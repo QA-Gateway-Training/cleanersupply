@@ -6,6 +6,7 @@
    <UUID>b5554ecf-bf9e-42e9-9803-4b3f677dc70f</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
+   <projectFileLocation>/Users/waleedafifi/git/cleanersupply/cleanersupply.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>

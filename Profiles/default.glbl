@@ -19,4 +19,14 @@
       <initValue>'Cleaner\'s Supply - Dry Cleaning Supplies'</initValue>
       <name>homePageTitle</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Search by Stock # or Keyword'</initValue>
+      <name>searchInputFieldPlaceHolder</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Plastic'</initValue>
+      <name>searchTerm</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
