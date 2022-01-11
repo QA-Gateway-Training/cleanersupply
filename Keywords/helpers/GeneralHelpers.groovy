@@ -39,10 +39,29 @@ public class GeneralHelpers {
 		GeneralValidation.verifyCurrentPageURL(GlobalVariable.baseUrl)
 	}
 
+	/**
+	 * Fill search field with specific term
+	 * Verify the value reflected to the same search term
+	 * Verify search box is visible when filling the search field
+	 * Click on search button
+	 * 
+	 * @author waleedafifi
+	 */
 	public static void headerSearchFillAndClick() {
 		GeneralActions.fillHeaderSearch(GlobalVariable.searchTerm)
 		GeneralValidation.verifySearchFieldValue(GlobalVariable.searchTerm)
 		GeneralValidation.verifySearchDropdownIsDisplayed()
 		GeneralActions.clickSearchButton()
+	}
+
+	/**
+	 * Verify result page title
+	 * Verify result page url contain plastic as search term
+	 * Verify result section heading contain search result
+	 */
+	public static void navigateToResultPage() {
+		GeneralValidation.verifyCurrentPageTitleValue(GlobalVariable.searchResultTitle)
+		GeneralValidation.verifyCurrentPageURL(GlobalVariable.plasticResultPage)
+		GeneralValidation.verifySectionHeading(GlobalVariable.searchReasultHeadingTag)
 	}
 }

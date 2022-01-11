@@ -29,4 +29,19 @@
       <initValue>'Plastic'</initValue>
       <name>searchTerm</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'SEARCH RESULTS'</initValue>
+      <name>searchReasultHeadingTag</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'search-results/?q=Plastic'</initValue>
+      <name>plasticResultPage</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Search Results - Cleaner\'s Supply'</initValue>
+      <name>searchResultTitle</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -21,5 +21,6 @@ import org.openqa.selenium.Keys as Keys
 
 GeneralHelpers.initScenario()
 GeneralHelpers.headerSearchFillAndClick()
+GeneralHelpers.navigateToResultPage()
 
 WebUI.closeBrowser()
