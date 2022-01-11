@@ -18,6 +18,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
+import actions.GeneralActions
 import actions.Navigations
 import internal.GlobalVariable
 import validation.GeneralValidation
@@ -36,5 +37,12 @@ public class GeneralHelpers {
 
 		GeneralValidation.verifyCurrentPageTitleValue(GlobalVariable.homePageTitle)
 		GeneralValidation.verifyCurrentPageURL(GlobalVariable.baseUrl)
+	}
+
+	public static void headerSearchFillAndClick() {
+		GeneralActions.fillHeaderSearch(GlobalVariable.searchTerm)
+		GeneralValidation.verifySearchFieldValue(GlobalVariable.searchTerm)
+		GeneralValidation.verifySearchDropdownIsDisplayed()
+		GeneralActions.clickSearchButton()
 	}
 }
