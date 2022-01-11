@@ -4,4 +4,29 @@
    <name>default</name>
    <tag></tag>
    <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://www.cleanersupply.com/'</initValue>
+      <name>baseUrl</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>5</initValue>
+      <name>pageLoadTimeOut</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Cleaner\'s Supply - Dry Cleaning Supplies'</initValue>
+      <name>homePageTitle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Search by Stock # or Keyword'</initValue>
+      <name>searchInputFieldPlaceHolder</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Plastic'</initValue>
+      <name>searchTerm</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
