@@ -40,7 +40,7 @@ public class GeneralHelpers {
 	 */
 	public static void navigateTotags() {
 		CategoryScActions.hoverTags()
-  }
+	}
 	public static void headerSearchFillAndClick() {
 		GeneralActions.fillHeaderSearch(GlobalVariable.searchTerm)
 		GeneralValidation.verifySearchFieldValue(GlobalVariable.searchTerm)
@@ -48,6 +48,7 @@ public class GeneralHelpers {
 		SearchValidations.VerifySearchForContainSearchTerm(GlobalVariable.searchTerm)
 		SearchValidations.VerifySearchDropDownTopBarStyle()
 		GeneralActions.clickSearchButton()
+
 	}
 
 	/**
@@ -59,5 +60,6 @@ public class GeneralHelpers {
 		GeneralValidation.verifyCurrentPageTitleValue(GlobalVariable.searchResultTitle)
 		GeneralValidation.verifyCurrentPageURL(GlobalVariable.plasticResultPage)
 		GeneralValidation.verifySectionHeading(GlobalVariable.searchReasultHeadingTag)
+
 	}
 }

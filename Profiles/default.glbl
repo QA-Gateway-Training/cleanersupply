@@ -31,6 +31,11 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
+      <initValue>'PRT381'</initValue>
+     <name>firstStockNo</name>
+    </GlobalVariableEntity>
+    <GlobalVariableEntity>
+       <description></description>
       <initValue>'SEARCH RESULTS'</initValue>
       <name>searchReasultHeadingTag</name>
    </GlobalVariableEntity>
@@ -153,5 +158,25 @@
       <description></description>
       <initValue>'Currently Unavailable.'</initValue>
       <name>txtOutStock</name>
+    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'GTDCA700C'</initValue>
+      <name>secStockNo</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'PP30'</initValue>
+      <name>thirdStockNo</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'ZB400'</initValue>
+      <name>fourthStockNo</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'SP4005'</initValue>
+      <name>fifthStockNo</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
