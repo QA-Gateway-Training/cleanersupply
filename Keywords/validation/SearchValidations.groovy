@@ -21,7 +21,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
 
 public class SearchValidations {
-	
+
 	/**
 	 * Verify search for paragraph contain search term in search field
 	 * @param searchTerm
@@ -31,10 +31,13 @@ public class SearchValidations {
 		TestObject searchFor = findTestObject('Product details/div_searchHeaderTopBar');
 		assert WebUI.getText(searchFor).contains(searchTerm.toUpperCase())
 	}
-	
+
+	/**
+	 * Verify the style of search dropdown top bar
+	 * @author waleedafifi
+	 */
 	public static void VerifySearchDropDownTopBarStyle() {
 		TestObject searchFor = findTestObject('Product details/div_searchHeaderTopBar');
 		assert WebUI.getCSSValue(searchFor, 'background-color').equals(GlobalVariable.searchHeaderTopBarBackgroundColor)
-		
 	}
 }

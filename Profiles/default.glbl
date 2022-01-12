@@ -49,4 +49,14 @@
       <initValue>'rgba(82, 36, 127, 1)'</initValue>
       <name>searchHeaderTopBarBackgroundColor</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Featured'</initValue>
+      <name>featured</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'224'</initValue>
+      <name>defaultProductCount</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
