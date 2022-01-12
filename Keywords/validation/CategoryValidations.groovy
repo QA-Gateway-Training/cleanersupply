@@ -23,9 +23,9 @@ public class CategoryValidations {
 		assert	actualBackground.equals(ExpectedHoverBackground)
 	}
 
-		public static void validatespanText(String ExpectedText){
-			TestObject object=findTestObject("Object Repository/Category/span_omputerRegister")
-			String text =	WebUI.getText(object)
-			assert text.contains(ExpectedText.toUpperCase())
-		}
+	public static void validatespanText(String ExpectedText){
+		TestObject object=findTestObject("Object Repository/Category/span_omputerRegister")
+		String text =	WebUI.getText(object)
+		assert text.contains(ExpectedText.toUpperCase())
+	}
 }
