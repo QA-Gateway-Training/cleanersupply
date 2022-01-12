@@ -20,39 +20,16 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
 
-public class GeneralValidation {
-	/***
-	 * Verify Current Page Title Is Not Empty
-	 * @author waleedafifi
-	 */
-	public static void verifyCurrentPageTitleIsNotEmpty() {
-		assert !WebUI.getWindowTitle().isEmpty()
+public class QuickOrderValidations {
+
+	public static void verifyChangesOnInputFocus(TestObject item , String value) {
+		assert WebUI.getCSSValue(item, "box-shadow").equals(value)
 	}
 
-	/***
-	 * verify current page title match the expected title
-	 * @param expectedTitle
-	 * @author waleedafifi
-	 */
-	public static void verifyCurrentPageTitleValue(String expectedTitle) {
-		assert WebUI.getWindowTitle().equals(expectedTitle)
-	}
-
-	/**
-	 * Verify Current Page URL matched the passed url
-	 * @param expectedURL expectedURL or part of expectedURL
-	 * @author waleedafifi
-	 */
-	public static void verifyCurrentPageURL(String expectedURL) {
-		assert WebUI.getUrl().contains(expectedURL)
-	}
-
-
-	public static void verifyColorChangeOnHover(TestObject item , String color) {
-		assert WebUI.getCSSValue(item, "color").equals(color)
-	}
-
-	public static void verifyInputValue(TestObject item , String expectedValue) {
-		assert WebUI.getAttribute(item, "value").equals(expectedValue)
+	public static void verifyQuickOrderSubTotal(int quantity, TestObject price, TestObject expectedSubTotal) {
+		float priceNo = Float.parseFloat(WebUI.getText(price))
+		float expectedTotal = Float.parseFloat(WebUI.getText(expectedSubTotal))
+		float actualTotal = quantity * priceNo
+		assert actualTotal==expectedTotal
 	}
 }

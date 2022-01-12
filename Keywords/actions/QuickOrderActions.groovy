@@ -1,4 +1,4 @@
-package validation
+package actions
 
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
@@ -20,39 +20,10 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
 
-public class GeneralValidation {
-	/***
-	 * Verify Current Page Title Is Not Empty
-	 * @author waleedafifi
-	 */
-	public static void verifyCurrentPageTitleIsNotEmpty() {
-		assert !WebUI.getWindowTitle().isEmpty()
-	}
+public class QuickOrderActions {
 
-	/***
-	 * verify current page title match the expected title
-	 * @param expectedTitle
-	 * @author waleedafifi
-	 */
-	public static void verifyCurrentPageTitleValue(String expectedTitle) {
-		assert WebUI.getWindowTitle().equals(expectedTitle)
-	}
-
-	/**
-	 * Verify Current Page URL matched the passed url
-	 * @param expectedURL expectedURL or part of expectedURL
-	 * @author waleedafifi
-	 */
-	public static void verifyCurrentPageURL(String expectedURL) {
-		assert WebUI.getUrl().contains(expectedURL)
-	}
-
-
-	public static void verifyColorChangeOnHover(TestObject item , String color) {
-		assert WebUI.getCSSValue(item, "color").equals(color)
-	}
-
-	public static void verifyInputValue(TestObject item , String expectedValue) {
-		assert WebUI.getAttribute(item, "value").equals(expectedValue)
+	public static void clickQuickOrderLink() {
+		TestObject quickOrderLink = findTestObject("Object Repository/Quick Order/a_quickOrder")
+		WebUI.click(quickOrderLink)
 	}
 }

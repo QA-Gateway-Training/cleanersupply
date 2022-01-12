@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "AA269DAE7E3A6378C0B5C26DC0E897CB",
+  "keywordFileContentHash": "0AD26CE6330380FC16E6040C55AB100F",
   "keywordClasses": [
     {
       "name": "helpers.GeneralHelpers",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "ECB0B0481FEF839A82A02001B41D0AFF",
+  "keywordClasses": [
+    {
+      "name": "actions.QuickOrderActions",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

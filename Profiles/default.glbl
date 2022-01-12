@@ -29,4 +29,14 @@
       <initValue>'Plastic'</initValue>
       <name>searchTerm</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'CBS40BK'</initValue>
+      <name>firstStockNo</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'inset 0 -3px 0 0 #636363'</initValue>
+      <name>shadowValue</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
