@@ -20,13 +20,10 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
 
-public class Navigations {
-	/**
-	 * Navigate to home page
-	 * @author waleedafifi
-	 */
-	public static void navigateToHomePage() {
-		WebUI.navigateToUrl(GlobalVariable.baseUrl)
+public class QuickOrderActions {
+
+	public static void clickQuickOrderLink() {
+		TestObject quickOrderLink = findTestObject("Object Repository/Quick Order/a_quickOrder")
+		WebUI.click(quickOrderLink)
 	}
-	
 }

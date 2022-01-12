@@ -31,6 +31,15 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
+
+      <initValue>'CBS40BK'</initValue>
+      <name>firstStockNo</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'inset 0 -3px 0 0 #636363'</initValue>
+      <name>shadowValue</name>
+
       <initValue>'#52247f'</initValue>
       <name>tagsHoverColor</name>
    </GlobalVariableEntity>
@@ -58,5 +67,6 @@
       <description></description>
       <initValue>'Computer &amp; Register Tags &amp; Forms'</initValue>
       <name>computerRegisterspan</name>
+
    </GlobalVariableEntity>
 </GlobalVariableEntities>

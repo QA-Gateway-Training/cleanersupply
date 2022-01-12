@@ -48,6 +48,15 @@ public class GeneralValidation {
 		assert WebUI.getUrl().contains(expectedURL)
 	}
 
+
+
+	public static void verifyColorChangeOnHover(TestObject item , String color) {
+		assert WebUI.getCSSValue(item, "color").equals(color)
+	}
+
+	public static void verifyInputValue(TestObject item , String expectedValue) {
+		assert WebUI.getAttribute(item, "value").equals(expectedValue)
+
 	/**
 	 * Verify the value of search filed is refelected
 	 * @param searchValue
@@ -65,5 +74,6 @@ public class GeneralValidation {
 		TestObject searchBox = findTestObject('Object Repository/Product details/div_searchAutocompleteBox')
 		WebUI.waitForElementVisible(searchBox, GlobalVariable.pageLoadTimeOut)
 		assert WebUI.getAttribute(searchBox, 'class').contains('open')
+
 	}
 }
