@@ -22,6 +22,7 @@ import actions.GeneralActions
 import actions.Navigations
 import internal.GlobalVariable
 import validation.GeneralValidation
+import validation.SearchValidations
 
 public class GeneralHelpers {
 	/***
@@ -51,6 +52,8 @@ public class GeneralHelpers {
 		GeneralActions.fillHeaderSearch(GlobalVariable.searchTerm)
 		GeneralValidation.verifySearchFieldValue(GlobalVariable.searchTerm)
 		GeneralValidation.verifySearchDropdownIsDisplayed()
+		SearchValidations.VerifySearchForContainSearchTerm(GlobalVariable.searchTerm)
+		SearchValidations.VerifySearchDropDownTopBarStyle()
 		GeneralActions.clickSearchButton()
 	}
 

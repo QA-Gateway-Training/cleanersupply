@@ -40,11 +40,18 @@ git clone https://github.com/QA-Gateway-Training/cleanersupply.git
 2- Product details page test plan ( search )
   - test 1
 
-3 - Category test plan
+3- Category test plan
   - test 1
 
 4- Quick order test plan
   - test 1
+  
+5- Search
+  - Check placeholder
+  - Fill the field and check if reflected
+  - Check the top bar contains search term
+  - Check top bar background
+  - Click on search button
    
 ## Update
 - [ ] ^_^

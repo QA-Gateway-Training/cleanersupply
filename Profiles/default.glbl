@@ -44,4 +44,9 @@
       <initValue>'Search Results - Cleaner\'s Supply'</initValue>
       <name>searchResultTitle</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'rgba(82, 36, 127, 1)'</initValue>
+      <name>searchHeaderTopBarBackgroundColor</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
