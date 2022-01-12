@@ -29,4 +29,34 @@
       <initValue>'Plastic'</initValue>
       <name>searchTerm</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'#52247f'</initValue>
+      <name>tagsHoverColor</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'#fff'</initValue>
+      <name>tagsHoverBackgound</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Computer-Register'</initValue>
+      <name>computerRegisterURL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Computer &amp; Register - Cleaner\'s Supply'</initValue>
+      <name>computerRegisterTitle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>computerRegisterspanSelector</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Computer &amp; Register Tags &amp; Forms'</initValue>
+      <name>computerRegisterspan</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

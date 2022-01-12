@@ -36,6 +36,7 @@ public class GeneralValidation {
 	 */
 	public static void verifyCurrentPageTitleValue(String expectedTitle) {
 		assert WebUI.getWindowTitle().equals(expectedTitle)
+		
 	}
 
 	/**

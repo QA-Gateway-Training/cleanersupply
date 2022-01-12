@@ -25,10 +25,9 @@ public class GeneralActions {
 		TestObject searchField = findTestObject('Object Repository/Product details/input_searchField');
 		WebUI.setText(searchField, GlobalVariable.searchTerm)
 	}
-	
+
 	public static void clickSearchButton() {
 		TestObject searchField = findTestObject('Object Repository/Product details/btn_searchAction');
 		WebUI.click(searchField);
-		
 	}
 }
