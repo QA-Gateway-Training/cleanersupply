@@ -26,6 +26,6 @@ GeneralHelpers.initScenario()
 GeneralHelpers.headerSearchFillAndClick()
 GeneralHelpers.navigateToResultPage()
 SearchResultPageValidations.verifyDefaultValues()
-SearchResultHelper.filterCardExpand()
+SearchResultHelper.selectPackagingProduct()
 
 WebUI.closeBrowser()

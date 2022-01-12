@@ -27,4 +27,27 @@ public class SearchResultHelper {
 		SearchResultPageActions.expandFilterCard('collapse7')
 		SearchResultPageValidations.verifyFilterCardExpanded('collapse7')
 	}
+
+	public static void selectPackagingProduct() {
+		SearchResultPageActions.selectPackagingProduct()
+		int f1 = SearchResultPageValidations.verifyFilterCounter();
+		SearchResultPageValidations.verifyProductHeadingTotal(f1)
+		
+		SearchResultPageActions.selectPlasticBags()
+//		int f2 = SearchResultPageValidations.verifyPlasticFilterCounter();
+		
+		
+		filterCardExpand()
+		
+		SearchResultPageActions.selectColorFilter()
+		int colorCounter = SearchResultPageValidations.verifyColorFilterCounter()
+		SearchResultPageValidations.verifyProductHeadingTotal(colorCounter)
+		
+		// Total number is incorrect (Bug)
+//		SearchResultPageValidations.verifyProductHeadingTotal(f1+f2)
+	}
+
+	public static void selectGreenColor() {
+		
+	}
 }

@@ -22,8 +22,28 @@ import helpers.GeneralHelperFunctions
 import internal.GlobalVariable
 
 public class SearchResultPageActions {
+	/**
+	 * Expand filter card based on it's id
+	 * @param selector
+	 * @author waleedafifi
+	 */
 	public static void expandFilterCard(String selector) {
 		TestObject titleObj = GeneralHelperFunctions.makeTO('//div[@href="#'+selector+'"]')
 		WebUI.click(titleObj)
+	}
+
+	public static void selectPackagingProduct() {
+		TestObject productObject = findTestObject('Object Repository/Filter/a_packagingProduct')
+		WebUI.click(productObject)
+	}
+
+	public static void selectPlasticBags() {
+		TestObject productObject = findTestObject('Object Repository/Filter/a_plasticBags')
+		WebUI.click(productObject)
+	}
+	
+	public static void selectColorFilter() {
+		TestObject colorObject = findTestObject('Object Repository/Filter/a_greenColor')
+		WebUI.click(colorObject)
 	}
 }
