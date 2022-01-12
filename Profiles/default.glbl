@@ -31,15 +31,11 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-
-      <initValue>'CBS40BK'</initValue>
+      <initValue>'PRT381'</initValue>
       <name>firstStockNo</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'inset 0 -3px 0 0 #636363'</initValue>
-      <name>shadowValue</name>
-
       <initValue>'#52247f'</initValue>
       <name>tagsHoverColor</name>
    </GlobalVariableEntity>
@@ -67,6 +63,25 @@
       <description></description>
       <initValue>'Computer &amp; Register Tags &amp; Forms'</initValue>
       <name>computerRegisterspan</name>
-
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'GTDCA700C'</initValue>
+      <name>secStockNo</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'PP30'</initValue>
+      <name>thirdStockNo</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'ZB400'</initValue>
+      <name>fourthStockNo</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'SP4005'</initValue>
+      <name>fifthStockNo</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

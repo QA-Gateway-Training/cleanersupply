@@ -21,22 +21,35 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import actions.GeneralActions
+import actions.QuickOrderActions
 import internal.GlobalVariable
 import validation.GeneralValidation
 import validation.QuickOrderValidations
 
 public class QuickOrderHelpers {
 
-	public static void fillProductQuickOrder(TestObject stockInput, String value, TestObject quantityInput, TestObject price, TestObject expectedSubTotal,TestObject title, TestObject stock) {
+	public static void fillStockNoQuickOrder(TestObject stockInput, String value) {
 		GeneralActions.focusItem(stockInput)
-		QuickOrderValidations.verifyChangesOnInputFocus(stockInput, GlobalVariable.shadowValue)
+		//	QuickOrderValidations.verifyChangesOnInputFocus(stockInput, "rgb(99, 99, 99) 0px -3px 0px 0px inset")
 		WebUI.sendKeys(stockInput, value+ Keys.ENTER)
 		GeneralValidation.verifyInputValue(stockInput, value)
-		int randomQuantity = (int) (Math.random() * 50 + 5)
-		WebUI.sendKeys(quantityInput, randomQuantity+""+Keys.TAB)
-		GeneralValidation.verifyInputValue(quantityInput, randomQuantity)
+	}
+
+	public static void verifyQuickOrderTotal(TestObject title,TestObject price, TestObject expectedSubTotal, TestObject stock,TestObject quantityInput) {
+		int randomQuantity = (int) (Math.random() * 50 + 4)
+		WebUI.sendKeys(quantityInput, Keys.chord(Keys.BACK_SPACE) +randomQuantity+Keys.TAB )
+		GeneralValidation.verifyInputValue(quantityInput, randomQuantity.toString())
 		WebUI.verifyElementPresent(title, 2)
-		WebUI.verifyElementText(stock, " In Stock!")
+		WebUI.verifyElementText(stock, "In Stock!")
 		QuickOrderValidations.verifyQuickOrderSubTotal(randomQuantity, price, expectedSubTotal)
+	}
+
+	public static double calculateQuickOrdersTotal(TestObject first, TestObject sec, TestObject third, TestObject fourth,TestObject fifth) {
+		double firstTotal = QuickOrderActions.formatPriceAndTotal(first)
+		double secTotal = QuickOrderActions.formatPriceAndTotal(sec)
+		double thirdTotal = QuickOrderActions.formatPriceAndTotal(third)
+		double fourthTotal = QuickOrderActions.formatPriceAndTotal(fourth)
+		double fifthTotal = QuickOrderActions.formatPriceAndTotal(fifth)
+		return firstTotal*secTotal*thirdTotal*fourthTotal*fifthTotal;
 	}
 }
