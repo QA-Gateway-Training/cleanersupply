@@ -13,8 +13,8 @@ String computerRegister ="Object Repository/Category/a_ComputerRegister"
 CategoryScActions.hovertags()
 
 
-CategoryValidations.checkanchorHoverColorBackground(tags, GlobalVariable.tagsHoverColor,
-	GlobalVariable.tagsHoverBackgound)
+//CategoryValidations.checkanchorHoverColorBackground(tags, GlobalVariable.tagsHoverColor,
+//	GlobalVariable.tagsHoverBackgound)
 CategorySCHelpers.navigateComputerRegister()
 
 CategoryValidations.validatespanText(GlobalVariable.computerRegisterspan )
