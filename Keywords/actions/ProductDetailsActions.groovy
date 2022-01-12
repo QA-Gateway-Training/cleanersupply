@@ -21,4 +21,42 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
 
 public class ProductDetailsActions {
+	public static void hoverOverSizeLink(TestObject obj) {
+	}
+
+	/**
+	 * Hover on the x-large size link
+	 * @author waleedafifi
+	 */
+	public static void hoverOverXLargeSizeLink() {
+		TestObject obj = findTestObject('Object Repository/Product details/a_xLargeLink')
+		WebUI.mouseOver(obj)
+	}
+
+	/**
+	 * Hover on the large size link
+	 * @author waleedafifi
+	 */
+	public static void hoverOverLargeSizeLink() {
+		TestObject obj = findTestObject('Object Repository/Product details/a_largeLink')
+		WebUI.mouseOver(obj)
+	}
+
+	/**
+	 * Click on x-large link
+	 * @author waleedafifi 
+	 */
+	public static void xLargeSizeLinkClickAction() {
+		TestObject obj = findTestObject('Object Repository/Product details/a_xLargeLink')
+		WebUI.click(obj)
+	}
+
+	/**
+	 * Click on large link
+	 * @author waleedafifi
+	 */
+	public static void largeSizeLinkClickAction() {
+		TestObject obj = findTestObject('Object Repository/Product details/a_largeLink')
+		WebUI.click(obj)
+	}
 }

@@ -1,4 +1,4 @@
-package actions
+package helpers
 
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
@@ -18,37 +18,21 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
-import helpers.GeneralHelperFunctions
+import actions.ProductDetailsActions
 import internal.GlobalVariable
+import validation.ProductDetailsValidation
 
-public class SearchResultPageActions {
+public class ProductDetailsHelpers {
+	
 	/**
-	 * Expand filter card based on it's id
-	 * @param selector
+	 * Verify hover effect on x-large, then click on it and check the active style
 	 * @author waleedafifi
 	 */
-	public static void expandFilterCard(String selector) {
-		TestObject titleObj = GeneralHelperFunctions.makeTO('//div[@href="#'+selector+'"]')
-		WebUI.click(titleObj)
-	}
+	public static void verifyHoverEffectAndClickXLargeSizeLink() {
+		ProductDetailsActions.hoverOverXLargeSizeLink()
+		ProductDetailsValidation.verifyOnHoverStyle()
 
-	public static void selectPackagingProduct() {
-		TestObject productObject = findTestObject('Object Repository/Filter/a_packagingProduct')
-		WebUI.click(productObject)
-	}
-
-	public static void selectPlasticBags() {
-		TestObject productObject = findTestObject('Object Repository/Filter/a_plasticBags')
-		WebUI.click(productObject)
-	}
-
-	public static void selectColorFilter() {
-		TestObject colorObject = findTestObject('Object Repository/Filter/a_greenColor')
-		WebUI.click(colorObject)
-	}
-
-	public static void NavigateToProductDetailsPage() {
-		TestObject item = findTestObject('Object Repository/Product details/a_productItem')
-		WebUI.click(item);
+		ProductDetailsActions.xLargeSizeLinkClickAction()
+		ProductDetailsValidation.verifyActiveProductSize()
 	}
 }
