@@ -20,3 +20,6 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 GeneralHelpers.initScenario()
+GeneralHelpers.headerSearchFillAndClick()
+
+WebUI.closeBrowser()
