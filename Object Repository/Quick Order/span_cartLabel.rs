@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_addToCart</name>
+   <name>span_cartLabel</name>
    <tag></tag>
-   <elementGuidId>2dd131e3-c1a3-41fc-a9ec-8348e42e198e</elementGuidId>
+   <elementGuidId>6852e735-6708-4c21-a596-c2a86eb34bcc</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>.button-holder .pull-right</value>
+         <value>.cart-label</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

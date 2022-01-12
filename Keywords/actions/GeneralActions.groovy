@@ -32,7 +32,6 @@ public class GeneralActions {
 	}
 
 
-
 	public static void hoverItem(TestObject item) {
 		WebUI.mouseOver(item)
 	}
@@ -41,13 +40,16 @@ public class GeneralActions {
 		WebUI.focus(item)
 	}
 
-		/**
-		 * Click on search button
-		 * @author waleedafifi
-		 */
+	/**
+	 * Click on search button
+	 * @author waleedafifi
+	 */
 
-		public static void clickSearchButton() {
-			TestObject searchField = findTestObject('Object Repository/Product details/btn_searchAction');
-			WebUI.click(searchField);
-		}
+	public static void clickSearchButton() {
+		TestObject searchField = findTestObject('Object Repository/Product details/btn_searchAction');
+		WebUI.click(searchField);
 	}
+	
+	
+	
+}

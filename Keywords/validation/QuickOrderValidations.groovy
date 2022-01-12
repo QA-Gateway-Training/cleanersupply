@@ -6,6 +6,8 @@ import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
+import java.text.DecimalFormat
+
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
@@ -18,6 +20,8 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
+import actions.QuickOrderActions
+import helpers.QuickOrderHelpers
 import internal.GlobalVariable
 
 public class QuickOrderValidations {
@@ -27,9 +31,28 @@ public class QuickOrderValidations {
 	}
 
 	public static void verifyQuickOrderSubTotal(int quantity, TestObject price, TestObject expectedSubTotal) {
-		float priceNo = Float.parseFloat(WebUI.getText(price))
-		float expectedTotal = Float.parseFloat(WebUI.getText(expectedSubTotal))
-		float actualTotal = quantity * priceNo
-		assert actualTotal==expectedTotal
+		double priceNo = QuickOrderActions.formatPriceAndTotal(price)
+		double expectedTotal = QuickOrderActions.formatPriceAndTotal(expectedSubTotal)
+		double actualTotal = quantity * priceNo
+		assert new DecimalFormat("##.##").format(actualTotal) ==  new DecimalFormat("##.##").format(expectedTotal)
 	}
+
+	public static void verifyChangeStyleOnBtnHover(TestObject item) {
+		assert WebUI.getCSSValue(item, "box-shadow").equals("0 0 10px 2px rgb(0 0 0 / 30%)")
+	}
+
+	public static void verifyCartCounter(String no) {
+		assert WebUI.getText(findTestObject("Object Repository/Quick Order/span_cartCounter")).equals(no)
+	}
+
+	public static void verifyCartTotal(TestObject first, TestObject sec, TestObject third, TestObject fourth,TestObject fifth) {
+		double expectedTotal = QuickOrderHelpers.calculateQuickOrdersTotal(first, sec, third, fourth, fifth)
+		double actualTotal = QuickOrderActions.formatPriceAndTotal(WebUI.getText(findTestObject("Object Repository/Quick Order/span_quickOrderTotal")))
+		assert expectedTotal == actualTotal
+	}
+	
+	public static void verifyProductDetailsInCheckOut(TestObject Quantity, TestObject Price, TestObject Total, TestObject Title,TestObject Img, TestObject StocksNotify) {
+		
+	}
+	
 }

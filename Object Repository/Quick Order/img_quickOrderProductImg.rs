@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_addToCart</name>
+   <name>img_quickOrderProductImg</name>
    <tag></tag>
-   <elementGuidId>2dd131e3-c1a3-41fc-a9ec-8348e42e198e</elementGuidId>
+   <elementGuidId>68d5475e-a0a0-4780-a779-8cab40e2d7ad</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>.button-holder .pull-right</value>
+         <value>.product-table__image img</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
