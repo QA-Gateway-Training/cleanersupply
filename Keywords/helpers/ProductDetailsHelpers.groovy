@@ -24,7 +24,12 @@ import validation.ProductDetailsValidation
 
 public class ProductDetailsHelpers {
 	
+	/**
+	 * Initial product details page on page load 
+	 * @author waleedafifi
+	 */
 	public static void initProductDetailsPage() {
+		ProductDetailsValidation.verifyProductDetailsPageBreadCrumb()
 		ProductDetailsValidation.verifyActiveProductSize('//a[@title=\'X-Small - 15" x 18" x 3"\']')
 		ProductDetailsValidation.verifyProductAvailability(false)
 		ProductDetailsValidation.verifySKUNotEmpty()
@@ -41,7 +46,7 @@ public class ProductDetailsHelpers {
 	 * Verify hover effect on x-large, then click on it and check the active style
 	 * @author waleedafifi
 	 */
-	public static void verifyHoverEffectAndClickXLargeSizeLink() {
+	public static void hoverEffectAndClickXLargeSizeLink() {
 		ProductDetailsActions.hoverOverXLargeSizeLink()
 		ProductDetailsValidation.verifyOnHoverStyle()
 
@@ -53,8 +58,40 @@ public class ProductDetailsHelpers {
 		ProductDetailsValidation.verifyAddToCartButtonVisibility()
 		
 		ProductDetailsValidation.verifyAddCartStyle()
+	}
+	
+	/**
+	 * Select product green color
+	 * @author waleedafifi
+	 */
+	public static void selectGreenColor() {
+		ProductDetailsActions.selectGreenColor()
+		TestObject obj = findTestObject('Object Repository/Product details/a_greenColor')
+		ProductDetailsValidation.verifyProductColorSelect(obj, 'Green')
+
+	}
+	
+	/**
+	 * Fill product quantity
+	 * @author waleedafifi
+	 */
+	public static void fillProductQuantity() {
+		ProductDetailsActions.fillQuantityInput(5)
+		ProductDetailsValidation.verifyProductQuantityField(5)	
+	}
+	
+	/**
+	 * Click add to cart button
+	 * @author waleedafifi
+	 */
+	public static void addProductToCart() {
 		ProductDetailsActions.addToCartOnHover()
 		ProductDetailsValidation.verifyAddToCartOnHover()
-
+		ProductDetailsActions.addToCartAction()
+		
+//		ProductDetailsValidation.VerifyInnerTEXTLoadingAfterAddToCart()
+		ProductDetailsValidation.VerifyInnerTEXTAddedAfterAddToCart()
+		ProductDetailsValidation.verifyProductQuantityField(1)
+		
 	}
 }

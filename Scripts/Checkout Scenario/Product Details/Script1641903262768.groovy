@@ -33,6 +33,9 @@ SearchResultHelper.selectProductFilters()
 SearchResultPageActions.NavigateToProductDetailsPage()
 
 ProductDetailsHelpers.initProductDetailsPage()
-ProductDetailsHelpers.verifyHoverEffectAndClickXLargeSizeLink()
+ProductDetailsHelpers.hoverEffectAndClickXLargeSizeLink()
+ProductDetailsHelpers.selectGreenColor()
+ProductDetailsHelpers.fillProductQuantity()
+ProductDetailsHelpers.addProductToCart()
 
-WebUI.closeBrowser()
+//WebUI.closeBrowser()

@@ -90,15 +90,20 @@ public class ProductDetailsValidation {
 	 * Verify the selected color has a selected class
 	 * @param obj
 	 * @param colorName
+	 * @author waleedafifi
 	 */
-	public static void verifyProductColorSelect(TestObject obj, String colorName = '') {
+	public static void verifyProductColorSelect(TestObject obj, String colorName = 'Black') {
 		assert WebUI.verifyElementPresent(obj, GlobalVariable.globalTimeOut)
 		assert WebUI.getAttribute(obj, 'class').contains(GlobalVariable.selected)
+		TestObject color = findTestObject('Object Repository/Product details/span_selectedColor')
+		assert WebUI.getText(color).contains(colorName.toUpperCase())
+		
 	}
 
 	/**
 	 * Verify if the stock availability, if yes will have green color, if not will have red color
 	 * @param stockStatus
+	 * @author waleedafifi
 	 */
 	public static void verifyProductAvailability(boolean stockStatus = true) {
 		TestObject stock = findTestObject('Object Repository/Product details/div_stockNotifcations')
@@ -110,16 +115,26 @@ public class ProductDetailsValidation {
 			assert WebUI.getCSSValue(stock, 'color').equals(GlobalVariable.redColor)
 		}
 	}
-	
+
+	/**
+	 * Verify add to cart button visibility based on buttonStatus 
+	 * @param buttonStatus
+	 * @author waleedafifi
+	 */
 	public static void verifyAddToCartButtonVisibility(boolean buttonStatus = true) {
 		TestObject btn = findTestObject('Object Repository/Product details/button_addToCart')
 		if(buttonStatus) {
-			assert WebUI.verifyElementVisible(btn)			
+			assert WebUI.verifyElementVisible(btn)
 		} else {
 			assert WebUI.verifyElementNotVisible(btn)
 		}
 	}
-	
+
+	/**
+	 * Verify favorite icon visibility Based on status passed from the helper
+	 * @param iconStatus
+	 * @author waleedafifi
+	 */
 	public static void verifyFavoriteIconVisibility(boolean iconStatus = true) {
 		TestObject ico = findTestObject('Object Repository/Product details/i_favorite')
 		if(iconStatus) {
@@ -128,20 +143,59 @@ public class ProductDetailsValidation {
 			assert WebUI.verifyElementNotVisible(ico)
 		}
 	}
-	
+
+	/**
+	 * Verify favorite icon style to be gray
+	 * @author waleedafifi
+	 */
 	public static void verifyFavoriteIconStyle() {
 		TestObject ico = findTestObject('Object Repository/Product details/i_favorite')
 		assert WebUI.getCSSValue(ico, 'color').equals(GlobalVariable.lightGray)
 	}
-	
+
+	/**
+	 * Verify add to cart style to be purple
+	 * @author waleedafifi
+	 */
 	public static void verifyAddCartStyle() {
 		TestObject btn = findTestObject('Object Repository/Product details/button_addToCart')
 		assert WebUI.getCSSValue(btn, 'background-color').equals(GlobalVariable.purpleColor)
 	}
-	
+
+	/**
+	 * Verify hover effect on add to cart button
+	 * @author waleedafifi
+	 */
 	public static void verifyAddToCartOnHover() {
 		TestObject container = findTestObject('Object Repository/Product details/div_addToCartContainer')
 		assert WebUI.getCSSValue(container, 'box-shadow').equals('rgba(0, 0, 0, 0.3) 0px 0px 10px 2px')
+	}
 
+	/**
+	 * Verify product quantity field equals to passed params
+	 * @param txt
+	 * @author waleedafifi
+	 */
+	public static void verifyProductQuantityField(int txt) {
+		TestObject ipt = findTestObject('Object Repository/Product details/input_productQuantity')
+		assert WebUI.getAttribute(ipt, 'value').equals(txt.toString())
+	}
+	
+	/**
+	 * Verify text of the button contains LOADING
+	 * @author waleedafifi
+	 */
+	public static void VerifyInnerTEXTLoadingAfterAddToCart() {
+		TestObject btn = findTestObject('Object Repository/Product details/button_addToCart')
+		assert WebUI.getText(btn).contains('Loading'.toUpperCase())
+	}
+	
+	/**
+	 * Verify text of the button contains ADDED TO CART
+	 * @author waleedafifi
+	 */
+	public static void VerifyInnerTEXTAddedAfterAddToCart() {
+		TestObject btn = findTestObject('Object Repository/Product details/button_addToCart')
+		assert WebUI.getText(btn).contains('Added to cart'.toUpperCase())
 	}
 }

@@ -6,6 +6,8 @@ import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
+import org.openqa.selenium.Keys
+
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
@@ -59,10 +61,36 @@ public class ProductDetailsActions {
 		TestObject obj = findTestObject('Object Repository/Product details/a_largeLink')
 		WebUI.click(obj)
 	}
-	
+
+	/**
+	 * Hover on add to cart
+	 * @author waleedafifi
+	 */
 	public static void addToCartOnHover() {
 		TestObject container = findTestObject('Object Repository/Product details/div_addToCartContainer')
 		WebUI.mouseOver(container)
+	}
 
+	/**
+	 * Add the product to cart
+	 * @author waleedafifi
+	 */
+	public static void addToCartAction() {
+		TestObject btn = findTestObject('Object Repository/Product details/button_addToCart')
+		WebUI.click(btn)
+	}
+
+	/**
+	 * Fill product quantity with passed params
+	 * @param txt
+	 */
+	public static void fillQuantityInput(int txt) {
+		TestObject ipt = findTestObject('Object Repository/Product details/input_productQuantity')
+		WebUI.sendKeys(ipt, Keys.chord(Keys.BACK_SPACE) + txt)
+	}
+	
+	public static void selectGreenColor() {
+		TestObject color = findTestObject('Object Repository/Product details/a_greenColor')
+		WebUI.click(color)
 	}
 }
