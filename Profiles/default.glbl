@@ -34,6 +34,8 @@
       <initValue>'PRT381'</initValue>
      <name>firstStockNo</name>
     </GlobalVariableEntity>
+    <GlobalVariableEntity>
+       <description></description>
       <initValue>'SEARCH RESULTS'</initValue>
       <name>searchReasultHeadingTag</name>
    </GlobalVariableEntity>
@@ -61,8 +63,6 @@
       <description></description>
       <initValue>'224'</initValue>
       <name>defaultProductCount</name>
-
-      <initValue>'CBS40BK'</initValue>
 
      
    </GlobalVariableEntity>
