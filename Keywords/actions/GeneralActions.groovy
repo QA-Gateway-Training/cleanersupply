@@ -31,10 +31,12 @@ public class GeneralActions {
 		WebUI.setText(searchField, searchTerm)
 	}
 
+
 	/**
 	 * Click on search button
 	 * @author waleedafifi
 	 */
+
 	public static void clickSearchButton() {
 		TestObject searchField = findTestObject('Object Repository/Product details/btn_searchAction');
 		WebUI.click(searchField);
