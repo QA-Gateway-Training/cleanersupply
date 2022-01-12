@@ -74,5 +74,17 @@ public class GeneralValidation {
 		TestObject searchBox = findTestObject('Object Repository/Product details/div_searchAutocompleteBox')
 		WebUI.waitForElementVisible(searchBox, GlobalVariable.pageLoadTimeOut)
 		assert WebUI.getAttribute(searchBox, 'class').contains('open')
+
+	}
+
+	/**
+	 * Verify page section header title
+	 * @param title
+	 * @author waleedafifi
+	 */
+	public static void verifySectionHeading(String title) {
+		TestObject sectionHeader = findTestObject('Object Repository/Product details/h1_sectionHeading')
+		assert WebUI.getText(sectionHeader).equals(GlobalVariable.searchReasultHeadingTag)
+
 	}
 }
