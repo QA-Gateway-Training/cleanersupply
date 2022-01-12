@@ -21,10 +21,21 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
 
 public class GeneralActions {
+	/**
+	 * Search for product using header search field
+	 * @param searchTerm
+	 * @author waleedafifi
+	 */
 	public static void fillHeaderSearch(String searchTerm) {
 		TestObject searchField = findTestObject('Object Repository/Product details/input_searchField');
-		WebUI.setText(searchField, GlobalVariable.searchTerm)
+		WebUI.setText(searchField, searchTerm)
 	}
+
+
+	/**
+	 * Click on search button
+	 * @author waleedafifi
+	 */
 
 	public static void clickSearchButton() {
 		TestObject searchField = findTestObject('Object Repository/Product details/btn_searchAction');
