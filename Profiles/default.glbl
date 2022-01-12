@@ -32,10 +32,10 @@
    <GlobalVariableEntity>
       <description></description>
       <initValue>'PRT381'</initValue>
-     <name>firstStockNo</name>
-    </GlobalVariableEntity>
-    <GlobalVariableEntity>
-       <description></description>
+      <name>firstStockNo</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
       <initValue>'SEARCH RESULTS'</initValue>
       <name>searchReasultHeadingTag</name>
    </GlobalVariableEntity>
@@ -158,7 +158,7 @@
       <description></description>
       <initValue>'Currently Unavailable.'</initValue>
       <name>txtOutStock</name>
-    </GlobalVariableEntity>
+   </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>'GTDCA700C'</initValue>
@@ -178,5 +178,20 @@
       <description></description>
       <initValue>'SP4005'</initValue>
       <name>fifthStockNo</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'//a[@title=\'X-Large - 26\\&quot; x 29\\&quot; x 10\\&quot;\']'</initValue>
+      <name>xLargeLinkTitle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'rgba(199, 200, 202, 1)'</initValue>
+      <name>lightGray</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'rgba(82, 36, 127, 1)'</initValue>
+      <name>purpleColor</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -15,7 +15,9 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
+import actions.SearchResultPageActions
 import helpers.GeneralHelpers
+import helpers.ProductDetailsHelpers
 import helpers.SearchResultHelper
 import internal.GlobalVariable
 import validation.SearchResultPageValidations
@@ -28,4 +30,12 @@ GeneralHelpers.navigateToResultPage()
 SearchResultPageValidations.verifyDefaultValues()
 SearchResultHelper.selectProductFilters()
 
-WebUI.closeBrowser()
+SearchResultPageActions.NavigateToProductDetailsPage()
+
+ProductDetailsHelpers.initProductDetailsPage()
+ProductDetailsHelpers.hoverEffectAndClickXLargeSizeLink()
+ProductDetailsHelpers.selectGreenColor()
+ProductDetailsHelpers.fillProductQuantity()
+ProductDetailsHelpers.addProductToCart()
+
+//WebUI.closeBrowser()
