@@ -24,6 +24,19 @@ import validation.ProductDetailsValidation
 
 public class ProductDetailsHelpers {
 	
+	public static void initProductDetailsPage() {
+		ProductDetailsValidation.verifyActiveProductSize('//a[@title=\'X-Small - 15" x 18" x 3"\']')
+		ProductDetailsValidation.verifyProductAvailability(false)
+		ProductDetailsValidation.verifySKUNotEmpty()
+		ProductDetailsValidation.verifyProductDetailsName()
+		
+		TestObject obj = findTestObject('Object Repository/Product details/a_blackColor')
+		ProductDetailsValidation.verifyProductColorSelect(obj)
+		ProductDetailsValidation.verifyFavoriteIconVisibility(false)
+		ProductDetailsValidation.verifyAddToCartButtonVisibility(false)
+		
+	}
+	
 	/**
 	 * Verify hover effect on x-large, then click on it and check the active style
 	 * @author waleedafifi
@@ -33,6 +46,15 @@ public class ProductDetailsHelpers {
 		ProductDetailsValidation.verifyOnHoverStyle()
 
 		ProductDetailsActions.xLargeSizeLinkClickAction()
-		ProductDetailsValidation.verifyActiveProductSize()
+		ProductDetailsValidation.verifyActiveProductSize('//a[@title=\'X-Large - 26" x 29" x 10"\']')
+		ProductDetailsValidation.verifyProductAvailability()
+		
+		ProductDetailsValidation.verifyFavoriteIconVisibility()
+		ProductDetailsValidation.verifyAddToCartButtonVisibility()
+		
+		ProductDetailsValidation.verifyAddCartStyle()
+		ProductDetailsActions.addToCartOnHover()
+		ProductDetailsValidation.verifyAddToCartOnHover()
+
 	}
 }

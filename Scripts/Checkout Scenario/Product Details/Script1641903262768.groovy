@@ -31,6 +31,8 @@ SearchResultPageValidations.verifyDefaultValues()
 SearchResultHelper.selectProductFilters()
 
 SearchResultPageActions.NavigateToProductDetailsPage()
+
+ProductDetailsHelpers.initProductDetailsPage()
 ProductDetailsHelpers.verifyHoverEffectAndClickXLargeSizeLink()
 
 WebUI.closeBrowser()

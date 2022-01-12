@@ -18,6 +18,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
+import helpers.GeneralHelperFunctions
 import internal.GlobalVariable
 
 public class ProductDetailsValidation {
@@ -52,10 +53,12 @@ public class ProductDetailsValidation {
 
 	/**
 	 * Verify default size if has selected class, dark gray background, white color for the text
+	 * @param xpath
 	 * @author waleedafifi
 	 */
-	public static void verifyActiveProductSize() {
-		TestObject size = findTestObject('Object Repository/Product details/a_xLargeLink')
+	public static void verifyActiveProductSize(xpath) {
+		TestObject size = GeneralHelperFunctions.makeTO(xpath)
+		//		TestObject size = findTestObject('Object Repository/Product details/a_xLargeLink')
 		assert WebUI.getAttribute(size, 'class').contains(GlobalVariable.selected)
 		assert WebUI.getCSSValue(size, 'background-color').equals(GlobalVariable.selectedSizeBackgroundColor)
 		assert WebUI.getCSSValue(size, 'color').equals(GlobalVariable.whiteColor)
@@ -88,7 +91,7 @@ public class ProductDetailsValidation {
 	 * @param obj
 	 * @param colorName
 	 */
-	public static void verifyProductColorSelect(TestObject obj, String colorName) {
+	public static void verifyProductColorSelect(TestObject obj, String colorName = '') {
 		assert WebUI.verifyElementPresent(obj, GlobalVariable.globalTimeOut)
 		assert WebUI.getAttribute(obj, 'class').contains(GlobalVariable.selected)
 	}
@@ -106,5 +109,39 @@ public class ProductDetailsValidation {
 			assert WebUI.getText(stock).contains(GlobalVariable.txtOutStock)
 			assert WebUI.getCSSValue(stock, 'color').equals(GlobalVariable.redColor)
 		}
+	}
+	
+	public static void verifyAddToCartButtonVisibility(boolean buttonStatus = true) {
+		TestObject btn = findTestObject('Object Repository/Product details/button_addToCart')
+		if(buttonStatus) {
+			assert WebUI.verifyElementVisible(btn)			
+		} else {
+			assert WebUI.verifyElementNotVisible(btn)
+		}
+	}
+	
+	public static void verifyFavoriteIconVisibility(boolean iconStatus = true) {
+		TestObject ico = findTestObject('Object Repository/Product details/i_favorite')
+		if(iconStatus) {
+			assert WebUI.verifyElementVisible(ico)
+		} else {
+			assert WebUI.verifyElementNotVisible(ico)
+		}
+	}
+	
+	public static void verifyFavoriteIconStyle() {
+		TestObject ico = findTestObject('Object Repository/Product details/i_favorite')
+		assert WebUI.getCSSValue(ico, 'color').equals(GlobalVariable.lightGray)
+	}
+	
+	public static void verifyAddCartStyle() {
+		TestObject btn = findTestObject('Object Repository/Product details/button_addToCart')
+		assert WebUI.getCSSValue(btn, 'background-color').equals(GlobalVariable.purpleColor)
+	}
+	
+	public static void verifyAddToCartOnHover() {
+		TestObject container = findTestObject('Object Repository/Product details/div_addToCartContainer')
+		assert WebUI.getCSSValue(container, 'box-shadow').equals('rgba(0, 0, 0, 0.3) 0px 0px 10px 2px')
+
 	}
 }

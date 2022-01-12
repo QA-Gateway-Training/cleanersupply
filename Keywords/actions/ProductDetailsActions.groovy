@@ -59,4 +59,10 @@ public class ProductDetailsActions {
 		TestObject obj = findTestObject('Object Repository/Product details/a_largeLink')
 		WebUI.click(obj)
 	}
+	
+	public static void addToCartOnHover() {
+		TestObject container = findTestObject('Object Repository/Product details/div_addToCartContainer')
+		WebUI.mouseOver(container)
+
+	}
 }
