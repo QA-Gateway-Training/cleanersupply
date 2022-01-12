@@ -60,4 +60,30 @@ public class SearchResultPageValidations {
 			assert !WebUI.getAttribute(contentObj, 'class').contains('in')
 		}
 	}
+
+	public static int verifyFilterCounter() {
+		TestObject filterObject = findTestObject('Object Repository/Filter/li_packagingProduct');
+		String filterNumberOnly = WebUI.getText(filterObject).replaceAll("[^0-9]", "");
+
+		return Integer.parseInt(filterNumberOnly)
+	}
+
+	public static int verifyPlasticFilterCounter() {
+		TestObject filterObject = findTestObject('Object Repository/Filter/li_plasticBags');
+		String filterNumberOnly = WebUI.getText(filterObject).replaceAll("[^0-9]", "");
+		return Integer.parseInt(filterNumberOnly)
+	}
+
+	public static int verifyColorFilterCounter() {
+		TestObject filterObject = findTestObject('Object Repository/Filter/li_greenColor');
+		String filterNumberOnly = WebUI.getText(filterObject).replaceAll("[^0-9]", "");
+		return Integer.parseInt(filterNumberOnly)
+	}
+
+	public static void verifyProductHeadingTotal(int counter) {
+		TestObject headingObject = findTestObject('Object Repository/Search Result/h2_productListHeading');
+		String headingNumberOnly = WebUI.getText(headingObject).replaceAll("[^0-9]", "");
+
+		assert headingNumberOnly.equals(counter.toString())
+	}
 }
