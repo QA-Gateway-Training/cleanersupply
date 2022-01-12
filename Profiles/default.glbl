@@ -58,5 +58,42 @@
       <description></description>
       <initValue>'224'</initValue>
       <name>defaultProductCount</name>
+
+      <initValue>'CBS40BK'</initValue>
+      <name>firstStockNo</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'inset 0 -3px 0 0 #636363'</initValue>
+      <name>shadowValue</name>
+
+      <initValue>'#52247f'</initValue>
+      <name>tagsHoverColor</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'#fff'</initValue>
+      <name>tagsHoverBackgound</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Computer-Register'</initValue>
+      <name>computerRegisterURL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Computer &amp; Register - Cleaner\'s Supply'</initValue>
+      <name>computerRegisterTitle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>computerRegisterspanSelector</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Computer &amp; Register Tags &amp; Forms'</initValue>
+      <name>computerRegisterspan</name>
+
    </GlobalVariableEntity>
 </GlobalVariableEntities>
