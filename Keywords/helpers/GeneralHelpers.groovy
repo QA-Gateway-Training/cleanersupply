@@ -48,7 +48,6 @@ public class GeneralHelpers {
 		SearchValidations.VerifySearchForContainSearchTerm(GlobalVariable.searchTerm)
 		SearchValidations.VerifySearchDropDownTopBarStyle()
 		GeneralActions.clickSearchButton()
-
 	}
 
 	/**

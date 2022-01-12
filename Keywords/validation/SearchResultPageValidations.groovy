@@ -51,10 +51,10 @@ public class SearchResultPageValidations {
 	public static void verifyFilterCardExpanded(String selector, boolean cardStatus = true) {
 		TestObject titleObj = GeneralHelperFunctions.makeTO('//div[@href="#'+selector+'"]')
 		TestObject contentObj = GeneralHelperFunctions.makeTO('//div[@id="'+selector+'"]')
-		
+
 		if(cardStatus) {
 			assert !WebUI.getAttribute(titleObj, 'class').contains('collapsed')
-			assert WebUI.getAttribute(contentObj, 'class').contains('in')			
+			assert WebUI.getAttribute(contentObj, 'class').contains('in')
 		} else {
 			assert WebUI.getAttribute(titleObj, 'class').contains('collapsed')
 			assert !WebUI.getAttribute(contentObj, 'class').contains('in')

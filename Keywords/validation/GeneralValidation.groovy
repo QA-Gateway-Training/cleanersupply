@@ -57,24 +57,23 @@ public class GeneralValidation {
 		assert WebUI.getAttribute(item, "value").equals(expectedValue)
 	}
 
-		/**
-		 * Verify the value of search filed is refelected
-		 * @param searchValue
-		 */
-		public static void verifySearchFieldValue(String searchValue) {
-			TestObject searchField = findTestObject('Object Repository/Product details/input_searchField');
-			assert WebUI.getAttribute(searchField, 'value').equals(searchValue)
-		}
+	/**
+	 * Verify the value of search filed is refelected
+	 * @param searchValue
+	 */
+	public static void verifySearchFieldValue(String searchValue) {
+		TestObject searchField = findTestObject('Object Repository/Product details/input_searchField');
+		assert WebUI.getAttribute(searchField, 'value').equals(searchValue)
+	}
 
-		/**
-		 * Verify search dropdown is displayed
-		 * @author waleedafifi
-		 */
-		public static void verifySearchDropdownIsDisplayed() {
-			TestObject searchBox = findTestObject('Object Repository/Product details/div_searchAutocompleteBox')
-			WebUI.waitForElementVisible(searchBox, GlobalVariable.pageLoadTimeOut)
-			assert WebUI.getAttribute(searchBox, 'class').contains('open')
-		}
+	/**
+	 * Verify search dropdown is displayed
+	 * @author waleedafifi
+	 */
+	public static void verifySearchDropdownIsDisplayed() {
+		TestObject searchBox = findTestObject('Object Repository/Product details/div_searchAutocompleteBox')
+		WebUI.waitForElementVisible(searchBox, GlobalVariable.pageLoadTimeOut)
+		assert WebUI.getAttribute(searchBox, 'class').contains('open')
 	}
 
 	/**
