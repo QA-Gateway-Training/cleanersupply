@@ -41,9 +41,14 @@ public class SearchResultPageActions {
 		TestObject productObject = findTestObject('Object Repository/Filter/a_plasticBags')
 		WebUI.click(productObject)
 	}
-	
+
 	public static void selectColorFilter() {
 		TestObject colorObject = findTestObject('Object Repository/Filter/a_greenColor')
 		WebUI.click(colorObject)
+	}
+	
+	public static void NavigateToProductDetailsPage() {
+		TestObject item = findTestObject('Object Repository/Product details/a_productItem')
+		WebUI.click(item);
 	}
 }

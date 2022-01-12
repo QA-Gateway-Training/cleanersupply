@@ -23,31 +23,33 @@ import internal.GlobalVariable
 import validation.SearchResultPageValidations
 
 public class SearchResultHelper {
+
+	/**
+	 * Expand filter cards
+	 * @author waleedafifi
+	 */
 	public static void filterCardExpand() {
-		SearchResultPageActions.expandFilterCard('collapse7')
-		SearchResultPageValidations.verifyFilterCardExpanded('collapse7')
+		SearchResultPageActions.expandFilterCard('collapse5')
+		SearchResultPageValidations.verifyFilterCardExpanded('collapse5')
 	}
 
-	public static void selectPackagingProduct() {
+	/**
+	 * Select product filter ( Packaging product, Plastic bags, Green color)
+	 * @author waleedafifi
+	 */
+	public static void selectProductFilters() {
 		SearchResultPageActions.selectPackagingProduct()
 		int f1 = SearchResultPageValidations.verifyFilterCounter();
 		SearchResultPageValidations.verifyProductHeadingTotal(f1)
-		
+
 		SearchResultPageActions.selectPlasticBags()
-//		int f2 = SearchResultPageValidations.verifyPlasticFilterCounter();
-		
-		
 		filterCardExpand()
-		
+
 		SearchResultPageActions.selectColorFilter()
 		int colorCounter = SearchResultPageValidations.verifyColorFilterCounter()
 		SearchResultPageValidations.verifyProductHeadingTotal(colorCounter)
-		
-		// Total number is incorrect (Bug)
-//		SearchResultPageValidations.verifyProductHeadingTotal(f1+f2)
-	}
 
-	public static void selectGreenColor() {
-		
+		// Total number is incorrect for plastic bags and packaging (Bug)
+		//SearchResultPageValidations.verifyProductHeadingTotal(f1+f2)
 	}
 }
