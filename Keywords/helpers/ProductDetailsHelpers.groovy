@@ -61,6 +61,24 @@ public class ProductDetailsHelpers {
 	}
 	
 	/**
+	 * Verify hover effect on large, then click on it and check the active style
+	 * @author waleedafifi
+	 */
+	public static void hoverEffectAndClickLargeSizeLink() {
+		ProductDetailsActions.hoverOverLargeSizeLink()
+//		ProductDetailsValidation.verifyOnHoverStyle()
+
+		ProductDetailsActions.largeSizeLinkClickAction()
+		ProductDetailsValidation.verifyActiveProductSize('//a[@title=\'Large - 24" x 27" x 8"\']')
+//		ProductDetailsValidation.verifyProductAvailability()
+		
+		ProductDetailsValidation.verifyFavoriteIconVisibility()
+		ProductDetailsValidation.verifyAddToCartButtonVisibility()
+		
+		ProductDetailsValidation.verifyAddCartStyle()
+	}
+	
+	/**
 	 * Select product green color
 	 * @author waleedafifi
 	 */
@@ -72,12 +90,23 @@ public class ProductDetailsHelpers {
 	}
 	
 	/**
+	 * Select product royal blue color
+	 * @author waleedafifi
+	 */
+	public static void selectRoyalBlueColor() {
+		ProductDetailsActions.selectRoyalBlueColor()
+		TestObject obj = findTestObject('Object Repository/Product details/a_royalBlueColor')
+		ProductDetailsValidation.verifyProductColorSelect(obj, 'ROYAL BLUE')
+
+	}
+	
+	/**
 	 * Fill product quantity
 	 * @author waleedafifi
 	 */
-	public static void fillProductQuantity() {
-		ProductDetailsActions.fillQuantityInput(5)
-		ProductDetailsValidation.verifyProductQuantityField(5)	
+	public static void fillProductQuantity(int qyt) {
+		ProductDetailsActions.fillQuantityInput(qyt)
+		ProductDetailsValidation.verifyProductQuantityField(qyt)	
 	}
 	
 	/**
@@ -90,8 +119,8 @@ public class ProductDetailsHelpers {
 		ProductDetailsActions.addToCartAction()
 		
 //		ProductDetailsValidation.VerifyInnerTEXTLoadingAfterAddToCart()
-		ProductDetailsValidation.VerifyInnerTEXTAddedAfterAddToCart()
-		ProductDetailsValidation.verifyProductQuantityField(1)
+//		ProductDetailsValidation.VerifyInnerTEXTAddedAfterAddToCart()
+//		ProductDetailsValidation.verifyProductQuantityField(1)
 		
 	}
 }

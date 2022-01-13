@@ -93,4 +93,10 @@ public class ProductDetailsActions {
 		TestObject color = findTestObject('Object Repository/Product details/a_greenColor')
 		WebUI.click(color)
 	}
+	
+	public static void selectRoyalBlueColor() {
+		TestObject color = findTestObject('Object Repository/Product details/a_royalBlueColor')
+		WebUI.click(color)
+
+	}
 }
