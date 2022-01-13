@@ -293,9 +293,6 @@
       <name>afterAdd10ItemsBadge</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <name>addToCartPageTitle</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
       <description></description>
       <initValue>'SHOPPING CART CONTINUE SHOPPING'</initValue>
       <name>shopCartHeader</name>
