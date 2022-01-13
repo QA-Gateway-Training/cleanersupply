@@ -15,11 +15,13 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
+import actions.MiniCartActions
 import actions.SearchResultPageActions
 import helpers.GeneralHelpers
 import helpers.MiniCartHelpers
 import helpers.ProductDetailsHelpers
 import helpers.SearchResultHelper
+import helpers.ShoppingCartHelpers
 import internal.GlobalVariable
 import validation.SearchResultPageValidations
 
@@ -49,5 +51,8 @@ ProductDetailsHelpers.fillProductQuantity(4)
 ProductDetailsHelpers.addProductToCart()
 
 MiniCartHelpers.hoverOnMiniCartHeader()
+MiniCartActions.navigateToCartPage()
+
+ShoppingCartHelpers.navigateToCartPage()
 
 WebUI.closeBrowser()
