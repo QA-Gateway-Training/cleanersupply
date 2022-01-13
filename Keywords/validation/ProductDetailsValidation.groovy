@@ -20,6 +20,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import helpers.GeneralHelperFunctions
 import internal.GlobalVariable
+import org.openqa.selenium.WebElement
 
 public class ProductDetailsValidation {
 
@@ -81,21 +82,21 @@ public class ProductDetailsValidation {
 	 * @author waleedafifi
 	 */
 	public static void verifyProductPrice() {
-//		String numberOnly = price.replaceAll("[^0-9\\.]","");
+		//		String numberOnly = price.replaceAll("[^0-9\\.]","");
 		String numberOnly = GlobalVariable.productItems[2];
 
 		TestObject prc = findTestObject('Object Repository/Product details/span_productPrice')
-		
+
 		float priceText = Float.parseFloat(WebUI.getText(prc).replaceAll("[^0-9\\.]",""))
 
 		String[] splitedPrice = numberOnly.split("-");
-		
+
 		float num1 = Float.parseFloat(splitedPrice[0].replaceAll("[^0-9\\.]",""))
 		float num2 = Float.parseFloat(splitedPrice[1].split("List")[0].replaceAll("[^0-9\\.]",""))
-		
+
 		assert (priceText >= num1 && priceText <= num2)
-		
-//		assert WebUI.getText(obj).contains(numberOnly)
+
+		//		assert WebUI.getText(obj).contains(numberOnly)
 	}
 
 	/**
@@ -208,5 +209,15 @@ public class ProductDetailsValidation {
 	public static void VerifyInnerTEXTAddedAfterAddToCart() {
 		TestObject btn = findTestObject('Object Repository/Product details/button_addToCart')
 		assert WebUI.getText(btn).contains('Added to cart'.toUpperCase())
+	}
+
+	/**
+	 * Verify available color count
+	 * @author waleedafifi
+	 */
+	public static void verifyAvailableColorCounter() {
+		List<WebElement> clr = WebUI.findWebElements(findTestObject('Object Repository/Product details/div_colorOptions'), GlobalVariable.globalTimeOut)
+		String availabelColor = GlobalVariable.productItems[3].toString().replaceAll("[^0-9]","")
+		assert clr.size().equals(Integer.parseInt(availabelColor))
 	}
 }

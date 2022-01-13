@@ -41,6 +41,7 @@ public class ProductDetailsHelpers {
 		ProductDetailsValidation.verifyProductDetailsName()
 		
 		ProductDetailsValidation.verifyProductPrice()
+		ProductDetailsValidation.verifyAvailableColorCounter()
 		
 		TestObject obj = findTestObject('Object Repository/Product details/a_blackColor')
 		ProductDetailsValidation.verifyProductColorSelect(obj)
