@@ -65,6 +65,7 @@
       <name>defaultProductCount</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
+      <description></description>
       <initValue>'CBS40BK'</initValue>
       <name>firstStockNo</name>
    </GlobalVariableEntity>
@@ -169,6 +170,7 @@
       <name>cartURL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
+      <description></description>
       <initValue>'224'</initValue>
       <name>defaultProductCount</name>
    </GlobalVariableEntity>
@@ -294,6 +296,11 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
+      <initValue>''</initValue>
+      <name>addToCartPageTitle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
       <initValue>'SHOPPING CART CONTINUE SHOPPING'</initValue>
       <name>shopCartHeader</name>
    </GlobalVariableEntity>
@@ -301,9 +308,10 @@
       <description></description>
       <initValue>'/shopping-cart/'</initValue>
       <name>shoppingCartUrl</name>
-  </GlobalVariableEntity>
+   </GlobalVariableEntity>
    <GlobalVariableEntity>
-     <initValue>'//a[@title=\'X-Large - 26\\&quot; x 29\\&quot; x 10\\&quot;\']'</initValue>
+      <description></description>
+      <initValue>'//a[@title=\'X-Large - 26\\&quot; x 29\\&quot; x 10\\&quot;\']'</initValue>
       <name>xLargeLinkTitle</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -315,5 +323,10 @@
       <description></description>
       <initValue>'rgba(82, 36, 127, 1)'</initValue>
       <name>purpleColor</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'155.40'</initValue>
+      <name>total10</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
