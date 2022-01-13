@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_ComputerRegister</name>
+   <name>button_addToCart</name>
    <tag></tag>
-   <elementGuidId>273a1809-8b12-4a66-a364-a883a2862bc8</elementGuidId>
+   <elementGuidId>e7e0ee9c-24a5-41dc-aee6-5e52220c2bfa</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>a[href=&quot;/Tags-Forms/Computer-Register/&quot;]</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>CSS</key>
+         <value>button.add-to-cart</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

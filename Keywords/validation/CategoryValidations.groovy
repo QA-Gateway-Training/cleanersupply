@@ -14,8 +14,6 @@ public class CategoryValidations {
 	 * @param1 ExpectedHoverColor get expected hover anchor color 
 	 * @param2 ExpectedHoverBackground get expected hover anchor background
 	 */
-
-
 	public static void checkanchorHoverColorBackground(String selector,String ExpectedHoverColor,String ExpectedHoverBackground) {
 		String actualColor = CategoryScActions.getcssvvalueforTagsColor(selector)
 		String actualBackground = CategoryScActions.getcssvvalueforTagsBackGround(selector)
@@ -27,5 +25,29 @@ public class CategoryValidations {
 		TestObject object=findTestObject("Object Repository/Category/span_omputerRegister")
 		String text =	WebUI.getText(object)
 		assert text.contains(ExpectedText.toUpperCase())
+	}
+	
+	public static void validateText(String Selector ,String ExpectedText) {
+		TestObject textSelector = findTestObject(Selector)
+		String text =WebUI.getText(textSelector)
+		WebUI.verifyEqual(text, ExpectedText.toUpperCase())
+	}
+	
+	public static void validatePrice(String Selector,BigDecimal ExpectedPrice) {
+		TestObject priceSelector = findTestObject(Selector)
+		String price =WebUI.getText(priceSelector)
+		println (price)
+		//println (ExpectedPrice)
+		price = price.replace('\\$', "");
+		println(price)
+		float f=Float.parseFloat(price);
+		WebUI.verifyEqual(price, ExpectedPrice)
+		
+	}
+	
+	public static void validateCartNo(String ExpectedNo) {
+		TestObject badge =findTestObject("Object Repository/Category/span_badge")
+		String itemsNo=WebUI.getText(badge)
+		WebUI.verifyEqual(itemsNo, ExpectedNo)
 	}
 }

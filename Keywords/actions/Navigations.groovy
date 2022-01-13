@@ -28,5 +28,4 @@ public class Navigations {
 	public static void navigateToHomePage() {
 		WebUI.navigateToUrl(GlobalVariable.baseUrl)
 	}
-	
 }

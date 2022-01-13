@@ -31,8 +31,8 @@ public class QuickOrderActions {
 		TestObject searchField = findTestObject('Object Repository/Quick Order/button_addToCart');
 		WebUI.click(searchField);
 	}
-	
-	public static double formatPriceAndTotal(TestObject elm){
-		return Double.parseDouble(WebUI.getText(elm).replace('$', '').replace(',', ''))
+
+	public static double formatPriceAndTotal(String elm){
+		return Double.parseDouble(elm.replace('$', '').replace(',', ''))
 	}
 }

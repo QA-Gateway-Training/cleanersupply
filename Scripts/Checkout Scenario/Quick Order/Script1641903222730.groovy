@@ -26,16 +26,17 @@ import validation.QuickOrderValidations
 
 import org.openqa.selenium.Keys as Keys
 
+
 GeneralHelpers.initScenario()
 
+//-------------------quick order------------------------
+QuickOrderHelpers.navigateToQuickOrderPage()
 
-TestObject quickOrderLink = findTestObject("Object Repository/Quick Order/a_quickOrder") 
-WebUI.verifyElementVisible(quickOrderLink)
-GeneralActions.hoverItem(quickOrderLink)
-GeneralValidation.verifyColorChangeOnHover(findTestObject("Object Repository/Quick Order/i_quickOrderIcon"),"rgba(82, 36, 127, 1)") 
-QuickOrderActions.clickQuickOrderLink()
-//verify url,header
+TestObject quickOrderHeader = findTestObject("Object Repository/Quick Order/span_quickOrderHeader")
+GeneralHelpers.verifyNavigationToPage(GlobalVariable.quickOrderPageTitle, quickOrderHeader, 
+									  GlobalVariable.quickOrderHeader, GlobalVariable.quickOrderUrl)
 
+//--------------product stock number inputs ----------
 TestObject firstStockNo = findTestObject("Object Repository/Quick Order/input_0quickOrderStock")
 WebUI.waitForElementPresent(firstStockNo, 5)
 TestObject secStockNo = findTestObject("Object Repository/Quick Order/input_1quickOrderStock")
@@ -43,84 +44,107 @@ TestObject thirdStockNo = findTestObject("Object Repository/Quick Order/input_2q
 TestObject fourthStockNo = findTestObject("Object Repository/Quick Order/input_3quickOrderStock")
 TestObject fivthStockNo = findTestObject("Object Repository/Quick Order/input_4quickOrderStock")
 
-
+//--------------filling stock no----------------------
 QuickOrderHelpers.fillStockNoQuickOrder(firstStockNo, GlobalVariable.firstStockNo)
 QuickOrderHelpers.fillStockNoQuickOrder(secStockNo, GlobalVariable.secStockNo)
 QuickOrderHelpers.fillStockNoQuickOrder(thirdStockNo, GlobalVariable.thirdStockNo)
 QuickOrderHelpers.fillStockNoQuickOrder(fourthStockNo, GlobalVariable.fourthStockNo)
 QuickOrderHelpers.fillStockNoQuickOrder(fivthStockNo, GlobalVariable.fifthStockNo)
 
+//---------------get quick order products details----------
+List<WebElement> quantities = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/input_quantities"),GlobalVariable.webElementTimeOut)
+List<WebElement> prices = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/div_quickOrderPrice"),GlobalVariable.webElementTimeOut)
+List<WebElement> totals = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/span_quickOrderTotal"),GlobalVariable.webElementTimeOut)
+List<WebElement> titles = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/a_quickOrderTitle"),GlobalVariable.webElementTimeOut)
+List<WebElement> stocksNotify = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/div_quickOrderStock"),GlobalVariable.webElementTimeOut)
+List<WebElement> images = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/img_quickOrderProductImg"),GlobalVariable.webElementTimeOut)
 
-List<WebElement> quantities = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/input_quantities"),2)
-List<WebElement> prices = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/div_quickOrderPrice"),2)
-List<WebElement> totals = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/span_quickOrderTotal"),2)
-List<WebElement> titles = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/a_quickOrderTitle"),2)
-List<WebElement> stocksNotify = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/div_quickOrderStock"),2)
-List<WebElement> images = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/img_quickOrderProductImg"),2)
+//---------------filling quantity inputs and verify total----------
+for(int i=0; i<=4; i++) {
+	TestObject Quantity = WebUI.convertWebElementToTestObject(quantities[i])
+	TestObject Title = WebUI.convertWebElementToTestObject(titles[i])
+	TestObject StocksNotify = WebUI.convertWebElementToTestObject(stocksNotify[i])
+	QuickOrderHelpers.fillQuantityQuickOrder(Title, StocksNotify, Quantity)
+}
 
-//arrange
-TestObject firstQuantity = WebUI.convertWebElementToTestObject(quantities[0])
-TestObject firstPrice = WebUI.convertWebElementToTestObject(prices[0])
-TestObject firstTotal = WebUI.convertWebElementToTestObject(totals[0])
-TestObject firstTitle = WebUI.convertWebElementToTestObject(titles[0])
-TestObject firstImg = WebUI.convertWebElementToTestObject(images[0])
-TestObject firstStocksNotify = WebUI.convertWebElementToTestObject(stocksNotify[0])
+//List<Object> products = new List<Object>();
+class quickOrder{
+	public String Quantity;
+	public String Price;
+	public String Total;
+	public String Title;
+	public String Img;
+	public String StocksNotify;
+	
+	public quickOrder(String _Quantity,String _Price, String _Total, String _Title,String _Img ,String _StocksNotify) {
+		Quantity = _Quantity;
+		Price = _Price;
+		Total = _Total;
+		Title = _Title;
+		Img = _Img;
+		StocksNotify = _StocksNotify;
+	}
+}
 
-QuickOrderHelpers.verifyQuickOrderTotal(firstTitle, firstPrice, firstTotal, firstStocksNotify, firstQuantity)
+List<quickOrder> products = new ArrayList<quickOrder>();
 
-TestObject secQuantity = WebUI.convertWebElementToTestObject(quantities[1])
-TestObject secPrice = WebUI.convertWebElementToTestObject(prices[1])
-TestObject secTotal = WebUI.convertWebElementToTestObject(totals[1])
-TestObject secTitle = WebUI.convertWebElementToTestObject(titles[1])
-TestObject sectImg = WebUI.convertWebElementToTestObject(images[1])
-TestObject secStocksNotify = WebUI.convertWebElementToTestObject(stocksNotify[1])
+for(int i=0; i<=4; i++) {
+	TestObject Quantity = WebUI.convertWebElementToTestObject(quantities[i])
+	TestObject Price = WebUI.convertWebElementToTestObject(prices[i])
+	TestObject Total = WebUI.convertWebElementToTestObject(totals[i])
+	TestObject Title = WebUI.convertWebElementToTestObject(titles[i])
+	TestObject Img = WebUI.convertWebElementToTestObject(images[i])
+	TestObject StocksNotify = WebUI.convertWebElementToTestObject(stocksNotify[i])
+	products.add(new quickOrder(WebUI.getText(Quantity),WebUI.getText(Price), WebUI.getText(Total),WebUI.getText(Title),
+							WebUI.getAttribute(Img,"src"),WebUI.getText(StocksNotify)))
+	QuickOrderHelpers.verifyQuickOrderTotal(Price, Total, Quantity)
+}
 
-QuickOrderHelpers.verifyQuickOrderTotal(secTitle, secPrice, secTotal, secStocksNotify, secQuantity)
+//-----------------add to cart--------------------------------
+QuickOrderHelpers.navigateToAddToCartPage()
+TestObject shopCartHeader = findTestObject("Object Repository/Shopping Cart/h1_shopCartHeader")
+WebUI.waitForElementPresent(shopCartHeader, 5)
 
-TestObject thirdQuantity = WebUI.convertWebElementToTestObject(quantities[2])
-TestObject thirdPrice = WebUI.convertWebElementToTestObject(prices[2])
-TestObject thirdTotal = WebUI.convertWebElementToTestObject(totals[2])
-TestObject thirdTitle = WebUI.convertWebElementToTestObject(titles[2])
-TestObject thirdImg = WebUI.convertWebElementToTestObject(images[2])
-TestObject thirdStocksNotify = WebUI.convertWebElementToTestObject(stocksNotify[2])
+GeneralHelpers.verifyNavigationToPage(GlobalVariable.addToCartPageTitle, shopCartHeader, GlobalVariable.shopCartHeader, 
+									  GlobalVariable.shoppingCartUrl)
 
-QuickOrderHelpers.verifyQuickOrderTotal(thirdTitle, thirdPrice, thirdTotal, thirdStocksNotify, thirdQuantity)
 
-TestObject fourthQuantity = WebUI.convertWebElementToTestObject(quantities[3])
-TestObject fourthPrice = WebUI.convertWebElementToTestObject(prices[3])
-TestObject fourthTotal = WebUI.convertWebElementToTestObject(totals[3])
-TestObject fourthImg = WebUI.convertWebElementToTestObject(images[3])
-TestObject fourthTitle = WebUI.convertWebElementToTestObject(titles[3])
-TestObject fourthStocksNotify = WebUI.convertWebElementToTestObject(stocksNotify[3])
-
-QuickOrderHelpers.verifyQuickOrderTotal(fourthTitle, fourthPrice, fourthTotal, fourthStocksNotify, fourthQuantity)
-
-TestObject fifthQuantity = WebUI.convertWebElementToTestObject(quantities[4])
-TestObject fifthPrice = WebUI.convertWebElementToTestObject(prices[4])
-TestObject fifthTotal = WebUI.convertWebElementToTestObject(totals[4])
-TestObject fifthTitle = WebUI.convertWebElementToTestObject(titles[4])
-TestObject fifthImg = WebUI.convertWebElementToTestObject(images[4])
-TestObject fifthStocksNotify = WebUI.convertWebElementToTestObject(stocksNotify[4])
-
-QuickOrderHelpers.verifyQuickOrderTotal(fifthTitle, fifthPrice, fifthTotal, fifthStocksNotify, fifthQuantity)
-
-TestObject addToCartBtn = findTestObject('Object Repository/Quick Order/button_addToCart')
-//check background color
-GeneralActions.hoverItem(addToCartBtn)
-//QuickOrderValidations.verifyChangeStyleOnBtnHover(addToCartBtn)
-QuickOrderActions.clickAddToCartBtn()
-//check url, title
-
+//-----------------verify cart counter and cart total----------
 QuickOrderValidations.verifyCartCounter("5")
-QuickOrderValidations.verifyCartTotal(firstTotal, secTotal, thirdTotal, fourthTotal, fifthTotal)
+println(products[0].Total+" "+ products[1].Total+" "+ products[2].Total+" "+products[3].Total+" "+ products[4].Total) 
+QuickOrderValidations.verifyCartTotal(products[0].Total, products[1].Total, products[2].Total, 
+									  products[3].Total, products[4].Total)
+
+List<WebElement> productsNoCartTr = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/tr_productsInCart"),GlobalVariable.webElementTimeOut)
+QuickOrderValidations.verifyProductsNoInCart(5, productsNoCartTr.size())
 
 
-List<WebElement> quantitiesCheckout = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/input_quantities"),2)
-List<WebElement> pricesCheckout = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/div_quickOrderPrice"),2)
-List<WebElement> totalsCheckout = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/span_quickOrderTotal"),2)
-List<WebElement> titlesCheckout = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/a_quickOrderTitle"),2)
-List<WebElement> stocksNotifyCheckout = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/div_quickOrderStock"),2)
-List<WebElement> imagesCheckout = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/img_quickOrderProductImg"),2)
+//-----------------get products details from shopping cart page----------
+List<WebElement> quantitiesCheckout = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/input_quantities"),GlobalVariable.webElementTimeOut)
+List<WebElement> pricesCheckout = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/div_quickOrderPrice"),GlobalVariable.webElementTimeOut)
+List<WebElement> totalsCheckout = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/span_quickOrderTotal"),GlobalVariable.webElementTimeOut)
+List<WebElement> titlesCheckout = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/a_quickOrderTitle"),GlobalVariable.webElementTimeOut)
+List<WebElement> stocksNotifyCheckout = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/div_quickOrderStock"),GlobalVariable.webElementTimeOut)
+List<WebElement> imagesCheckout = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/img_quickOrderProductImg"),GlobalVariable.webElementTimeOut)
+
+
+//-----------------verify the products details and totals in shopping cart----------
+
+
+
+
+
+//-----------------proceed to checkout----------
+
+TestObject proceedCheckout = findTestObject("Object Repository/Shopping Cart/button_proceedToCheckout")
+GeneralActions.hoverItem(proceedCheckout)
+//GeneralValidation.verifyColorChangeOnHover(proceedCheckout,GlobalVariable.quickOrderIconColor)
+WebUI.click(proceedCheckout)
+
+
+
+
+
 
 
 

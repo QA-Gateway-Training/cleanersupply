@@ -2,6 +2,7 @@ package helpers
 
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
+import com.kms.katalon.core.testobject.TestObject as TestObject
 
 import actions.CategoryScActions
 
@@ -48,7 +49,6 @@ public class GeneralHelpers {
 		SearchValidations.VerifySearchForContainSearchTerm(GlobalVariable.searchTerm)
 		SearchValidations.VerifySearchDropDownTopBarStyle()
 		GeneralActions.clickSearchButton()
-
 	}
 
 	/**
@@ -60,6 +60,11 @@ public class GeneralHelpers {
 		GeneralValidation.verifyCurrentPageTitleValue(GlobalVariable.searchResultTitle)
 		GeneralValidation.verifyCurrentPageURL(GlobalVariable.plasticResultPage)
 		GeneralValidation.verifySectionHeading(GlobalVariable.searchReasultHeadingTag)
-
+	}
+	
+	public static void verifyNavigationToPage(String pageTitle, TestObject header ,String pageHeader, String url) {
+		GeneralValidation.verifyCurrentPageTitleValue(pageTitle)
+		GeneralValidation.verifyCurrentPageURL(url)
+		GeneralValidation.verifyAnyHeading(header, pageHeader)
 	}
 }
