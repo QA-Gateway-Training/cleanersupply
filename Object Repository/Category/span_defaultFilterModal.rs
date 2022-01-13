@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_ComputerRegister</name>
+   <name>span_defaultFilterModal</name>
    <tag></tag>
-   <elementGuidId>273a1809-8b12-4a66-a364-a883a2862bc8</elementGuidId>
+   <elementGuidId>dd8e0486-8abe-4303-979f-d00c4d5f4d37</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>a[href=&quot;/Tags-Forms/Computer-Register/&quot;]</value>
+         <value>#collapse1 button[title=&quot;Model #&quot;]>span.filter-option</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

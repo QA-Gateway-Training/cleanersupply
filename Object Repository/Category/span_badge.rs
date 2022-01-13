@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_ComputerRegister</name>
+   <name>span_badge</name>
    <tag></tag>
-   <elementGuidId>273a1809-8b12-4a66-a364-a883a2862bc8</elementGuidId>
+   <elementGuidId>1dcab0e5-d9b3-4976-91fe-9778b00ec715</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>a[href=&quot;/Tags-Forms/Computer-Register/&quot;]</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>CSS</key>
+         <value>a[href=&quot;/shopping-cart/&quot;] span.item-no</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

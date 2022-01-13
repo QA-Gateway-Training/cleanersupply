@@ -40,7 +40,7 @@ public class GeneralHelpers {
 	 * @author waleedafifi
 	 */
 	public static void navigateTotags() {
-		CategoryScActions.hovertags()()
+		CategoryScActions.hoverTags()
 	}
 	public static void headerSearchFillAndClick() {
 		GeneralActions.fillHeaderSearch(GlobalVariable.searchTerm)

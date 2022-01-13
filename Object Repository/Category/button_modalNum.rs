@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_ComputerRegister</name>
+   <name>button_modalNum</name>
    <tag></tag>
-   <elementGuidId>273a1809-8b12-4a66-a364-a883a2862bc8</elementGuidId>
+   <elementGuidId>ddf28755-2f55-4820-b52c-0ade3f3b4122</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>a[href=&quot;/Tags-Forms/Computer-Register/&quot;]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>CSS</key>
+         <value>button[title=&quot;Model #&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
