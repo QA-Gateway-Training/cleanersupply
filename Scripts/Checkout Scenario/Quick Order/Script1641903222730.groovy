@@ -53,10 +53,10 @@ QuickOrderHelpers.fillStockNoQuickOrder(fivthStockNo, GlobalVariable.fifthStockN
 
 //---------------get quick order products details----------
 List<WebElement> quantities = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/input_quantities"),GlobalVariable.webElementTimeOut)
-List<WebElement> prices = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/div_quickOrderPrice"),GlobalVariable.webElementTimeOut)
-List<WebElement> totals = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/span_quickOrderTotal"),GlobalVariable.webElementTimeOut)
 List<WebElement> titles = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/a_quickOrderTitle"),GlobalVariable.webElementTimeOut)
 List<WebElement> stocksNotify = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/div_quickOrderStock"),GlobalVariable.webElementTimeOut)
+List<WebElement> prices = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/div_quickOrderPrice"),GlobalVariable.webElementTimeOut)
+List<WebElement> totals = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/span_quickOrderTotal"),GlobalVariable.webElementTimeOut)
 List<WebElement> images = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/img_quickOrderProductImg"),GlobalVariable.webElementTimeOut)
 
 //---------------filling quantity inputs and verify total----------
@@ -88,6 +88,8 @@ class quickOrder{
 
 List<quickOrder> products = new ArrayList<quickOrder>();
 
+//------------------store 5 products details & verify the total is right ----------------
+ 
 for(int i=0; i<=4; i++) {
 	TestObject Quantity = WebUI.convertWebElementToTestObject(quantities[i])
 	TestObject Price = WebUI.convertWebElementToTestObject(prices[i])
@@ -95,8 +97,10 @@ for(int i=0; i<=4; i++) {
 	TestObject Title = WebUI.convertWebElementToTestObject(titles[i])
 	TestObject Img = WebUI.convertWebElementToTestObject(images[i])
 	TestObject StocksNotify = WebUI.convertWebElementToTestObject(stocksNotify[i])
+	
 	products.add(new quickOrder(WebUI.getText(Quantity),WebUI.getText(Price), WebUI.getText(Total),WebUI.getText(Title),
 							WebUI.getAttribute(Img,"src"),WebUI.getText(StocksNotify)))
+	
 	QuickOrderHelpers.verifyQuickOrderTotal(Price, Total, Quantity)
 }
 
@@ -137,13 +141,15 @@ List<WebElement> imagesCheckout = WebUI.findWebElements(findTestObject("Object R
 //-----------------proceed to checkout----------
 
 TestObject proceedCheckout = findTestObject("Object Repository/Shopping Cart/button_proceedToCheckout")
+GeneralValidation.verifyBackgroundColor(proceedCheckout, GlobalVariable.checkoutBgColor)
 GeneralActions.hoverItem(proceedCheckout)
-//GeneralValidation.verifyColorChangeOnHover(proceedCheckout,GlobalVariable.quickOrderIconColor)
+//QuickOrderValidations.verifyChangeStyleOnBtnHover(proceedCheckout)
 WebUI.click(proceedCheckout)
 
-
-
-
+TestObject checkoutHeader = findTestObject("Object Repository/Checkout page/div_checkoutHeader")
+GeneralHelpers.verifyNavigationToPage(GlobalVariable.checkoutPageTitle, checkoutHeader,
+									  GlobalVariable.checkoutHeader, GlobalVariable.checkoutUrl)
+//exist of icon lock
 
 
 
