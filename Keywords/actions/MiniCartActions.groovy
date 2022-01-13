@@ -22,12 +22,12 @@ import internal.GlobalVariable
 
 public class MiniCartActions {
 	public static void hoverOnMiniCartLink() {
-		TestObject miniCart = findTestObject('Object Repository/Cart/a_miniCartLink')
+		TestObject miniCart = findTestObject('Mini Cart/a_miniCartLink')
 		WebUI.mouseOver(miniCart)
 	}
 
 	public static void navigateToCartPage() {
-		TestObject miniCart = findTestObject('Object Repository/Cart/a_miniCartLink')
+		TestObject miniCart = findTestObject('Mini Cart/a_miniCartLink')
 		WebUI.click(miniCart)
 	}
 }

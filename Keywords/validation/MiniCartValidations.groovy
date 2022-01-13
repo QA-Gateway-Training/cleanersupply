@@ -24,39 +24,38 @@ import java.text.DecimalFormat
 
 public class MiniCartValidations {
 	public static void verifyHoverStyleOnMiniCartLink() {
-		TestObject miniCart = findTestObject('Object Repository/Cart/a_miniCartLink')
+		TestObject miniCart = findTestObject('Mini Cart/a_miniCartLink')
 		assert WebUI.getCSSValue(miniCart, 'background-color').equals(GlobalVariable.whiteColor)
 
-		TestObject cartIcon = findTestObject('Object Repository/Cart/i_cartIcon')
+		TestObject cartIcon = findTestObject('Mini Cart/i_cartIcon')
 		assert WebUI.getCSSValue(miniCart, 'color').equals(GlobalVariable.purpleColor)
 	}
 
 	public static void verifyMiniCartTotals() {
-		List<WebElement> prodPrice = WebUI.findWebElements(findTestObject('Object Repository/Cart/span_miniCartProductPrice'), 1)
-		List<WebElement> prodQyt = WebUI.findWebElements(findTestObject('Object Repository/Cart/td_miniCartTableQuantityTableData'), 1)
-		List<WebElement> prodTotal = WebUI.findWebElements(findTestObject('Object Repository/Cart/td_miniCartTotalPrice'), 1)
+		List<WebElement> prodPrice = WebUI.findWebElements(findTestObject('Mini Cart/span_miniCartProductPrice'), 1)
+		List<WebElement> prodQyt = WebUI.findWebElements(findTestObject('Mini Cart/td_miniCartTableQuantityTableData'), 1)
+		List<WebElement> prodTotal = WebUI.findWebElements(findTestObject('Mini Cart/td_miniCartTotalPrice'), 1)
 
 		Float totalOfTotal = 0
-		
+
 		for(int idx = 0; idx < prodPrice.size(); idx++) {
 			String prc = prodPrice.get(idx).getAttribute('innerText').replaceAll("[^0-9\\.]","");
 			String qt = prodQyt.get(idx).getAttribute('innerText').replaceAll("[^0-9\\.]","");
 			String total = prodTotal.get(idx).getAttribute('innerText').replaceAll("[^0-9\\.]","");
 
 			totalOfTotal += Float.parseFloat(total)
-			
-			assert total.contains(new DecimalFormat("#.##").format(Float.parseFloat(prc) * Integer.parseInt(qt)))
+
+			assert total.contains(String.format("%.2f", (Float.parseFloat(prc) * Integer.parseInt(qt))))
 		}
-		
-		TestObject miniCartTotal = findTestObject('Object Repository/Cart/span_miniCartSubTotal')
-		assert WebUI.getText(miniCartTotal).contains(totalOfTotal.toString())
+
+		TestObject miniCartTotal = findTestObject('Mini Cart/span_miniCartSubTotal')
+		assert WebUI.getText(miniCartTotal).contains(String.format("%.2f", totalOfTotal))
 	}
-	
+
 	public static void miniCartItemCount() {
-		List<WebElement> productRow = WebUI.findWebElements(findTestObject('Object Repository/Cart/tr_miniCartTableRow'), 1)
-		TestObject counterBadge = findTestObject('Object Repository/Cart/span_cartCounterPadge')
-		
+		List<WebElement> productRow = WebUI.findWebElements(findTestObject('Mini Cart/tr_miniCartTableRow'), 1)
+		TestObject counterBadge = findTestObject('Mini Cart/span_cartCounterPadge')
+
 		assert WebUI.getText(counterBadge).contains(productRow.size().toString())
-		
-	} 
+	}
 }

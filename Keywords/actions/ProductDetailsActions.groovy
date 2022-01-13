@@ -88,15 +88,14 @@ public class ProductDetailsActions {
 		TestObject ipt = findTestObject('Object Repository/Product details/input_productQuantity')
 		WebUI.sendKeys(ipt, Keys.chord(Keys.BACK_SPACE) + txt)
 	}
-	
+
 	public static void selectGreenColor() {
 		TestObject color = findTestObject('Object Repository/Product details/a_greenColor')
 		WebUI.click(color)
 	}
-	
+
 	public static void selectRoyalBlueColor() {
 		TestObject color = findTestObject('Object Repository/Product details/a_royalBlueColor')
 		WebUI.click(color)
-
 	}
 }
