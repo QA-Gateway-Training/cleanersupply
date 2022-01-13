@@ -22,9 +22,9 @@ import internal.GlobalVariable
 import org.openqa.selenium.WebElement
 
 public class ShoppingCartValidations {
-	
+
 	public static Float cartTotalPrice = 0
-	
+
 	/**
 	 * Verify shopping cart is empty if no product add to the cart
 	 * @author waleedafifi
@@ -43,7 +43,7 @@ public class ShoppingCartValidations {
 		TestObject badgeCount = findTestObject('Object Repository/Mini Cart/span_cartCounterPadge')
 		assert Integer.parseInt(WebUI.getText(badgeCount)) == itemCount.size()
 	}
-	
+
 	/**
 	 * Verify if the item number are equals to the summary item count
 	 * @author waleedafifi
@@ -53,7 +53,7 @@ public class ShoppingCartValidations {
 		TestObject summaryCount = findTestObject('Object Repository/Shopping Cart/td_summaryTableItemCount')
 		assert Integer.parseInt(WebUI.getText(summaryCount).replaceAll("[^0-9\\.]","")) == itemCount.size()
 	}
-	
+
 	/**
 	 * Verify product total price and add the total of total to a global variable to been used in the summary totals
 	 * @author waleedafifi
@@ -62,27 +62,40 @@ public class ShoppingCartValidations {
 		List<WebElement> productPrice = WebUI.findWebElements(findTestObject('Object Repository/Shopping Cart/td_shoppingCartProductPrice'), GlobalVariable.globalTimeOut)
 		List<WebElement> productQuantity = WebUI.findWebElements(findTestObject('Object Repository/Shopping Cart/input_shoppingCartProductQuantity'), GlobalVariable.globalTimeOut)
 		List<WebElement> productTotal = WebUI.findWebElements(findTestObject('Object Repository/Shopping Cart/td_shoppingCartProductTotal'), GlobalVariable.globalTimeOut)
-		
+
 		for(int idx = 0; idx < productPrice.size(); idx++) {
 			String prc = productPrice.get(idx).getAttribute('innerText').replaceAll("[^0-9\\.]","");
 			String qt = productQuantity.get(idx).getAttribute('value');
 			String total = productTotal.get(idx).getAttribute('innerText').replaceAll("[^0-9\\.]","");
 
 			cartTotalPrice += Float.parseFloat(total)
-			
-			assert total.equals(String.format("%.2f", (Float.parseFloat(prc) * Integer.parseInt(qt))))
 
+			assert total.equals(String.format("%.2f", (Float.parseFloat(prc) * Integer.parseInt(qt))))
 		}
 	}
-	
+
 	/**
 	 * Verify total prices n the summary table if it's equal to product sub total
 	 */
 	public static void verifyTotalPriceInSummaryTable() {
 		TestObject summaryTotal = findTestObject('Object Repository/Shopping Cart/td_summaryTableTotal')
 		TestObject subTotal = findTestObject('Object Repository/Shopping Cart/td_summaryTotalSubTotal')
-		
-		assert WebUI.getText(summaryTotal).contains(cartTotalPrice)
-		assert WebUI.getText(subTotal).contains(cartTotalPrice)
+
+		String roundedTotal = String.format("%.2f", cartTotalPrice)
+		GlobalVariable.totalPrice = roundedTotal
+
+		assert WebUI.getText(summaryTotal).contains(roundedTotal)
+		assert WebUI.getText(subTotal).contains(roundedTotal)
+	}
+
+	public static void verifyCheckoutButtonStyle() {
+		TestObject btn = findTestObject('Object Repository/Shopping Cart/button_proceedToCheckout')
+		assert WebUI.getCSSValue(btn, 'background-color').equals(GlobalVariable.purpleColor)
+		assert WebUI.getCSSValue(btn, 'color').equals(GlobalVariable.whiteColor)
+	}
+
+	public static void verifyCheckoutButtonOnHover() {
+		TestObject btn = findTestObject('Object Repository/Shopping Cart/button_proceedToCheckout')
+		assert WebUI.getCSSValue(btn, 'box-shadow').equals('rgba(0, 0, 0, 0.3) 0px 0px 10px 2px')
 	}
 }

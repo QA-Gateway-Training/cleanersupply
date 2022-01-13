@@ -1,4 +1,4 @@
-package helpers
+package actions
 
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
@@ -18,30 +18,16 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
-import actions.ShoppingCartActions
 import internal.GlobalVariable
-import validation.ShoppingCartValidations
 
-public class ShoppingCartHelpers {
-	public static void initShoppingCartPage() {
-		ShoppingCartValidations.verifyShoppingCartIsEmpty()
+public class ShoppingCartActions {
+	public static void navigateToCheckOutPage() {
+		TestObject btn = findTestObject('Object Repository/Shopping Cart/button_proceedToCheckout')
+		WebUI.click(btn)
 	}
 
-	/**
-	 * Navigate to shopping cart page after clicking on cart link in the header
-	 * @author waleedafifi
-	 */
-	public static void navigateToCartPage() {
-		ShoppingCartValidations.verifyShoppingCartItemEqualMiniCartBadge()
-		ShoppingCartValidations.verifyShoppingCartItemEqualToSummaryItem()
-		ShoppingCartValidations.verifyTotalPriceForProductTable()
-		ShoppingCartValidations.verifyTotalPriceInSummaryTable()
-	}
-
-	public static void navigateToCheckoutPage() {
-		ShoppingCartValidations.verifyCheckoutButtonStyle()
-		ShoppingCartActions.hoverCheckOutButton()
-		ShoppingCartValidations.verifyCheckoutButtonOnHover()
-		ShoppingCartActions.navigateToCheckOutPage()
+	public static void hoverCheckOutButton() {
+		TestObject btn = findTestObject('Object Repository/Shopping Cart/button_proceedToCheckout')
+		WebUI.mouseOver(btn)
 	}
 }

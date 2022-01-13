@@ -18,30 +18,11 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
-import actions.ShoppingCartActions
 import internal.GlobalVariable
-import validation.ShoppingCartValidations
+import validation.CheckoutPageValidation
 
-public class ShoppingCartHelpers {
-	public static void initShoppingCartPage() {
-		ShoppingCartValidations.verifyShoppingCartIsEmpty()
-	}
-
-	/**
-	 * Navigate to shopping cart page after clicking on cart link in the header
-	 * @author waleedafifi
-	 */
-	public static void navigateToCartPage() {
-		ShoppingCartValidations.verifyShoppingCartItemEqualMiniCartBadge()
-		ShoppingCartValidations.verifyShoppingCartItemEqualToSummaryItem()
-		ShoppingCartValidations.verifyTotalPriceForProductTable()
-		ShoppingCartValidations.verifyTotalPriceInSummaryTable()
-	}
-
-	public static void navigateToCheckoutPage() {
-		ShoppingCartValidations.verifyCheckoutButtonStyle()
-		ShoppingCartActions.hoverCheckOutButton()
-		ShoppingCartValidations.verifyCheckoutButtonOnHover()
-		ShoppingCartActions.navigateToCheckOutPage()
+public class CheckoutPageHelpers {
+	public static void initCheckoutPage() {
+		CheckoutPageValidation.verifyTotalPrice()
 	}
 }

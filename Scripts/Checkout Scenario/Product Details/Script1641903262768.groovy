@@ -17,6 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import actions.MiniCartActions
 import actions.SearchResultPageActions
+import helpers.CheckoutPageHelpers
 import helpers.GeneralHelpers
 import helpers.MiniCartHelpers
 import helpers.ProductDetailsHelpers
@@ -54,5 +55,7 @@ MiniCartHelpers.hoverOnMiniCartHeader()
 MiniCartActions.navigateToCartPage()
 
 ShoppingCartHelpers.navigateToCartPage()
+ShoppingCartHelpers.navigateToCheckoutPage()
 
+CheckoutPageHelpers.initCheckoutPage()
 WebUI.closeBrowser()
