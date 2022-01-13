@@ -23,7 +23,7 @@ import internal.GlobalVariable
 import validation.ProductDetailsValidation
 
 public class ProductDetailsHelpers {
-	
+
 	/**
 	 * Initial product details page on page load 
 	 * @author waleedafifi
@@ -34,14 +34,13 @@ public class ProductDetailsHelpers {
 		ProductDetailsValidation.verifyProductAvailability(false)
 		ProductDetailsValidation.verifySKUNotEmpty()
 		ProductDetailsValidation.verifyProductDetailsName()
-		
+
 		TestObject obj = findTestObject('Object Repository/Product details/a_blackColor')
 		ProductDetailsValidation.verifyProductColorSelect(obj)
 		ProductDetailsValidation.verifyFavoriteIconVisibility(false)
 		ProductDetailsValidation.verifyAddToCartButtonVisibility(false)
-		
 	}
-	
+
 	/**
 	 * Verify hover effect on x-large, then click on it and check the active style
 	 * @author waleedafifi
@@ -53,13 +52,31 @@ public class ProductDetailsHelpers {
 		ProductDetailsActions.xLargeSizeLinkClickAction()
 		ProductDetailsValidation.verifyActiveProductSize('//a[@title=\'X-Large - 26" x 29" x 10"\']')
 		ProductDetailsValidation.verifyProductAvailability()
-		
+
 		ProductDetailsValidation.verifyFavoriteIconVisibility()
 		ProductDetailsValidation.verifyAddToCartButtonVisibility()
-		
+
 		ProductDetailsValidation.verifyAddCartStyle()
 	}
-	
+
+	/**
+	 * Verify hover effect on large, then click on it and check the active style
+	 * @author waleedafifi
+	 */
+	public static void hoverEffectAndClickLargeSizeLink() {
+		ProductDetailsActions.hoverOverLargeSizeLink()
+		//		ProductDetailsValidation.verifyOnHoverStyle()
+
+		ProductDetailsActions.largeSizeLinkClickAction()
+		ProductDetailsValidation.verifyActiveProductSize('//a[@title=\'Large - 24" x 27" x 8"\']')
+		//		ProductDetailsValidation.verifyProductAvailability()
+
+		ProductDetailsValidation.verifyFavoriteIconVisibility()
+		ProductDetailsValidation.verifyAddToCartButtonVisibility()
+
+		ProductDetailsValidation.verifyAddCartStyle()
+	}
+
 	/**
 	 * Select product green color
 	 * @author waleedafifi
@@ -68,18 +85,27 @@ public class ProductDetailsHelpers {
 		ProductDetailsActions.selectGreenColor()
 		TestObject obj = findTestObject('Object Repository/Product details/a_greenColor')
 		ProductDetailsValidation.verifyProductColorSelect(obj, 'Green')
-
 	}
-	
+
+	/**
+	 * Select product royal blue color
+	 * @author waleedafifi
+	 */
+	public static void selectRoyalBlueColor() {
+		ProductDetailsActions.selectRoyalBlueColor()
+		TestObject obj = findTestObject('Object Repository/Product details/a_royalBlueColor')
+		ProductDetailsValidation.verifyProductColorSelect(obj, 'ROYAL BLUE')
+	}
+
 	/**
 	 * Fill product quantity
 	 * @author waleedafifi
 	 */
-	public static void fillProductQuantity() {
-		ProductDetailsActions.fillQuantityInput(5)
-		ProductDetailsValidation.verifyProductQuantityField(5)	
+	public static void fillProductQuantity(int qyt) {
+		ProductDetailsActions.fillQuantityInput(qyt)
+		ProductDetailsValidation.verifyProductQuantityField(qyt)
 	}
-	
+
 	/**
 	 * Click add to cart button
 	 * @author waleedafifi
@@ -88,10 +114,10 @@ public class ProductDetailsHelpers {
 		ProductDetailsActions.addToCartOnHover()
 		ProductDetailsValidation.verifyAddToCartOnHover()
 		ProductDetailsActions.addToCartAction()
-		
-//		ProductDetailsValidation.VerifyInnerTEXTLoadingAfterAddToCart()
-		ProductDetailsValidation.VerifyInnerTEXTAddedAfterAddToCart()
-		ProductDetailsValidation.verifyProductQuantityField(1)
-		
+
+		//		ProductDetailsValidation.VerifyInnerTEXTLoadingAfterAddToCart()
+		//		ProductDetailsValidation.VerifyInnerTEXTAddedAfterAddToCart()
+		//		ProductDetailsValidation.verifyProductQuantityField(1)
+
 	}
 }

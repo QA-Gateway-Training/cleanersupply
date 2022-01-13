@@ -97,7 +97,6 @@ public class ProductDetailsValidation {
 		assert WebUI.getAttribute(obj, 'class').contains(GlobalVariable.selected)
 		TestObject color = findTestObject('Object Repository/Product details/span_selectedColor')
 		assert WebUI.getText(color).contains(colorName.toUpperCase())
-		
 	}
 
 	/**
@@ -180,7 +179,7 @@ public class ProductDetailsValidation {
 		TestObject ipt = findTestObject('Object Repository/Product details/input_productQuantity')
 		assert WebUI.getAttribute(ipt, 'value').equals(txt.toString())
 	}
-	
+
 	/**
 	 * Verify text of the button contains LOADING
 	 * @author waleedafifi
@@ -189,7 +188,7 @@ public class ProductDetailsValidation {
 		TestObject btn = findTestObject('Object Repository/Product details/button_addToCart')
 		assert WebUI.getText(btn).contains('Loading'.toUpperCase())
 	}
-	
+
 	/**
 	 * Verify text of the button contains ADDED TO CART
 	 * @author waleedafifi

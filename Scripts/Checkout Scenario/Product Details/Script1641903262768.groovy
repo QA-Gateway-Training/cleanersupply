@@ -17,6 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import actions.SearchResultPageActions
 import helpers.GeneralHelpers
+import helpers.MiniCartHelpers
 import helpers.ProductDetailsHelpers
 import helpers.SearchResultHelper
 import internal.GlobalVariable
@@ -33,9 +34,20 @@ SearchResultHelper.selectProductFilters()
 SearchResultPageActions.NavigateToProductDetailsPage()
 
 ProductDetailsHelpers.initProductDetailsPage()
+// Green X large
 ProductDetailsHelpers.hoverEffectAndClickXLargeSizeLink()
 ProductDetailsHelpers.selectGreenColor()
-ProductDetailsHelpers.fillProductQuantity()
+ProductDetailsHelpers.fillProductQuantity(5)
 ProductDetailsHelpers.addProductToCart()
 
-//WebUI.closeBrowser()
+MiniCartHelpers.hoverOnMiniCartHeader()
+
+// Blue Large
+ProductDetailsHelpers.hoverEffectAndClickLargeSizeLink()
+ProductDetailsHelpers.selectRoyalBlueColor()
+ProductDetailsHelpers.fillProductQuantity(4)
+ProductDetailsHelpers.addProductToCart()
+
+MiniCartHelpers.hoverOnMiniCartHeader()
+
+WebUI.closeBrowser()
