@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value>href=&quot;/shopping-cart/&quot;</value>
+         <value>a[href=&quot;/shopping-cart/&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

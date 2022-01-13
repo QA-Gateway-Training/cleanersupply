@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_proceedToCheckout</name>
+   <name>span_selectedState</name>
    <tag></tag>
-   <elementGuidId>2ad8aa09-b3a3-4b4f-ba3e-608fde91a3a4</elementGuidId>
+   <elementGuidId>e6921d94-d1aa-469f-b0f4-16f59d6b6d5d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value>button#proceedToCheckout</value>
+         <value>button[data-id=&quot;shp1-state-select&quot;] span.filter-option</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
