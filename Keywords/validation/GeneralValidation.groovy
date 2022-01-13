@@ -89,4 +89,9 @@ public class GeneralValidation {
 	public static void verifyAnyHeading(TestObject header ,String pageHeader) {
 		assert WebUI.getText(header).toLowerCase().replace("\n", " ").equals(pageHeader.toLowerCase())
 	}
+
+	public static void verifyLoader() {
+		TestObject loader = findTestObject('Object Repository/General/div_pagleLoader')
+		assert WebUI.verifyElementNotPresent(loader, 3)
+	}
 }

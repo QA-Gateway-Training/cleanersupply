@@ -61,7 +61,7 @@ public class GeneralHelpers {
 		GeneralValidation.verifyCurrentPageURL(GlobalVariable.plasticResultPage)
 		GeneralValidation.verifySectionHeading(GlobalVariable.searchReasultHeadingTag)
 	}
-	
+
 	public static void verifyNavigationToPage(String pageTitle, TestObject header ,String pageHeader, String url) {
 		GeneralValidation.verifyCurrentPageTitleValue(pageTitle)
 		GeneralValidation.verifyCurrentPageURL(url)

@@ -20,6 +20,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import actions.SearchResultPageActions
 import internal.GlobalVariable
+import validation.GeneralValidation
 import validation.SearchResultPageValidations
 
 public class SearchResultHelper {
@@ -39,17 +40,32 @@ public class SearchResultHelper {
 	 */
 	public static void selectProductFilters() {
 		SearchResultPageActions.selectPackagingProduct()
+		GeneralValidation.verifyLoader()
 		int f1 = SearchResultPageValidations.verifyFilterCounter();
 		SearchResultPageValidations.verifyProductHeadingTotal(f1)
+		SearchResultPageValidations.verifyPackagingProductFilterSelected()
+		SearchResultPageValidations.verifySelectedFilter('Packaging Products')
 
 		SearchResultPageActions.selectPlasticBags()
+		GeneralValidation.verifyLoader()
+		SearchResultPageValidations.verifyPlasticBagsFilterSelected()
+		//		SearchResultPageValidations.verifySelectedFilter('Plastic Bags')
 		filterCardExpand()
 
 		SearchResultPageActions.selectColorFilter()
+		GeneralValidation.verifyLoader()
+		SearchResultPageValidations.verifyColorFilterSelected()
+		//		SearchResultPageValidations.verifySelectedFilter('Green')
+
 		int colorCounter = SearchResultPageValidations.verifyColorFilterCounter()
 		SearchResultPageValidations.verifyProductHeadingTotal(colorCounter)
 
 		// Total number is incorrect for plastic bags and packaging (Bug)
 		//SearchResultPageValidations.verifyProductHeadingTotal(f1+f2)
+	}
+
+	public static void checkSearchPagePagination() {
+		SearchResultPageValidations.verifyPaginationExists()
+		SearchResultPageValidations.verifyPagination()
 	}
 }

@@ -36,10 +36,10 @@ public class ProductDetailsValidation {
 	 * Verify if product title contain part of the product name
 	 * @author waleedafifi
 	 */
-	public static void verifyProductDetailsName() {
+	public static void verifyProductDetailsName(String pName = GlobalVariable.productName) {
 		TestObject productName = findTestObject('Object Repository/Product details/h1_productName')
 		assert WebUI.verifyElementPresent(productName, GlobalVariable.globalTimeOut)
-		assert WebUI.getText(productName).contains(GlobalVariable.productName)
+		assert WebUI.getText(productName).contains(pName)
 	}
 
 	/**
@@ -80,10 +80,22 @@ public class ProductDetailsValidation {
 	 * @param price
 	 * @author waleedafifi
 	 */
-	public static void verifyProductPrice(TestObject obj, String price) {
-		String numberOnly = price.replaceAll("[^0-9\\.]","");
-		//		TestObject prc = findTestObject('Object Repository/Product details/span_productPrice')
-		assert WebUI.getText(obj).contains(numberOnly)
+	public static void verifyProductPrice() {
+//		String numberOnly = price.replaceAll("[^0-9\\.]","");
+		String numberOnly = GlobalVariable.productItems[2];
+
+		TestObject prc = findTestObject('Object Repository/Product details/span_productPrice')
+		
+		float priceText = Float.parseFloat(WebUI.getText(prc).replaceAll("[^0-9\\.]",""))
+
+		String[] splitedPrice = numberOnly.split("-");
+		
+		float num1 = Float.parseFloat(splitedPrice[0].replaceAll("[^0-9\\.]",""))
+		float num2 = Float.parseFloat(splitedPrice[1].split("List")[0].replaceAll("[^0-9\\.]",""))
+		
+		assert (priceText >= num1 && priceText <= num2)
+		
+//		assert WebUI.getText(obj).contains(numberOnly)
 	}
 
 	/**

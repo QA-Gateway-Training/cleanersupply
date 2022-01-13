@@ -65,6 +65,7 @@
       <name>defaultProductCount</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
+      <description></description>
       <initValue>'CBS40BK'</initValue>
       <name>firstStockNo</name>
    </GlobalVariableEntity>
@@ -169,6 +170,7 @@
       <name>cartURL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
+      <description></description>
       <initValue>'224'</initValue>
       <name>defaultProductCount</name>
    </GlobalVariableEntity>
@@ -301,9 +303,10 @@
       <description></description>
       <initValue>'/shopping-cart/'</initValue>
       <name>shoppingCartUrl</name>
-  </GlobalVariableEntity>
+   </GlobalVariableEntity>
    <GlobalVariableEntity>
-     <initValue>'//a[@title=\'X-Large - 26\\&quot; x 29\\&quot; x 10\\&quot;\']'</initValue>
+      <description></description>
+      <initValue>'//a[@title=\'X-Large - 26\\&quot; x 29\\&quot; x 10\\&quot;\']'</initValue>
       <name>xLargeLinkTitle</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -320,5 +323,10 @@
       <description>Will be filled from shopping cart</description>
       <initValue>'0'</initValue>
       <name>totalPrice</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>['test']</initValue>
+      <name>productItems</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

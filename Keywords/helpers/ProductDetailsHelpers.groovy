@@ -19,7 +19,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import actions.ProductDetailsActions
+import actions.SearchResultPageActions
 import internal.GlobalVariable
+import validation.GeneralValidation
 import validation.ProductDetailsValidation
 
 public class ProductDetailsHelpers {
@@ -29,12 +31,17 @@ public class ProductDetailsHelpers {
 	 * @author waleedafifi
 	 */
 	public static void initProductDetailsPage() {
+		//		GeneralValidation.verifyCurrentPageTitleValue(GlobalVariable.productItems[1])
+		GeneralValidation.verifyCurrentPageURL(GlobalVariable.productItems[0])
+
 		ProductDetailsValidation.verifyProductDetailsPageBreadCrumb()
 		ProductDetailsValidation.verifyActiveProductSize('//a[@title=\'X-Small - 15" x 18" x 3"\']')
 		ProductDetailsValidation.verifyProductAvailability(false)
 		ProductDetailsValidation.verifySKUNotEmpty()
 		ProductDetailsValidation.verifyProductDetailsName()
-
+		
+		ProductDetailsValidation.verifyProductPrice()
+		
 		TestObject obj = findTestObject('Object Repository/Product details/a_blackColor')
 		ProductDetailsValidation.verifyProductColorSelect(obj)
 		ProductDetailsValidation.verifyFavoriteIconVisibility(false)
@@ -48,10 +55,13 @@ public class ProductDetailsHelpers {
 	public static void hoverEffectAndClickXLargeSizeLink() {
 		ProductDetailsActions.hoverOverXLargeSizeLink()
 		ProductDetailsValidation.verifyOnHoverStyle()
-
 		ProductDetailsActions.xLargeSizeLinkClickAction()
+
+		ProductDetailsValidation.verifyProductDetailsName('X-LARGE')
+
 		ProductDetailsValidation.verifyActiveProductSize('//a[@title=\'X-Large - 26" x 29" x 10"\']')
 		ProductDetailsValidation.verifyProductAvailability()
+		GeneralValidation.verifyCurrentPageURL(SearchResultPageActions.skuNumber())
 
 		ProductDetailsValidation.verifyFavoriteIconVisibility()
 		ProductDetailsValidation.verifyAddToCartButtonVisibility()
@@ -70,6 +80,8 @@ public class ProductDetailsHelpers {
 		ProductDetailsActions.largeSizeLinkClickAction()
 		ProductDetailsValidation.verifyActiveProductSize('//a[@title=\'Large - 24" x 27" x 8"\']')
 		//		ProductDetailsValidation.verifyProductAvailability()
+		ProductDetailsValidation.verifyProductDetailsName('LARGE')
+		GeneralValidation.verifyCurrentPageURL(SearchResultPageActions.skuNumber())
 
 		ProductDetailsValidation.verifyFavoriteIconVisibility()
 		ProductDetailsValidation.verifyAddToCartButtonVisibility()
@@ -85,6 +97,8 @@ public class ProductDetailsHelpers {
 		ProductDetailsActions.selectGreenColor()
 		TestObject obj = findTestObject('Object Repository/Product details/a_greenColor')
 		ProductDetailsValidation.verifyProductColorSelect(obj, 'Green')
+		ProductDetailsValidation.verifyProductDetailsName('GREEN')
+		GeneralValidation.verifyCurrentPageURL(SearchResultPageActions.skuNumber())
 	}
 
 	/**
@@ -95,6 +109,8 @@ public class ProductDetailsHelpers {
 		ProductDetailsActions.selectRoyalBlueColor()
 		TestObject obj = findTestObject('Object Repository/Product details/a_royalBlueColor')
 		ProductDetailsValidation.verifyProductColorSelect(obj, 'ROYAL BLUE')
+		ProductDetailsValidation.verifyProductDetailsName('ROYAL BLUE')
+		GeneralValidation.verifyCurrentPageURL(SearchResultPageActions.skuNumber())
 	}
 
 	/**
