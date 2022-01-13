@@ -316,4 +316,9 @@
       <initValue>'rgba(82, 36, 127, 1)'</initValue>
       <name>purpleColor</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Will be filled from shopping cart</description>
+      <initValue>'0'</initValue>
+      <name>totalPrice</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
