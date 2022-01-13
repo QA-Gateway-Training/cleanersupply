@@ -65,6 +65,10 @@
       <name>defaultProductCount</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
+      <initValue>'CBS40BK'</initValue>
+      <name>firstStockNo</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
       <description></description>
       <initValue>'#52247f'</initValue>
       <name>tagsHoverColor</name>
@@ -93,6 +97,71 @@
       <description></description>
       <initValue>'Computer &amp; Register Tags &amp; Forms'</initValue>
       <name>computerRegisterspan</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'224'</initValue>
+      <name>defaultProductCount</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Bags/Plastic-Bags/Comforter/comforterblanket-bags-12pack'</initValue>
+      <name>productLink</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Plastic Bags'</initValue>
+      <name>breadCrumb</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'X-SMALL BLANKET BAG'</initValue>
+      <name>productName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>1</initValue>
+      <name>globalTimeOut</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'selected'</initValue>
+      <name>selected</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'rgba(65, 64, 66, 1)'</initValue>
+      <name>selectedSizeBackgroundColor</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'rgba(255, 255, 255, 1)'</initValue>
+      <name>whiteColor</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'rgba(119, 120, 123, 1)'</initValue>
+      <name>grayColor</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'rgba(0, 137, 63, 1)'</initValue>
+      <name>greenColor</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'rgba(237, 28, 36, 1)'</initValue>
+      <name>redColor</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'In Stock!'</initValue>
+      <name>txtInStock</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Currently Unavailable.'</initValue>
+      <name>txtOutStock</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
@@ -153,5 +222,19 @@
       <description></description>
       <initValue>'/shopping-cart/'</initValue>
       <name>shoppingCartUrl</name>
+  </GlobalVariableEntity>
+   <GlobalVariableEntity>
+     <initValue>'//a[@title=\'X-Large - 26\\&quot; x 29\\&quot; x 10\\&quot;\']'</initValue>
+      <name>xLargeLinkTitle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'rgba(199, 200, 202, 1)'</initValue>
+      <name>lightGray</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'rgba(82, 36, 127, 1)'</initValue>
+      <name>purpleColor</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

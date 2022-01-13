@@ -18,37 +18,16 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
-import helpers.GeneralHelperFunctions
 import internal.GlobalVariable
 
-public class SearchResultPageActions {
-	/**
-	 * Expand filter card based on it's id
-	 * @param selector
-	 * @author waleedafifi
-	 */
-	public static void expandFilterCard(String selector) {
-		TestObject titleObj = GeneralHelperFunctions.makeTO('//div[@href="#'+selector+'"]')
-		WebUI.click(titleObj)
+public class MiniCartActions {
+	public static void hoverOnMiniCartLink() {
+		TestObject miniCart = findTestObject('Mini Cart/a_miniCartLink')
+		WebUI.mouseOver(miniCart)
 	}
 
-	public static void selectPackagingProduct() {
-		TestObject productObject = findTestObject('Object Repository/Filter/a_packagingProduct')
-		WebUI.click(productObject)
-	}
-
-	public static void selectPlasticBags() {
-		TestObject productObject = findTestObject('Object Repository/Filter/a_plasticBags')
-		WebUI.click(productObject)
-	}
-
-	public static void selectColorFilter() {
-		TestObject colorObject = findTestObject('Object Repository/Filter/a_greenColor')
-		WebUI.click(colorObject)
-	}
-
-	public static void NavigateToProductDetailsPage() {
-		TestObject item = findTestObject('Object Repository/Product details/a_productItem')
-		WebUI.click(item);
+	public static void navigateToCartPage() {
+		TestObject miniCart = findTestObject('Mini Cart/a_miniCartLink')
+		WebUI.click(miniCart)
 	}
 }
