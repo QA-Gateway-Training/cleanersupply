@@ -58,4 +58,6 @@ ShoppingCartHelpers.navigateToCartPage()
 ShoppingCartHelpers.navigateToCheckoutPage()
 
 CheckoutPageHelpers.initCheckoutPage()
+CheckoutPageHelpers.navigateToCheckoutInformationForm()
+
 WebUI.closeBrowser()
