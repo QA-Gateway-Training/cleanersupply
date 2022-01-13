@@ -31,10 +31,10 @@ public class QuickOrderValidations {
 	}
 
 	public static void verifyQuickOrderSubTotal(int quantity, TestObject price, TestObject expectedSubTotal) {
-		double priceNo = QuickOrderActions.formatPriceAndTotal(price)
-		double expectedTotal = QuickOrderActions.formatPriceAndTotal(expectedSubTotal)
+		double priceNo = QuickOrderActions.formatPriceAndTotal(WebUI.getText(price))
+		double expectedTotal = QuickOrderActions.formatPriceAndTotal(WebUI.getText(expectedSubTotal))
 		double actualTotal = quantity * priceNo
-		assert new DecimalFormat("##.##").format(actualTotal) ==  new DecimalFormat("##.##").format(expectedTotal)
+		assert new DecimalFormat("##.##").format(actualTotal) ==  new DecimalFormat("##.##").format(expectedTotal) //
 	}
 
 	public static void verifyChangeStyleOnBtnHover(TestObject item) {
@@ -45,14 +45,16 @@ public class QuickOrderValidations {
 		assert WebUI.getText(findTestObject("Object Repository/Quick Order/span_cartCounter")).equals(no)
 	}
 
-	public static void verifyCartTotal(TestObject first, TestObject sec, TestObject third, TestObject fourth,TestObject fifth) {
+	public static void verifyCartTotal(String first, String sec, String third, String fourth,String fifth) {
 		double expectedTotal = QuickOrderHelpers.calculateQuickOrdersTotal(first, sec, third, fourth, fifth)
-		double actualTotal = QuickOrderActions.formatPriceAndTotal(WebUI.getText(findTestObject("Object Repository/Quick Order/span_quickOrderTotal")))
+		double actualTotal = QuickOrderActions.formatPriceAndTotal(WebUI.getText(findTestObject("Object Repository/Quick Order/span_cartLabel")))
 		assert expectedTotal == actualTotal
 	}
-	
+
 	public static void verifyProductDetailsInCheckOut(TestObject Quantity, TestObject Price, TestObject Total, TestObject Title,TestObject Img, TestObject StocksNotify) {
-		
 	}
-	
+
+	public static void verifyProductsNoInCart(int expectedNo, int realNo) {
+		assert expectedNo == realNo
+	}
 }

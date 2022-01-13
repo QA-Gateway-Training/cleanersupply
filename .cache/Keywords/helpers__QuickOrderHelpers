@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "B5B75DDC040B9C6253B648D9C89F3780",
+  "keywordFileContentHash": "E357ECD50888613F7C76494605AD1E62",
   "keywordClasses": [
     {
       "name": "helpers.QuickOrderHelpers",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

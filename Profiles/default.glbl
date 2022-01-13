@@ -32,10 +32,10 @@
    <GlobalVariableEntity>
       <description></description>
       <initValue>'PRT381'</initValue>
-     <name>firstStockNo</name>
-    </GlobalVariableEntity>
-    <GlobalVariableEntity>
-       <description></description>
+      <name>firstStockNo</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
       <initValue>'SEARCH RESULTS'</initValue>
       <name>searchReasultHeadingTag</name>
    </GlobalVariableEntity>
@@ -63,8 +63,6 @@
       <description></description>
       <initValue>'224'</initValue>
       <name>defaultProductCount</name>
-
-     
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
@@ -115,5 +113,45 @@
       <description></description>
       <initValue>'SP4005'</initValue>
       <name>fifthStockNo</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'rgba(82, 36, 127, 1)'</initValue>
+      <name>quickOrderIconColor</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Quick Order - Cleaner\'s Supply'</initValue>
+      <name>quickOrderPageTitle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Quick Order'</initValue>
+      <name>quickOrderHeader</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'quick-order'</initValue>
+      <name>quickOrderUrl</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>2</initValue>
+      <name>webElementTimeOut</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Shopping Cart - Cleaner\'s Supply'</initValue>
+      <name>addToCartPageTitle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'SHOPPING CART CONTINUE SHOPPING'</initValue>
+      <name>shopCartHeader</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'/shopping-cart/'</initValue>
+      <name>shoppingCartUrl</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
