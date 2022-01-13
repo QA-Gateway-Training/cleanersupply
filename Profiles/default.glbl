@@ -31,6 +31,45 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
+      <initValue>'PRT381'</initValue>
+      <name>firstStockNo</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'SEARCH RESULTS'</initValue>
+      <name>searchReasultHeadingTag</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'search-results/?q=Plastic'</initValue>
+      <name>plasticResultPage</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Search Results - Cleaner\'s Supply'</initValue>
+      <name>searchResultTitle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'rgba(82, 36, 127, 1)'</initValue>
+      <name>searchHeaderTopBarBackgroundColor</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Featured'</initValue>
+      <name>featured</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'224'</initValue>
+      <name>defaultProductCount</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <initValue>'CBS40BK'</initValue>
+      <name>firstStockNo</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
       <initValue>'#52247f'</initValue>
       <name>tagsHoverColor</name>
    </GlobalVariableEntity>
@@ -130,6 +169,115 @@
       <name>cartURL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
+      <initValue>'224'</initValue>
+      <name>defaultProductCount</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Bags/Plastic-Bags/Comforter/comforterblanket-bags-12pack'</initValue>
+      <name>productLink</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Plastic Bags'</initValue>
+      <name>breadCrumb</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'X-SMALL BLANKET BAG'</initValue>
+      <name>productName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>1</initValue>
+      <name>globalTimeOut</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'selected'</initValue>
+      <name>selected</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'rgba(65, 64, 66, 1)'</initValue>
+      <name>selectedSizeBackgroundColor</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'rgba(255, 255, 255, 1)'</initValue>
+      <name>whiteColor</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'rgba(119, 120, 123, 1)'</initValue>
+      <name>grayColor</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'rgba(0, 137, 63, 1)'</initValue>
+      <name>greenColor</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'rgba(237, 28, 36, 1)'</initValue>
+      <name>redColor</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'In Stock!'</initValue>
+      <name>txtInStock</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Currently Unavailable.'</initValue>
+      <name>txtOutStock</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'GTDCA700C'</initValue>
+      <name>secStockNo</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'PP30'</initValue>
+      <name>thirdStockNo</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'ZB400'</initValue>
+      <name>fourthStockNo</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'SP4005'</initValue>
+      <name>fifthStockNo</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'rgba(82, 36, 127, 1)'</initValue>
+      <name>quickOrderIconColor</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Quick Order - Cleaner\'s Supply'</initValue>
+      <name>quickOrderPageTitle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Quick Order'</initValue>
+      <name>quickOrderHeader</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'quick-order'</initValue>
+      <name>quickOrderUrl</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>2</initValue>
+      <name>webElementTimeOut</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
       <description></description>
       <initValue>'Shopping Cart - Cleaner\'s Supply'</initValue>
       <name>cartTitle</name>
@@ -143,5 +291,32 @@
       <description></description>
       <initValue>'1'</initValue>
       <name>afterAdd10ItemsBadge</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <name>addToCartPageTitle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'SHOPPING CART CONTINUE SHOPPING'</initValue>
+      <name>shopCartHeader</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'/shopping-cart/'</initValue>
+      <name>shoppingCartUrl</name>
+  </GlobalVariableEntity>
+   <GlobalVariableEntity>
+     <initValue>'//a[@title=\'X-Large - 26\\&quot; x 29\\&quot; x 10\\&quot;\']'</initValue>
+      <name>xLargeLinkTitle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'rgba(199, 200, 202, 1)'</initValue>
+      <name>lightGray</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'rgba(82, 36, 127, 1)'</initValue>
+      <name>purpleColor</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

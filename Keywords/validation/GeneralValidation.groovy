@@ -36,7 +36,6 @@ public class GeneralValidation {
 	 */
 	public static void verifyCurrentPageTitleValue(String expectedTitle) {
 		assert WebUI.getWindowTitle().equals(expectedTitle)
-		
 	}
 
 	/**
@@ -46,6 +45,16 @@ public class GeneralValidation {
 	 */
 	public static void verifyCurrentPageURL(String expectedURL) {
 		assert WebUI.getUrl().contains(expectedURL)
+	}
+
+
+
+	public static void verifyColorChangeOnHover(TestObject item , String color) {
+		assert WebUI.getCSSValue(item, "color").equals(color)
+	}
+
+	public static void verifyInputValue(TestObject item , String expectedValue) {
+		assert WebUI.getAttribute(item, "value").equals(expectedValue)
 	}
 
 	/**
@@ -65,5 +74,19 @@ public class GeneralValidation {
 		TestObject searchBox = findTestObject('Object Repository/Product details/div_searchAutocompleteBox')
 		WebUI.waitForElementVisible(searchBox, GlobalVariable.pageLoadTimeOut)
 		assert WebUI.getAttribute(searchBox, 'class').contains('open')
+	}
+
+	/**
+	 * Verify page section header title
+	 * @param title
+	 * @author waleedafifi
+	 */
+	public static void verifySectionHeading(String title) {
+		TestObject sectionHeader = findTestObject('Object Repository/Product details/h1_sectionHeading')
+		assert WebUI.getText(sectionHeader).equals(GlobalVariable.searchReasultHeadingTag)
+	}
+
+	public static void verifyAnyHeading(TestObject header ,String pageHeader) {
+		assert WebUI.getText(header).toLowerCase().replace("\n", " ").equals(pageHeader.toLowerCase())
 	}
 }

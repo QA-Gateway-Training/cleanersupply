@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "EC7001A423EC5F0FAE4A6645E80A01D6",
+  "keywordClasses": [
+    {
+      "name": "validation.QuickOrderValidations",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": false
+}

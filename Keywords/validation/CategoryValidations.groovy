@@ -14,8 +14,6 @@ public class CategoryValidations {
 	 * @param1 ExpectedHoverColor get expected hover anchor color 
 	 * @param2 ExpectedHoverBackground get expected hover anchor background
 	 */
-
-
 	public static void checkanchorHoverColorBackground(String selector,String ExpectedHoverColor,String ExpectedHoverBackground) {
 		String actualColor = CategoryScActions.getcssvvalueforTagsColor(selector)
 		String actualBackground = CategoryScActions.getcssvvalueforTagsBackGround(selector)
