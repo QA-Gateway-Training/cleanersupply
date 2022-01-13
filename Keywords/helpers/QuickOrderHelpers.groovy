@@ -28,6 +28,22 @@ import validation.QuickOrderValidations
 
 public class QuickOrderHelpers {
 
+	public static void navigateToQuickOrderPage() {
+		TestObject quickOrderLink = findTestObject("Object Repository/Quick Order/a_quickOrder")
+		WebUI.verifyElementVisible(quickOrderLink)
+		GeneralActions.hoverItem(quickOrderLink)
+		GeneralValidation.verifyColorChangeOnHover(findTestObject("Object Repository/Quick Order/i_quickOrderIcon"),GlobalVariable.quickOrderIconColor)
+		QuickOrderActions.clickQuickOrderLink()
+	}
+
+	public static void navigateToAddToCartPage() {
+		TestObject addToCartBtn = findTestObject('Object Repository/Quick Order/button_addToCart')
+		//check background color
+		GeneralActions.hoverItem(addToCartBtn)
+		//QuickOrderValidations.verifyChangeStyleOnBtnHover(addToCartBtn)
+		QuickOrderActions.clickAddToCartBtn()
+	}
+	
 	public static void fillStockNoQuickOrder(TestObject stockInput, String value) {
 		GeneralActions.focusItem(stockInput)
 		//	QuickOrderValidations.verifyChangesOnInputFocus(stockInput, "rgb(99, 99, 99) 0px -3px 0px 0px inset")
@@ -35,21 +51,25 @@ public class QuickOrderHelpers {
 		GeneralValidation.verifyInputValue(stockInput, value)
 	}
 
-	public static void verifyQuickOrderTotal(TestObject title,TestObject price, TestObject expectedSubTotal, TestObject stock,TestObject quantityInput) {
-		int randomQuantity = (int) (Math.random() * 50 + 4)
+	public static void fillQuantityQuickOrder(TestObject title,TestObject stock, TestObject quantityInput) {
+		int randomQuantity = (int) (Math.random() * 50 + 1)
 		WebUI.sendKeys(quantityInput, Keys.chord(Keys.BACK_SPACE) +randomQuantity+Keys.TAB )
 		GeneralValidation.verifyInputValue(quantityInput, randomQuantity.toString())
 		WebUI.verifyElementPresent(title, 2)
 		WebUI.verifyElementText(stock, "In Stock!")
-		QuickOrderValidations.verifyQuickOrderSubTotal(randomQuantity, price, expectedSubTotal)
+	}
+	
+	public static void verifyQuickOrderTotal(TestObject price, TestObject expectedSubTotal, TestObject quantityInput) {
+		int quantity = Integer.parseInt(WebUI.getAttribute(quantityInput, "value"))
+		QuickOrderValidations.verifyQuickOrderSubTotal(quantity, price, expectedSubTotal)
 	}
 
-	public static double calculateQuickOrdersTotal(TestObject first, TestObject sec, TestObject third, TestObject fourth,TestObject fifth) {
+	public static double calculateQuickOrdersTotal(String first, String sec, String third, String fourth,String fifth) {
 		double firstTotal = QuickOrderActions.formatPriceAndTotal(first)
 		double secTotal = QuickOrderActions.formatPriceAndTotal(sec)
 		double thirdTotal = QuickOrderActions.formatPriceAndTotal(third)
 		double fourthTotal = QuickOrderActions.formatPriceAndTotal(fourth)
 		double fifthTotal = QuickOrderActions.formatPriceAndTotal(fifth)
-		return firstTotal*secTotal*thirdTotal*fourthTotal*fifthTotal;
+		return firstTotal + secTotal + thirdTotal + fourthTotal + fifthTotal;
 	}
 }
