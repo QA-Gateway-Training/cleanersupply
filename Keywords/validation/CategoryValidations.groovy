@@ -23,9 +23,33 @@ public class CategoryValidations {
 		assert	actualBackground.equals(ExpectedHoverBackground)
 	}
 
-		public static void validatespanText(String ExpectedText){
-			TestObject object=findTestObject("Object Repository/Category/span_omputerRegister")
-			String text =	WebUI.getText(object)
-			assert text.contains(ExpectedText.toUpperCase())
-		}
+	public static void validatespanText(String ExpectedText){
+		TestObject object=findTestObject("Object Repository/Category/span_omputerRegister")
+		String text =	WebUI.getText(object)
+		assert text.contains(ExpectedText.toUpperCase())
+	}
+	
+	public static void validateText(String Selector ,String ExpectedText) {
+		TestObject textSelector = findTestObject(Selector)
+		String text =WebUI.getText(textSelector)
+		WebUI.verifyEqual(text, ExpectedText.toUpperCase())
+	}
+	
+	public static void validatePrice(String Selector,BigDecimal ExpectedPrice) {
+		TestObject priceSelector = findTestObject(Selector)
+		String price =WebUI.getText(priceSelector)
+		println (price)
+		//println (ExpectedPrice)
+		price = price.replace('\\$', "");
+		println(price)
+		float f=Float.parseFloat(price);
+		WebUI.verifyEqual(price, ExpectedPrice)
+		
+	}
+	
+	public static void validateCartNo(String ExpectedNo) {
+		TestObject badge =findTestObject("Object Repository/Category/span_badge")
+		String itemsNo=WebUI.getText(badge)
+		WebUI.verifyEqual(itemsNo, ExpectedNo)
+	}
 }

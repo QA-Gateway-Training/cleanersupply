@@ -59,4 +59,89 @@
       <initValue>'Computer &amp; Register Tags &amp; Forms'</initValue>
       <name>computerRegisterspan</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'74'</initValue>
+      <name>expectedProductNum</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Featured'</initValue>
+      <name>sortByDefault</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Manufacturer'</initValue>
+      <name>manufacturarDefault</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Model #'</initValue>
+      <name>defaultmodal</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'true'</initValue>
+      <name>menuExpandValue</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Casio'</initValue>
+      <name>CasioSelect</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'SP1000'</initValue>
+      <name>modalSelect</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Epson Printer Indelibond Ink Ribbons #TM290, ERC27 - 6/Box'</initValue>
+      <name>sp1000casioproductTitle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'$15.54'</initValue>
+      <name>sp1000casioproductMinPrice</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'$20.94'</initValue>
+      <name>sp1000casioproductMaxPrice</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'10'</initValue>
+      <name>itemsQty10</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>20.94</initValue>
+      <name>sp1000Casioprice</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'In Stock!\r\n'</initValue>
+      <name>instockText</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'shopping-cart'</initValue>
+      <name>cartURL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Shopping Cart - Cleaner\'s Supply'</initValue>
+      <name>cartTitle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'0'</initValue>
+      <name>initialCartBadge</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'1'</initValue>
+      <name>afterAdd10ItemsBadge</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

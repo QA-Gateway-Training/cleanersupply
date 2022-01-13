@@ -31,12 +31,11 @@ public class GeneralHelpers {
 
 	public static void navigateTotags() {
 		CategoryScActions.hoverTags()
-  }
+	}
 	public static void headerSearchFillAndClick() {
 		GeneralActions.fillHeaderSearch(GlobalVariable.searchTerm)
 		GeneralValidation.verifySearchFieldValue(GlobalVariable.searchTerm)
 		GeneralValidation.verifySearchDropdownIsDisplayed()
 		GeneralActions.clickSearchButton()
-
 	}
 }

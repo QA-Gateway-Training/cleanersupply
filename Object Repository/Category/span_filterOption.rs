@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_ComputerRegister</name>
+   <name>span_filterOption</name>
    <tag></tag>
-   <elementGuidId>273a1809-8b12-4a66-a364-a883a2862bc8</elementGuidId>
+   <elementGuidId>040b0823-7855-425f-bbc2-d84834abfc6a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>a[href=&quot;/Tags-Forms/Computer-Register/&quot;]</value>
+         <value>.product-list-container .section-subheading h2</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
