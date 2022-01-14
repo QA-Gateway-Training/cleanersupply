@@ -71,7 +71,7 @@ public class CategorySCHelpers {
 		CategoryScActions.getDefaultProjectCategoryFilter(GlobalVariable.expectedProductNum) // false on console
 
 	}
-	
+
 
 	public static void EnterCasioSP1000Product() {
 		String titleSelector = "Object Repository/Category/sp001Casiprodoct/h2_sp1000CasioTitle"
@@ -83,9 +83,9 @@ public class CategorySCHelpers {
 		CategoryValidations.validateText(maxPrice, GlobalVariable.sp1000casioproductMaxPrice)
 		TestObject productClick = findTestObject("Object Repository/Category/sp001Casiprodoct/a_product")
 		WebUI.click(productClick)
-		
+
 	}
-	
+
 	public static void ValidateCasioSP1000ProductDetails() {
 		String productName= "Object Repository/Category/sp1000CasioProductDetails/h1_sp1000CasioProduct"
 		String productPrice="Object Repository/Category/sp1000CasioProductDetails/span_productPrice"
@@ -93,9 +93,9 @@ public class CategorySCHelpers {
 		CategoryValidations.validateText(productName, GlobalVariable.sp1000casioproductTitle)
 		//CategoryValidations.validateText(inStock,GlobalVariable.instockText)
 		//CategoryValidations.validatePrice(productPrice,GlobalVariable.sp1000Casioprice)
-		
-		}
-		
+
+	}
+
 	public static void enterTenItemsFromProduct() {
 		CategoryValidations.validateCartNo(GlobalVariable.initialCartBadge)
 		String qty = "Object Repository/Category/sp1000CasioProductDetails/input_quantity"
@@ -105,23 +105,48 @@ public class CategorySCHelpers {
 		WebUI.setText(textSelector, GlobalVariable.itemsQty10)
 		WebUI.click(findTestObject("Object Repository/Category/sp1000CasioProductDetails/h1_sp1000CasioProduct"))
 		TestObject addToCart = findTestObject("Object Repository/Category/sp1000CasioProductDetails/button_addToCart")
-		WebUI.mouseOver(addToCart)
+		//WebUI.mouseOver(addToCart)
 		WebUI.click(addToCart)
 		CategoryValidations.validateCartNo(GlobalVariable.afterAdd10ItemsBadge)
 		GeneralValidation.verifyCurrentPageTitleIsNotEmpty()
-//		GeneralValidation.verifyCurrentPageURL(GlobalVariable.cartURL)
-//		GeneralValidation.verifyCurrentPageTitleValue(GlobalVariable.cartTitle)
-		
-		}
-		
-		
-	public static void checkMeniCart() {
-		
-		}
-	
-	
-	
-	
+
 
 	}
+
+	public static BigDecimal formatNumber(String selector){
+		TestObject cartLabelTotalPrice = findTestObject(selector)
+		String Actualprice =WebUI.getText(cartLabelTotalPrice)
+		String Formatedprice = Actualprice.replace('$',"")
+		BigDecimal FormatedDecimalPrice = new BigDecimal(Formatedprice)
+		return FormatedDecimalPrice
+	}
+
+	public static void checkEqualityNumber(BigDecimal Price,BigDecimal Expected) {
+
+		WebUI.verifyEqual(Price, Expected)
+
+	}
+
+	public static void checkMeniCartBadge() {
+		String priceLabelCart = "Object Repository/Category/labelCart"
+		BigDecimal actual = formatNumber(priceLabelCart)
+		BigDecimal expected =new BigDecimal(GlobalVariable.total10)
+		checkEqualityNumber(actual,expected)
+
+	}
+
+
+	public static void navigateToCart() {
+		TestObject CartNavigate = findTestObject("Object Repository/Category/a_cart")
+		WebUI.click(CartNavigate)
+		GeneralValidation.verifyCurrentPageURL(GlobalVariable.cartURL)
+		GeneralValidation.verifyCurrentPageTitleValue(GlobalVariable.cartTitle)
+
+	}
+
+
+
+
+
+}
 

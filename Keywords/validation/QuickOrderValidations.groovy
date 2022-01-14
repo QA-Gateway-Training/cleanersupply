@@ -34,7 +34,7 @@ public class QuickOrderValidations {
 		double priceNo = QuickOrderActions.formatPriceAndTotal(WebUI.getText(price))
 		double expectedTotal = QuickOrderActions.formatPriceAndTotal(WebUI.getText(expectedSubTotal))
 		double actualTotal = quantity * priceNo
-		assert new DecimalFormat("##.##").format(actualTotal) ==  new DecimalFormat("##.##").format(expectedTotal) //
+		assert String.format("%,.2f",actualTotal).equals(String.format("%,.2f",expectedTotal))
 	}
 
 	public static void verifyChangeStyleOnBtnHover(TestObject item) {
@@ -51,7 +51,8 @@ public class QuickOrderValidations {
 		assert expectedTotal == actualTotal
 	}
 
-	public static void verifyProductDetailsInCheckOut(TestObject Quantity, TestObject Price, TestObject Total, TestObject Title,TestObject Img, TestObject StocksNotify) {
+	public static void verifyProductDetailsInShoppingCart( TestObject Quantity, TestObject Price, TestObject Total,
+			TestObject Title,TestObject Img, TestObject StocksNotify) {
 	}
 
 	public static void verifyProductsNoInCart(int expectedNo, int realNo) {

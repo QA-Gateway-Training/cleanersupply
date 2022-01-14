@@ -87,7 +87,7 @@ public class CategoryScActions{
 		TestObject manuDefault = findTestObject("Object Repository/Category/span_defaultFilterModal")
 		String actual = WebUI.getText(manuDefault)
 		actual.equals(Expected)
-  }
+	}
 	public static void getDefaultProjectCategoryFilter() {
 		WebElement defaultfilterPro = FindElement(By.partialLinkText("74 products"))
 		TestObject element = WebUI.convertWebElementToTestObject(defaultfilterPro)

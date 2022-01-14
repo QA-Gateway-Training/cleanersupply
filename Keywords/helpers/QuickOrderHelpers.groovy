@@ -6,6 +6,8 @@ import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
+import java.text.DecimalFormat
+
 import org.openqa.selenium.Keys
 
 import com.kms.katalon.core.annotation.Keyword
@@ -43,7 +45,7 @@ public class QuickOrderHelpers {
 		//QuickOrderValidations.verifyChangeStyleOnBtnHover(addToCartBtn)
 		QuickOrderActions.clickAddToCartBtn()
 	}
-	
+
 	public static void fillStockNoQuickOrder(TestObject stockInput, String value) {
 		GeneralActions.focusItem(stockInput)
 		//	QuickOrderValidations.verifyChangesOnInputFocus(stockInput, "rgb(99, 99, 99) 0px -3px 0px 0px inset")
@@ -58,18 +60,19 @@ public class QuickOrderHelpers {
 		WebUI.verifyElementPresent(title, 2)
 		WebUI.verifyElementText(stock, "In Stock!")
 	}
-	
+
 	public static void verifyQuickOrderTotal(TestObject price, TestObject expectedSubTotal, TestObject quantityInput) {
 		int quantity = Integer.parseInt(WebUI.getAttribute(quantityInput, "value"))
 		QuickOrderValidations.verifyQuickOrderSubTotal(quantity, price, expectedSubTotal)
 	}
 
 	public static double calculateQuickOrdersTotal(String first, String sec, String third, String fourth,String fifth) {
+		DecimalFormat format = new DecimalFormat("#.##")
 		double firstTotal = QuickOrderActions.formatPriceAndTotal(first)
 		double secTotal = QuickOrderActions.formatPriceAndTotal(sec)
 		double thirdTotal = QuickOrderActions.formatPriceAndTotal(third)
 		double fourthTotal = QuickOrderActions.formatPriceAndTotal(fourth)
 		double fifthTotal = QuickOrderActions.formatPriceAndTotal(fifth)
-		return firstTotal + secTotal + thirdTotal + fourthTotal + fifthTotal;
+		return Double.parseDouble(format.format(firstTotal + secTotal + thirdTotal + fourthTotal + fifthTotal));
 	}
 }
