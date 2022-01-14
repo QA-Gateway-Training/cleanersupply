@@ -18,11 +18,18 @@ import org.openqa.selenium.WebElement
 import actions.GeneralActions
 import actions.Navigations
 import actions.QuickOrderActions
+import actions.ShoppingCartActions
+import actions.checkOutFormAction
+import helpers.CheckoutPageHelpers
 import helpers.GeneralHelpers
+import helpers.MiniCartHelpers
 import helpers.QuickOrderHelpers
+import helpers.ShoppingCartHelpers
+import helpers.checkOutFormHelper
 import internal.GlobalVariable
 import validation.GeneralValidation
 import validation.QuickOrderValidations
+import validation.ShoppingCartValidations
 
 import org.eclipse.jdt.internal.compiler.ast.ForeachStatement
 import org.openqa.selenium.Keys as Keys
@@ -55,9 +62,9 @@ QuickOrderHelpers.fillStockNoQuickOrder(fivthStockNo, GlobalVariable.fifthStockN
 //---------------get quick order products details----------
 List<WebElement> quantities = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/input_quantities"),GlobalVariable.webElementTimeOut)
 List<WebElement> titles = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/a_quickOrderTitle"),GlobalVariable.webElementTimeOut)
-List<WebElement> stocksNotify = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/div_quickOrderStock"),GlobalVariable.webElementTimeOut)
 List<WebElement> prices = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/div_quickOrderPrice"),GlobalVariable.webElementTimeOut)
 List<WebElement> totals = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/span_quickOrderTotal"),GlobalVariable.webElementTimeOut)
+List<WebElement> stocksNotify = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/div_quickOrderStock"),GlobalVariable.webElementTimeOut)
 List<WebElement> images = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/img_quickOrderProductImg"),GlobalVariable.webElementTimeOut)
 
 //---------------filling quantity inputs and verify total----------
@@ -90,7 +97,7 @@ class quickOrder{
 List<quickOrder> products = new ArrayList<quickOrder>();
 
 //------------------store 5 products details & verify the total is right ----------------
- 
+
 for(int i=0; i<=4; i++) {
 	TestObject Quantity = WebUI.convertWebElementToTestObject(quantities[i])
 	TestObject Price = WebUI.convertWebElementToTestObject(prices[i])
@@ -111,21 +118,23 @@ QuickOrderHelpers.navigateToAddToCartPage()
 TestObject shopCartHeader = findTestObject("Object Repository/Shopping Cart/h1_shopCartHeader")
 WebUI.waitForElementPresent(shopCartHeader, 5)
 
-GeneralHelpers.verifyNavigationToPage(GlobalVariable.addToCartPageTitle, shopCartHeader, GlobalVariable.shopCartHeader, 
+GeneralHelpers.verifyNavigationToPage(GlobalVariable.shoppingCartPageTitle, shopCartHeader, GlobalVariable.shopCartHeader, 
 									  GlobalVariable.shoppingCartUrl)
 
 
 //-----------------verify cart counter and cart total----------
 QuickOrderValidations.verifyCartCounter("5")
-println(products[0].Total+" "+ products[1].Total+" "+ products[2].Total+" "+products[3].Total+" "+ products[4].Total) 
+//println(products[0].Total+" "+ products[1].Total+" "+ products[2].Total+" "+products[3].Total+" "+ products[4].Total) 
 QuickOrderValidations.verifyCartTotal(products[0].Total, products[1].Total, products[2].Total, 
 									  products[3].Total, products[4].Total)
 
 List<WebElement> productsNoCartTr = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/tr_productsInCart"),GlobalVariable.webElementTimeOut)
 QuickOrderValidations.verifyProductsNoInCart(5, productsNoCartTr.size())
 
+//MiniCartHelpers.hoverOnMiniCartHeader()
 
 //-----------------get products details from shopping cart page----------
+
 List<WebElement> quantitiesShopping = WebUI.findWebElements(findTestObject("Object Repository/Shopping Cart/input_shoppingCartProductQuantity"),GlobalVariable.webElementTimeOut)
 List<WebElement> pricesShopping = WebUI.findWebElements(findTestObject("Object Repository/Shopping Cart/td_shoppingCartProductPrice"),GlobalVariable.webElementTimeOut)
 List<WebElement> totalsShopping = WebUI.findWebElements(findTestObject("Object Repository/Shopping Cart/td_shoppingCartProductTotal"),GlobalVariable.webElementTimeOut)
@@ -155,20 +164,48 @@ for(int i=4; i>=0; i--) {
    y++;
 }
 
+ShoppingCartHelpers.navigateToCartPage()
 
 //-----------------proceed to checkout----------
 
-TestObject proceedCheckout = findTestObject("Object Repository/Shopping Cart/button_proceedToCheckout")
-GeneralValidation.verifyBackgroundColor(proceedCheckout, GlobalVariable.checkoutBgColor)
-GeneralActions.hoverItem(proceedCheckout)
-//QuickOrderValidations.verifyChangeStyleOnBtnHover(proceedCheckout)
-WebUI.click(proceedCheckout)
+ShoppingCartHelpers.navigateToCheckoutPage()
+
+//TestObject proceedCheckout = findTestObject("Object Repository/Shopping Cart/button_proceedToCheckout")
+//GeneralValidation.verifyBackgroundColor(proceedCheckout, GlobalVariable.checkoutBgColor)
+//GeneralActions.hoverItem(proceedCheckout)
+////QuickOrderValidations.verifyChangeStyleOnBtnHover(proceedCheckout)
+//WebUI.click(proceedCheckout)
 
 TestObject checkoutHeader = findTestObject("CheckOut/div_checkoutHeader")
 GeneralHelpers.verifyNavigationToPage(GlobalVariable.checkoutPageTitle, checkoutHeader,
 									  GlobalVariable.checkoutHeader, GlobalVariable.checkoutUrl)
-//exist of icon lock
 
+CheckoutPageHelpers.initCheckoutPage()
+CheckoutPageHelpers.navigateToCheckoutInformationForm()
+
+//-----------------filling checkout form----------
+
+checkOutFormHelper.sendCompanyValue()
+checkOutFormHelper.sendFnameValue()
+checkOutFormHelper.sendlnameValue()
+checkOutFormHelper.sendAddress1Value()
+checkOutFormHelper.sendAddress2Value()
+checkOutFormHelper.sendzipCodeValue()
+checkOutFormHelper.sendCityValue()
+checkOutFormHelper.sendPhoneValue()
+checkOutFormHelper.sendPhoneExtValue()
+checkOutFormHelper.sendemailValue()
+
+String button = "Object Repository/CheckOutForm/button_state"
+String aSelector="Object Repository/CheckOutForm/a_state"
+String selectedSpan = "Object Repository/CheckOutForm/span_selectedState"
+checkOutFormAction.selectStateValue(button,aSelector,selectedSpan)
+checkOutFormHelper.sendCreditCardNAme()
+checkOutFormHelper.sendCreditCardNum()
+checkOutFormHelper.sendCreditCardCVV()
+checkOutFormHelper.sendPO()
+checkOutFormHelper.sendComment()
+checkOutFormAction.clickReviewButton()
 
 //-----------------details after checkout----------
 
@@ -178,27 +215,31 @@ GeneralHelpers.verifyNavigationToPage(GlobalVariable.checkoutDetailsPageTitle, c
 
 TestObject shippingAddrDiv = findTestObject("Object Repository/CheckOut Details/div_shippingAddr")
 WebUI.verifyElementVisible(shippingAddrDiv)
+GeneralValidation.verifyBackgroundColor(shippingAddrDiv, "rgba(241, 242, 242, 1)")
 
-TestObject shippingAddrDivHeader = findTestObject("Object Repository/CheckOut Details/div_shippingAddr")
+TestObject shippingAddrDivHeader = findTestObject("Object Repository/CheckOut Details/h2_shippingAddrDivHeader")
 WebUI.verifyElementVisible(shippingAddrDivHeader)
 assert WebUI.getText(shippingAddrDivHeader).equals("SHIPPING ADDRESS")
-GeneralValidation.verifyBackgroundColor(shippingAddrDivHeader, "#f1f2f2")
+
+TestObject companyName = findTestObject("Object Repository/CheckOut Details/span_shippingCompany")
+assert WebUI.getText(companyName).equals(GlobalVariable.companyValue)
 
 TestObject fullName = findTestObject("Object Repository/CheckOut Details/span_shippingAddrCustomerName")
-assert WebUI.getText(fullName).equals("asd"+" "+"asd") //global variables
+assert WebUI.getText(fullName).equals(GlobalVariable.fNameValue+" "+ GlobalVariable.lNameValue) 
 
 TestObject address = findTestObject("Object Repository/CheckOut Details/span_shippingAddressDetails")
 String[] allAddress =  WebUI.getText(address).split("\n")
-assert allAddress[0].equals("sdfd") //global variables
-assert allAddress[1].equals("dsdf")
-assert allAddress[2].equals("dsdf")
-assert allAddress[3].equals("dsdf")
-
+assert allAddress[0].equals(GlobalVariable.address1) 
+assert allAddress[1].equals(GlobalVariable.address2)
+assert allAddress[2].contains(GlobalVariable.city) && allAddress[2].contains(GlobalVariable.zipCode)
+assert allAddress[3].split(" ")[0].contains(GlobalVariable.phone)
+assert allAddress[3].split(" ")[1].contains(GlobalVariable.phoneExt)
+//united states
 
 TestObject StandardShippingDiv = findTestObject("Object Repository/CheckOut Details/dic_standardShiping")
 WebUI.verifyElementVisible(StandardShippingDiv)
 //assert WebUI.getText(StandardShippingDiv).equals("FAST, FREE Standard Shipping")
-GeneralValidation.verifyBackgroundColor(shippingAddrDivHeader, "#f1f2f2")
+GeneralValidation.verifyBackgroundColor(shippingAddrDivHeader, "rgba(241, 242, 242, 1)")
 
 TestObject ShippingOptionLink = findTestObject("Object Repository/CheckOut Details/a_shippingOptionLink")
 assert WebUI.getCSSValue(ShippingOptionLink, "class").contains("collapsed")
@@ -218,9 +259,9 @@ GeneralValidation.verifyBackgroundColor(paymentMethodHeader.parentObject, "#f1f2
 TestObject paymentDetails = findTestObject("Object Repository/CheckOut Details/span_paymentMethodDetails")
 String[] allpaymentDetails =  WebUI.getText(paymentDetails).split("\n")
 assert allpaymentDetails[0].split(" ")[1].equals("****")
-assert allpaymentDetails[0].split(" ")[2].equals("2222333344445555".substring(12)) //last 4 numbers from card
+assert allpaymentDetails[0].split(" ")[2].equals(GlobalVariable.CreditCardNumber.toString().substring(12)) //last 4 numbers from card
 assert WebUI.getText(paymentMethodHeader).equals("Payment Method")
-assert allpaymentDetails[1].equals("") //name on card
+assert allpaymentDetails[1].equals(GlobalVariable.creditCardNAme) //name on card
 assert allpaymentDetails[2].equals("") //expires date
 
 TestObject poNoDiv = findTestObject("Object Repository/CheckOut Details/div_PoNoDiv")

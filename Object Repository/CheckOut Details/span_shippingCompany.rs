@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_shippingAddrCustomerName</name>
+   <name>span_shippingCompany</name>
    <tag></tag>
-   <elementGuidId>e73ebee9-4f6b-441f-ac24-6867b1c10e17</elementGuidId>
+   <elementGuidId>baa44a88-41cb-4aa5-822e-d3aab1e2e495</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
@@ -11,10 +11,11 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class=&quot;card-info-holder&quot;]/address/span[2]</value>
+         <value>//div[@class=&quot;card-info-holder&quot;]/address/span[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

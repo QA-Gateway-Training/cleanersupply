@@ -18,6 +18,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
+import actions.QuickOrderActions
 import internal.GlobalVariable
 import org.openqa.selenium.WebElement
 import java.text.DecimalFormat
@@ -49,7 +50,7 @@ public class MiniCartValidations {
 		}
 
 		TestObject miniCartTotal = findTestObject('Mini Cart/span_miniCartSubTotal')
-		assert WebUI.getText(miniCartTotal).contains(String.format("%.2f", totalOfTotal))
+		assert WebUI.getText(miniCartTotal).replace('$', '').replace(',', '').contains(String.format("%.2f", totalOfTotal))
 	}
 
 	public static void miniCartItemCount() {
