@@ -23,6 +23,7 @@ import helpers.MiniCartHelpers
 import helpers.ProductDetailsHelpers
 import helpers.SearchResultHelper
 import helpers.ShoppingCartHelpers
+import helpers.checkOutFormHelper
 import internal.GlobalVariable
 import validation.SearchResultPageValidations
 
@@ -59,5 +60,6 @@ ShoppingCartHelpers.navigateToCheckoutPage()
 
 CheckoutPageHelpers.initCheckoutPage()
 CheckoutPageHelpers.navigateToCheckoutInformationForm()
+checkOutFormHelper.fillCheckOutForm()
 
-WebUI.closeBrowser()
+//WebUI.closeBrowser()

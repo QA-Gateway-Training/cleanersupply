@@ -84,7 +84,7 @@ public class ShoppingCartValidations {
 		String roundedTotal = String.format("%.2f", cartTotalPrice)
 		GlobalVariable.totalPrice = roundedTotal
 
-    cartTotalPrice = 0
+		cartTotalPrice = 0
 
 		assert WebUI.getText(summaryTotal).replace('$', '').replace(',', '').contains(roundedTotal)
 		assert WebUI.getText(subTotal).replace('$', '').replace(',', '').contains(roundedTotal)
@@ -140,7 +140,7 @@ public class ShoppingCartValidations {
 
 		assert flag : "Verify Added Product To Shopping Cart Refelected"
 	}
-	
+
 	/**
 	 * Verify if the the value of quantity of items equal to passed params
 	 * @param qyt
@@ -152,6 +152,5 @@ public class ShoppingCartValidations {
 			TestObject to = WebUI.convertWebElementToTestObject(ipt)
 			assert WebUI.getAttribute(to, 'value').equals(qyt.toString())
 		}
-
 	}
 }
