@@ -348,7 +348,8 @@
       <description></description>
       <initValue>'/checkout-interstitial/'</initValue>
       <name>checkoutUrl</name>
- <GlobalVariableEntity>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
       <description></description>
       <initValue>'155.40'</initValue>
       <name>total10</name>
@@ -377,7 +378,8 @@
       <description></description>
       <initValue>'/checkout/'</initValue>
       <name>checkoutDetailsUrl</name>
- <GlobalVariableEntity>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
       <description></description>
       <initValue>'rgb(99, 99, 99)'</initValue>
       <name>checkOutinputborderColor</name>
