@@ -32,49 +32,68 @@ public class SearchResultPageActions {
 		WebUI.click(titleObj)
 	}
 
+	/**
+	 * Select packaging product filter
+	 * @author waleedafifi
+	 */
 	public static void selectPackagingProduct() {
 		TestObject productObject = findTestObject('Object Repository/Filter/a_packagingProduct')
 		WebUI.click(productObject)
 	}
 
+	/**
+	 * Select plastic bags filter
+	 * @author waleedafifi
+	 */
 	public static void selectPlasticBags() {
 		TestObject productObject = findTestObject('Object Repository/Filter/a_plasticBags')
 		WebUI.click(productObject)
 	}
 
+	/**
+	 * Select green color filter
+	 * @author waleedafifi
+	 */
 	public static void selectColorFilter() {
 		TestObject colorObject = findTestObject('Object Repository/Filter/a_greenColor')
 		WebUI.click(colorObject)
 	}
 
+	/**
+	 * Navigate to product page and store the product info into Global Variable
+	 * @author waleedafifi
+	 */
 	public static void NavigateToProductDetailsPage() {
 		TestObject item = findTestObject('Object Repository/Product details/a_productItem')
-		
+
 		addFilteredProductToGlobalVariable()
-		
+
 		WebUI.click(item);
 	}
-	
+
+	/**
+	 * Add filtered product to GlobalVariable
+	 * @author waleedafifi
+	 */
 	public static void addFilteredProductToGlobalVariable() {
-		
+
 		List<Integer> item = new ArrayList<>();
-		
+
 		TestObject href = findTestObject('Object Repository/Search Result/a_productItemLink')
 		TestObject name = findTestObject('Object Repository/Search Result/h2_productName')
 		TestObject price = findTestObject('Object Repository/Search Result/div_priceRange')
 		TestObject color = findTestObject('Object Repository/Search Result/span_availability')
-		
+
 		String hrefTxt = WebUI.getAttribute(href, 'href')
 		String nameTxt = WebUI.getText(name)
 		String priceTxt = WebUI.getText(price)
 		String colorTxt = WebUI.getText(color)
-		
+
 		item.addAll(Arrays.asList(hrefTxt, nameTxt, priceTxt, colorTxt));
-		
+
 		GlobalVariable.productItems = item
-		
 	}
-	
+
 	/**
 	 * return sku number from product details page to checkit in the url
 	 * @return String

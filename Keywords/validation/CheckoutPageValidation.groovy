@@ -30,12 +30,12 @@ public class CheckoutPageValidation {
 		TestObject titleTotal = findTestObject('Object Repository/CheckOut/span_checkoutTitleTotal')
 		TestObject subTotal = findTestObject('Object Repository/CheckOut/td_summaryTableTotal')
 		TestObject total = findTestObject('Object Repository/CheckOut/td_summaryTotalSubTotal')
-		
+
 		assert WebUI.getText(titleTotal).contains(GlobalVariable.totalPrice)
 		assert WebUI.getText(subTotal).contains(GlobalVariable.totalPrice)
 		assert WebUI.getText(total).contains(GlobalVariable.totalPrice)
 	}
-	
+
 	/**
 	 * Verify checkout as a guest label content
 	 * @author waleedafifi
@@ -44,7 +44,7 @@ public class CheckoutPageValidation {
 		TestObject lbl = findTestObject('Object Repository/CheckOut/label_checkoutAsGuest')
 		assert WebUI.getText(lbl).contains('Checkout as Guest')
 	}
-	
+
 	/**
 	 * Verify checkout as a guest is selected
 	 * @author waleedafifi 
@@ -52,9 +52,9 @@ public class CheckoutPageValidation {
 	public static void verifyCheckoutAsGuestSelected() {
 		TestObject radio = findTestObject('Object Repository/CheckOut/input_checkoutAsGuestRadioButton')
 		assert WebUI.verifyElementChecked(radio, GlobalVariable.globalTimeOut)
-//		assert WebUI.getAttribute(radio, 'checked').equals('checked')
+		//		assert WebUI.getAttribute(radio, 'checked').equals('checked')
 	}
-	
+
 	/**
 	 * Verify product summary table to have the multiply ( quantity, price )
 	 * @author waleedafifi
@@ -69,10 +69,9 @@ public class CheckoutPageValidation {
 			String qt = productQuantity.get(idx).getAttribute('value');
 			String total = productTotal.get(idx).getAttribute('innerText').replaceAll("[^0-9\\.]","");
 
-//			cartTotalPrice += Float.parseFloat(total)
+			//			cartTotalPrice += Float.parseFloat(total)
 
 			assert total.equals(String.format("%.2f", (Float.parseFloat(prc) * Integer.parseInt(qt))))
 		}
 	}
-	
 }

@@ -83,7 +83,7 @@ public class ShoppingCartValidations {
 
 		String roundedTotal = String.format("%.2f", cartTotalPrice)
 		GlobalVariable.totalPrice = roundedTotal
-
+		cartTotalPrice = 0
 		assert WebUI.getText(summaryTotal).contains(roundedTotal)
 		assert WebUI.getText(subTotal).contains(roundedTotal)
 	}

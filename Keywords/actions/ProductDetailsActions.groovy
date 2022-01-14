@@ -94,16 +94,29 @@ public class ProductDetailsActions {
 		WebUI.sendKeys(ipt, Keys.chord(Keys.BACK_SPACE) + txt)
 	}
 
+	/**
+	 * Select green color filter in product details page
+	 * @author waleedafifi
+	 */
 	public static void selectGreenColor() {
 		TestObject color = findTestObject('Object Repository/Product details/a_greenColor')
 		WebUI.click(color)
 	}
 
+	/**
+	 * Select royal blue color filter in product details page
+	 * @author waleedafifi
+	 */
 	public static void selectRoyalBlueColor() {
 		TestObject color = findTestObject('Object Repository/Product details/a_royalBlueColor')
 		WebUI.click(color)
 	}
-	
+
+	/**
+	 * Get the product price in details page
+	 * @return String
+	 * @author waleedafifi
+	 */
 	public static String returnProductPrice() {
 		TestObject price = findTestObject('Object Repository/Product details/span_productPrice')
 		return WebUI.getText(price).replaceAll("[^0-9\\.]","")

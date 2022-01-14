@@ -40,7 +40,7 @@ public class ShoppingCartActions {
 		TestObject btn = findTestObject('Object Repository/Shopping Cart/button_proceedToCheckout')
 		WebUI.mouseOver(btn)
 	}
-	
+
 	/**
 	 * Update product quantity in shopping cart page based on passed params
 	 * @param qyt
@@ -50,6 +50,15 @@ public class ShoppingCartActions {
 		List<WebElement> quantityInput = WebUI.findWebElements(findTestObject('Object Repository/Shopping Cart/input_shoppingCartProductQuantity'), GlobalVariable.globalTimeOut)
 		for (int idx = 0; idx < quantityInput.size(); idx++) {
 			quantityInput[idx].sendKeys(Keys.chord(Keys.BACK_SPACE) + qyt.toString())
-		} 
+		}
+	}
+
+	/**
+	 * Click outside the quantity field to update the totals
+	 * @author waleedafifi 
+	 */
+	public static void moveOutQuantityField() {
+		TestObject to = findTestObject('Object Repository/Shopping Cart/td_summaryTableItemCount')
+		WebUI.click(to)
 	}
 }

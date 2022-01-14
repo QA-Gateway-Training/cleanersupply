@@ -57,5 +57,8 @@ public class ShoppingCartHelpers {
 	public static void updateQuantities() {
 		ShoppingCartActions.updateProductQuantity(4)
 		ShoppingCartValidations.verifyQuantityValue(4)
+		ShoppingCartActions.moveOutQuantityField()
+		ShoppingCartValidations.verifyTotalPriceForProductTable()
+		ShoppingCartValidations.verifyTotalPriceInSummaryTable()
 	}
 }
