@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_expirationDate</name>
+   <name>card_freeShipping</name>
    <tag></tag>
-   <elementGuidId>88222555-2819-45a6-a2fd-ed2b5178fafd</elementGuidId>
+   <elementGuidId>73334d84-be79-4afb-abb4-c23e7d38de89</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value>button[title=&quot;Month&quot;] + div ul a</value>
+         <value>.clearfix a.pull-right</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

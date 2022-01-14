@@ -29,4 +29,6 @@ public class CheckoutPageActions {
 		TestObject btn = findTestObject('Object Repository/CheckOut/button_continueButton')
 		WebUI.click(btn)
 	}
+	
+	
 }
