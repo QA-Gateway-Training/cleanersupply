@@ -62,7 +62,7 @@ https://github.com/QA-Gateway-Training/cleanersupply.git
 
 2- Product details page test plan ( search )
   - Verify page url
-  - Verify page Title ( title cappetlize but the product name uppercase <img src="https://c.tenor.com/U3gdp2isP3EAAAAC/programming-software-testing.gif" alt="testing image" width="30"/>)
+  - Verify page Title ( title cappetlize but the product name uppercase <img src="https://c.tenor.com/IUzym1Pr2x0AAAAC/bug-cute.gif" alt="testing image" width="30"/>)
   - Verify product name contain part of the name
   - Verify breadcrumb
   - Verify `sku` number with the url
@@ -88,7 +88,7 @@ https://github.com/QA-Gateway-Training/cleanersupply.git
   - Verify on select filter page loading overlay
   - Verify `selected` class once the filter selected
   - Verify the filter add to the selected filter section
-  - Verify the data has been changed on change the filter ( product counter not correct `Bug` <img src="https://c.tenor.com/U3gdp2isP3EAAAAC/programming-software-testing.gif" alt="testing image" width="30"/>)
+  - Verify the data has been changed on change the filter ( product counter not correct `Bug` <img src="https://c.tenor.com/IUzym1Pr2x0AAAAC/bug-cute.gif" alt="testing image" width="30"/>)
   - Verify the pagination is displayed
   - Verify the current page is checked in the pagination
 
