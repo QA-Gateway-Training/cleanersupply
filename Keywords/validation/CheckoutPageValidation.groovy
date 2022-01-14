@@ -30,7 +30,7 @@ public class CheckoutPageValidation {
 		TestObject titleTotal = findTestObject('Object Repository/CheckOut/span_checkoutTitleTotal')
 		TestObject subTotal = findTestObject('Object Repository/CheckOut/td_summaryTableTotal')
 		TestObject total = findTestObject('Object Repository/CheckOut/td_summaryTotalSubTotal')
-		
+
 		assert WebUI.getText(titleTotal).replace('$', '').replace(',', '').contains(GlobalVariable.totalPrice)
 		assert WebUI.getText(subTotal).replace('$', '').replace(',', '').contains(GlobalVariable.totalPrice)
 		assert WebUI.getText(total).replace('$', '').replace(',', '').contains(GlobalVariable.totalPrice)

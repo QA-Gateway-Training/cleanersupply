@@ -21,11 +21,20 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
 
 public class MiniCartActions {
+	
+	/**
+	 * Mouse over action on minicart on header link
+	 * @author waleedafifi
+	 */
 	public static void hoverOnMiniCartLink() {
 		TestObject miniCart = findTestObject('Mini Cart/a_miniCartLink')
 		WebUI.mouseOver(miniCart)
 	}
 
+	/**
+	 * Navigate to cart page
+	 * @author waleedafifi
+	 */
 	public static void navigateToCartPage() {
 		TestObject miniCart = findTestObject('Mini Cart/a_miniCartLink')
 		WebUI.click(miniCart)
