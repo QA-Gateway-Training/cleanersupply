@@ -91,21 +91,23 @@ https://github.com/QA-Gateway-Training/cleanersupply.git
   - Verify the data has been changed on change the filter ( product counter not correct `Bug` <img src="https://c.tenor.com/IUzym1Pr2x0AAAAC/bug-cute.gif" alt="testing image" width="30"/>)
   - Verify the pagination is displayed
   - Verify the current page is checked in the pagination
+  
+4- Category Test Plan
 
-4- Quick order test plan
+5- Quick order test plan
   - test 1
   
-5- Search
+6- Search
   - Check placeholder
   - Fill the field and check if reflected
   - Check the top bar contains search term
   - Check top bar background
   - Click on search button
  
-6- Footer Test Plan
+7- Footer Test Plan
   - test1
   
-7- Shopping Cart
+8- Shopping Cart
   - Verify Page url
   - Verify page title
   - Verify Heading tag
