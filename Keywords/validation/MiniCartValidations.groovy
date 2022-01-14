@@ -52,6 +52,34 @@ public class MiniCartValidations {
 		assert WebUI.getText(miniCartTotal).contains(String.format("%.2f", totalOfTotal))
 	}
 
+	public static void verifyAddedProductRefelectDetails() {
+		List<WebElement> prodPrice = WebUI.findWebElements(findTestObject('Mini Cart/span_miniCartProductPrice'), 1)
+		List<WebElement> prodQyt = WebUI.findWebElements(findTestObject('Mini Cart/td_miniCartTableQuantityTableData'), 1)
+		List<WebElement> prodSKU = WebUI.findWebElements(findTestObject('Object Repository/Mini Cart/span_productSKU'), 1)
+		List<WebElement> prodName = WebUI.findWebElements(findTestObject('Object Repository/Mini Cart/a_productName'), 1)
+
+		List cartItem = GlobalVariable.cartItems
+		boolean flag = false
+
+		println cartItem
+		
+		for(int idx = 0; idx < prodPrice.size(); idx++) {
+			String prc = prodPrice.get(idx).getAttribute('innerText').replaceAll("[^0-9\\.]","");
+			String qt = prodQyt.get(idx).getAttribute('innerText');
+			String sku = prodSKU.get(idx).getAttribute('innerText');
+			String name = prodName.get(idx).getAttribute('innerText');
+
+			for(int i = 0; i < cartItem.size(); i++) {
+				if(name.contains(cartItem[i][0]) && sku.contains(cartItem[i][2])) {
+					flag = true
+					break
+				}
+			}
+		}
+
+		assert flag : "Verify Added Product To MiniCart Refelected"
+	}
+
 	public static void miniCartItemCount() {
 		List<WebElement> productRow = WebUI.findWebElements(findTestObject('Mini Cart/tr_miniCartTableRow'), 1)
 		TestObject counterBadge = findTestObject('Mini Cart/span_cartCounterPadge')

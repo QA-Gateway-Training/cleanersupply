@@ -329,4 +329,9 @@
       <initValue>['test']</initValue>
       <name>productItems</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>['test']</initValue>
+      <name>cartItems</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

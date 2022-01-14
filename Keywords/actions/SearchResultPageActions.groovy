@@ -75,6 +75,11 @@ public class SearchResultPageActions {
 		
 	}
 	
+	/**
+	 * return sku number from product details page to checkit in the url
+	 * @return String
+	 * @author waleedafifi
+	 */
 	public static String skuNumber() {
 		TestObject sku = findTestObject('Object Repository/Product details/span_skuNumber')
 		return WebUI.getText(sku)

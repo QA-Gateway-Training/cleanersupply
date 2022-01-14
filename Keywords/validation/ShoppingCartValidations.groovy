@@ -98,4 +98,32 @@ public class ShoppingCartValidations {
 		TestObject btn = findTestObject('Object Repository/Shopping Cart/button_proceedToCheckout')
 		assert WebUI.getCSSValue(btn, 'box-shadow').equals('rgba(0, 0, 0, 0.3) 0px 0px 10px 2px')
 	}
+	
+	public static void verifyAddedProductRefelectDetails() {
+		List<WebElement> prodPrice = WebUI.findWebElements(findTestObject('Object Repository/Shopping Cart/td_shoppingCartProductPrice'), 1)
+		List<WebElement> prodQyt = WebUI.findWebElements(findTestObject('Object Repository/Shopping Cart/input_shoppingCartProductQuantity'), 1)
+		List<WebElement> prodSKU = WebUI.findWebElements(findTestObject('Object Repository/Shopping Cart/span_shoppingCartSkuNumber'), 1)
+		List<WebElement> prodName = WebUI.findWebElements(findTestObject('Object Repository/Shopping Cart/a_shoppingCartProductTitle'), 1)
+
+		List cartItem = GlobalVariable.cartItems
+		boolean flag = false
+
+		println cartItem
+		
+		for(int idx = 0; idx < prodPrice.size(); idx++) {
+			String prc = prodPrice.get(idx).getAttribute('innerText').replaceAll("[^0-9\\.]","");
+			String qt = prodQyt.get(idx).getAttribute('value');
+			String sku = prodSKU.get(idx).getAttribute('innerText');
+			String name = prodName.get(idx).getAttribute('innerText');
+
+			for(int i = 0; i < cartItem.size(); i++) {
+				if(name.contains(cartItem[i][0]) && sku.contains(cartItem[i][2]) && qt.equals(cartItem[i][3])) {
+					flag = true
+					break
+				}
+			}
+		}
+
+		assert flag : "Verify Added Product To Shopping Cart Refelected"
+	}
 }

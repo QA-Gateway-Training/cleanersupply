@@ -39,10 +39,10 @@ public class ProductDetailsHelpers {
 		ProductDetailsValidation.verifyProductAvailability(false)
 		ProductDetailsValidation.verifySKUNotEmpty()
 		ProductDetailsValidation.verifyProductDetailsName()
-		
+
 		ProductDetailsValidation.verifyProductPrice()
 		ProductDetailsValidation.verifyAvailableColorCounter()
-		
+
 		TestObject obj = findTestObject('Object Repository/Product details/a_blackColor')
 		ProductDetailsValidation.verifyProductColorSelect(obj)
 		ProductDetailsValidation.verifyFavoriteIconVisibility(false)

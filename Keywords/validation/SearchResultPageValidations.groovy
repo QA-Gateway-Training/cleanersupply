@@ -116,9 +116,13 @@ public class SearchResultPageValidations {
 
 	public static void verifySelectedFilter(String filter) {
 		List<WebElement> packProduct = WebUI.findWebElements(findTestObject('Object Repository/Filter/a_selectedFilterContent'), GlobalVariable.globalTimeOut)
+		boolean flag = false
 		for(int idx = 0; idx < packProduct.size(); idx++) {
-			assert packProduct.get(idx).getAttribute('innerText').contains(filter)
+			if(packProduct.get(idx).getAttribute('innerText').contains(filter)) {
+				flag = true
+			}
 		}
+		assert flag
 	}
 
 	/**

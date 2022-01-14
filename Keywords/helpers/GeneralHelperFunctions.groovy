@@ -39,10 +39,19 @@ public class GeneralHelperFunctions {
 		}catch (Exception e){}
 		return retStr;
 	}
-	
+
 	public static void executeJs(String javaScript,WebElement element){
 		WebDriver driver = DriverFactory.getWebDriver()
 		JavascriptExecutor executor = ((JavascriptExecutor)driver)
 		executor.executeScript(javaScript, element)
+	}
+
+	public static List makeListOfItems(String nameTxt, String priceTxt, String sku, String qyt) {
+
+		List<Integer> item = new ArrayList<>();
+
+		item.addAll(Arrays.asList(nameTxt, priceTxt, sku, qyt));
+
+		return item
 	}
 }

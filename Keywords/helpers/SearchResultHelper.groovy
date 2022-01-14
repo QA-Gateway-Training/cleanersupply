@@ -49,13 +49,13 @@ public class SearchResultHelper {
 		SearchResultPageActions.selectPlasticBags()
 		GeneralValidation.verifyLoader()
 		SearchResultPageValidations.verifyPlasticBagsFilterSelected()
-		//		SearchResultPageValidations.verifySelectedFilter('Plastic Bags')
+		SearchResultPageValidations.verifySelectedFilter('Plastic Bags')
 		filterCardExpand()
 
 		SearchResultPageActions.selectColorFilter()
 		GeneralValidation.verifyLoader()
 		SearchResultPageValidations.verifyColorFilterSelected()
-		//		SearchResultPageValidations.verifySelectedFilter('Green')
+		SearchResultPageValidations.verifySelectedFilter('Green')
 
 		int colorCounter = SearchResultPageValidations.verifyColorFilterCounter()
 		SearchResultPageValidations.verifyProductHeadingTotal(colorCounter)
