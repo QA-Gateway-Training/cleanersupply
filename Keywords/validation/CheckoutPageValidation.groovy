@@ -115,6 +115,8 @@ public class CheckoutPageValidation {
 		TestObject checkoutHeader = findTestObject("CheckOut/div_checkoutHeader")
 		GeneralHelpers.verifyNavigationToPage(GlobalVariable.checkoutPageTitle, checkoutHeader,
 											  GlobalVariable.checkoutHeader, GlobalVariable.checkoutUrl)
+	}
+	
 	/**
 	 * Verify added product reflected to the cart items
 	 * @author waleedafifi
