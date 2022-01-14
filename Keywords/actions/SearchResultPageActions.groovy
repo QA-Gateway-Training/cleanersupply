@@ -49,6 +49,39 @@ public class SearchResultPageActions {
 
 	public static void NavigateToProductDetailsPage() {
 		TestObject item = findTestObject('Object Repository/Product details/a_productItem')
+		
+		addFilteredProductToGlobalVariable()
+		
 		WebUI.click(item);
+	}
+	
+	public static void addFilteredProductToGlobalVariable() {
+		
+		List<Integer> item = new ArrayList<>();
+		
+		TestObject href = findTestObject('Object Repository/Search Result/a_productItemLink')
+		TestObject name = findTestObject('Object Repository/Search Result/h2_productName')
+		TestObject price = findTestObject('Object Repository/Search Result/div_priceRange')
+		TestObject color = findTestObject('Object Repository/Search Result/span_availability')
+		
+		String hrefTxt = WebUI.getAttribute(href, 'href')
+		String nameTxt = WebUI.getText(name)
+		String priceTxt = WebUI.getText(price)
+		String colorTxt = WebUI.getText(color)
+		
+		item.addAll(Arrays.asList(hrefTxt, nameTxt, priceTxt, colorTxt));
+		
+		GlobalVariable.productItems = item
+		
+	}
+	
+	/**
+	 * return sku number from product details page to checkit in the url
+	 * @return String
+	 * @author waleedafifi
+	 */
+	public static String skuNumber() {
+		TestObject sku = findTestObject('Object Repository/Product details/span_skuNumber')
+		return WebUI.getText(sku)
 	}
 }

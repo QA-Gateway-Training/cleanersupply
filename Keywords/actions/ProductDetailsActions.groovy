@@ -23,6 +23,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
 
 public class ProductDetailsActions {
+
+	public static List<Integer> cartItem = new ArrayList<>();
+
 	public static void hoverOverSizeLink(TestObject obj) {
 	}
 
@@ -77,6 +80,8 @@ public class ProductDetailsActions {
 	 */
 	public static void addToCartAction() {
 		TestObject btn = findTestObject('Object Repository/Product details/button_addToCart')
+		cartItem.add(GeneralActions.returnProductDetailsList())
+		GlobalVariable.cartItems = cartItem
 		WebUI.click(btn)
 	}
 

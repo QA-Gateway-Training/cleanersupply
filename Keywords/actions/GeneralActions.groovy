@@ -18,6 +18,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
+import helpers.GeneralHelperFunctions
 import internal.GlobalVariable
 
 public class GeneralActions {
@@ -50,6 +51,17 @@ public class GeneralActions {
 		WebUI.click(searchField);
 	}
 	
-	
-	
+	public static List returnProductDetailsList() {
+		TestObject productName = findTestObject('Object Repository/Product details/h1_productName')
+		TestObject ipt = findTestObject('Object Repository/Product details/input_productQuantity')
+		TestObject sku = findTestObject('Object Repository/Product details/span_skuNumber')
+		TestObject prc = findTestObject('Object Repository/Product details/span_productPrice')
+		
+		String name = WebUI.getText(productName)
+		String qyt = WebUI.getAttribute(ipt, 'value')
+		String skuTxt = WebUI.getText(sku)
+		String price = WebUI.getText(prc).replaceAll("[^0-9\\.]","")
+		
+		return GeneralHelperFunctions.makeListOfItems(name, price, skuTxt, qyt)
+	}
 }

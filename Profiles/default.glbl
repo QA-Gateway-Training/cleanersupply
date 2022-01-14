@@ -360,7 +360,17 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Checkout - Cleaner\'s Supply'</initValue>
+      <initValue>['test']</initValue>
+      <name>productItems</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>['test']</initValue>
+      <name>cartItems</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+     <description></description>
+     <initValue>'Checkout - Cleaner\'s Supply'</initValue>
       <name>checkoutDetailsPageTitle</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
