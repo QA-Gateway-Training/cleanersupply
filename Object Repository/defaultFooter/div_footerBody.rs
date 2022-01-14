@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>h2_shippingAddrDivHeader</name>
+   <name>div_footerBody</name>
    <tag></tag>
-   <elementGuidId>17fe4fed-4419-49dd-a63b-b7ee408d80ed</elementGuidId>
+   <elementGuidId>7e91ed5b-0f70-4a67-b7c6-d0dc3ed837ff</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>.form-component h2</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>CSS</key>
+         <value>.footer-body</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

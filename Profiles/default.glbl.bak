@@ -66,6 +66,11 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
+      <initValue>'CBS40BK'</initValue>
+      <name>firstStockNo</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
       <initValue>'#52247f'</initValue>
       <name>tagsHoverColor</name>
    </GlobalVariableEntity>
@@ -291,6 +296,11 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
+      <initValue>''</initValue>
+      <name>addToCartPageTitle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
       <initValue>'SHOPPING CART CONTINUE SHOPPING'</initValue>
       <name>shopCartHeader</name>
    </GlobalVariableEntity>
@@ -315,14 +325,13 @@
       <name>purpleColor</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-<<<<<<< HEAD
       <description></description>
       <initValue>'Shopping Cart - Cleaner\'s Supply'</initValue>
       <name>addToCartPageTitle</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'rgb(82, 36, 127)'</initValue>
+      <initValue>'rgba(82, 36, 127, 1)'</initValue>
       <name>checkoutBgColor</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -339,10 +348,113 @@
       <description></description>
       <initValue>'/checkout-interstitial/'</initValue>
       <name>checkoutUrl</name>
+ <GlobalVariableEntity>
+      <description></description>
+      <initValue>'155.40'</initValue>
+      <name>total10</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Will be filled from shopping cart</description>
       <initValue>'0'</initValue>
       <name>totalPrice</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Checkout - Cleaner\'s Supply'</initValue>
+      <name>checkoutDetailsPageTitle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'/checkout/'</initValue>
+      <name>checkoutDetailsUrl</name>
+ <GlobalVariableEntity>
+      <description></description>
+      <initValue>'rgb(99, 99, 99)'</initValue>
+      <name>checkOutinputborderColor</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'rgb(99, 99, 99) 0px -3px 0px 0px inset'</initValue>
+      <name>checkOutInputShadow</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'testCompany'</initValue>
+      <name>companyValue</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'FNameTest'</initValue>
+      <name>fNameValue</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'lnameValueTest'</initValue>
+      <name>lNameValue</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'addres1Test'</initValue>
+      <name>address1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'address2 test'</initValue>
+      <name>address2</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'55555'</initValue>
+      <name>zipCode</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Palestine'</initValue>
+      <name>city</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'541-143-1030'</initValue>
+      <name>phone</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'1'</initValue>
+      <name>phoneExt</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'test@test.com'</initValue>
+      <name>email</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Arizona'</initValue>
+      <name>state</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Razan'</initValue>
+      <name>creditCardNAme</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'379936489179273'</initValue>
+      <name>CreditCardNumber</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'2222'</initValue>
+      <name>creditCVV</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'test1155'</initValue>
+      <name>poNumber</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'test comment'</initValue>
+      <name>comment</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>h2_shippingAddrDivHeader</name>
+   <name>div_topFooter</name>
    <tag></tag>
-   <elementGuidId>17fe4fed-4419-49dd-a63b-b7ee408d80ed</elementGuidId>
+   <elementGuidId>3e71f0f1-65cb-41ac-8af6-c63c322a20eb</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>.form-component h2</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>CSS</key>
+         <value>#footer-container .footer-top</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
