@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>dic_standardShiping</name>
+   <name>input_paymentMethodPo</name>
    <tag></tag>
-   <elementGuidId>bf2e98bf-212e-42d8-bbf2-968b4d403e9a</elementGuidId>
+   <elementGuidId>029a765d-8c20-48cc-9e2a-ddf7f2aaf200</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//section[@anonymous=&quot;true&quot;]/div</value>
+         <key>CSS</key>
+         <value>#po</value>
       </entry>
       <entry>
          <key>BASIC</key>
-      </entry>
-      <entry>
-         <key>CSS</key>
+         <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

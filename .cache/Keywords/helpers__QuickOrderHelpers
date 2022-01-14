@@ -1,8 +1,12 @@
 {
-  "keywordFileContentHash": "CBECC322E157BA2B9540EC11729D33F1",
+  "keywordFileContentHash": "A1824FA94ED14C2F467F710BEFA7C745",
   "keywordClasses": [
     {
       "name": "helpers.QuickOrderHelpers",
+      "keywordMethods": []
+    },
+    {
+      "name": "helpers.QuickOrderHelpers$quickOrder",
       "keywordMethods": []
     }
   ],

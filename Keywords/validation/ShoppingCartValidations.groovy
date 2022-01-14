@@ -98,7 +98,7 @@ public class ShoppingCartValidations {
 		TestObject btn = findTestObject('Object Repository/Shopping Cart/button_proceedToCheckout')
 		assert WebUI.getCSSValue(btn, 'box-shadow').equals('rgba(0, 0, 0, 0.3) 0px 0px 10px 2px')
 	}
-	
+
 	public static void verifyAddedProductRefelectDetails() {
 		List<WebElement> prodPrice = WebUI.findWebElements(findTestObject('Object Repository/Shopping Cart/td_shoppingCartProductPrice'), 1)
 		List<WebElement> prodQyt = WebUI.findWebElements(findTestObject('Object Repository/Shopping Cart/input_shoppingCartProductQuantity'), 1)
@@ -109,7 +109,7 @@ public class ShoppingCartValidations {
 		boolean flag = false
 
 		println cartItem
-		
+
 		for(int idx = 0; idx < prodPrice.size(); idx++) {
 			String prc = prodPrice.get(idx).getAttribute('innerText').replaceAll("[^0-9\\.]","");
 			String qt = prodQyt.get(idx).getAttribute('value');

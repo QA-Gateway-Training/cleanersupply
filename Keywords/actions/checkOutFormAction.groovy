@@ -51,7 +51,10 @@ public class checkOutFormAction {
 		int maxMonth = Months.size();
 		Random random = new Random();
 		int randomMonth= random.nextInt(maxMonth);
+		GlobalVariable.monthValue = Months.get(randomMonth).getAttribute('innerText')
+		println(Months.get(randomMonth).getAttribute('innerText'))
 		Months.get(randomMonth).click();
+		
 	}
 
 	public static void selectRandomExpirationYearExceptNowMonth() {
@@ -63,6 +66,8 @@ public class checkOutFormAction {
 		int maxYear = Years.size();
 		Random random = new Random();
 		int randomyear= random.nextInt(maxYear);
+		GlobalVariable.yearValue = Years.get(randomyear).getAttribute('innerText')
+		println(Years.get(randomyear).getAttribute('innerText'))
 		Years.get(randomyear).click();
 	}
 }

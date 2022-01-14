@@ -36,21 +36,21 @@ public class CheckOutFormValidation {
 		//		WebUI.verifyEqual(text, '')
 
 	}
-	
-//	public static void checkVisibilityOfFreeShippingFormandCollapsedByDefault() {
-//		TestObject shippingFree = findTestObject(".clearfix a.pull-right")
-//		WebUI.click(findTestObject("Object Repository/CheckOutForm/h2_paymentMethod"))
-//		WebUI.verifyElementVisible(shippingFree)
-//		String attribute = WebUI.getAttribute(shippingFree, 'class')
-//		assert attribute.contains("collapsed")
-//	}
-	
-	
-//	public static void checkVisibilityOfFreeShippingFormandCollapsedByDefault() {
-//		TestObject shippingFree = findTestObject(".clearfix a.pull-right")
-//		WebUI.click(findTestObject("Object Repository/CheckOutForm/h2_paymentMethod"))
-//		WebUI.verifyElementVisible(findTestObject("Object Repository/CheckOutForm/h2_clearfixShippingFree"))
-//		String attribute = WebUI.getAttribute(shippingFree, 'class')
-//		assert attribute.contains("collapsed")
-//	}
+
+	//	public static void checkVisibilityOfFreeShippingFormandCollapsedByDefault() {
+	//		TestObject shippingFree = findTestObject(".clearfix a.pull-right")
+	//		WebUI.click(findTestObject("Object Repository/CheckOutForm/h2_paymentMethod"))
+	//		WebUI.verifyElementVisible(shippingFree)
+	//		String attribute = WebUI.getAttribute(shippingFree, 'class')
+	//		assert attribute.contains("collapsed")
+	//	}
+
+
+	//	public static void checkVisibilityOfFreeShippingFormandCollapsedByDefault() {
+	//		TestObject shippingFree = findTestObject(".clearfix a.pull-right")
+	//		WebUI.click(findTestObject("Object Repository/CheckOutForm/h2_paymentMethod"))
+	//		WebUI.verifyElementVisible(findTestObject("Object Repository/CheckOutForm/h2_clearfixShippingFree"))
+	//		String attribute = WebUI.getAttribute(shippingFree, 'class')
+	//		assert attribute.contains("collapsed")
+	//	}
 }

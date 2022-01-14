@@ -448,8 +448,8 @@
       <description></description>
       <initValue>'Shopping Cart - Cleaner\'s Supply'</initValue>
       <name>shoppingCartPageTitle</name>
-     </GlobalVariableEntity>
- <GlobalVariableEntity>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
       <description></description>
       <initValue>'CHECKOUT'</initValue>
       <name>checkOutFormHeader</name>
@@ -483,5 +483,40 @@
       <description></description>
       <initValue>'rgb(70, 70, 70)'</initValue>
       <name>footerBodyBackGroundColor</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'AZ'</initValue>
+      <name>stateAbbr</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'United States'</initValue>
+      <name>USDcountry</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>will be filled randomly</description>
+      <initValue>''</initValue>
+      <name>monthValue</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>yearValue</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'rgba(241, 242, 242, 1)'</initValue>
+      <name>grayBgColor</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'AmericanExpress'</initValue>
+      <name>cardType</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'PAYMENT METHOD'</initValue>
+      <name>paymentMethodDivTitle</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

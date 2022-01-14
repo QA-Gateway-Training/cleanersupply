@@ -6,15 +6,14 @@
    <elementGuidId>79adb33d-9786-498d-a682-17a0895dd934</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>XPATH</key>
-         <value>//div[@class=&quot;card-info-holder&quot;]/address/span[3]</value>
+         <value>//div[@class=&quot;card-info-holder&quot;]/address</value>
       </entry>
       <entry>
          <key>BASIC</key>
+      </entry>
+      <entry>
+         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
