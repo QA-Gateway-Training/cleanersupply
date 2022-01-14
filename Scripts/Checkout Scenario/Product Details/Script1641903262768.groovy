@@ -25,6 +25,7 @@ import helpers.SearchResultHelper
 import helpers.ShoppingCartHelpers
 import helpers.checkOutFormHelper
 import internal.GlobalVariable
+import validation.CheckoutPageValidation
 import validation.SearchResultPageValidations
 
 import org.openqa.selenium.Keys as Keys
@@ -62,4 +63,12 @@ CheckoutPageHelpers.initCheckoutPage()
 CheckoutPageHelpers.navigateToCheckoutInformationForm()
 checkOutFormHelper.fillCheckOutForm()
 
-//WebUI.closeBrowser()
+
+CheckoutPageValidation.verifyNavigationToCheckoutDetails()
+CheckoutPageHelpers.ShippingAddressDiv()
+CheckoutPageHelpers.verifyShippingDetailsInCeckout()
+CheckoutPageHelpers.standardShippingAddress()
+CheckoutPageHelpers.paymentMethodDiv()
+CheckoutPageHelpers.verifyPaymentMethodDetails()
+
+WebUI.closeBrowser()

@@ -8,7 +8,6 @@
 3. Waleed A. Afifi
 
 ## Requirenments
-### System requirements
 - Windows 7 or higher
 - macOS 10.11 or later
 - Linux with OpenJDK 8.0 [Tutorial](https://docs.katalon.com/katalon-studio/docs/katalon-studio-gui-beta-for-linux.html#install-katalon-studio-for-linux)
@@ -74,6 +73,8 @@ https://github.com/QA-Gateway-Training/cleanersupply.git
   - Verify quantity value by enter value and check if refelected
   - Verify `Added to Cart` on click add to cart button
   - Verify MiniCart if the product reflected after adding
+  - Verify if the price with the quantity reflected in the volume table
+  - Verify product spec. size changing
 
 3- Search result page test plan
   - Verify current page title
@@ -92,7 +93,28 @@ https://github.com/QA-Gateway-Training/cleanersupply.git
   - Verify the pagination is displayed
   - Verify the current page is checked in the pagination
   
-4- Category Test Plan
+4- Checkout Test Plan
+  - init Page
+    - Verify checkout as a guest checked and contain the correct text
+    - Verify hover effect for continue button
+    - Verify summary table contain the added items
+    - Verify price total in the title and the summary
+    - Verify url, title, heading
+  - Form page
+    - Verify summary table contain the added items
+    - Verify price total in the title and the summary
+    - Verify url, title, heading
+    - Verify checkout form fileds one by one 
+      - Values
+      - style ( focus style, shadow, border)
+    - Verify state value
+    - Verify shipping fees ( expand the card of shipping and check for the readio selected)
+    - Verify payment method form
+  - Information page
+    - Verify summary table contain the added items
+    - Verify price total in the title and the summary
+    - Verify url, title, heading
+    - Verify displayed information are the same as user entered
 
 5- Quick order test plan
   - test 1
@@ -117,9 +139,10 @@ https://github.com/QA-Gateway-Training/cleanersupply.git
   - Veryfi checkout button style, then click
   
    
-## Update
-- [ ] ^_^
+## Update <img src="https://static.wixstatic.com/media/c25f40_b40fd52500d9473aa2a6d93115091847~mv2.gif" alt="testing image" width="40"/>
+- [x] Checkout summary table check with the added product to the cart
+- [x] Check product price with the volume table depend on the quantity
 
-## Todo
+## Todo <img src="https://i.pinimg.com/originals/89/d9/e0/89d9e0f67c361865fe9746c3c3de6b8a.gif" alt="testing image" width="50"/>
 - [ ] Verify `header` assertions for all pages and the `header` for the checkout page
 - [ ] Verify `footer` assertions for all pages and the `footer` for the checkout page
