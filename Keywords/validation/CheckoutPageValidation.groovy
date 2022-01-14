@@ -18,6 +18,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
+import helpers.GeneralHelpers
 import internal.GlobalVariable
 import org.openqa.selenium.WebElement
 
@@ -34,7 +35,6 @@ public class CheckoutPageValidation {
 		assert WebUI.getText(titleTotal).replace('$', '').replace(',', '').contains(GlobalVariable.totalPrice)
 		assert WebUI.getText(subTotal).replace('$', '').replace(',', '').contains(GlobalVariable.totalPrice)
 		assert WebUI.getText(total).replace('$', '').replace(',', '').contains(GlobalVariable.totalPrice)
-
 	}
 
 	/**
@@ -75,4 +75,10 @@ public class CheckoutPageValidation {
 			assert total.equals(String.format("%.2f", (Float.parseFloat(prc) * Integer.parseInt(qt))))
 		}
 	}
+
+	public static void verifyNavigationToCheckoutDetails() {
+		TestObject checkoutDetailsHeader = findTestObject("Object Repository/CheckOut Details/h1_checkoutHeader")
+		GeneralHelpers.verifyNavigationToPage(GlobalVariable.checkoutDetailsPageTitle, checkoutDetailsHeader,
+											  "CHECKOUT", GlobalVariable.checkoutDetailsUrl)
+	}	
 }
