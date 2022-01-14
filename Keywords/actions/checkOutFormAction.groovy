@@ -17,16 +17,16 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-
+import org.openqa.selenium.WebElement
 import internal.GlobalVariable
 import helpers.CategorySCHelpers
 public class checkOutFormAction {
-	
+
 	public static void sendValue(String selector,String value) {
 		TestObject element  =findTestObject(selector)
 		WebUI.setText(element, value)
 	}
-	
+
 	public static void selectStateValue(String buttonSelector,String aSelector, String spanSelected) {
 		TestObject selector1 = findTestObject(buttonSelector)
 		WebUI.click(selector1)
@@ -40,8 +40,29 @@ public class checkOutFormAction {
 	public static void clickReviewButton() {
 		TestObject button = findTestObject("Object Repository/CheckOutForm/a_reviewOrder")
 		WebUI.click(button)
-	} 
+	}
 	
+	public static void selectRandomExpirationDateExceptNowMonth() {
+		TestObject button = findTestObject("Object Repository/CheckOutForm/button_expirationDate")
+		WebUI.click(button)
+		List <WebElement> Months =
+		WebUI.findWebElements(findTestObject("Object Repository/CheckOutForm/a_expirationDate"),
+		GlobalVariable.elementVisibilityTimeOut)
+		int maxMonth = Months.size();
+		Random random = new Random();
+		int randomMonth= random.nextInt(maxMonth);
+		Months.get(randomMonth).click();
+	}
 	
-	
+	public static void selectRandomExpirationYearExceptNowMonth() {
+		TestObject button = findTestObject("Object Repository/CheckOutForm/button_expirationYear")
+		WebUI.click(button)
+		List <WebElement> Years =
+		WebUI.findWebElements(findTestObject("Object Repository/CheckOutForm/a_expirationCardYear"),
+		GlobalVariable.elementVisibilityTimeOut)
+		int maxYear = Years.size();
+		Random random = new Random();
+		int randomyear= random.nextInt(maxYear);
+		Years.get(randomyear).click();
+	}
 }

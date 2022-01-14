@@ -25,7 +25,7 @@ public class CheckOutFormValidation {
 	public static void validateBoxShadowBlaceHolderBorder(String selector){
 		TestObject input = findTestObject(selector)
 		WebUI.focus(input)
-//		WebUI.delay(5)
+		//		WebUI.delay(5)
 		String shadow =WebUI.getCSSValue(input, 'box-shadow')
 		String borderColor =WebUI.getCSSValue(input, 'border-color')
 		println (shadow)
@@ -37,4 +37,20 @@ public class CheckOutFormValidation {
 
 	}
 	
+//	public static void checkVisibilityOfFreeShippingFormandCollapsedByDefault() {
+//		TestObject shippingFree = findTestObject(".clearfix a.pull-right")
+//		WebUI.click(findTestObject("Object Repository/CheckOutForm/h2_paymentMethod"))
+//		WebUI.verifyElementVisible(shippingFree)
+//		String attribute = WebUI.getAttribute(shippingFree, 'class')
+//		assert attribute.contains("collapsed")
+//	}
+	
+	
+//	public static void checkVisibilityOfFreeShippingFormandCollapsedByDefault() {
+//		TestObject shippingFree = findTestObject(".clearfix a.pull-right")
+//		WebUI.click(findTestObject("Object Repository/CheckOutForm/h2_paymentMethod"))
+//		WebUI.verifyElementVisible(findTestObject("Object Repository/CheckOutForm/h2_clearfixShippingFree"))
+//		String attribute = WebUI.getAttribute(shippingFree, 'class')
+//		assert attribute.contains("collapsed")
+//	}
 }

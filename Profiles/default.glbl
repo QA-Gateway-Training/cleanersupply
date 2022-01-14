@@ -326,31 +326,6 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Shopping Cart - Cleaner\'s Supply'</initValue>
-      <name>addToCartPageTitle</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'rgba(82, 36, 127, 1)'</initValue>
-      <name>checkoutBgColor</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'Checkout Interstitial - Cleaner\'s Supply'</initValue>
-      <name>checkoutPageTitle</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'Secure Checkout'</initValue>
-      <name>checkoutHeader</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'/checkout-interstitial/'</initValue>
-      <name>checkoutUrl</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
       <initValue>'155.40'</initValue>
       <name>total10</name>
    </GlobalVariableEntity>
@@ -358,26 +333,6 @@
       <description>Will be filled from shopping cart</description>
       <initValue>'0'</initValue>
       <name>totalPrice</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>['test']</initValue>
-      <name>productItems</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>['test']</initValue>
-      <name>cartItems</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-     <description></description>
-     <initValue>'Checkout - Cleaner\'s Supply'</initValue>
-      <name>checkoutDetailsPageTitle</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'/checkout/'</initValue>
-      <name>checkoutDetailsUrl</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
@@ -468,5 +423,25 @@
       <description></description>
       <initValue>'test comment'</initValue>
       <name>comment</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'CHECKOUT'</initValue>
+      <name>checkOutFormHeader</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Checkout - Cleaner\'s Supply'</initValue>
+      <name>checkOutFormTitle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'checkout'</initValue>
+      <name>checkOutFormURL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>0</initValue>
+      <name>elementVisibilityTimeOut</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
