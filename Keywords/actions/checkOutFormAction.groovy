@@ -41,25 +41,25 @@ public class checkOutFormAction {
 		TestObject button = findTestObject("Object Repository/CheckOutForm/a_reviewOrder")
 		WebUI.click(button)
 	}
-	
+
 	public static void selectRandomExpirationDateExceptNowMonth() {
 		TestObject button = findTestObject("Object Repository/CheckOutForm/button_expirationDate")
 		WebUI.click(button)
 		List <WebElement> Months =
-		WebUI.findWebElements(findTestObject("Object Repository/CheckOutForm/a_expirationDate"),
-		GlobalVariable.elementVisibilityTimeOut)
+				WebUI.findWebElements(findTestObject("Object Repository/CheckOutForm/a_expirationDate"),
+				GlobalVariable.elementVisibilityTimeOut)
 		int maxMonth = Months.size();
 		Random random = new Random();
 		int randomMonth= random.nextInt(maxMonth);
 		Months.get(randomMonth).click();
 	}
-	
+
 	public static void selectRandomExpirationYearExceptNowMonth() {
 		TestObject button = findTestObject("Object Repository/CheckOutForm/button_expirationYear")
 		WebUI.click(button)
 		List <WebElement> Years =
-		WebUI.findWebElements(findTestObject("Object Repository/CheckOutForm/a_expirationCardYear"),
-		GlobalVariable.elementVisibilityTimeOut)
+				WebUI.findWebElements(findTestObject("Object Repository/CheckOutForm/a_expirationCardYear"),
+				GlobalVariable.elementVisibilityTimeOut)
 		int maxYear = Years.size();
 		Random random = new Random();
 		int randomyear= random.nextInt(maxYear);
