@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_expirationDate</name>
+   <name>h2_clearfixShippingFree</name>
    <tag></tag>
-   <elementGuidId>88222555-2819-45a6-a2fd-ed2b5178fafd</elementGuidId>
+   <elementGuidId>e2bb3d89-af08-4669-830a-4926a8649d5f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value>button[title=&quot;Month&quot;] + div ul a</value>
+         <value>h2.clearfix</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

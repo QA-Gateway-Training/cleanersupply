@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_expirationDate</name>
+   <name>div_colorOptions</name>
    <tag></tag>
-   <elementGuidId>88222555-2819-45a6-a2fd-ed2b5178fafd</elementGuidId>
+   <elementGuidId>dc8dc057-c690-40d2-a70a-38a65fbd810a</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.color div#mCSB_1_container div.option</value>
+      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value>button[title=&quot;Month&quot;] + div ul a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

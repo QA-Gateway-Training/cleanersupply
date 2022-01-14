@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_expirationDate</name>
+   <name>div.pagenationSection</name>
    <tag></tag>
-   <elementGuidId>88222555-2819-45a6-a2fd-ed2b5178fafd</elementGuidId>
+   <elementGuidId>6ea6e6ad-66d8-4859-a60c-84ef68d7062e</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.pagination-section</value>
+      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value>button[title=&quot;Month&quot;] + div ul a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

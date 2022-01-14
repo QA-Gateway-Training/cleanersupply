@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_expirationDate</name>
+   <name>h2_shippingAddress</name>
    <tag></tag>
-   <elementGuidId>88222555-2819-45a6-a2fd-ed2b5178fafd</elementGuidId>
+   <elementGuidId>d759f2a2-fd7b-4273-8ce7-822f22a9268e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
          <value></value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>button[title=&quot;Month&quot;] + div ul a</value>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;checkout&quot;]/div[1]/div/div[1]/div/div[1]/h2</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

@@ -28,5 +28,6 @@ public class MiniCartHelpers {
 		MiniCartValidations.verifyHoverStyleOnMiniCartLink()
 		MiniCartValidations.verifyMiniCartTotals()
 		MiniCartValidations.miniCartItemCount()
+		MiniCartValidations.verifyAddedProductRefelectDetails()
 	}
 }

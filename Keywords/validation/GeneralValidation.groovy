@@ -90,7 +90,12 @@ public class GeneralValidation {
 		assert WebUI.getText(header).toLowerCase().replace("\n", " ").equals(pageHeader.toLowerCase())
 	}
 
-	public static void verifyBackgroundColor(TestObject item, String backgroundColor) {
+	public static void verifyLoader() {
+		TestObject loader = findTestObject('Object Repository/General/div_pagleLoader')
+		assert WebUI.verifyElementNotPresent(loader, 3)
+  }
+  
+  public static void verifyBackgroundColor(TestObject item, String backgroundColor) {
 		assert WebUI.getCSSValue(item, "background-color").equals(backgroundColor)
 	}
 }

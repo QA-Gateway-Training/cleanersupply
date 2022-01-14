@@ -32,6 +32,7 @@ GeneralHelpers.initScenario()
 GeneralHelpers.headerSearchFillAndClick()
 GeneralHelpers.navigateToResultPage()
 SearchResultPageValidations.verifyDefaultValues()
+SearchResultHelper.checkSearchPagePagination()
 SearchResultHelper.selectProductFilters()
 
 SearchResultPageActions.NavigateToProductDetailsPage()

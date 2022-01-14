@@ -36,6 +36,7 @@ public class ShoppingCartHelpers {
 		ShoppingCartValidations.verifyShoppingCartItemEqualToSummaryItem()
 		ShoppingCartValidations.verifyTotalPriceForProductTable()
 		ShoppingCartValidations.verifyTotalPriceInSummaryTable()
+		ShoppingCartValidations.verifyAddedProductRefelectDetails()
 	}
 
 	public static void navigateToCheckoutPage() {

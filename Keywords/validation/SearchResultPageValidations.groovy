@@ -40,12 +40,12 @@ public class SearchResultPageValidations {
 		TestObject selectedFilters = findTestObject('Object Repository/Search Result/ul_selectedFilters')
 		assert WebUI.verifyElementNotPresent(selectedFilters, 5)
 
-		//		List<WebElement> filterOptionList = findTestObject('Object Repository/Search Result/li_facetGroup')
-		//		for(int index = 1; index < filterOptionList.size(); index++) {
-		//			WebElement randomClassificationOption = filterOptionList.get(index)
-		//			TestObject selectedClassificationOption = WebUI.convertWebElementToTestObject(randomClassificationOption)
-		//			assert !WebUI.getAttribute(selectedClassificationOption, 'class').contains('selected')
-		//		}
+		List<WebElement> filterOptionList = WebUI.findWebElements(findTestObject('Object Repository/Search Result/li_facetGroup'), GlobalVariable.globalTimeOut)
+		for(int index = 1; index < filterOptionList.size(); index++) {
+			WebElement randomClassificationOption = filterOptionList.get(index)
+			TestObject selectedClassificationOption = WebUI.convertWebElementToTestObject(randomClassificationOption)
+			assert !WebUI.getAttribute(selectedClassificationOption, 'class').contains('selected')
+		}
 	}
 
 	public static void verifyFilterCardExpanded(String selector, boolean cardStatus = true) {
@@ -85,5 +85,73 @@ public class SearchResultPageValidations {
 		String headingNumberOnly = WebUI.getText(headingObject).replaceAll("[^0-9]", "");
 
 		assert headingNumberOnly.equals(counter.toString())
+	}
+
+	/**
+	 * Verify if the packaging product has selected  class
+	 * @author waleedafifi
+	 */
+	public static void verifyPackagingProductFilterSelected() {
+		TestObject item = findTestObject('Object Repository/Filter/li_packagingProduct')
+		assert WebUI.getAttribute(item, 'class').contains(GlobalVariable.selected)
+	}
+
+	/**
+	 * Verify if the plastic bags has selected  class
+	 * @author waleedafifi
+	 */
+	public static void verifyPlasticBagsFilterSelected() {
+		TestObject item = findTestObject('Object Repository/Filter/li_plasticBags')
+		assert WebUI.getAttribute(item, 'class').contains(GlobalVariable.selected)
+	}
+
+	/**
+	 * Verify if the plastic bags has selected  class
+	 * @author waleedafifi
+	 */
+	public static void verifyColorFilterSelected() {
+		TestObject item = findTestObject('Object Repository/Filter/li_greenColor')
+		assert WebUI.getAttribute(item, 'class').contains(GlobalVariable.selected)
+	}
+
+	public static void verifySelectedFilter(String filter) {
+		List<WebElement> packProduct = WebUI.findWebElements(findTestObject('Object Repository/Filter/a_selectedFilterContent'), GlobalVariable.globalTimeOut)
+		boolean flag = false
+		for(int idx = 0; idx < packProduct.size(); idx++) {
+			if(packProduct.get(idx).getAttribute('innerText').contains(filter)) {
+				flag = true
+			}
+		}
+		assert flag
+	}
+
+	/**
+	 * Verify pagination style for left arrow disabled, current page back color, right arrow color
+	 * @author waleedafifi
+	 */
+	public static void verifyPagination() {
+		TestObject currentPage = findTestObject('Object Repository/Search Result/span_currentPagenation')
+		assert WebUI.getCSSValue(currentPage, 'background-color').contains(GlobalVariable.purpleColor)
+		assert WebUI.getCSSValue(currentPage, 'color').contains(GlobalVariable.whiteColor)
+
+		TestObject leftArrow = findTestObject('Object Repository/Search Result/span_pagenationLeftArrow')
+		assert WebUI.getAttribute(leftArrow, 'class').contains('disabled')
+
+		TestObject rightArrow = findTestObject('Object Repository/Search Result/span_pagenationRightArrow')
+		assert WebUI.getCSSValue(leftArrow, 'color').contains('rgba(220, 221, 222, 1)')
+	}
+
+	/**
+	 * Verify if pagination exists by passed param
+	 * @param paginationStatus
+	 * @author waleedafifi
+	 */
+	public static void verifyPaginationExists(boolean paginationStatus = true) {
+		TestObject currentPage = findTestObject('Object Repository/Search Result/div.pagenationSection')
+		if(paginationStatus) {
+			assert WebUI.verifyElementPresent(currentPage, GlobalVariable.globalTimeOut)
+		} else {
+			assert WebUI.verifyElementNotPresent(currentPage, GlobalVariable.globalTimeOut)
+		}
 	}
 }

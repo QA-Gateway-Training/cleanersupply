@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_expirationDate</name>
+   <name>div_pagleLoader</name>
    <tag></tag>
-   <elementGuidId>88222555-2819-45a6-a2fd-ed2b5178fafd</elementGuidId>
+   <elementGuidId>75e7febe-f92f-4b49-aecb-85b443313680</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value>button[title=&quot;Month&quot;] + div ul a</value>
+         <value>div.page-overlay</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

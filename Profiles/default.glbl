@@ -448,5 +448,25 @@
       <description></description>
       <initValue>'Shopping Cart - Cleaner\'s Supply'</initValue>
       <name>shoppingCartPageTitle</name>
+     </GlobalVariableEntity>
+ <GlobalVariableEntity>
+      <description></description>
+      <initValue>'CHECKOUT'</initValue>
+      <name>checkOutFormHeader</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Checkout - Cleaner\'s Supply'</initValue>
+      <name>checkOutFormTitle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'checkout'</initValue>
+      <name>checkOutFormURL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>0</initValue>
+      <name>elementVisibilityTimeOut</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
