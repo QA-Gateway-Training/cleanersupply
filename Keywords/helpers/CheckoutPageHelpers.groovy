@@ -49,6 +49,18 @@ public class CheckoutPageHelpers {
 		CheckoutPageActions.moveToShippingAddressDiv()	
 		CheckoutPageValidation.verifyVisibilityAndHeaderShipping()
 	}
+	
+	public static void verifyShippingDetailsInCeckout() {
+		TestObject address = findTestObject("Object Repository/CheckOut Details/span_shippingAddressDetails")
+		String[] allAddress =  WebUI.getText(address).split("\n")
+		assert allAddress[0].equals(GlobalVariable.companyValue)
+		assert allAddress[1].equals(GlobalVariable.fNameValue+" "+ GlobalVariable.lNameValue)
+		assert allAddress[2].equals(GlobalVariable.address1)
+		assert allAddress[3].equals(GlobalVariable.address2)
+		assert allAddress[4].equals(GlobalVariable.city + ", "+GlobalVariable.stateAbbr +" "+ GlobalVariable.zipCode)
+		assert allAddress[5].equals(GlobalVariable.phone + " x" + GlobalVariable.phoneExt)
+		assert allAddress[6].equals(GlobalVariable.USDcountry)
+	}
 
 	public static void ShippingDetailsInCeckout() {
 		TestObject address = findTestObject("Object Repository/CheckOut Details/span_shippingAddressDetails")
