@@ -103,4 +103,9 @@ public class ProductDetailsActions {
 		TestObject color = findTestObject('Object Repository/Product details/a_royalBlueColor')
 		WebUI.click(color)
 	}
+	
+	public static String returnProductPrice() {
+		TestObject price = findTestObject('Object Repository/Product details/span_productPrice')
+		return WebUI.getText(price).replaceAll("[^0-9\\.]","")
+	}
 }

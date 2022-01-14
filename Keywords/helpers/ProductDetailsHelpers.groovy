@@ -64,6 +64,13 @@ public class ProductDetailsHelpers {
 		ProductDetailsValidation.verifyProductAvailability()
 		GeneralValidation.verifyCurrentPageURL(SearchResultPageActions.skuNumber())
 
+		ProductDetailsValidation.verifyProductSpecSize('26" L x 29" H x 10" W')
+		
+		fillProductQuantity(5)
+		
+		String prodPrice = ProductDetailsActions.returnProductPrice()
+		ProductDetailsValidation.verifyVolumeTable(5, prodPrice)
+		
 		ProductDetailsValidation.verifyFavoriteIconVisibility()
 		ProductDetailsValidation.verifyAddToCartButtonVisibility()
 
@@ -84,6 +91,12 @@ public class ProductDetailsHelpers {
 		ProductDetailsValidation.verifyProductDetailsName('LARGE')
 		GeneralValidation.verifyCurrentPageURL(SearchResultPageActions.skuNumber())
 
+		ProductDetailsValidation.verifyProductSpecSize('24" L x 27" H x 8" W')
+		
+		fillProductQuantity(4)
+		
+		String prodPrice = ProductDetailsActions.returnProductPrice()
+		ProductDetailsValidation.verifyVolumeTable(4, prodPrice)
 		ProductDetailsValidation.verifyFavoriteIconVisibility()
 		ProductDetailsValidation.verifyAddToCartButtonVisibility()
 

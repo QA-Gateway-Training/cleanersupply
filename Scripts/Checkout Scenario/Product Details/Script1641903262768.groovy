@@ -41,7 +41,6 @@ ProductDetailsHelpers.initProductDetailsPage()
 // Green X large
 ProductDetailsHelpers.hoverEffectAndClickXLargeSizeLink()
 ProductDetailsHelpers.selectGreenColor()
-ProductDetailsHelpers.fillProductQuantity(5)
 ProductDetailsHelpers.addProductToCart()
 
 MiniCartHelpers.hoverOnMiniCartHeader()
@@ -49,13 +48,13 @@ MiniCartHelpers.hoverOnMiniCartHeader()
 // Blue Large
 ProductDetailsHelpers.hoverEffectAndClickLargeSizeLink()
 ProductDetailsHelpers.selectRoyalBlueColor()
-ProductDetailsHelpers.fillProductQuantity(4)
 ProductDetailsHelpers.addProductToCart()
 
 MiniCartHelpers.hoverOnMiniCartHeader()
 MiniCartActions.navigateToCartPage()
 
 ShoppingCartHelpers.navigateToCartPage()
+ShoppingCartHelpers.updateQuantities()
 ShoppingCartHelpers.navigateToCheckoutPage()
 
 CheckoutPageHelpers.initCheckoutPage()

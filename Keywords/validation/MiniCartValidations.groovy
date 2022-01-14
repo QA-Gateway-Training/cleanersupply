@@ -62,7 +62,7 @@ public class MiniCartValidations {
 		boolean flag = false
 
 		println cartItem
-		
+
 		for(int idx = 0; idx < prodPrice.size(); idx++) {
 			String prc = prodPrice.get(idx).getAttribute('innerText').replaceAll("[^0-9\\.]","");
 			String qt = prodQyt.get(idx).getAttribute('innerText');
