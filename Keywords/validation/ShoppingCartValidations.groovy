@@ -84,21 +84,35 @@ public class ShoppingCartValidations {
 		String roundedTotal = String.format("%.2f", cartTotalPrice)
 		GlobalVariable.totalPrice = roundedTotal
 
+    cartTotalPrice = 0
+
 		assert WebUI.getText(summaryTotal).replace('$', '').replace(',', '').contains(roundedTotal)
 		assert WebUI.getText(subTotal).replace('$', '').replace(',', '').contains(roundedTotal)
 	}
 
+	/**
+	 * Verify checkout button stye to have the default style
+	 * @author waleedafifi
+	 */
 	public static void verifyCheckoutButtonStyle() {
 		TestObject btn = findTestObject('Object Repository/Shopping Cart/button_proceedToCheckout')
 		assert WebUI.getCSSValue(btn, 'background-color').equals(GlobalVariable.purpleColor)
 		assert WebUI.getCSSValue(btn, 'color').equals(GlobalVariable.whiteColor)
 	}
 
+	/**
+	 * Verify checkout button on hover effect
+	 * @author waleedafifi
+	 */
 	public static void verifyCheckoutButtonOnHover() {
 		TestObject btn = findTestObject('Object Repository/Shopping Cart/button_proceedToCheckout')
 		assert WebUI.getCSSValue(btn, 'box-shadow').equals('rgba(0, 0, 0, 0.3) 0px 0px 10px 2px')
 	}
 
+	/**
+	 * Verify added product reflected to the cart items
+	 * @author waleedafifi
+	 */
 	public static void verifyAddedProductRefelectDetails() {
 		List<WebElement> prodPrice = WebUI.findWebElements(findTestObject('Object Repository/Shopping Cart/td_shoppingCartProductPrice'), 1)
 		List<WebElement> prodQyt = WebUI.findWebElements(findTestObject('Object Repository/Shopping Cart/input_shoppingCartProductQuantity'), 1)
@@ -125,5 +139,19 @@ public class ShoppingCartValidations {
 		}
 
 		assert flag : "Verify Added Product To Shopping Cart Refelected"
+	}
+	
+	/**
+	 * Verify if the the value of quantity of items equal to passed params
+	 * @param qyt
+	 * @author waleedafifi
+	 */
+	public static void verifyQuantityValue(int qyt) {
+		List<WebElement> quantityInput = WebUI.findWebElements(findTestObject('Object Repository/Shopping Cart/input_shoppingCartProductQuantity'), GlobalVariable.globalTimeOut)
+		for (WebElement ipt : quantityInput) {
+			TestObject to = WebUI.convertWebElementToTestObject(ipt)
+			assert WebUI.getAttribute(to, 'value').equals(qyt.toString())
+		}
+
 	}
 }

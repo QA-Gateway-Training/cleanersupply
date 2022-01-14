@@ -220,4 +220,38 @@ public class ProductDetailsValidation {
 		String availabelColor = GlobalVariable.productItems[3].toString().replaceAll("[^0-9]","")
 		assert clr.size().equals(Integer.parseInt(availabelColor))
 	}
+	
+	/**
+	 * Verify product Specification dimension to contain passed params
+	 * @param dimesion
+	 * @author waleedafifi
+	 */
+	public static void verifyProductSpecSize(String dimesion) {
+		TestObject to = findTestObject('Object Repository/Product details/span_productSpecSize')
+		assert WebUI.getText(to).contains(dimesion) 
+	}
+	
+	public static void verifyVolumeTable(int qty = 1, String prodPrice) {
+		List<WebElement> qtyTD = WebUI.findWebElements(findTestObject('Object Repository/Product details/Volume Table/td_qty'), GlobalVariable.globalTimeOut)
+		List<WebElement> priceTD = WebUI.findWebElements(findTestObject('Object Repository/Product details/Volume Table/td_price'), GlobalVariable.globalTimeOut)
+		List<WebElement> saveTD = WebUI.findWebElements(findTestObject('Object Repository/Product details/Volume Table/td_save'), GlobalVariable.globalTimeOut)
+		
+		boolean flag = false
+
+		for(int idx = 0; idx < qtyTD.size(); idx++) {
+			String originalPrice = priceTD[0].getText().replaceAll("[^0-9\\.]","")
+			String price = priceTD[idx].getText().replaceAll("[^0-9\\.]","")
+			String save = saveTD[idx].getText() == '—' ? '0' : saveTD[idx].getText().replaceAll("[^0-9\\.]","")
+			String quntity = qtyTD[idx].getText().replaceAll("[^0-9\\.]","")
+			
+			Float savedPrice = Float.parseFloat(originalPrice) - (Float.parseFloat(originalPrice) * (Float.parseFloat(save) / 100))
+			
+			if(qty >= Integer.parseInt(quntity)) {
+				flag = prodPrice == String.format("%.2f", savedPrice)
+				break			
+			}
+			
+		}
+		assert flag : 'Volume table price'
+	}
 }

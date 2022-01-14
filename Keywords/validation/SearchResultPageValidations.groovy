@@ -48,6 +48,12 @@ public class SearchResultPageValidations {
 		}
 	}
 
+	/**
+	 * Verify filter card expand by passing selector and if the card status is expand or collapsed
+	 * @param selector
+	 * @param cardStatus
+	 * @author waleedafifi
+	 */
 	public static void verifyFilterCardExpanded(String selector, boolean cardStatus = true) {
 		TestObject titleObj = GeneralHelperFunctions.makeTO('//div[@href="#'+selector+'"]')
 		TestObject contentObj = GeneralHelperFunctions.makeTO('//div[@id="'+selector+'"]')
@@ -61,6 +67,11 @@ public class SearchResultPageValidations {
 		}
 	}
 
+	/**
+	 * Verify packaging filter counter
+	 * @return int
+	 * @author waleedafifi
+	 */
 	public static int verifyFilterCounter() {
 		TestObject filterObject = findTestObject('Object Repository/Filter/li_packagingProduct');
 		String filterNumberOnly = WebUI.getText(filterObject).replaceAll("[^0-9]", "");
@@ -68,18 +79,33 @@ public class SearchResultPageValidations {
 		return Integer.parseInt(filterNumberOnly)
 	}
 
+	/**
+	 * Verify plastic filter counter
+	 * @return int
+	 * @author waleedafifi
+	 */
 	public static int verifyPlasticFilterCounter() {
 		TestObject filterObject = findTestObject('Object Repository/Filter/li_plasticBags');
 		String filterNumberOnly = WebUI.getText(filterObject).replaceAll("[^0-9]", "");
 		return Integer.parseInt(filterNumberOnly)
 	}
 
+	/**
+	 * Verify color filter counter
+	 * @return int
+	 * @author waleedafifi
+	 */
 	public static int verifyColorFilterCounter() {
 		TestObject filterObject = findTestObject('Object Repository/Filter/li_greenColor');
 		String filterNumberOnly = WebUI.getText(filterObject).replaceAll("[^0-9]", "");
 		return Integer.parseInt(filterNumberOnly)
 	}
 
+	/**
+	 * Verify product heading total if it's equal to passed params
+	 * @param counter
+	 * @author waleedafifi
+	 */
 	public static void verifyProductHeadingTotal(int counter) {
 		TestObject headingObject = findTestObject('Object Repository/Search Result/h2_productListHeading');
 		String headingNumberOnly = WebUI.getText(headingObject).replaceAll("[^0-9]", "");
@@ -114,6 +140,11 @@ public class SearchResultPageValidations {
 		assert WebUI.getAttribute(item, 'class').contains(GlobalVariable.selected)
 	}
 
+	/**
+	 * Verify if the selected filter reflected in selected filters list
+	 * @param filter
+	 * @author waleedafifi
+	 */
 	public static void verifySelectedFilter(String filter) {
 		List<WebElement> packProduct = WebUI.findWebElements(findTestObject('Object Repository/Filter/a_selectedFilterContent'), GlobalVariable.globalTimeOut)
 		boolean flag = false
