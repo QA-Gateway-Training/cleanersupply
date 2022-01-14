@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_proceedToCheckout</name>
+   <name>div_PoNoDiv</name>
    <tag></tag>
-   <elementGuidId>2ad8aa09-b3a3-4b4f-ba3e-608fde91a3a4</elementGuidId>
+   <elementGuidId>8047252e-4607-4841-a681-3fdc04cf440a</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>.po-number-container</value>
+      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value>button#proceedToCheckout</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

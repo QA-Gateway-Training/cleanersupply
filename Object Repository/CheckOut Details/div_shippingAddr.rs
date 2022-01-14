@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_proceedToCheckout</name>
+   <name>div_shippingAddr</name>
    <tag></tag>
-   <elementGuidId>2ad8aa09-b3a3-4b4f-ba3e-608fde91a3a4</elementGuidId>
+   <elementGuidId>dd852fd4-603a-467e-bd7e-937bbeedd5a0</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value>button#proceedToCheckout</value>
+         <value>.form-component</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

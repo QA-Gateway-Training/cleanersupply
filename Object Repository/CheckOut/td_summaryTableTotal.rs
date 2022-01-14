@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_checkoutHeader</name>
+   <name>td_summaryTableTotal</name>
    <tag></tag>
-   <elementGuidId>95ef651d-02e1-4596-ba28-19891eeb4295</elementGuidId>
+   <elementGuidId>8dc362b4-d33a-47ba-a59a-2f63b866d6f1</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,9 +11,13 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value>.heading</value>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@class='order-summary__totals'] //td[contains(text(), 'Total')]/following-sibling::td</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

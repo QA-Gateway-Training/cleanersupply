@@ -51,7 +51,8 @@ public class QuickOrderValidations {
 		assert expectedTotal == actualTotal
 	}
 
-	public static void verifyProductDetailsInCheckOut(TestObject Quantity, TestObject Price, TestObject Total, TestObject Title,TestObject Img, TestObject StocksNotify) {
+	public static void verifyProductDetailsInShoppingCart( TestObject Quantity, TestObject Price, TestObject Total,
+			TestObject Title,TestObject Img, TestObject StocksNotify) {
 	}
 
 	public static void verifyProductsNoInCart(int expectedNo, int realNo) {
