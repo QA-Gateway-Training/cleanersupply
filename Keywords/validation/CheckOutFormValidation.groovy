@@ -1,4 +1,4 @@
-package helpers
+package validation
 
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
@@ -18,28 +18,23 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
-import actions.CheckoutPageActions
 import internal.GlobalVariable
-import validation.CheckoutPageValidation
 
-public class CheckoutPageHelpers {
-	
-	/**
-	 * Check page on load have the default values of the totals
-	 * @author waleedafifi
-	 */
-	public static void initCheckoutPage() {
-		CheckoutPageValidation.verifyTotalPrice()
-		CheckoutPageValidation.verifyCheckoutAsGuest()
-		CheckoutPageValidation.verifyCheckoutAsGuestSelected()
-		CheckoutPageValidation.verifyProductSummaryItemQountityTotal()
+public class CheckOutFormValidation {
+
+	public static void validateBoxShadowBlaceHolderBorder(String selector){
+		TestObject input = findTestObject(selector)
+		WebUI.focus(input)
+//		WebUI.delay(5)
+		String shadow =WebUI.getCSSValue(input, 'box-shadow')
+		String borderColor =WebUI.getCSSValue(input, 'border-color')
+		println (shadow)
+		println (borderColor)
+		assert WebUI.verifyEqual(shadow, GlobalVariable.checkOutInputShadow)
+		assert WebUI.verifyEqual(borderColor, GlobalVariable.checkOutinputborderColor)
+		//		String text = WebUI.verifyElementHasAttribute(input,'placeholder',2)
+		//		WebUI.verifyEqual(text, '')
+
 	}
 	
-	/**
-	 * Navigate to checkout form page
-	 * @author waleedafifi
-	 */
-	public static void navigateToCheckoutInformationForm() {
-		CheckoutPageActions.navigateToCheckoutPageForm()
-	}
 }

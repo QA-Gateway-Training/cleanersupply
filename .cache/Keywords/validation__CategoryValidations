@@ -1,10 +1,12 @@
 {
+
   "keywordFileContentHash": "1CF2DA1DBBD08865BC0A66EF156A28CE",
+
   "keywordClasses": [
     {
       "name": "validation.CategoryValidations",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

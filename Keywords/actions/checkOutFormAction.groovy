@@ -1,4 +1,4 @@
-package helpers
+package actions
 
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
@@ -18,28 +18,30 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
-import actions.CheckoutPageActions
 import internal.GlobalVariable
-import validation.CheckoutPageValidation
+import helpers.CategorySCHelpers
+public class checkOutFormAction {
+	
+	public static void sendValue(String selector,String value) {
+		TestObject element  =findTestObject(selector)
+		WebUI.setText(element, value)
+	}
+	
+	public static void selectStateValue(String buttonSelector,String aSelector, String spanSelected) {
+		TestObject selector1 = findTestObject(buttonSelector)
+		WebUI.click(selector1)
+		CategorySCHelpers.checkCollabse(buttonSelector)
+		TestObject selectedState = findTestObject(aSelector)
+		WebUI.click(selectedState)
+		String selectedStatespan =WebUI.getText(findTestObject(spanSelected))
+		assert selectedStatespan.equals(GlobalVariable.state)
+	}
 
-public class CheckoutPageHelpers {
+	public static void clickReviewButton() {
+		TestObject button = findTestObject("Object Repository/CheckOutForm/a_reviewOrder")
+		WebUI.click(button)
+	} 
 	
-	/**
-	 * Check page on load have the default values of the totals
-	 * @author waleedafifi
-	 */
-	public static void initCheckoutPage() {
-		CheckoutPageValidation.verifyTotalPrice()
-		CheckoutPageValidation.verifyCheckoutAsGuest()
-		CheckoutPageValidation.verifyCheckoutAsGuestSelected()
-		CheckoutPageValidation.verifyProductSummaryItemQountityTotal()
-	}
 	
-	/**
-	 * Navigate to checkout form page
-	 * @author waleedafifi
-	 */
-	public static void navigateToCheckoutInformationForm() {
-		CheckoutPageActions.navigateToCheckoutPageForm()
-	}
+	
 }

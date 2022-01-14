@@ -26,25 +26,25 @@ public class CategoryValidations {
 		String text =	WebUI.getText(object)
 		assert text.contains(ExpectedText.toUpperCase())
 	}
-	
+
 	public static void validateText(String Selector ,String ExpectedText) {
 		TestObject textSelector = findTestObject(Selector)
 		String text =WebUI.getText(textSelector)
 		WebUI.verifyEqual(text, ExpectedText.toUpperCase())
 	}
-	
+
 	public static void validatePrice(String Selector,BigDecimal ExpectedPrice) {
 		TestObject priceSelector = findTestObject(Selector)
 		String price =WebUI.getText(priceSelector)
-		println (price)
+		//println (price)
 		//println (ExpectedPrice)
 		price = price.replace('\\$', "");
-		println(price)
+		//println(price)
 		float f=Float.parseFloat(price);
 		WebUI.verifyEqual(price, ExpectedPrice)
-		
+
 	}
-	
+
 	public static void validateCartNo(String ExpectedNo) {
 		TestObject badge =findTestObject("Object Repository/Category/span_badge")
 		String itemsNo=WebUI.getText(badge)

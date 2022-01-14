@@ -1,4 +1,4 @@
-package helpers
+package actions
 
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
@@ -18,28 +18,15 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
-import actions.CheckoutPageActions
 import internal.GlobalVariable
-import validation.CheckoutPageValidation
 
-public class CheckoutPageHelpers {
-	
+public class CheckoutPageActions {
 	/**
-	 * Check page on load have the default values of the totals
+	 * Navigate to checkout information page
 	 * @author waleedafifi
 	 */
-	public static void initCheckoutPage() {
-		CheckoutPageValidation.verifyTotalPrice()
-		CheckoutPageValidation.verifyCheckoutAsGuest()
-		CheckoutPageValidation.verifyCheckoutAsGuestSelected()
-		CheckoutPageValidation.verifyProductSummaryItemQountityTotal()
-	}
-	
-	/**
-	 * Navigate to checkout form page
-	 * @author waleedafifi
-	 */
-	public static void navigateToCheckoutInformationForm() {
-		CheckoutPageActions.navigateToCheckoutPageForm()
+	public static void navigateToCheckoutPageForm() {
+		TestObject btn = findTestObject('Object Repository/CheckOut/button_continueButton')
+		WebUI.click(btn)
 	}
 }

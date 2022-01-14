@@ -31,6 +31,15 @@ git clone https://github.com/QA-Gateway-Training/cleanersupply.git
 ### Using Katalon
 
 ---
+## Test Scenarios
+
+  1- Product Details Scenario.
+  2- Category Scenario.
+  3- Quick Order Scenario.
+  
+## Test Steps
+  1- Step 1
+  2- Step 2
 
 ## Test Plan
 
@@ -52,6 +61,10 @@ git clone https://github.com/QA-Gateway-Training/cleanersupply.git
   - Check the top bar contains search term
   - Check top bar background
   - Click on search button
+ 
+ 6-Footer Test Plan
+  -test1
+  
    
 ## Update
 - [ ] ^_^
