@@ -89,4 +89,8 @@ public class GeneralValidation {
 	public static void verifyAnyHeading(TestObject header ,String pageHeader) {
 		assert WebUI.getText(header).toLowerCase().replace("\n", " ").equals(pageHeader.toLowerCase())
 	}
+
+	public static void verifyBackgroundColor(TestObject item, String backgroundColor) {
+		assert WebUI.getCSSValue(item, "background-color").equals(backgroundColor)
+	}
 }
