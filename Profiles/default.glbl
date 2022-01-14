@@ -466,7 +466,22 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>0</initValue>
+      <initValue>5</initValue>
       <name>elementVisibilityTimeOut</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'rgb(255, 199, 9)'</initValue>
+      <name>topFooterBackGroundColor</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'93px'</initValue>
+      <name>footerMaxHeight</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'rgb(70, 70, 70)'</initValue>
+      <name>footerBodyBackGroundColor</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

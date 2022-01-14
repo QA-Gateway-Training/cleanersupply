@@ -14,7 +14,9 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import helpers.checkOutFormHelper;
 import actions.checkOutFormAction
 
+
 GeneralHelpers.initScenario()
+
 String computerRegister ="Object Repository/Category/a_ComputerRegister"
 CategoryScActions.hovertags()
 //CategoryValidations.checkanchorHoverColorBackground(tags, GlobalVariable.tagsHoverColor,
@@ -36,31 +38,4 @@ CategorySCHelpers.checkMeniCartBadge()
 CategorySCHelpers.navigateToCart()
 WebUI.navigateToUrl('https://www.cleanersupply.com/checkout/')
 WebUI.maximizeWindow()
-TestObject CheckOutHeader = findTestObject("Object Repository/CheckOutForm/h1_checkOutHeader")
-
-GeneralHelpers.verifyNavigationToPage(GlobalVariable.checkOutFormTitle,CheckOutHeader,
-	GlobalVariable.checkOutFormHeader, GlobalVariable.checkOutFormURL)
-checkOutFormHelper.sendCompanyValue()
-checkOutFormHelper.sendFnameValue()
-checkOutFormHelper.sendlnameValue()
-checkOutFormHelper.sendAddress1Value()
-checkOutFormHelper.sendAddress2Value()
-checkOutFormHelper.sendzipCodeValue()
-checkOutFormHelper.sendCityValue()
-checkOutFormHelper.sendPhoneValue()
-checkOutFormHelper.sendPhoneExtValue()
-checkOutFormHelper.sendPhoneExtValue()
-checkOutFormHelper.sendemailValue()
-String button = "Object Repository/CheckOutForm/button_state"
-String aSelector="Object Repository/CheckOutForm/a_state"
-String selectedSpan = "Object Repository/CheckOutForm/span_selectedState"
-checkOutFormAction.selectStateValue(button,aSelector,selectedSpan)
-//CheckOutFormValidation.checkVisibilityOfFreeShippingFormandCollapsedByDefault()
-checkOutFormHelper.sendCreditCardNAme()
-checkOutFormHelper.sendCreditCardNum()
-checkOutFormHelper.sendCreditCardCVV()
-checkOutFormAction.selectRandomExpirationDateExceptNowMonth()
-checkOutFormAction.selectRandomExpirationYearExceptNowMonth()
-checkOutFormHelper.sendPO()
-checkOutFormHelper.sendComment()
-checkOutFormAction.clickReviewButton()
+checkOutFormHelper.fillCheckOutForm()
