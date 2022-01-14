@@ -34,6 +34,7 @@ public class CheckoutPageHelpers {
 		CheckoutPageValidation.verifyCheckoutAsGuest()
 		CheckoutPageValidation.verifyCheckoutAsGuestSelected()
 		CheckoutPageValidation.verifyProductSummaryItemQountityTotal()
+		CheckoutPageValidation.verifyAddedProductRefelectDetails()
 	}
 
 	/**

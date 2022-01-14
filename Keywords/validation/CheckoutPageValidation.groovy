@@ -115,5 +115,36 @@ public class CheckoutPageValidation {
 		TestObject checkoutHeader = findTestObject("CheckOut/div_checkoutHeader")
 		GeneralHelpers.verifyNavigationToPage(GlobalVariable.checkoutPageTitle, checkoutHeader,
 											  GlobalVariable.checkoutHeader, GlobalVariable.checkoutUrl)
+	/**
+	 * Verify added product reflected to the cart items
+	 * @author waleedafifi
+	 */
+	public static void verifyAddedProductRefelectDetails() {
+		List<WebElement> prodPrice = WebUI.findWebElements(findTestObject('Object Repository/CheckOut/Cart/div_productPrice'), GlobalVariable.globalTimeOut)
+		List<WebElement> prodQyt = WebUI.findWebElements(findTestObject('Object Repository/CheckOut/Cart/input_productQuantity'), GlobalVariable.globalTimeOut)
+		List<WebElement> prodSKU = WebUI.findWebElements(findTestObject('Object Repository/CheckOut/Cart/span_skuNumber'), GlobalVariable.globalTimeOut)
+		List<WebElement> prodName = WebUI.findWebElements(findTestObject('Object Repository/CheckOut/Cart/a_tableProductNameTitle'), GlobalVariable.globalTimeOut)
+		List<WebElement> totalPrice = WebUI.findWebElements(findTestObject('Object Repository/CheckOut/Cart/div_priceTotal'), GlobalVariable.globalTimeOut)
+		
+		List cartItem = GlobalVariable.cartItems
+		boolean flag = false
+
+		println cartItem
+
+		for(int idx = 0; idx < prodPrice.size(); idx++) {
+			String prc = prodPrice.get(idx).getAttribute('innerText').replaceAll("[^0-9\\.]","");
+			String qt = prodQyt.get(idx).getAttribute('value');
+			String sku = prodSKU.get(idx).getAttribute('innerText');
+			String name = prodName.get(idx).getAttribute('innerText');
+
+			for(int i = 0; i < cartItem.size(); i++) {
+				if(name.contains(cartItem[i][0]) && sku.contains(cartItem[i][2]) && qt.equals(cartItem[i][3])) {
+					flag = true
+					break
+				}
+			}
+		}
+
+		assert flag : "Verify summary Refelected to added cart"
 	}
 }

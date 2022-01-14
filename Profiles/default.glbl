@@ -480,7 +480,7 @@
       <name>cartItems</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-     <description></description>
+      <description></description>
       <initValue>'rgb(255, 199, 9)'</initValue>
       <name>topFooterBackGroundColor</name>
    </GlobalVariableEntity>
@@ -506,12 +506,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>will be filled randomly</description>
-      <initValue>''</initValue>
+      <initValue>'1'</initValue>
       <name>monthValue</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>''</initValue>
+      <initValue>'2020'</initValue>
       <name>yearValue</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
