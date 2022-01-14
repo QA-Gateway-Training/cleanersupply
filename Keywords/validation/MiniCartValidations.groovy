@@ -24,7 +24,7 @@ import org.openqa.selenium.WebElement
 import java.text.DecimalFormat
 
 public class MiniCartValidations {
-	
+
 	/**
 	 * Verify hover effect style on mini cart link
 	 * @author waleedafifi

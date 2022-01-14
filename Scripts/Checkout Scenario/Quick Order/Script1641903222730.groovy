@@ -16,6 +16,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import org.openqa.selenium.WebElement
 import actions.GeneralActions
+import actions.MiniCartActions
 import actions.Navigations
 import actions.QuickOrderActions
 import actions.ShoppingCartActions
@@ -29,6 +30,7 @@ import helpers.checkOutFormHelper
 import internal.GlobalVariable
 import validation.CheckoutPageValidation
 import validation.GeneralValidation
+import validation.MiniCartValidations
 import validation.QuickOrderValidations
 import validation.ShoppingCartValidations
 
@@ -66,7 +68,16 @@ QuickOrderHelpers.verifyCartTotalAndRowsNo(5)
 //-----------------verify cart counter and cart total inside mini cart ---------------
 
 //MiniCartHelpers.hoverOnMiniCartHeader()
+MiniCartActions.hoverOnMiniCartLink()
+MiniCartValidations.verifyHoverStyleOnMiniCartLink()
+MiniCartValidations.verifyMiniCartTotals()
+MiniCartValidations.miniCartItemCount()
+
 //ShoppingCartHelpers.navigateToCartPage()
+ShoppingCartValidations.verifyShoppingCartItemEqualMiniCartBadge()
+ShoppingCartValidations.verifyShoppingCartItemEqualToSummaryItem()
+ShoppingCartValidations.verifyTotalPriceForProductTable()
+ShoppingCartValidations.verifyTotalPriceInSummaryTable()
 
 //-----------------verify the products details and totals in shopping cart same as stored products----------
 
@@ -74,16 +85,11 @@ QuickOrderHelpers.verifyShoppingCartProductsSameWithStoredProducts()
 
 //-----------------proceed to checkout----------
 
-//ShoppingCartHelpers.navigateToCheckoutPage()
+ShoppingCartHelpers.navigateToCheckoutPage()
 
-TestObject proceedCheckout = findTestObject("Object Repository/Shopping Cart/button_proceedToCheckout")
-WebUI.click(proceedCheckout)
+CheckoutPageValidation.verifyNaigationTOCheckOut()
 
-TestObject checkoutHeader = findTestObject("CheckOut/div_checkoutHeader")
-GeneralHelpers.verifyNavigationToPage(GlobalVariable.checkoutPageTitle, checkoutHeader,
-									  GlobalVariable.checkoutHeader, GlobalVariable.checkoutUrl)
-
-//CheckoutPageHelpers.initCheckoutPage()
+CheckoutPageHelpers.initCheckoutPage()
 CheckoutPageHelpers.navigateToCheckoutInformationForm()
 
 //-----------------filling checkout form----------
@@ -96,7 +102,7 @@ CheckoutPageValidation.verifyNavigationToCheckoutDetails()
 
 CheckoutPageHelpers.ShippingAddressDiv()
 
-CheckoutPageHelpers.verifyShippingDetailsInCeckout()
+CheckoutPageHelpers.ShippingDetailsInCeckout()
 
 CheckoutPageHelpers.standardShippingAddress()
 

@@ -1,12 +1,12 @@
 {
-  "keywordFileContentHash": "A1824FA94ED14C2F467F710BEFA7C745",
+  "keywordFileContentHash": "09AC45BC6AC10F558680A13CEB1CDE51",
   "keywordClasses": [
     {
       "name": "helpers.QuickOrderHelpers",
       "keywordMethods": []
     },
     {
-      "name": "helpers.QuickOrderHelpers$quickOrder",
+      "name": "helpers.quickOrder",
       "keywordMethods": []
     }
   ],

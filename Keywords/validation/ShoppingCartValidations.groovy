@@ -96,6 +96,7 @@ public class ShoppingCartValidations {
 	 */
 	public static void verifyCheckoutButtonStyle() {
 		TestObject btn = findTestObject('Object Repository/Shopping Cart/button_proceedToCheckout')
+		WebUI.mouseOver(findTestObject('Object Repository/Shopping Cart/a_shoppingCartProductTitle'))
 		assert WebUI.getCSSValue(btn, 'background-color').equals(GlobalVariable.purpleColor)
 		assert WebUI.getCSSValue(btn, 'color').equals(GlobalVariable.whiteColor)
 	}
