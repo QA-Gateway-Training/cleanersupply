@@ -21,52 +21,53 @@ import helpers.GeneralHelpers
 import validation.defaultFooterValidatins
 import actions.defaultFooterActions
 import helpers.defaultFooterHelpers
+
 GeneralHelpers.initScenario()
-//defaultFooterValidatins.verifyExistingOftopFooterImage()
-//defaultFooterValidatins.verifyBackGroundandMaxHeightOfTopFooter()
-//defaultFooterValidatins.verifyExistingOffooterBody()
-//defaultFooterValidatins.verifyBackGroundandPaddingOfFooterBody()
-//defaultFooterValidatins.verifyExistingOffooterBodyRightColomn()
-//defaultFooterValidatins.verifyExistingOffooterBodyMiddleColomn()
-//defaultFooterValidatins.verifyExistingOffooterBodyLeftColomn()
-//defaultFooterValidatins.verifyRequestCatalogueLink()
-//defaultFooterValidatins.verifycassifiedListLink()
-//defaultFooterValidatins.verifyExistingOfRegionButtonandClickable()
-//defaultFooterValidatins.verifyClickingOnFeedBackButtonShowPopUP()
-//defaultFooterValidatins.fillModalWithAssertValueAndClose()
+defaultFooterValidatins.verifyExistingOftopFooterImage()
+defaultFooterValidatins.verifyBackGroundandMaxHeightOfTopFooter()
+defaultFooterValidatins.verifyExistingOffooterBody()
+defaultFooterValidatins.verifyBackGroundandPaddingOfFooterBody()
+defaultFooterValidatins.verifyExistingOffooterBodyRightColomn()
+defaultFooterValidatins.verifyExistingOffooterBodyMiddleColomn()
+defaultFooterValidatins.verifyExistingOffooterBodyLeftColomn()
+defaultFooterValidatins.verifyRequestCatalogueLink()
+defaultFooterValidatins.verifycassifiedListLink()
+defaultFooterValidatins.verifyExistingOfRegionButtonandClickable()
+defaultFooterValidatins.verifyClickingOnFeedBackButtonShowPopUP()
+defaultFooterValidatins.fillModalWithAssertValueAndClose()
 //defaultFooterActions.clickFavouritLink()
 	//defaultFooterValidatins.verifyClickingFavourites()
-//defaultFooterActions.clickpreviouslyOrdered()
-//defaultFooterValidatins.verifyClickingPreviouslyOrdered()
-//defaultFooterActions.clickQuickOrder()
+defaultFooterActions.clickpreviouslyOrdered()
+defaultFooterValidatins.verifyClickingPreviouslyOrdered()
+defaultFooterActions.clickQuickOrder()
 	//defaultFooterValidatins.verifyClickingOnQuickOrder()
 //defaultFooterActions.clickOnOnlineOrder()
 //defaultFooterValidatins.verifyClickingOnOnlineOrder()
-//defaultFooterValidatins.verifyExistingOfLeftFooterTitle()
-//defaultFooterValidatins.verifyExistingOfLeftFooterSubTitle()
-//defaultFooterValidatins.verifyExistingOfEmailAndValidatingIt()
-//defaultFooterActions.fillEmailSubscriber()
-//defaultFooterActions.clickOnSignUpSubscriber()
-//defaultFooterValidatins.verifyExistingOfConnectUsTitleandhasexpectedTitle()
-//defaultFooterValidatins.verifyEmailContactAddresAndHasExpectedAddress()
-//defaultFooterValidatins.verifyExistingangOfEmailIconAndHasExpectedStyle()
-//defaultFooterValidatins.verifyContactInfoAddressAsExpected()
-//defaultFooterValidatins.verifyExistingangOfPhoneIconAndHasExpectedStyle()
-//String english = "Object Repository/defaultFooter/footerBody/leftColumn/div_englishSpeaking"
-//defaultFooterHelpers.verifyPresentOfContactNumberasExpectedTextAndStyle(english,GlobalVariable.englishContact)
-//
-//String korean = "Object Repository/defaultFooter/footerBody/leftColumn/div_koreanSpeaking"
-//defaultFooterHelpers.verifyPresentOfContactNumberasExpectedTextAndStyle(korean,GlobalVariable.koreanSpeaking)
-//
-//String international = "Object Repository/defaultFooter/footerBody/leftColumn/div_internationalOrders"
-//defaultFooterHelpers.verifyPresentOfContactNumberasExpectedTextAndStyle(international,GlobalVariable.internationalOrdersContact)
+defaultFooterValidatins.verifyExistingOfLeftFooterTitle()
+defaultFooterValidatins.verifyExistingOfLeftFooterSubTitle()
+defaultFooterValidatins.verifyExistingOfEmailAndValidatingIt()
+defaultFooterActions.fillEmailSubscriber()
+defaultFooterActions.clickOnSignUpSubscriber()
+defaultFooterValidatins.verifyExistingOfConnectUsTitleandhasexpectedTitle()
+defaultFooterValidatins.verifyEmailContactAddresAndHasExpectedAddress()
+defaultFooterValidatins.verifyExistingangOfEmailIconAndHasExpectedStyle()
+defaultFooterValidatins.verifyContactInfoAddressAsExpected()
+defaultFooterValidatins.verifyExistingangOfPhoneIconAndHasExpectedStyle()
+String english = "Object Repository/defaultFooter/footerBody/leftColumn/div_englishSpeaking"
+defaultFooterHelpers.verifyPresentOfContactNumberasExpectedTextAndStyle(english,GlobalVariable.englishContact)
 
-//defaultFooterValidatins.verifyLogoExisting()
-//
+String korean = "Object Repository/defaultFooter/footerBody/leftColumn/div_koreanSpeaking"
+defaultFooterHelpers.verifyPresentOfContactNumberasExpectedTextAndStyle(korean,GlobalVariable.koreanSpeaking)
+
+String international = "Object Repository/defaultFooter/footerBody/leftColumn/div_internationalOrders"
+defaultFooterHelpers.verifyPresentOfContactNumberasExpectedTextAndStyle(international,GlobalVariable.internationalOrdersContact)
+
+defaultFooterValidatins.verifyLogoExisting()
+
 //defaultFooterValidatins.verifyChatLinkExistAndHasExpectedColor()
 //defaultFooterValidatins.verifychatIconExistingAndHasExpectedColor()
 //defaultFooterValidatins.verifychatIconExistingAndHasExpectedColor()
-//defaultFooterValidatins.verifyFaceBookIconExistingAndRedirection()
-//defaultFooterValidatins.verifyYoutubeIconExistingAndRedirection()
-//defaultFooterValidatins.verifyInstagramIconExistingAndRedirection()
-//defaultFooterValidatins.verifylinkedInIconExistingAndRedirection()
+defaultFooterValidatins.verifyFaceBookIconExistingAndRedirection()
+defaultFooterValidatins.verifyYoutubeIconExistingAndRedirection()
+defaultFooterValidatins.verifyInstagramIconExistingAndRedirection()
+defaultFooterValidatins.verifylinkedInIconExistingAndRedirection()
