@@ -496,6 +496,191 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
+      <initValue>'Request A Catalog – Free Monthly Printed Catalog - Cleaner\'s Supply'</initValue>
+      <name>requestHeaderTitle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'CATALOG REQUEST'</initValue>
+      <name>requestCatalogueHeader</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'request-a-catalog'</initValue>
+      <name>requestCatalogueURL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'rgba(255, 255, 255, 1)'</initValue>
+      <name>footerbodyWightColor</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'CLASSIFIEDS'</initValue>
+      <name>classifiedListHeader</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'classifieds-list'</initValue>
+      <name>classifiedURL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Classifieds List - Cleaner\'s Supply'</initValue>
+      <name>classifiedTitle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'USA'</initValue>
+      <name>defaultRegionText</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'HAVE AN IDEA, SUGGESTION OR SOME FEEDBACK?'</initValue>
+      <name>feedbackHeader</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'favorites'</initValue>
+      <name>favouriteURL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Log In - Cleaner\'s Supply'</initValue>
+      <name>loginPageTitle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'RETURNING CUSTOMER?'</initValue>
+      <name>loginPageHeader</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'previously-ordered'</initValue>
+      <name>previouslyOrderURL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'href=&quot;https://online.fliphtml5.com/kjzal/eapd/&quot;'</initValue>
+      <name>onlineOrderingUrl</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Cleaner\'s Supply January 2022 US Catatalog'</initValue>
+      <name>onlineOrderingTitle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Exclusive email specials'</initValue>
+      <name>leftFooterTitle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Enter your email'</initValue>
+      <name>leftFooterPlaceHolder</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Get Specials, Exclusive Promotions &amp; Updates'</initValue>
+      <name>leftfooterSubTitle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Enter your email'</initValue>
+      <name>subscriberPlaceHolder</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'FOLLOW US'</initValue>
+      <name>followUsTitle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://www.facebook.com/cleanersupply'</initValue>
+      <name>facebookLink</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://www.youtube.com/channel/UCuRpXEVYnsiiHTHkOAWZsww'</initValue>
+      <name>youtubeLink</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://www.instagram.com/cleanerssupply/'</initValue>
+      <name>instagramLink</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://www.linkedin.com/company/cleaners-supply-inc/'</initValue>
+      <name>linkedInLink</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'CONNECT WITH US'</initValue>
+      <name>contactUsTitle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'customerservice@cleanersupply.com'</initValue>
+      <name>contactEmail</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Monday - Friday 8am - 8pm EST'</initValue>
+      <name>workTime</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'1-800-388-5410 English Speaking'</initValue>
+      <name>englishContact</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'1-800-388-0190 Korean Speaking'</initValue>
+      <name>koreanSpeaking</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'1-607-584-5853 International Orders'</initValue>
+      <name>internationalOrdersContact</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Chat Offline'</initValue>
+      <name>chatOfflineTitle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Thanks for signing up'</initValue>
+      <name>emailSuccessMessage</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'96px'</initValue>
+      <name>logoFooterWidth</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'38px'</initValue>
+      <name>logoFooterHeight</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'© 2022 Cleaner’s Supply ® All Rights Reserved'</initValue>
+      <name>copyRightSentence</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'TERMS OF USE'</initValue>
+      <name>termsOfUseTitle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'PRIVACY POLICY'</initValue>
+      <name>privacyPolicyTitle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
       <initValue>'AZ'</initValue>
       <name>stateAbbr</name>
    </GlobalVariableEntity>
