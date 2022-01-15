@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Header" time="51.666" tests="1" failures="0" errors="0">
+   <testsuite name="Header" tests="1" failures="0" errors="0" time="51.666" skipped="0" timestamp="2022-01-15 16:45:01" hostname="waleedafifi - localhost" id="Test Suites/Header">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/waleedafifi/git/cleanersupply/Reports/20220115_164449/Header/20220115_164451"/>
+         <property name="logFiles" value="/Users/waleedafifi/git/cleanersupply/Reports/20220115_164449/Header/20220115_164451/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="waleedafifi - localhost"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="8.2.0.208"/>
+         <property name="browser" value="Chrome 97.0.4692.71"/>
+         <property name="hostAddress" value="127.0.0.1"/>
+         <property name="sessionId" value="e0b1112c25ddd62b334e2a04509ff975"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Mac OS X"/>
+      </properties>
+      <testcase name="Test Cases/Header/Primary Header TC" time="51.217" classname="Test Cases/Header/Primary Header TC" status="PASSED">
+         <system-out><![CDATA[2022-01-15 16:45:01 - [TEST_CASE][PASSED] - Test Cases/Header/Primary Header TC: Test Cases/Header/Primary Header TC
+
+2022-01-15 16:45:02 - [TEST_STEP][PASSED] - GeneralHelpers.initScenario(): Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-15 16:45:02 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-01-15 16:45:02 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-01-15 16:45:08 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2022-01-15 16:45:09 - [MESSAGE][PASSED] - Current window maximized
+
+2022-01-15 16:45:26 - [MESSAGE][PASSED] - Navigate to 'https://www.cleanersupply.com/' successfully
+
+2022-01-15 16:45:26 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2022-01-15 16:45:26 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-15 16:45:26 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-15 16:45:26 - [MESSAGE][PASSED] - Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-15 16:45:26 - [TEST_STEP][PASSED] - PrimaryHeaderHelpers.topNav(): Object 'Object Repository/Primary Header/button_myAccount' is present
+
+2022-01-15 16:45:27 - [MESSAGE][PASSED] - Get CSS 'background-color' value on 'Object Repository/Primary Header/div_navTop' successfully: 'rgba(255, 200, 11, 1)'.
+
+2022-01-15 16:45:29 - [MESSAGE][PASSED] - Object 'Object Repository/Primary Header/div_navTop' is present
+
+2022-01-15 16:45:29 - [MESSAGE][PASSED] - Object 'Object Repository/Primary Header/div_headerSearch' is present
+
+2022-01-15 16:45:30 - [MESSAGE][PASSED] - Object 'Object Repository/Primary Header/a_quickOrder' is present
+
+2022-01-15 16:45:31 - [MESSAGE][PASSED] - Object 'Object Repository/Primary Header/img_logo' is present
+
+2022-01-15 16:45:31 - [MESSAGE][PASSED] - Get CSS 'width' value on 'Object Repository/Primary Header/img_logo' successfully: '121px'.
+
+2022-01-15 16:45:32 - [MESSAGE][PASSED] - Object 'Object Repository/Primary Header/header' is present
+
+2022-01-15 16:45:32 - [MESSAGE][PASSED] - Object 'Object Repository/Primary Header/a_cart' is present
+
+2022-01-15 16:45:32 - [MESSAGE][PASSED] - Object 'Object Repository/Primary Header/button_myAccount' is present
+
+2022-01-15 16:45:32 - [TEST_STEP][PASSED] - PrimaryHeaderHelpers.rightLinkehoverEffect(): Get CSS 'color' value on 'Object Repository/Primary Header/i_iconReOrder' successfully: 'rgba(82, 36, 127, 1)'.
+
+2022-01-15 16:45:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Primary Header/button_myAccount' is hovered
+
+2022-01-15 16:45:34 - [MESSAGE][PASSED] - Get CSS 'color' value on 'Object Repository/Primary Header/i_iconMyAccount' successfully: 'rgba(82, 36, 127, 1)'.
+
+2022-01-15 16:45:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Primary Header/a_quickOrder' is hovered
+
+2022-01-15 16:45:34 - [MESSAGE][PASSED] - Get CSS 'color' value on 'Object Repository/Primary Header/i_iconQuickOrder' successfully: 'rgba(82, 36, 127, 1)'.
+
+2022-01-15 16:45:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Primary Header/a_reOrder' is hovered
+
+2022-01-15 16:45:35 - [MESSAGE][PASSED] - Get CSS 'color' value on 'Object Repository/Primary Header/i_iconReOrder' successfully: 'rgba(82, 36, 127, 1)'.
+
+2022-01-15 16:45:35 - [TEST_STEP][PASSED] - PrimaryHeaderHelpers.cartLinkHover(): Text of object 'Object Repository/Primary Header/span_emptCart' is: 'YOUR CART IS EMPTY
+AND VERY SAD'
+
+2022-01-15 16:45:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Primary Header/a_cart' is hovered
+
+2022-01-15 16:45:37 - [MESSAGE][PASSED] - Get CSS 'background-color' value on 'Object Repository/Mini Cart/a_miniCartLink' successfully: 'rgba(255, 255, 255, 1)'.
+
+2022-01-15 16:45:37 - [MESSAGE][PASSED] - Get CSS 'color' value on 'Object Repository/Mini Cart/a_miniCartLink' successfully: 'rgba(82, 36, 127, 1)'.
+
+2022-01-15 16:45:37 - [MESSAGE][PASSED] - Object 'Object Repository/Mini Cart/div_miniCartDropDown' is present
+
+2022-01-15 16:45:38 - [MESSAGE][PASSED] - Text of object 'Object Repository/Primary Header/span_emptCart' is: 'YOUR CART IS EMPTY
+AND VERY SAD'
+
+2022-01-15 16:45:38 - [TEST_STEP][PASSED] - PrimaryHeaderHelpers.myAccountButton(): Object 'Object Repository/Primary Header/My Account/div.accountDropDown' is present
+
+2022-01-15 16:45:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Primary Header/button_myAccount' is clicked on
+
+2022-01-15 16:45:39 - [MESSAGE][PASSED] - Attribute 'class' of object 'Object Repository/Primary Header/li_myAccount' is: 'dropdown hidden-mobile account-container open'
+
+2022-01-15 16:45:40 - [MESSAGE][PASSED] - Object 'Object Repository/Primary Header/My Account/div.accountDropDown' is present
+
+2022-01-15 16:45:40 - [TEST_STEP][PASSED] - PrimaryHeaderHelpers.headerTopBar(): Get CSS 'font-family' value on 'Object Repository/Primary Header/TobBar/a_headerShippingDetails' successfully: '"Nunito Sans", sans-serif'.
+
+2022-01-15 16:45:40 - [MESSAGE][PASSED] - Object 'Object Repository/Primary Header/TobBar/div_topBarHeader' is present
+
+2022-01-15 16:45:40 - [MESSAGE][PASSED] - Get CSS 'background-color' value on 'Object Repository/Primary Header/TobBar/div_topBarHeader' successfully: 'rgba(243, 243, 244, 1)'.
+
+2022-01-15 16:45:41 - [MESSAGE][PASSED] - Get CSS 'text-align' value on 'Object Repository/Primary Header/TobBar/div_infoHolder' successfully: 'center'.
+
+2022-01-15 16:45:41 - [MESSAGE][PASSED] - Text of object 'Object Repository/Primary Header/TobBar/span_headerShippingInfo' is: 'FREE SHIPPING & RETURNS ON ORDERS OVER $99'
+
+2022-01-15 16:45:42 - [MESSAGE][PASSED] - Get CSS 'font-weight' value on 'Object Repository/Primary Header/TobBar/span_headerShippingInfo' successfully: '900'.
+
+2022-01-15 16:45:43 - [MESSAGE][PASSED] - Get CSS 'color' value on 'Object Repository/Primary Header/TobBar/span_headerShippingInfo' successfully: 'rgba(0, 0, 0, 1)'.
+
+2022-01-15 16:45:43 - [MESSAGE][PASSED] - Get CSS 'font-family' value on 'Object Repository/Primary Header/TobBar/span_headerShippingInfo' successfully: '"Nunito Sans", sans-serif'.
+
+2022-01-15 16:45:43 - [MESSAGE][PASSED] - Get CSS 'font-weight' value on 'Object Repository/Primary Header/TobBar/a_headerShippingDetails' successfully: '400'.
+
+2022-01-15 16:45:44 - [MESSAGE][PASSED] - Get CSS 'color' value on 'Object Repository/Primary Header/TobBar/a_headerShippingDetails' successfully: 'rgba(0, 0, 0, 1)'.
+
+2022-01-15 16:45:44 - [MESSAGE][PASSED] - Get CSS 'font-family' value on 'Object Repository/Primary Header/TobBar/a_headerShippingDetails' successfully: '"Nunito Sans", sans-serif'.
+
+2022-01-15 16:45:44 - [TEST_STEP][PASSED] - PrimaryHeaderHelpers.shippingDetailsAction(): Get CSS 'text-decoration' value on 'Object Repository/Primary Header/TobBar/a_headerShippingDetails' successfully: 'underline solid rgb(0, 0, 0)'.
+
+2022-01-15 16:45:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Primary Header/TobBar/a_headerShippingDetails' is hovered
+
+2022-01-15 16:45:45 - [MESSAGE][PASSED] - Get CSS 'text-decoration' value on 'Object Repository/Primary Header/TobBar/a_headerShippingDetails' successfully: 'underline solid rgb(0, 0, 0)'.
+
+2022-01-15 16:45:45 - [TEST_STEP][PASSED] - PrimaryHeaderHelpers.customerService(): Get CSS 'font-family' value on 'Object Repository/Primary Header/TobBar/a_customerServiceLink' successfully: '"Nunito Sans", sans-serif'.
+
+2022-01-15 16:45:45 - [MESSAGE][PASSED] - Object 'Object Repository/Primary Header/TobBar/div_customerServicesArea' is present
+
+2022-01-15 16:45:46 - [MESSAGE][PASSED] - Get CSS 'font-weight' value on 'Object Repository/Primary Header/TobBar/span_customerAreaPhone' successfully: '700'.
+
+2022-01-15 16:45:46 - [MESSAGE][PASSED] - Get CSS 'color' value on 'Object Repository/Primary Header/TobBar/span_customerAreaPhone' successfully: 'rgba(0, 0, 0, 1)'.
+
+2022-01-15 16:45:47 - [MESSAGE][PASSED] - Get CSS 'font-family' value on 'Object Repository/Primary Header/TobBar/span_customerAreaPhone' successfully: '"Nunito Sans", sans-serif'.
+
+2022-01-15 16:45:47 - [MESSAGE][PASSED] - Get CSS 'font-weight' value on 'Object Repository/Primary Header/TobBar/a_customerServiceLink' successfully: '700'.
+
+2022-01-15 16:45:47 - [MESSAGE][PASSED] - Get CSS 'color' value on 'Object Repository/Primary Header/TobBar/a_customerServiceLink' successfully: 'rgba(0, 0, 0, 1)'.
+
+2022-01-15 16:45:49 - [MESSAGE][PASSED] - Get CSS 'font-family' value on 'Object Repository/Primary Header/TobBar/a_customerServiceLink' successfully: '"Nunito Sans", sans-serif'.
+
+2022-01-15 16:45:49 - [TEST_STEP][PASSED] - PrimaryHeaderHelpers.customerServiceLinkAction(): Get CSS 'text-decoration' value on 'Object Repository/Primary Header/TobBar/a_customerServiceLink' successfully: 'underline solid rgb(0, 0, 0)'.
+
+2022-01-15 16:45:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Primary Header/TobBar/a_customerServiceLink' is hovered
+
+2022-01-15 16:45:49 - [MESSAGE][PASSED] - Get CSS 'text-decoration' value on 'Object Repository/Primary Header/TobBar/a_customerServiceLink' successfully: 'underline solid rgb(0, 0, 0)'.
+
+2022-01-15 16:45:49 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2022-01-15 16:45:50 - [MESSAGE][PASSED] - Browser is closed
+
+2022-01-15 16:45:52 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/Header/Primary Header TC' .
+
+2022-01-15 16:45:52 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/Header/Primary Header TC' .]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-01-15 16:45:01 - [TEST_SUITE][PASSED] - Header: Test Cases/Header/Primary Header TC]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

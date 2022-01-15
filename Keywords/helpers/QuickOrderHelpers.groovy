@@ -31,6 +31,8 @@ import validation.QuickOrderValidations
 
 public class QuickOrderHelpers {
 
+	public static List<Integer> cartItem = new ArrayList<>();
+	
 	public static List<WebElement> quantities
 	public static List<WebElement> titles
 	public static List<WebElement> prices
@@ -119,6 +121,7 @@ public class QuickOrderHelpers {
 		GeneralValidation.verifyBackgroundColor(quickOrderTableRows,"rgb(241, 242, 242)")
 		TestObject addToCartBtn = findTestObject("Object Repository/Quick Order/button_addToCart")
 		WebUI.verifyElementNotVisible(addToCartBtn)
+
 	}
 
 	public static void fillingVerifyingStockNo() {
@@ -203,7 +206,13 @@ public class QuickOrderHelpers {
 
 			products.add(new quickOrder(WebUI.getAttribute(Quantity,"value"),WebUI.getText(Price), WebUI.getText(Total),WebUI.getText(Title),
 					WebUI.getAttribute(Img,"src"),WebUI.getText(StocksNotify)))
-
+			String name = WebUI.getText(Title)
+			String qyt = WebUI.getAttribute(Quantity, 'value')
+			String price = WebUI.getText(Price).replaceAll("[^0-9\\.]","")
+			
+			cartItem.add(GeneralHelperFunctions.makeListOfItems(name, price, 'none', qyt))
+			GlobalVariable.cartItems = cartItem
+			
 			QuickOrderHelpers.verifyQuickOrderTotal(Price, Total, Quantity)
 		}
 	}

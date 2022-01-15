@@ -1,0 +1,6 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Footer,Chrome 97.0.4692.71,,,2022-01-15 16:54:09,2022-01-15 16:54:29,20.138s,PASSED
+,,,,,,,
+Test Cases/Footer/Footer TC,Chrome 97.0.4692.71,,,2022-01-15 16:54:09,2022-01-15 16:54:29,19.704s,PASSED
+GeneralHelpers.initScenario(),Chrome 97.0.4692.71,,,2022-01-15 16:54:10,2022-01-15 16:54:28,18.249s,PASSED
+Video,Chrome 97.0.4692.71,,,2022-01-15 16:54:29,2022-01-15 16:54:29,0.001s,PASSED
