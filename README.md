@@ -126,8 +126,24 @@ https://github.com/QA-Gateway-Training/cleanersupply.git
   - Check top bar background
   - Click on search button
  
-7- Footer Test Plan
-  - test1
+7- All Pages Default Footer Test Plan
+  - Verify existing Of Top Footer.
+  - Verify existing of Image in Top Footer.
+  - Verify background Color of top footer (yellow Color).
+  - Verify max height of top footer as expected.
+  - Verify existing of footer body and has a black Background Color.
+  - Verify Right Column' content in footer body.
+  - Verify request catalog link and icon with wight color and validate click's redirection.
+  - Verify free classifieds link and icon with wight color and validate click's redirection.
+  - Verify existing of choose region span.
+  - Verify USA as default region.
+  - Verify region's button can be clickable and by default has an aria expanded attribute equal to false.
+  - Verify visibility of a region's list when click on region's button.
+  - Verify visibility of leave feedback button, verify clicking it and a pop- up modal appear.
+  - Verify Filling feedback's modal with a comment and email and close it.( note: Katalon can't support recaptcha verification image).
+  - Verify existing of bbb logo image at the end left column in footer's body.
+  -   
+  - 
   
 8- Shopping Cart
   - Verify Page url
