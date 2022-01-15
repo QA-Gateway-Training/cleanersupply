@@ -169,7 +169,7 @@ public class SearchResultPageValidations {
 		assert WebUI.getAttribute(leftArrow, 'class').contains('disabled')
 
 		TestObject rightArrow = findTestObject('Object Repository/Search Result/span_pagenationRightArrow')
-		assert WebUI.getCSSValue(leftArrow, 'color').contains('rgba(220, 221, 222, 1)')
+		assert WebUI.getCSSValue(leftArrow, 'color').contains(GlobalVariable.leftArrowColor)
 	}
 
 	/**

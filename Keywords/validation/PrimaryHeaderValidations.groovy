@@ -100,7 +100,7 @@ public class PrimaryHeaderValidations {
 	 */
 	public static void verifyTopNavStyle() {
 		TestObject topNav = findTestObject('Object Repository/Primary Header/div_navTop')
-		assert WebUI.getCSSValue(topNav, 'background-color').equals('rgba(255, 200, 11, 1)')
+		assert WebUI.getCSSValue(topNav, 'background-color').contains(GlobalVariable.topNavBackgroundColor)
 	}
 	
 	/**
@@ -109,7 +109,7 @@ public class PrimaryHeaderValidations {
 	 */
 	public static void verifyTopBarStyle() {
 		TestObject topBar = findTestObject('Primary Header/TobBar/div_topBarHeader')
-		assert WebUI.getCSSValue(topBar, 'background-color').equals('rgba(243, 243, 244, 1)')
+		assert WebUI.getCSSValue(topBar, 'background-color').contains(GlobalVariable.topBarBackgroundColor)
 	}
 	
 	/**
@@ -177,7 +177,7 @@ public class PrimaryHeaderValidations {
 	public static void verifyShippingInfoStyle() {
 		TestObject to = findTestObject('Primary Header/TobBar/span_headerShippingInfo')
 		assert WebUI.getCSSValue(to, 'font-weight').contains('900')
-		assert WebUI.getCSSValue(to, 'color').contains('rgba(0, 0, 0, 1)')
+		assert WebUI.getCSSValue(to, 'color').contains(GlobalVariable.blackColor)
 		assert WebUI.getCSSValue(to, 'font-family').contains('"Nunito Sans", sans-serif')
 	}
 	
@@ -197,7 +197,7 @@ public class PrimaryHeaderValidations {
 	public static void verifyShippingDetailsStyle() {
 		TestObject to = findTestObject('Primary Header/TobBar/a_headerShippingDetails')
 		assert WebUI.getCSSValue(to, 'font-weight').contains('400')
-		assert WebUI.getCSSValue(to, 'color').contains('rgba(0, 0, 0, 1)')
+		assert WebUI.getCSSValue(to, 'color').contains(GlobalVariable.blackColor)
 		assert WebUI.getCSSValue(to, 'font-family').contains('"Nunito Sans", sans-serif')
 	}
 	
@@ -235,7 +235,7 @@ public class PrimaryHeaderValidations {
 	public static void verifyCustomerServiceLinkStyle() {
 		TestObject to = findTestObject('Object Repository/Primary Header/TobBar/a_customerServiceLink')
 		assert WebUI.getCSSValue(to, 'font-weight').contains('700')
-		assert WebUI.getCSSValue(to, 'color').contains('rgba(0, 0, 0, 1)')
+		assert WebUI.getCSSValue(to, 'color').contains(GlobalVariable.blackColor)
 		assert WebUI.getCSSValue(to, 'font-family').contains('"Nunito Sans", sans-serif')
 	}
 	
@@ -246,7 +246,7 @@ public class PrimaryHeaderValidations {
 	public static void verifyCustomerServicePhoneStyle() {
 		TestObject to = findTestObject('Object Repository/Primary Header/TobBar/span_customerAreaPhone')
 		assert WebUI.getCSSValue(to, 'font-weight').contains('700')
-		assert WebUI.getCSSValue(to, 'color').contains('rgba(0, 0, 0, 1)')
+		assert WebUI.getCSSValue(to, 'color').contains(GlobalVariable.blackColor)
 		assert WebUI.getCSSValue(to, 'font-family').contains('"Nunito Sans", sans-serif')
 	}
 	

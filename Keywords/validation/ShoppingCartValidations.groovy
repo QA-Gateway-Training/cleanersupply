@@ -97,8 +97,8 @@ public class ShoppingCartValidations {
 	public static void verifyCheckoutButtonStyle() {
 		TestObject btn = findTestObject('Object Repository/Shopping Cart/button_proceedToCheckout')
 		WebUI.mouseOver(findTestObject('Object Repository/Shopping Cart/a_shoppingCartProductTitle'))
-		assert WebUI.getCSSValue(btn, 'background-color').equals(GlobalVariable.purpleColor)
-		assert WebUI.getCSSValue(btn, 'color').equals(GlobalVariable.whiteColor)
+		assert WebUI.getCSSValue(btn, 'background-color').contains(GlobalVariable.purpleColor)
+		assert WebUI.getCSSValue(btn, 'color').contains(GlobalVariable.whiteColor)
 	}
 
 	/**
@@ -107,7 +107,7 @@ public class ShoppingCartValidations {
 	 */
 	public static void verifyCheckoutButtonOnHover() {
 		TestObject btn = findTestObject('Object Repository/Shopping Cart/button_proceedToCheckout')
-		assert WebUI.getCSSValue(btn, 'box-shadow').equals('rgba(0, 0, 0, 0.3) 0px 0px 10px 2px')
+		assert WebUI.getCSSValue(btn, 'box-shadow').equals(GlobalVariable.btnHoverBoxShadow)
 	}
 
 	/**

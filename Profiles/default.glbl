@@ -714,4 +714,29 @@
       <initValue>'PAYMENT METHOD'</initValue>
       <name>paymentMethodDivTitle</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'rgba(255, 200, 11, 1)'</initValue>
+      <name>topNavBackgroundColor</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'rgba(243, 243, 244, 1)'</initValue>
+      <name>topBarBackgroundColor</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'rgba(0, 0, 0, 1)'</initValue>
+      <name>blackColor</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'rgba(0, 0, 0, 0.3) 0px 0px 10px 2px'</initValue>
+      <name>btnHoverBoxShadow</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'rgba(220, 221, 222, 1)'</initValue>
+      <name>leftArrowColor</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
