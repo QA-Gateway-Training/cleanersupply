@@ -100,4 +100,9 @@ public class PrimaryHeaderValidations {
 		assert WebUI.getCSSValue(to, 'color').equals(GlobalVariable.purpleColor)
 	}
 	
+	public static void verifyMiniCartIsEmpty() {
+		TestObject to = findTestObject('Object Repository/Primary Header/span_emptCart')
+		assert WebUI.getText(to).contains('YOUR CART IS EMPTY')
+		
+	}
 }

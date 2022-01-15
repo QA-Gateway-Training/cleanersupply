@@ -18,8 +18,10 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
+import actions.MiniCartActions
 import actions.PrimaryHeaderActions
 import internal.GlobalVariable
+import validation.MiniCartValidations
 import validation.PrimaryHeaderValidations
 
 public class PrimaryHeaderHelpers {
@@ -45,4 +47,17 @@ public class PrimaryHeaderHelpers {
 		PrimaryHeaderActions.reOrderMouseMoveOver()
 		PrimaryHeaderValidations.verifyReOrderHoverEffect()
 	}
+	
+	public static void cartLinkHover() {
+		PrimaryHeaderActions.cartLinkMouseOver()
+		MiniCartValidations.verifyHoverStyleOnMiniCartLink()
+		MiniCartValidations.verifyMiniCartDropDownIsDisplayed()
+		PrimaryHeaderValidations.verifyMiniCartIsEmpty()
+	}
+	
+	public static void myAccountButton() {
+		PrimaryHeaderActions.myAccountMouseClick()
+		PrimaryHeaderValidations.verifyAccountDropDownDisplayed()
+	}
+	
 }

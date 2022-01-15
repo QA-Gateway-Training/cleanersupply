@@ -35,4 +35,14 @@ public class PrimaryHeaderActions {
 		TestObject to = findTestObject('Object Repository/Primary Header/button_myAccount')
 		WebUI.mouseOver(to)
 	}
+	
+	public static void myAccountMouseClick() {
+		TestObject to = findTestObject('Object Repository/Primary Header/button_myAccount')
+		WebUI.click(to)
+	}
+	
+	public static void cartLinkMouseOver() {
+		TestObject to = findTestObject('Object Repository/Primary Header/a_cart')
+		WebUI.mouseOver(to)
+	}
 }

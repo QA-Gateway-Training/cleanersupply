@@ -23,3 +23,5 @@ import org.openqa.selenium.Keys as Keys
 GeneralHelpers.initScenario()
 PrimaryHeaderHelpers.topNav()
 PrimaryHeaderHelpers.rightLinkehoverEffect()
+PrimaryHeaderHelpers.cartLinkHover()
+PrimaryHeaderHelpers.myAccountButton()
