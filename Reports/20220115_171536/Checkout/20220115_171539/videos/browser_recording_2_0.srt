@@ -1,0 +1,16 @@
+1
+00:00:00,569 --> 00:00:24,272
+1. GeneralHelpers.initScenario()
+
+2
+00:00:24,274 --> 00:00:45,307
+5. QuickOrderHelpers.navigationAndVerifyToQuickOrder()
+
+3
+00:00:45,308 --> 00:00:45,595
+9. QuickOrderValidations.verifyCartCounter("0")
+
+4
+00:00:45,596 --> 00:00:46,482
+13. QuickOrderHelpers.headerAndTableStyle()
+

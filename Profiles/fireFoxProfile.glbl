@@ -739,4 +739,9 @@
       <initValue>'rgb(220, 221, 222)'</initValue>
       <name>leftArrowColor</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'700'</initValue>
+      <name>navLinkFontWeight</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -1,0 +1,92 @@
+1
+00:00:00,000 --> 00:00:13,111
+1. GeneralHelpers.initScenario()
+
+2
+00:00:13,117 --> 00:00:24,823
+5. GeneralHelpers.headerSearchFillAndClick()
+
+3
+00:00:24,828 --> 00:00:27,107
+9. GeneralHelpers.navigateToResultPage()
+
+4
+00:00:27,107 --> 00:00:37,036
+13. SearchResultPageValidations.verifyDefaultValues()
+
+5
+00:00:37,037 --> 00:00:39,600
+17. SearchResultHelper.checkSearchPagePagination()
+
+6
+00:00:39,601 --> 00:00:50,182
+21. SearchResultHelper.selectProductFilters()
+
+7
+00:00:50,188 --> 00:00:55,802
+25. SearchResultPageActions.NavigateToProductDetailsPage()
+
+8
+00:00:55,828 --> 00:01:03,796
+29. ProductDetailsHelpers.initProductDetailsPage()
+
+9
+00:01:03,798 --> 00:01:15,160
+33. ProductDetailsHelpers.hoverEffectAndClickXLargeSizeLink()
+
+10
+00:01:15,161 --> 00:01:19,817
+37. ProductDetailsHelpers.selectGreenColor()
+
+11
+00:01:19,818 --> 00:01:22,761
+41. ProductDetailsHelpers.addProductToCart()
+
+12
+00:01:22,762 --> 00:01:30,030
+45. MiniCartHelpers.hoverOnMiniCartHeader()
+
+13
+00:01:30,031 --> 00:01:38,752
+49. ProductDetailsHelpers.hoverEffectAndClickLargeSizeLink()
+
+14
+00:01:38,752 --> 00:01:42,124
+53. ProductDetailsHelpers.selectRoyalBlueColor()
+
+15
+00:01:42,124 --> 00:01:44,688
+57. ProductDetailsHelpers.addProductToCart()
+
+16
+00:01:44,689 --> 00:01:52,162
+61. MiniCartHelpers.hoverOnMiniCartHeader()
+
+17
+00:01:52,164 --> 00:01:56,484
+65. MiniCartActions.navigateToCartPage()
+
+18
+00:01:56,485 --> 00:02:06,175
+69. ShoppingCartHelpers.navigateToCartPage()
+
+19
+00:02:06,176 --> 00:02:11,824
+73. ShoppingCartHelpers.updateQuantities()
+
+20
+00:02:11,825 --> 00:02:16,149
+77. ShoppingCartHelpers.navigateToCheckoutPage()
+
+21
+00:02:16,151 --> 00:02:32,618
+81. CheckoutPageHelpers.initCheckoutPage()
+
+22
+00:02:32,624 --> 00:02:35,190
+85. CheckoutPageHelpers.navigateToCheckoutInformationForm()
+
+23
+00:02:35,190 --> 00:03:13,194
+89. checkOutFormHelper.fillCheckOutForm()
+

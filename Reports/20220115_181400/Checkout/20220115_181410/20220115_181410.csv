@@ -1,0 +1,58 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Checkout,Firefox 95.0,,,2022-01-15 18:22:32,2022-01-15 18:26:31,3m - 58.954s,FAILED
+,,,,,,,
+Test Cases/Checkout Scenario/Product Details,Firefox 95.0,,,2022-01-15 18:22:32,2022-01-15 18:24:45,2m - 12.670s,FAILED
+GeneralHelpers.initScenario(),Firefox 95.0,,,2022-01-15 18:22:33,2022-01-15 18:22:49,15.949s,PASSED
+GeneralHelpers.headerSearchFillAndClick(),Firefox 95.0,,,2022-01-15 18:22:49,2022-01-15 18:22:58,9.453s,PASSED
+GeneralHelpers.navigateToResultPage(),Firefox 95.0,,,2022-01-15 18:22:58,2022-01-15 18:23:01,3.468s,PASSED
+SearchResultPageValidations.verifyDefaultValues(),Firefox 95.0,,,2022-01-15 18:23:01,2022-01-15 18:23:09,7.770s,PASSED
+SearchResultHelper.checkSearchPagePagination(),Firefox 95.0,,,2022-01-15 18:23:09,2022-01-15 18:23:11,2.165s,PASSED
+SearchResultHelper.selectProductFilters(),Firefox 95.0,,,2022-01-15 18:23:11,2022-01-15 18:23:21,9.309s,PASSED
+SearchResultPageActions.NavigateToProductDetailsPage(),Firefox 95.0,,,2022-01-15 18:23:21,2022-01-15 18:23:25,4.267s,PASSED
+ProductDetailsHelpers.initProductDetailsPage(),Firefox 95.0,,,2022-01-15 18:23:25,2022-01-15 18:23:32,6.879s,PASSED
+ProductDetailsHelpers.hoverEffectAndClickXLargeSizeLink(),Firefox 95.0,,,2022-01-15 18:23:32,2022-01-15 18:23:40,8.459s,PASSED
+ProductDetailsHelpers.selectGreenColor(),Firefox 95.0,,,2022-01-15 18:23:40,2022-01-15 18:23:43,3.158s,PASSED
+ProductDetailsHelpers.addProductToCart(),Firefox 95.0,,,2022-01-15 18:23:43,2022-01-15 18:23:46,2.405s,PASSED
+MiniCartHelpers.hoverOnMiniCartHeader(),Firefox 95.0,,,2022-01-15 18:23:46,2022-01-15 18:23:51,5.073s,PASSED
+ProductDetailsHelpers.hoverEffectAndClickLargeSizeLink(),Firefox 95.0,,,2022-01-15 18:23:51,2022-01-15 18:23:58,6.860s,PASSED
+ProductDetailsHelpers.selectRoyalBlueColor(),Firefox 95.0,,,2022-01-15 18:23:58,2022-01-15 18:24:01,2.756s,PASSED
+ProductDetailsHelpers.addProductToCart(),Firefox 95.0,,,2022-01-15 18:24:01,2022-01-15 18:24:03,2.368s,PASSED
+MiniCartHelpers.hoverOnMiniCartHeader(),Firefox 95.0,,,2022-01-15 18:24:03,2022-01-15 18:24:09,5.639s,PASSED
+MiniCartActions.navigateToCartPage(),Firefox 95.0,,,2022-01-15 18:24:09,2022-01-15 18:24:11,2.383s,PASSED
+ShoppingCartHelpers.navigateToCartPage(),Firefox 95.0,,,2022-01-15 18:24:11,2022-01-15 18:24:17,6.420s,PASSED
+ShoppingCartHelpers.updateQuantities(),Firefox 95.0,,,2022-01-15 18:24:17,2022-01-15 18:24:22,4.176s,PASSED
+ShoppingCartHelpers.navigateToCheckoutPage(),Firefox 95.0,,,2022-01-15 18:24:22,2022-01-15 18:24:25,3.375s,PASSED
+CheckoutPageHelpers.initCheckoutPage(),Firefox 95.0,,,2022-01-15 18:24:25,2022-01-15 18:24:40,14.562s,PASSED
+CheckoutPageHelpers.navigateToCheckoutInformationForm(),Firefox 95.0,,,2022-01-15 18:24:40,2022-01-15 18:24:42,2.299s,PASSED
+checkOutFormHelper.fillCheckOutForm(),Firefox 95.0,,,2022-01-15 18:24:42,2022-01-15 18:24:45,2.969s,FAILED
+Video,Firefox 95.0,,,2022-01-15 18:24:45,2022-01-15 18:24:45,0.002s,PASSED
+,,,,,,,
+Test Cases/Checkout Scenario/Quick Order,Firefox 95.0,,,2022-01-15 18:24:45,2022-01-15 18:25:07,22.558s,FAILED
+GeneralHelpers.initScenario(),Firefox 95.0,,,2022-01-15 18:24:45,2022-01-15 18:24:58,12.573s,PASSED
+QuickOrderHelpers.navigationAndVerifyToQuickOrder(),Firefox 95.0,,,2022-01-15 18:24:58,2022-01-15 18:25:07,8.496s,PASSED
+"QuickOrderValidations.verifyCartCounter(""0"")",Firefox 95.0,,,2022-01-15 18:25:07,2022-01-15 18:25:07,0.300s,PASSED
+QuickOrderHelpers.headerAndTableStyle(),Firefox 95.0,,,2022-01-15 18:25:07,2022-01-15 18:25:07,0.555s,FAILED
+Video,Firefox 95.0,,,2022-01-15 18:25:07,2022-01-15 18:25:07,0.001s,PASSED
+,,,,,,,
+Test Cases/Checkout Scenario/Category,Firefox 95.0,,,2022-01-15 18:25:07,2022-01-15 18:26:31,1m - 23.253s,FAILED
+GeneralHelpers.initScenario(),Firefox 95.0,,,2022-01-15 18:25:08,2022-01-15 18:25:26,18.134s,PASSED
+"computerRegister = ""Object Repository/Category/a_ComputerRegister""",Firefox 95.0,,,2022-01-15 18:25:26,2022-01-15 18:25:26,0.001s,PASSED
+CategoryScActions.hovertags(),Firefox 95.0,,,2022-01-15 18:25:26,2022-01-15 18:25:29,3.400s,PASSED
+CategorySCHelpers.navigateComputerRegister(),Firefox 95.0,,,2022-01-15 18:25:29,2022-01-15 18:25:34,4.591s,PASSED
+CategoryValidations.validatespanText(computerRegisterspan),Firefox 95.0,,,2022-01-15 18:25:34,2022-01-15 18:25:48,14.154s,PASSED
+CategoryScActions.getDefaultProjectCategoryFilter(expectedProductNum),Firefox 95.0,,,2022-01-15 18:25:48,2022-01-15 18:25:48,0.330s,PASSED
+CategoryScActions.getDefaultValueOfSortBy(sortByDefault),Firefox 95.0,,,2022-01-15 18:25:48,2022-01-15 18:25:49,0.298s,PASSED
+CategoryScActions.getDefaultManufacturar(manufacturarDefault),Firefox 95.0,,,2022-01-15 18:25:49,2022-01-15 18:25:49,0.309s,PASSED
+CategoryScActions.getDefaultModal(defaultmodal),Firefox 95.0,,,2022-01-15 18:25:49,2022-01-15 18:25:49,0.296s,PASSED
+CategoryScActions.clickOnManuWithassertOPened(menuExpandValue),Firefox 95.0,,,2022-01-15 18:25:49,2022-01-15 18:25:51,1.566s,PASSED
+CategorySCHelpers.selectCasioManufacturar(),Firefox 95.0,,,2022-01-15 18:25:51,2022-01-15 18:25:53,2.072s,PASSED
+CategorySCHelpers.selectModalsp1000(),Firefox 95.0,,,2022-01-15 18:25:53,2022-01-15 18:25:57,3.813s,PASSED
+CategorySCHelpers.EnterCasioSP1000Product(),Firefox 95.0,,,2022-01-15 18:25:57,2022-01-15 18:26:06,9.485s,PASSED
+CategorySCHelpers.ValidateCasioSP1000ProductDetails(),Firefox 95.0,,,2022-01-15 18:26:06,2022-01-15 18:26:12,5.448s,PASSED
+CategorySCHelpers.enterTenItemsFromProduct(),Firefox 95.0,,,2022-01-15 18:26:12,2022-01-15 18:26:16,4.348s,PASSED
+CategorySCHelpers.checkMeniCartBadge(),Firefox 95.0,,,2022-01-15 18:26:16,2022-01-15 18:26:17,0.758s,PASSED
+CategorySCHelpers.navigateToCart(),Firefox 95.0,,,2022-01-15 18:26:17,2022-01-15 18:26:25,8.247s,PASSED
+"navigateToUrl(""https://www.cleanersupply.com/checkout/"")",Firefox 95.0,,,2022-01-15 18:26:25,2022-01-15 18:26:28,2.902s,PASSED
+maximizeWindow(),Firefox 95.0,,,2022-01-15 18:26:28,2022-01-15 18:26:28,0.018s,PASSED
+checkOutFormHelper.fillCheckOutForm(),Firefox 95.0,,,2022-01-15 18:26:28,2022-01-15 18:26:31,2.808s,FAILED
+Video,Firefox 95.0,,,2022-01-15 18:26:31,2022-01-15 18:26:31,0.001s,PASSED

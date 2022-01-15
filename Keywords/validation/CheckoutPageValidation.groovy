@@ -140,7 +140,7 @@ public class CheckoutPageValidation {
 			String name = prodName.get(idx).getAttribute('innerText');
 
 			for(int i = 0; i < cartItem.size(); i++) {
-//				&& sku.contains(cartItem[i][2])
+				//				&& sku.contains(cartItem[i][2])
 				if(name.contains(cartItem[i][0]) && qt.equals(cartItem[i][3])) {
 					flag = true
 					break

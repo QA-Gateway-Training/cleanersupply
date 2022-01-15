@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Footer" time="18.189" tests="1" failures="0" errors="0">
+   <testsuite name="Footer" tests="1" failures="0" errors="0" time="18.189" skipped="0" timestamp="2022-01-15 18:22:04" hostname="waleedafifi - 192.168.1.104" id="Test Suites/Footer">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/waleedafifi/git/cleanersupply/Reports/20220115_181400/Footer/20220115_181408"/>
+         <property name="logFiles" value="/Users/waleedafifi/git/cleanersupply/Reports/20220115_181400/Footer/20220115_181408/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="waleedafifi - 192.168.1.104"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="8.2.0.208"/>
+         <property name="browser" value="Firefox 95.0"/>
+         <property name="hostAddress" value="192.168.1.104"/>
+         <property name="sessionId" value="50e2d3e8-63f7-4d48-8910-71f6a11c4864"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Mac OS X"/>
+      </properties>
+      <testcase name="Test Cases/Footer/Footer TC" time="17.758" classname="Test Cases/Footer/Footer TC" status="PASSED">
+         <system-out><![CDATA[2022-01-15 18:22:05 - [TEST_CASE][PASSED] - Test Cases/Footer/Footer TC: Test Cases/Footer/Footer TC
+
+2022-01-15 18:22:05 - [TEST_STEP][PASSED] - GeneralHelpers.initScenario(): Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-15 18:22:05 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2022-01-15 18:22:05 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-01-15 18:22:12 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2022-01-15 18:22:13 - [MESSAGE][PASSED] - Current window maximized
+
+2022-01-15 18:22:22 - [MESSAGE][PASSED] - Navigate to 'https://www.cleanersupply.com/' successfully
+
+2022-01-15 18:22:22 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2022-01-15 18:22:22 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-15 18:22:22 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-15 18:22:22 - [MESSAGE][PASSED] - Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-15 18:22:22 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/Footer/Footer TC' .
+
+2022-01-15 18:22:22 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/Footer/Footer TC' .]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-01-15 18:22:04 - [TEST_SUITE][PASSED] - Footer: Test Cases/Footer/Footer TC]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
