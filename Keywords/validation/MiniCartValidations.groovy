@@ -104,4 +104,13 @@ public class MiniCartValidations {
 
 		assert WebUI.getText(counterBadge).contains(productRow.size().toString())
 	}
+	
+	/**
+	 * Verify if the mini cart dropdown displayed
+	 * @author waleedafifi
+	 */
+	public static void verifyMiniCartDropDownIsDisplayed() {
+		TestObject to = findTestObject('Object Repository/Mini Cart/div_miniCartDropDown')
+		assert WebUI.verifyElementPresent(to, GlobalVariable.globalTimeOut)
+	}
 }
