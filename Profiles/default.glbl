@@ -529,4 +529,14 @@
       <initValue>'PAYMENT METHOD'</initValue>
       <name>paymentMethodDivTitle</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Enter Stock #'</initValue>
+      <name>stockNoInputPlaceholder</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'700'</initValue>
+      <name>navLinkFontWeight</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

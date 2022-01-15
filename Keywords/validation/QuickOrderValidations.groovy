@@ -58,4 +58,20 @@ public class QuickOrderValidations {
 	public static void verifyProductsNoInCart(int expectedNo, int realNo) {
 		assert expectedNo == realNo
 	}
+
+	public static void verifyInputPlaceholder(TestObject stockInput) {
+		assert WebUI.getAttribute(stockInput, "placeholder").equals(GlobalVariable.stockNoInputPlaceholder)
+	}
+
+	public static void veriyHeaderStyle() {
+		TestObject quickHeader = findTestObject('Object Repository/Quick Order/a_quickOrderHeader')
+		assert WebUI.getCSSValue(quickHeader, "background-color").equals(GlobalVariable.searchHeaderTopBarBackgroundColor)
+		assert WebUI.getCSSValue(quickHeader, "color").equals("#fff")
+		TestObject quickIcon = findTestObject('Object Repository/Quick Order/span_quickOrderIcon')
+		WebUI.verifyElementVisible(quickIcon)
+	}
+
+	public static void verifyInputEmpty(TestObject item) {
+		WebUI.getAttribute(item, "value").equals("")
+	}
 }
