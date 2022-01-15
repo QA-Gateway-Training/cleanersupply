@@ -43,9 +43,11 @@ GeneralHelpers.initScenario()
 //-------------------quick order------------------------
 
 QuickOrderHelpers.navigationAndVerifyToQuickOrder()
+QuickOrderValidations.verifyCartCounter("0")
 
 //--------------filling product stock number inputs ----------
 
+QuickOrderHelpers.headerAndTableStyle()
 QuickOrderHelpers.fillingVerifyingStockNo()
 
 //---------------filling quantity inputs and verify total----------
@@ -89,7 +91,12 @@ ShoppingCartHelpers.navigateToCheckoutPage()
 
 CheckoutPageValidation.verifyNaigationTOCheckOut()
 
-CheckoutPageHelpers.initCheckoutPage()
+//CheckoutPageHelpers.initCheckoutPage()
+CheckoutPageValidation.verifyTotalPrice()
+CheckoutPageValidation.verifyCheckoutAsGuest()
+CheckoutPageValidation.verifyCheckoutAsGuestSelected()
+CheckoutPageValidation.verifyProductSummaryItemQountityTotal()
+
 CheckoutPageHelpers.navigateToCheckoutInformationForm()
 
 //-----------------filling checkout form----------

@@ -30,6 +30,7 @@ import validation.GeneralValidation
 import validation.QuickOrderValidations
 
 public class QuickOrderHelpers {
+
 	public static List<Integer> cartItem = new ArrayList<>();
 	
 	public static List<WebElement> quantities
@@ -75,6 +76,8 @@ public class QuickOrderHelpers {
 	}
 
 	public static void fillStockNoQuickOrder(TestObject stockInput, String value) {
+		QuickOrderValidations.verifyInputPlaceholder(stockInput)
+		QuickOrderValidations.verifyInputEmpty(stockInput)
 		GeneralActions.focusItem(stockInput)
 		//	QuickOrderValidations.verifyChangesOnInputFocus(stockInput, "rgb(99, 99, 99) 0px -3px 0px 0px inset")
 		WebUI.sendKeys(stockInput, value+ Keys.ENTER)
@@ -112,6 +115,15 @@ public class QuickOrderHelpers {
 				GlobalVariable.quickOrderHeader, GlobalVariable.quickOrderUrl)
 	}
 
+	public static void headerAndTableStyle() {
+		QuickOrderValidations.veriyHeaderStyle()
+		TestObject quickOrderTableRows = findTestObject("Object Repository/Quick Order/tr_allQuickOrderRows")
+		GeneralValidation.verifyBackgroundColor(quickOrderTableRows,"rgb(241, 242, 242)")
+		TestObject addToCartBtn = findTestObject("Object Repository/Quick Order/button_addToCart")
+		WebUI.verifyElementNotVisible(addToCartBtn)
+
+	}
+
 	public static void fillingVerifyingStockNo() {
 		TestObject firstStockNo = findTestObject("Object Repository/Quick Order/input_0quickOrderStock")
 		WebUI.waitForElementPresent(firstStockNo, 5)
@@ -121,6 +133,8 @@ public class QuickOrderHelpers {
 		TestObject fivthStockNo = findTestObject("Object Repository/Quick Order/input_4quickOrderStock")
 
 		QuickOrderHelpers.fillStockNoQuickOrder(firstStockNo, GlobalVariable.firstStockNo)
+		TestObject addToCartBtn = findTestObject("Object Repository/Quick Order/button_addToCart")
+		WebUI.verifyElementVisible(addToCartBtn)
 		QuickOrderHelpers.fillStockNoQuickOrder(secStockNo, GlobalVariable.secStockNo)
 		QuickOrderHelpers.fillStockNoQuickOrder(thirdStockNo, GlobalVariable.thirdStockNo)
 		QuickOrderHelpers.fillStockNoQuickOrder(fourthStockNo, GlobalVariable.fourthStockNo)
@@ -192,7 +206,6 @@ public class QuickOrderHelpers {
 
 			products.add(new quickOrder(WebUI.getAttribute(Quantity,"value"),WebUI.getText(Price), WebUI.getText(Total),WebUI.getText(Title),
 					WebUI.getAttribute(Img,"src"),WebUI.getText(StocksNotify)))
-
 			String name = WebUI.getText(Title)
 			String qyt = WebUI.getAttribute(Quantity, 'value')
 			String price = WebUI.getText(Price).replaceAll("[^0-9\\.]","")

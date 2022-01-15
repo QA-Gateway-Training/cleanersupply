@@ -716,7 +716,17 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'rgba(255, 200, 11, 1)'</initValue>
+      <initValue>'Enter Stock #'</initValue>
+      <name>stockNoInputPlaceholder</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'700'</initValue>
+      <name>navLinkFontWeight</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+     <initValue>'rgba(255, 200, 11, 1)'</initValue>
       <name>topNavBackgroundColor</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
