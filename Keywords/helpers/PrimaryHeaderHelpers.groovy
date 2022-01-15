@@ -25,6 +25,11 @@ import validation.MiniCartValidations
 import validation.PrimaryHeaderValidations
 
 public class PrimaryHeaderHelpers {
+	
+	/**
+	 * Top navigation init style
+	 * @author waleedafifi
+	 */
 	public static void topNav() {
 		PrimaryHeaderValidations.verifyTopNavStyle()
 		PrimaryHeaderValidations.verifyTopNavPresent()
@@ -37,6 +42,10 @@ public class PrimaryHeaderHelpers {
 		PrimaryHeaderValidations.verifyAccountLinkExists()
 	}
 	
+	/**
+	 * Mouse move over my account, quick order, reorder
+	 * @author waleedafifi
+	 */
 	public static void rightLinkehoverEffect() {
 		PrimaryHeaderActions.myAccountMouseMoveOver()
 		PrimaryHeaderValidations.verifyMyAccountHoverEffect()
@@ -48,6 +57,10 @@ public class PrimaryHeaderHelpers {
 		PrimaryHeaderValidations.verifyReOrderHoverEffect()
 	}
 	
+	/**
+	 * Mouse move over the cart link
+	 * @author waleedafifi
+	 */
 	public static void cartLinkHover() {
 		PrimaryHeaderActions.cartLinkMouseOver()
 		MiniCartValidations.verifyHoverStyleOnMiniCartLink()
@@ -55,9 +68,54 @@ public class PrimaryHeaderHelpers {
 		PrimaryHeaderValidations.verifyMiniCartIsEmpty()
 	}
 	
+	/**
+	 * Account button action to open the dropdown card
+	 * @author waleedafifi
+	 */
 	public static void myAccountButton() {
 		PrimaryHeaderActions.myAccountMouseClick()
 		PrimaryHeaderValidations.verifyAccountDropDownDisplayed()
+	}
+	
+	/**
+	 * ToopBar init style and visibility
+	 * @author waleedafifi
+	 */
+	public static void headerTopBar() {
+		PrimaryHeaderValidations.verifyTopBarVisability()
+		PrimaryHeaderValidations.verifyTopBarStyle()
+		PrimaryHeaderValidations.verifyInfoHolderTextAlignment()
+		PrimaryHeaderValidations.verifyShippingInfoContent()
+		PrimaryHeaderValidations.verifyShippingInfoStyle()
+		PrimaryHeaderValidations.verifyShippingDetailsStyle()
+	}
+	
+	/**
+	 * Mouse move over the shipping details
+	 * @author waleedafifi
+	 */
+	public static void shippingDetailsAction() {
+		PrimaryHeaderActions.shippingDetailsMouseOver()
+		PrimaryHeaderValidations.verifyShippingDetailsLinkOnHover()
+	}
+	
+	/**
+	 * Customer service visibility and init style
+	 * @author waleedafifi
+	 */
+	public static void customerService() {
+		PrimaryHeaderValidations.verifyTopBarCustomerServicesVisibility()
+		PrimaryHeaderValidations.verifyCustomerServicePhoneStyle()
+		PrimaryHeaderValidations.verifyCustomerServiceLinkStyle()
+	}
+	
+	/**
+	 * Mouse move over the customer service link
+	 * @author waleedafifi
+	 */
+	public static void customerServiceLinkAction() {
+		PrimaryHeaderActions.customerPhoneMouseOver()
+		PrimaryHeaderValidations.verifyCustomerServiceLinkHoverStyle()
 	}
 	
 }

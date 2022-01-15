@@ -57,8 +57,36 @@ https://github.com/QA-Gateway-Training/cleanersupply.git
 ## Test Plan
 
 1- Header test plan
-  - test 1
-
+  - TopBar
+    - Verify top bar is displayed
+    - Verify background color
+    - Verify shipping information text centered
+    - Verify Shipping info. font family, font weight, color
+    - Verify shipping details link font family, font weight, color
+    - Verify shipping details link hover effect style
+    - Verify shipping info. text content
+    - Verify customer service is displayed
+    - Verify customer service style font family, font weight, color
+    - Verifu customer service link hover effect style
+  - Top Nvavigation
+    - Verify if displayed
+    - Verify background color
+    - Verify logo is displayed
+    - Verify search input is displayed
+    - Verify existence of
+      - Quick order link
+      - Reorder link
+      - My account button
+      - Cart link
+    - Verify hover effect for
+      - Quick order link
+      - Reorder link
+      - My account button
+      - Cart link
+    - Verify account dropdown box is present on my account button click
+    - Verify mini cart displayed on cart link hover
+    - Verify mini cart is empty and have text `your cart is empty`
+  
 2- Product details page test plan ( search )
   - Verify page url
   - Verify page Title ( title cappetlize but the product name uppercase <img src="https://c.tenor.com/IUzym1Pr2x0AAAAC/bug-cute.gif" alt="testing image" width="30"/>)

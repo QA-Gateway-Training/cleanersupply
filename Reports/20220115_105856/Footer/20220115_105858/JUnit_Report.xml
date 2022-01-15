@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Footer" time="25.21" tests="1" failures="0" errors="0">
+   <testsuite name="Footer" tests="1" failures="0" errors="0" time="25.21" skipped="0" timestamp="2022-01-15 10:59:13" hostname="waleedafifi - localhost" id="Test Suites/Footer">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/waleedafifi/git/cleanersupply/Reports/20220115_105856/Footer/20220115_105858"/>
+         <property name="logFiles" value="/Users/waleedafifi/git/cleanersupply/Reports/20220115_105856/Footer/20220115_105858/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="waleedafifi - localhost"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="8.2.0.208"/>
+         <property name="browser" value="Chrome 97.0.4692.71"/>
+         <property name="hostAddress" value="127.0.0.1"/>
+         <property name="sessionId" value="daf96d5162fc6e65f27571d882db6423"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Mac OS X"/>
+      </properties>
+      <testcase name="Test Cases/Footer/Footer TC" time="24.759" classname="Test Cases/Footer/Footer TC" status="PASSED">
+         <system-out><![CDATA[2022-01-15 10:59:14 - [TEST_CASE][PASSED] - Test Cases/Footer/Footer TC: Test Cases/Footer/Footer TC
+
+2022-01-15 10:59:14 - [TEST_STEP][PASSED] - GeneralHelpers.initScenario(): Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-15 10:59:15 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-01-15 10:59:15 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-01-15 10:59:20 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2022-01-15 10:59:22 - [MESSAGE][PASSED] - Current window maximized
+
+2022-01-15 10:59:34 - [MESSAGE][PASSED] - Navigate to 'https://www.cleanersupply.com/' successfully
+
+2022-01-15 10:59:34 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2022-01-15 10:59:34 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-15 10:59:34 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-15 10:59:34 - [MESSAGE][PASSED] - Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-15 10:59:34 - [TEST_STEP][PASSED] - defaultFooterValidatins.verifyExistingOftopFooterImage(): Object 'Object Repository/defaultFooter/img_topFooter' is visible
+
+2022-01-15 10:59:36 - [MESSAGE][PASSED] - Object 'Object Repository/defaultFooter/img_topFooter' is visible
+
+2022-01-15 10:59:36 - [TEST_STEP][PASSED] - defaultFooterValidatins.verifyBackGroundandMaxHeightOfTopFooter(): Get CSS 'max-height' value on 'Object Repository/defaultFooter/div_topFooter' successfully: '93px'.
+
+2022-01-15 10:59:36 - [MESSAGE][PASSED] - Get CSS 'background' value on 'Object Repository/defaultFooter/div_topFooter' successfully: 'rgb(255, 199, 9) none repeat scroll 0% 0% / auto padding-box border-box'.
+
+2022-01-15 10:59:37 - [MESSAGE][PASSED] - Get CSS 'max-height' value on 'Object Repository/defaultFooter/div_topFooter' successfully: '93px'.
+
+2022-01-15 10:59:37 - [TEST_STEP][PASSED] - defaultFooterValidatins.verifyExistingOffooterBody(): Object 'Object Repository/defaultFooter/div_footerBody' is visible
+
+2022-01-15 10:59:38 - [MESSAGE][PASSED] - Object 'Object Repository/defaultFooter/div_footerBody' is visible
+
+2022-01-15 10:59:38 - [TEST_STEP][PASSED] - defaultFooterValidatins.verifyBackGroundandPaddingOfFooterBody(): Get CSS 'padding' value on 'Object Repository/defaultFooter/div_footerBody' successfully: '30px 0px 45px'.
+
+2022-01-15 10:59:38 - [MESSAGE][PASSED] - Get CSS 'background' value on 'Object Repository/defaultFooter/div_footerBody' successfully: 'rgb(70, 70, 70) none repeat scroll 0% 0% / auto padding-box border-box'.
+
+2022-01-15 10:59:39 - [MESSAGE][PASSED] - Get CSS 'padding' value on 'Object Repository/defaultFooter/div_footerBody' successfully: '30px 0px 45px'.]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-01-15 10:59:13 - [TEST_SUITE][PASSED] - Footer: Test Cases/Footer/Footer TC]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

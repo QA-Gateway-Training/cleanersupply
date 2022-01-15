@@ -1,0 +1,9 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Footer,Chrome 97.0.4692.71,,,2022-01-15 10:59:13,2022-01-15 10:59:39,25.210s,PASSED
+,,,,,,,
+Test Cases/Footer/Footer TC,Chrome 97.0.4692.71,,,2022-01-15 10:59:14,2022-01-15 10:59:39,24.759s,PASSED
+GeneralHelpers.initScenario(),Chrome 97.0.4692.71,,,2022-01-15 10:59:14,2022-01-15 10:59:34,19.804s,PASSED
+defaultFooterValidatins.verifyExistingOftopFooterImage(),Chrome 97.0.4692.71,,,2022-01-15 10:59:34,2022-01-15 10:59:36,1.830s,PASSED
+defaultFooterValidatins.verifyBackGroundandMaxHeightOfTopFooter(),Chrome 97.0.4692.71,,,2022-01-15 10:59:36,2022-01-15 10:59:37,0.901s,PASSED
+defaultFooterValidatins.verifyExistingOffooterBody(),Chrome 97.0.4692.71,,,2022-01-15 10:59:37,2022-01-15 10:59:38,0.921s,PASSED
+defaultFooterValidatins.verifyBackGroundandPaddingOfFooterBody(),Chrome 97.0.4692.71,,,2022-01-15 10:59:38,2022-01-15 10:59:39,0.896s,PASSED
