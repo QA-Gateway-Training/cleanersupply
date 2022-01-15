@@ -19,6 +19,42 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
-
+import helpers.GeneralHelpers
 public class defaultFooterActions {
+
+	public static void clickFavouritLink() {
+		TestObject favourites = findTestObject("Object Repository/defaultFooter/footerBody/rightColumn/a_favourites")
+		WebUI.scrollToElement(favourites, 3)
+		WebUI.click(favourites)
+	}
+
+	public static void clickpreviouslyOrdered() {
+		TestObject previouslyOrdered = findTestObject("Object Repository/defaultFooter/footerBody/rightColumn/a_previouslyOrdered")
+		WebUI.click(previouslyOrdered)
+	}
+	public static void clickQuickOrder() {
+		TestObject quick = findTestObject("Object Repository/defaultFooter/footerBody/rightColumn/a_quickOrder")
+		WebUI.click(quick)
+	}
+
+	public static void clickOnOnlineOrder() {
+		TestObject quick = findTestObject("Object Repository/defaultFooter/footerBody/rightColumn/a_onlineOrdering")
+		WebUI.click(quick)
+	}
+
+	public static void fillEmailSubscriber() {
+		TestObject emailInput = findTestObject("Object Repository/defaultFooter/footerBody/leftColumn/input_emailSubscribe")
+		WebUI.setText(emailInput, GlobalVariable.email)
+		String text = WebUI.getAttribute(emailInput, 'value')
+		assert text.equals(GlobalVariable.email)
+	}
+
+	public static void clickOnSignUpSubscriber() {
+		TestObject signUpBtn = findTestObject("Object Repository/defaultFooter/footerBody/leftColumn/a_signIpSubscriber")
+		WebUI.click(signUpBtn)
+		TestObject successMsg = findTestObject("Object Repository/defaultFooter/footerBody/leftColumn/span_successMessage")
+		assert WebUI.verifyElementVisible(successMsg)
+		String msg =WebUI.getText(successMsg)
+		assert msg.equals(GlobalVariable.emailSuccessMessage)
+	}
 }

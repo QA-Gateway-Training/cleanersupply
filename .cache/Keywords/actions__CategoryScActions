@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "66317AF784FF824B13C49E779824593C",
+  "keywordFileContentHash": "4B214B817D9EF0900FA0D8874254D2FD",
   "keywordClasses": [
     {
       "name": "actions.CategoryScActions",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }
