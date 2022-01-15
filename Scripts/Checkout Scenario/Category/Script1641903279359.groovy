@@ -25,7 +25,7 @@ String computerRegister ="Object Repository/Category/a_ComputerRegister"
 CategoryScActions.hovertags()
 String tags = "Object Repository/Category/a_tags"
 CategoryValidations.checkanchorHoverColorBackground(tags, GlobalVariable.moveColr,
-GlobalVariable.tagsHoverBackgound)
+GlobalVariable.whiteColor)
 CategoryValidations.checkHoverFlyMenuVisibility()
 CategorySCHelpers.navigateComputerRegister()
 
@@ -34,8 +34,8 @@ CategoryScActions.getDefaultProjectCategoryFilter(GlobalVariable.expectedProduct
 CategoryScActions.getDefaultValueOfSortBy(GlobalVariable.sortByDefault)
 CategoryScActions.getDefaultManufacturar(GlobalVariable.manufacturarDefault)
 CategoryScActions.getDefaultModal(GlobalVariable.defaultmodal)
-//CategoryScActions.clickOnManuWithassertOPened(GlobalVariable.menuExpandValue)
-//CategorySCHelpers.selectCasioManufacturar()
+CategoryScActions.clickOnManuWithassertOPened(GlobalVariable.menuExpandValue)
+CategorySCHelpers.selectCasioManufacturar()
 CategorySCHelpers.selectModalsp1000()
 CategorySCHelpers.EnterCasioSP1000Product()
 CategorySCHelpers.ValidateCasioSP1000ProductDetails()
