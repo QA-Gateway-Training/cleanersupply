@@ -57,8 +57,36 @@ https://github.com/QA-Gateway-Training/cleanersupply.git
 ## Test Plan
 
 1- Header test plan
-  - test 1
-
+  - TopBar
+    - Verify top bar is displayed
+    - Verify background color
+    - Verify shipping information text centered
+    - Verify Shipping info. font family, font weight, color
+    - Verify shipping details link font family, font weight, color
+    - Verify shipping details link hover effect style
+    - Verify shipping info. text content
+    - Verify customer service is displayed
+    - Verify customer service style font family, font weight, color
+    - Verifu customer service link hover effect style
+  - Top Nvavigation
+    - Verify if displayed
+    - Verify background color
+    - Verify logo is displayed
+    - Verify search input is displayed
+    - Verify existence of
+      - Quick order link
+      - Reorder link
+      - My account button
+      - Cart link
+    - Verify hover effect for
+      - Quick order link
+      - Reorder link
+      - My account button
+      - Cart link
+    - Verify account dropdown box is present on my account button click
+    - Verify mini cart displayed on cart link hover
+    - Verify mini cart is empty and have text `your cart is empty`
+  
 2- Product details page test plan ( search )
   - Verify page url
   - Verify page Title ( title cappetlize but the product name uppercase <img src="https://c.tenor.com/IUzym1Pr2x0AAAAC/bug-cute.gif" alt="testing image" width="30"/>)
@@ -126,8 +154,24 @@ https://github.com/QA-Gateway-Training/cleanersupply.git
   - Check top bar background
   - Click on search button
  
-7- Footer Test Plan
-  - test1
+7- All Pages Default Footer Test Plan
+  - Verify existing Of Top Footer.
+  - Verify existing of Image in Top Footer.
+  - Verify background Color of top footer (yellow Color).
+  - Verify max height of top footer as expected.
+  - Verify existing of footer body and has a black Background Color.
+  - Verify Right Column' content in footer body.
+  - Verify request catalog link and icon with wight color and validate click's redirection.
+  - Verify free classifieds link and icon with wight color and validate click's redirection.
+  - Verify existing of choose region span.
+  - Verify USA as default region.
+  - Verify region's button can be clickable and by default has an aria expanded attribute equal to false.
+  - Verify visibility of a region's list when click on region's button.
+  - Verify visibility of leave feedback button, verify clicking it and a pop- up modal appear.
+  - Verify Filling feedback's modal with a comment and email and close it.( note: Katalon can't support recaptcha verification image).
+  - Verify existing of bbb logo image at the end left column in footer's body.
+  -   
+  - 
   
 8- Shopping Cart
   - Verify Page url

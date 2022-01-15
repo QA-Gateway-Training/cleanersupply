@@ -1,0 +1,870 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Checkout" time="423.907" tests="3" failures="3" errors="0">
+   <testsuite name="Checkout" tests="3" failures="3" errors="0" time="423.907" skipped="0" timestamp="2022-01-15 11:12:10" hostname="waleedafifi - localhost" id="Test Suites/Checkout">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/waleedafifi/git/cleanersupply/Reports/20220115_105856/Checkout/20220115_105906"/>
+         <property name="logFiles" value="/Users/waleedafifi/git/cleanersupply/Reports/20220115_105856/Checkout/20220115_105906/execution0.log"/>
+         <property name="attachments" value="/Users/waleedafifi/git/cleanersupply/Reports/20220115_105856/Checkout/20220115_105906/1642238161932.png, /Users/waleedafifi/git/cleanersupply/Reports/20220115_105856/Checkout/20220115_105906/1642238213663.png, /Users/waleedafifi/git/cleanersupply/Reports/20220115_105856/Checkout/20220115_105906/1642238262344.png, /Users/waleedafifi/git/cleanersupply/Reports/20220115_105856/Checkout/20220115_105906/1642238354160.png"/>
+         <property name="hostName" value="waleedafifi - localhost"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="8.2.0.208"/>
+         <property name="browser" value="Firefox 95.0"/>
+         <property name="hostAddress" value="127.0.0.1"/>
+         <property name="sessionId" value="54c574ea-8b02-48be-81ec-a1b2ca39532f"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Mac OS X"/>
+      </properties>
+      <testcase name="Test Cases/Checkout Scenario/Product Details" time="29.537" classname="Test Cases/Checkout Scenario/Product Details" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Checkout Scenario/Product Details FAILED.
+Reason:
+Assertion failed: 
+
+assert WebUI.getCSSValue(searchFor, 'background-color').equals(GlobalVariable.searchHeaderTopBarBackgroundColor)
+             |           |                              |                     |
+             |           |                              false                 rgba(82, 36, 127, 1)
+             |           TestObject - 'Object Repository/Product details/div_searchHeaderTopBar'
+             rgb(82, 36, 127)
+
+	at validation.SearchValidations.VerifySearchDropDownTopBarStyle(SearchValidations.groovy:41)
+	at validation.SearchValidations$VerifySearchDropDownTopBarStyle$0.call(Unknown Source)
+	at helpers.GeneralHelpers.headerSearchFillAndClick(GeneralHelpers.groovy:50)
+	at helpers.GeneralHelpers$headerSearchFillAndClick$0.call(Unknown Source)
+	at Product Details.run(Product Details:34)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:181)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1642237146783.run(TempTestSuite1642237146783.groovy:36)
+"/>
+         <system-out><![CDATA[2022-01-15 11:13:18 - [TEST_CASE][FAILED] - Test Cases/Checkout Scenario/Product Details: Test Cases/Checkout Scenario/Product Details FAILED.
+Reason:
+Assertion failed: 
+
+assert WebUI.getCSSValue(searchFor, 'background-color').equals(GlobalVariable.searchHeaderTopBarBackgroundColor)
+             |           |                              |                     |
+             |           |                              false                 rgba(82, 36, 127, 1)
+             |           TestObject - 'Object Repository/Product details/div_searchHeaderTopBar'
+             rgb(82, 36, 127)
+
+	at validation.SearchValidations.VerifySearchDropDownTopBarStyle(SearchValidations.groovy:41)
+	at validation.SearchValidations$VerifySearchDropDownTopBarStyle$0.call(Unknown Source)
+	at helpers.GeneralHelpers.headerSearchFillAndClick(GeneralHelpers.groovy:50)
+	at helpers.GeneralHelpers$headerSearchFillAndClick$0.call(Unknown Source)
+	at Product Details.run(Product Details:34)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:181)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1642237146783.run(TempTestSuite1642237146783.groovy:36)
+
+
+2022-01-15 11:13:18 - [TEST_STEP][PASSED] - GeneralHelpers.initScenario(): Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-15 11:13:18 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2022-01-15 11:13:18 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2022-01-15 11:13:18 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-01-15 11:13:22 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2022-01-15 11:13:23 - [MESSAGE][PASSED] - Current window maximized
+
+2022-01-15 11:13:39 - [MESSAGE][PASSED] - Navigate to 'https://www.cleanersupply.com/' successfully
+
+2022-01-15 11:13:39 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2022-01-15 11:13:39 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-15 11:13:39 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-15 11:13:39 - [MESSAGE][PASSED] - Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-15 11:13:39 - [TEST_STEP][FAILED] - GeneralHelpers.headerSearchFillAndClick(): Test Cases/Checkout Scenario/Product Details FAILED.
+Reason:
+Assertion failed: 
+
+assert WebUI.getCSSValue(searchFor, 'background-color').equals(GlobalVariable.searchHeaderTopBarBackgroundColor)
+             |           |                              |                     |
+             |           |                              false                 rgba(82, 36, 127, 1)
+             |           TestObject - 'Object Repository/Product details/div_searchHeaderTopBar'
+             rgb(82, 36, 127)
+
+	at validation.SearchValidations.VerifySearchDropDownTopBarStyle(SearchValidations.groovy:41)
+	at validation.SearchValidations$VerifySearchDropDownTopBarStyle$0.call(Unknown Source)
+	at helpers.GeneralHelpers.headerSearchFillAndClick(GeneralHelpers.groovy:50)
+	at helpers.GeneralHelpers$headerSearchFillAndClick$0.call(Unknown Source)
+	at Product Details.run(Product Details:34)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:181)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1642237146783.run(TempTestSuite1642237146783.groovy:36)
+
+
+2022-01-15 11:13:45 - [MESSAGE][PASSED] - Text 'Plastic' is set on object 'Object Repository/Product details/input_searchField'
+
+2022-01-15 11:13:45 - [MESSAGE][PASSED] - Attribute 'value' of object 'Object Repository/Product details/input_searchField' is: 'Plastic'
+
+2022-01-15 11:13:46 - [MESSAGE][PASSED] - Object 'Object Repository/Product details/div_searchAutocompleteBox' is visible
+
+2022-01-15 11:13:47 - [MESSAGE][PASSED] - Attribute 'class' of object 'Object Repository/Product details/div_searchAutocompleteBox' is: 'search-autocomplete dropdown-menu open'
+
+2022-01-15 11:13:47 - [MESSAGE][PASSED] - Text of object 'Object Repository/Product details/div_searchHeaderTopBar' is: 'Search for PLASTIC'
+
+2022-01-15 11:13:47 - [MESSAGE][PASSED] - Get CSS 'background-color' value on 'Object Repository/Product details/div_searchHeaderTopBar' successfully: 'rgb(82, 36, 127)'.
+
+2022-01-15 11:13:47 - [MESSAGE][FAILED] - Test Cases/Checkout Scenario/Product Details FAILED.
+Reason:
+Assertion failed: 
+
+assert WebUI.getCSSValue(searchFor, 'background-color').equals(GlobalVariable.searchHeaderTopBarBackgroundColor)
+             |           |                              |                     |
+             |           |                              false                 rgba(82, 36, 127, 1)
+             |           TestObject - 'Object Repository/Product details/div_searchHeaderTopBar'
+             rgb(82, 36, 127)
+
+	at validation.SearchValidations.VerifySearchDropDownTopBarStyle(SearchValidations.groovy:41)
+	at validation.SearchValidations$VerifySearchDropDownTopBarStyle$0.call(Unknown Source)
+	at helpers.GeneralHelpers.headerSearchFillAndClick(GeneralHelpers.groovy:50)
+	at helpers.GeneralHelpers$headerSearchFillAndClick$0.call(Unknown Source)
+	at Product Details.run(Product Details:34)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:181)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1642237146783.run(TempTestSuite1642237146783.groovy:36)]]></system-out>
+         <system-err><![CDATA[2022-01-15 11:13:18 - [TEST_CASE][FAILED] - Test Cases/Checkout Scenario/Product Details: Test Cases/Checkout Scenario/Product Details FAILED.
+Reason:
+Assertion failed: 
+
+assert WebUI.getCSSValue(searchFor, 'background-color').equals(GlobalVariable.searchHeaderTopBarBackgroundColor)
+             |           |                              |                     |
+             |           |                              false                 rgba(82, 36, 127, 1)
+             |           TestObject - 'Object Repository/Product details/div_searchHeaderTopBar'
+             rgb(82, 36, 127)
+
+	at validation.SearchValidations.VerifySearchDropDownTopBarStyle(SearchValidations.groovy:41)
+	at validation.SearchValidations$VerifySearchDropDownTopBarStyle$0.call(Unknown Source)
+	at helpers.GeneralHelpers.headerSearchFillAndClick(GeneralHelpers.groovy:50)
+	at helpers.GeneralHelpers$headerSearchFillAndClick$0.call(Unknown Source)
+	at Product Details.run(Product Details:34)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:181)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1642237146783.run(TempTestSuite1642237146783.groovy:36)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Checkout Scenario/Quick Order" time="15.629" classname="Test Cases/Checkout Scenario/Quick Order" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Checkout Scenario/Quick Order FAILED.
+Reason:
+Assertion failed: 
+
+assert WebUI.getCSSValue(item, &quot;color&quot;).equals(color)
+             |           |              |      |
+             |           |              false  rgba(82, 36, 127, 1)
+             |           TestObject - 'Object Repository/Quick Order/i_quickOrderIcon'
+             rgb(82, 36, 127)
+
+	at validation.GeneralValidation.verifyColorChangeOnHover(GeneralValidation.groovy:53)
+	at validation.GeneralValidation$verifyColorChangeOnHover$4.call(Unknown Source)
+	at helpers.QuickOrderHelpers.navigateToQuickOrderPage(QuickOrderHelpers.groovy:55)
+	at helpers.QuickOrderHelpers$navigateToQuickOrderPage$0.call(Unknown Source)
+	at helpers.QuickOrderHelpers.navigationAndVerifyToQuickOrder(QuickOrderHelpers.groovy:107)
+	at helpers.QuickOrderHelpers$navigationAndVerifyToQuickOrder.call(Unknown Source)
+	at Quick Order.run(Quick Order:45)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:181)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1642237146783.run(TempTestSuite1642237146783.groovy:36)
+"/>
+         <system-out><![CDATA[2022-01-15 11:14:54 - [TEST_CASE][FAILED] - Test Cases/Checkout Scenario/Quick Order: Test Cases/Checkout Scenario/Quick Order FAILED.
+Reason:
+Assertion failed: 
+
+assert WebUI.getCSSValue(item, "color").equals(color)
+             |           |              |      |
+             |           |              false  rgba(82, 36, 127, 1)
+             |           TestObject - 'Object Repository/Quick Order/i_quickOrderIcon'
+             rgb(82, 36, 127)
+
+	at validation.GeneralValidation.verifyColorChangeOnHover(GeneralValidation.groovy:53)
+	at validation.GeneralValidation$verifyColorChangeOnHover$4.call(Unknown Source)
+	at helpers.QuickOrderHelpers.navigateToQuickOrderPage(QuickOrderHelpers.groovy:55)
+	at helpers.QuickOrderHelpers$navigateToQuickOrderPage$0.call(Unknown Source)
+	at helpers.QuickOrderHelpers.navigationAndVerifyToQuickOrder(QuickOrderHelpers.groovy:107)
+	at helpers.QuickOrderHelpers$navigationAndVerifyToQuickOrder.call(Unknown Source)
+	at Quick Order.run(Quick Order:45)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:181)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1642237146783.run(TempTestSuite1642237146783.groovy:36)
+
+
+2022-01-15 11:14:54 - [TEST_STEP][PASSED] - GeneralHelpers.initScenario(): Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-15 11:14:54 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2022-01-15 11:14:55 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2022-01-15 11:14:55 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-01-15 11:14:58 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2022-01-15 11:14:59 - [MESSAGE][PASSED] - Current window maximized
+
+2022-01-15 11:15:07 - [MESSAGE][PASSED] - Navigate to 'https://www.cleanersupply.com/' successfully
+
+2022-01-15 11:15:07 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2022-01-15 11:15:07 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-15 11:15:07 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-15 11:15:07 - [MESSAGE][PASSED] - Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-15 11:15:07 - [TEST_STEP][FAILED] - QuickOrderHelpers.navigationAndVerifyToQuickOrder(): Test Cases/Checkout Scenario/Quick Order FAILED.
+Reason:
+Assertion failed: 
+
+assert WebUI.getCSSValue(item, "color").equals(color)
+             |           |              |      |
+             |           |              false  rgba(82, 36, 127, 1)
+             |           TestObject - 'Object Repository/Quick Order/i_quickOrderIcon'
+             rgb(82, 36, 127)
+
+	at validation.GeneralValidation.verifyColorChangeOnHover(GeneralValidation.groovy:53)
+	at validation.GeneralValidation$verifyColorChangeOnHover$4.call(Unknown Source)
+	at helpers.QuickOrderHelpers.navigateToQuickOrderPage(QuickOrderHelpers.groovy:55)
+	at helpers.QuickOrderHelpers$navigateToQuickOrderPage$0.call(Unknown Source)
+	at helpers.QuickOrderHelpers.navigationAndVerifyToQuickOrder(QuickOrderHelpers.groovy:107)
+	at helpers.QuickOrderHelpers$navigationAndVerifyToQuickOrder.call(Unknown Source)
+	at Quick Order.run(Quick Order:45)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:181)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1642237146783.run(TempTestSuite1642237146783.groovy:36)
+
+
+2022-01-15 11:15:09 - [MESSAGE][PASSED] - Object 'Object Repository/Quick Order/a_quickOrder' is visible
+
+2022-01-15 11:15:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Quick Order/a_quickOrder' is hovered
+
+2022-01-15 11:15:10 - [MESSAGE][PASSED] - Get CSS 'color' value on 'Object Repository/Quick Order/i_quickOrderIcon' successfully: 'rgb(82, 36, 127)'.
+
+2022-01-15 11:15:10 - [MESSAGE][FAILED] - Test Cases/Checkout Scenario/Quick Order FAILED.
+Reason:
+Assertion failed: 
+
+assert WebUI.getCSSValue(item, "color").equals(color)
+             |           |              |      |
+             |           |              false  rgba(82, 36, 127, 1)
+             |           TestObject - 'Object Repository/Quick Order/i_quickOrderIcon'
+             rgb(82, 36, 127)
+
+	at validation.GeneralValidation.verifyColorChangeOnHover(GeneralValidation.groovy:53)
+	at validation.GeneralValidation$verifyColorChangeOnHover$4.call(Unknown Source)
+	at helpers.QuickOrderHelpers.navigateToQuickOrderPage(QuickOrderHelpers.groovy:55)
+	at helpers.QuickOrderHelpers$navigateToQuickOrderPage$0.call(Unknown Source)
+	at helpers.QuickOrderHelpers.navigationAndVerifyToQuickOrder(QuickOrderHelpers.groovy:107)
+	at helpers.QuickOrderHelpers$navigationAndVerifyToQuickOrder.call(Unknown Source)
+	at Quick Order.run(Quick Order:45)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:181)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1642237146783.run(TempTestSuite1642237146783.groovy:36)]]></system-out>
+         <system-err><![CDATA[2022-01-15 11:14:54 - [TEST_CASE][FAILED] - Test Cases/Checkout Scenario/Quick Order: Test Cases/Checkout Scenario/Quick Order FAILED.
+Reason:
+Assertion failed: 
+
+assert WebUI.getCSSValue(item, "color").equals(color)
+             |           |              |      |
+             |           |              false  rgba(82, 36, 127, 1)
+             |           TestObject - 'Object Repository/Quick Order/i_quickOrderIcon'
+             rgb(82, 36, 127)
+
+	at validation.GeneralValidation.verifyColorChangeOnHover(GeneralValidation.groovy:53)
+	at validation.GeneralValidation$verifyColorChangeOnHover$4.call(Unknown Source)
+	at helpers.QuickOrderHelpers.navigateToQuickOrderPage(QuickOrderHelpers.groovy:55)
+	at helpers.QuickOrderHelpers$navigateToQuickOrderPage$0.call(Unknown Source)
+	at helpers.QuickOrderHelpers.navigationAndVerifyToQuickOrder(QuickOrderHelpers.groovy:107)
+	at helpers.QuickOrderHelpers$navigationAndVerifyToQuickOrder.call(Unknown Source)
+	at Quick Order.run(Quick Order:45)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:181)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1642237146783.run(TempTestSuite1642237146783.groovy:36)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Checkout Scenario/Category" time="91.761" classname="Test Cases/Checkout Scenario/Category" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Checkout Scenario/Category FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Cannot get CSS 'border-color' value on 'Object Repository/CheckOutForm/input_company'.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.getCSSValueKeyword.getCSSValue(GetCSSValueKeyword.groovy:84)
+	at com.kms.katalon.core.webui.keyword.builtin.getCSSValueKeyword.execute(GetCSSValueKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getCSSValue(WebUiBuiltInKeywords.groovy:4594)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$getCSSValue$9.call(Unknown Source)
+	at validation.CheckOutFormValidation.validateBoxShadowBlaceHolderBorder(CheckOutFormValidation.groovy:30)
+	at validation.CheckOutFormValidation$validateBoxShadowBlaceHolderBorder.call(Unknown Source)
+	at helpers.checkOutFormHelper.sendCompanyValue(checkOutFormHelper.groovy:28)
+	at helpers.checkOutFormHelper$sendCompanyValue$0.call(Unknown Source)
+	at helpers.checkOutFormHelper.fillCheckOutForm(checkOutFormHelper.groovy:141)
+	at helpers.checkOutFormHelper$fillCheckOutForm.call(Unknown Source)
+	at Category.run(Category:41)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:181)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1642237146783.run(TempTestSuite1642237146783.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Cannot get CSS 'border-color' value on 'Object Repository/CheckOutForm/input_company'.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.getCSSValueKeyword$_getCSSValue_closure1.doCall(GetCSSValueKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.getCSSValueKeyword$_getCSSValue_closure1.call(GetCSSValueKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 28 more
+"/>
+         <system-out><![CDATA[2022-01-15 11:17:42 - [TEST_CASE][FAILED] - Test Cases/Checkout Scenario/Category: Test Cases/Checkout Scenario/Category FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Cannot get CSS 'border-color' value on 'Object Repository/CheckOutForm/input_company'.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.getCSSValueKeyword.getCSSValue(GetCSSValueKeyword.groovy:84)
+	at com.kms.katalon.core.webui.keyword.builtin.getCSSValueKeyword.execute(GetCSSValueKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getCSSValue(WebUiBuiltInKeywords.groovy:4594)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$getCSSValue$9.call(Unknown Source)
+	at validation.CheckOutFormValidation.validateBoxShadowBlaceHolderBorder(CheckOutFormValidation.groovy:30)
+	at validation.CheckOutFormValidation$validateBoxShadowBlaceHolderBorder.call(Unknown Source)
+	at helpers.checkOutFormHelper.sendCompanyValue(checkOutFormHelper.groovy:28)
+	at helpers.checkOutFormHelper$sendCompanyValue$0.call(Unknown Source)
+	at helpers.checkOutFormHelper.fillCheckOutForm(checkOutFormHelper.groovy:141)
+	at helpers.checkOutFormHelper$fillCheckOutForm.call(Unknown Source)
+	at Category.run(Category:41)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:181)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1642237146783.run(TempTestSuite1642237146783.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Cannot get CSS 'border-color' value on 'Object Repository/CheckOutForm/input_company'.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.getCSSValueKeyword$_getCSSValue_closure1.doCall(GetCSSValueKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.getCSSValueKeyword$_getCSSValue_closure1.call(GetCSSValueKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 28 more
+
+
+2022-01-15 11:17:42 - [TEST_STEP][PASSED] - GeneralHelpers.initScenario(): Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-15 11:17:42 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2022-01-15 11:17:43 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2022-01-15 11:17:43 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-01-15 11:17:46 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2022-01-15 11:17:47 - [MESSAGE][PASSED] - Current window maximized
+
+2022-01-15 11:17:55 - [MESSAGE][PASSED] - Navigate to 'https://www.cleanersupply.com/' successfully
+
+2022-01-15 11:17:56 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2022-01-15 11:17:56 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-15 11:17:56 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-15 11:17:56 - [MESSAGE][PASSED] - Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-15 11:17:56 - [TEST_STEP][PASSED] - computerRegister = "Object Repository/Category/a_ComputerRegister": null
+
+2022-01-15 11:17:56 - [TEST_STEP][PASSED] - CategoryScActions.hovertags(): Object: 'Object Repository/Category/a_tags' is hovered
+
+2022-01-15 11:18:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Category/a_tags' is hovered
+
+2022-01-15 11:18:08 - [TEST_STEP][PASSED] - CategorySCHelpers.navigateComputerRegister(): Current window's url is: 'https://www.cleanersupply.com/Tags-Forms/Computer-Register/'
+
+2022-01-15 11:18:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Category/a_ComputerRegister' is hovered
+
+2022-01-15 11:18:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Category/a_ComputerRegister' is clicked on
+
+2022-01-15 11:18:13 - [MESSAGE][PASSED] - Current window's url is: 'https://www.cleanersupply.com/Tags-Forms/Computer-Register/'
+
+2022-01-15 11:18:13 - [TEST_STEP][PASSED] - CategoryValidations.validatespanText(computerRegisterspan): Text of object 'Object Repository/Category/span_omputerRegister' is: 'COMPUTER & REGISTER TAGS & FORMS'
+
+2022-01-15 11:18:28 - [MESSAGE][PASSED] - Text of object 'Object Repository/Category/span_omputerRegister' is: 'COMPUTER & REGISTER TAGS & FORMS'
+
+2022-01-15 11:18:28 - [TEST_STEP][PASSED] - CategoryScActions.getDefaultProjectCategoryFilter(expectedProductNum): Text of object 'Object Repository/Category/h2_productNum' is: '74 PRODUCTS'
+
+2022-01-15 11:18:29 - [MESSAGE][PASSED] - Text of object 'Object Repository/Category/h2_productNum' is: '74 PRODUCTS'
+
+2022-01-15 11:18:29 - [TEST_STEP][PASSED] - CategoryScActions.getDefaultValueOfSortBy(sortByDefault): Text of object 'Object Repository/Category/h2_productNum' is: '74 PRODUCTS'
+
+2022-01-15 11:18:30 - [MESSAGE][PASSED] - Text of object 'Object Repository/Category/h2_productNum' is: '74 PRODUCTS'
+
+2022-01-15 11:18:30 - [TEST_STEP][PASSED] - CategoryScActions.getDefaultManufacturar(manufacturarDefault): Text of object 'Object Repository/Category/span_manuDefault' is: 'Manufacturer'
+
+2022-01-15 11:18:30 - [MESSAGE][PASSED] - Text of object 'Object Repository/Category/span_manuDefault' is: 'Manufacturer'
+
+2022-01-15 11:18:30 - [TEST_STEP][PASSED] - CategoryScActions.getDefaultModal(defaultmodal): Text of object 'Object Repository/Category/span_defaultFilterModal' is: 'Model #'
+
+2022-01-15 11:18:30 - [MESSAGE][PASSED] - Text of object 'Object Repository/Category/span_defaultFilterModal' is: 'Model #'
+
+2022-01-15 11:18:30 - [TEST_STEP][PASSED] - CategoryScActions.clickOnManuWithassertOPened(menuExpandValue): Attribute 'aria-expanded' of object 'Object Repository/Category/span_manuDefault' is: 'null'
+
+2022-01-15 11:18:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Category/span_manuDefault' is clicked on
+
+2022-01-15 11:18:31 - [MESSAGE][PASSED] - Attribute 'aria-expanded' of object 'Object Repository/Category/span_manuDefault' is: 'null'
+
+2022-01-15 11:18:31 - [TEST_STEP][PASSED] - CategorySCHelpers.selectCasioManufacturar(): Text of object 'Object Repository/Category/h2_productNum' is: '2 PRODUCTS'
+
+2022-01-15 11:18:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Category/a_casio' is clicked on
+
+2022-01-15 11:18:33 - [MESSAGE][PASSED] - Attribute 'title' of object 'Object Repository/Category/button_afterSelectCasio' is: 'Casio'
+
+2022-01-15 11:18:33 - [MESSAGE][PASSED] - Text of object 'Object Repository/Category/a_casioSelectedFilter' is: 'Casio'
+
+2022-01-15 11:18:33 - [MESSAGE][PASSED] - Text of object 'Object Repository/Category/h2_productNum' is: '2 PRODUCTS'
+
+2022-01-15 11:18:33 - [TEST_STEP][PASSED] - CategorySCHelpers.selectModalsp1000(): Text of object 'Object Repository/Category/h2_productNum' is: '1 PRODUCT'
+
+2022-01-15 11:18:34 - [MESSAGE][PASSED] - Object 'Object Repository/Category/div_collabse1' has attribute 'aria-expanded' with value 'true'
+
+2022-01-15 11:18:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Category/button_modalNum' is clicked on
+
+2022-01-15 11:18:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Category/a_sp001' is clicked on
+
+2022-01-15 11:18:36 - [MESSAGE][PASSED] - Attribute 'title' of object 'Object Repository/Category/a_sp001' is: ''
+
+2022-01-15 11:18:36 - [MESSAGE][PASSED] - Text of object 'Object Repository/Category/A_SP001selectedFilter' is: 'SP1000'
+
+2022-01-15 11:18:36 - [MESSAGE][PASSED] - Text of object 'Object Repository/Category/h2_productNum' is: '1 PRODUCT'
+
+2022-01-15 11:18:36 - [TEST_STEP][PASSED] - CategorySCHelpers.EnterCasioSP1000Product(): Object: 'Object Repository/Category/sp001Casiprodoct/a_product' is clicked on
+
+2022-01-15 11:18:37 - [MESSAGE][PASSED] - Text of object 'Object Repository/Category/sp001Casiprodoct/h2_sp1000CasioTitle' is: 'EPSON PRINTER INDELIBOND INK RIBBONS #TM290, ERC27 - 6/BOX'
+
+2022-01-15 11:18:37 - [MESSAGE][PASSED] - Actual object 'EPSON PRINTER INDELIBOND INK RIBBONS #TM290, ERC27 - 6/BOX' and expected object 'EPSON PRINTER INDELIBOND INK RIBBONS #TM290, ERC27 - 6/BOX' are equal
+
+2022-01-15 11:18:37 - [MESSAGE][PASSED] - Text of object 'Object Repository/Category/sp001Casiprodoct/span_SP1000CasioProductMinPrice' is: '$15.54'
+
+2022-01-15 11:18:37 - [MESSAGE][PASSED] - Actual object '$15.54' and expected object '$15.54' are equal
+
+2022-01-15 11:18:37 - [MESSAGE][PASSED] - Text of object 'Object Repository/Category/sp001Casiprodoct/span_sp1000CasioProductMaxPrice' is: '$20.94'
+
+2022-01-15 11:18:37 - [MESSAGE][PASSED] - Actual object '$20.94' and expected object '$20.94' are equal
+
+2022-01-15 11:18:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Category/sp001Casiprodoct/a_product' is clicked on
+
+2022-01-15 11:18:41 - [TEST_STEP][PASSED] - CategorySCHelpers.ValidateCasioSP1000ProductDetails(): Actual object 'EPSON PRINTER INDELIBOND INK RIBBONS #TM290, ERC27 - 6/BOX' and expected object 'EPSON PRINTER INDELIBOND INK RIBBONS #TM290, ERC27 - 6/BOX' are equal
+
+2022-01-15 11:18:54 - [MESSAGE][PASSED] - Text of object 'Object Repository/Category/sp1000CasioProductDetails/h1_sp1000CasioProduct' is: 'EPSON PRINTER INDELIBOND INK RIBBONS #TM290, ERC27 - 6/BOX'
+
+2022-01-15 11:18:54 - [MESSAGE][PASSED] - Actual object 'EPSON PRINTER INDELIBOND INK RIBBONS #TM290, ERC27 - 6/BOX' and expected object 'EPSON PRINTER INDELIBOND INK RIBBONS #TM290, ERC27 - 6/BOX' are equal
+
+2022-01-15 11:18:54 - [TEST_STEP][PASSED] - CategorySCHelpers.enterTenItemsFromProduct(): Current window's title is: 'Epson Printer Indelibond Ink Ribbons #TM290, ERC27 - 6/Box - Cleaner's Supply'
+
+2022-01-15 11:18:54 - [MESSAGE][PASSED] - Text of object 'Object Repository/Category/span_badge' is: '0'
+
+2022-01-15 11:18:54 - [MESSAGE][PASSED] - Actual object '0' and expected object '0' are equal
+
+2022-01-15 11:18:54 - [MESSAGE][PASSED] - Text of object 'Object Repository/Category/sp1000CasioProductDetails/input_quantity' is cleared
+
+2022-01-15 11:18:55 - [MESSAGE][PASSED] - Keys 'BACK_SPACE + ' sent to object: 'Object Repository/Category/sp1000CasioProductDetails/input_quantity'
+
+2022-01-15 11:18:56 - [MESSAGE][PASSED] - Text '10' is set on object 'Object Repository/Category/sp1000CasioProductDetails/input_quantity'
+
+2022-01-15 11:18:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Category/sp1000CasioProductDetails/h1_sp1000CasioProduct' is clicked on
+
+2022-01-15 11:18:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Category/sp1000CasioProductDetails/button_addToCart' is clicked on
+
+2022-01-15 11:18:59 - [MESSAGE][PASSED] - Text of object 'Object Repository/Category/span_badge' is: '1'
+
+2022-01-15 11:18:59 - [MESSAGE][PASSED] - Actual object '1' and expected object '1' are equal
+
+2022-01-15 11:18:59 - [MESSAGE][PASSED] - Current window's title is: 'Epson Printer Indelibond Ink Ribbons #TM290, ERC27 - 6/Box - Cleaner's Supply'
+
+2022-01-15 11:18:59 - [TEST_STEP][PASSED] - CategorySCHelpers.checkMeniCartBadge(): Actual object '155.4' and expected object '155.4' are equal
+
+2022-01-15 11:18:59 - [MESSAGE][PASSED] - Text of object 'Object Repository/Category/labelCart' is: '$155.40'
+
+2022-01-15 11:18:59 - [MESSAGE][PASSED] - Actual object '155.4' and expected object '155.4' are equal
+
+2022-01-15 11:18:59 - [TEST_STEP][PASSED] - CategorySCHelpers.navigateToCart(): Current window's title is: 'Shopping Cart - Cleaner's Supply'
+
+2022-01-15 11:19:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Category/a_cart' is clicked on
+
+2022-01-15 11:19:08 - [MESSAGE][PASSED] - Current window's url is: 'https://www.cleanersupply.com/shopping-cart/'
+
+2022-01-15 11:19:08 - [MESSAGE][PASSED] - Current window's title is: 'Shopping Cart - Cleaner's Supply'
+
+2022-01-15 11:19:08 - [TEST_STEP][PASSED] - navigateToUrl("https://www.cleanersupply.com/checkout/"): Navigate to 'https://www.cleanersupply.com/checkout/' successfully
+
+2022-01-15 11:19:10 - [MESSAGE][PASSED] - Navigate to 'https://www.cleanersupply.com/checkout/' successfully
+
+2022-01-15 11:19:10 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2022-01-15 11:19:10 - [MESSAGE][PASSED] - Current window maximized
+
+2022-01-15 11:19:10 - [TEST_STEP][FAILED] - checkOutFormHelper.fillCheckOutForm(): Cannot get CSS 'border-color' value on 'Object Repository/CheckOutForm/input_company'. (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot get CSS 'border-color' value on 'Object Repository/CheckOutForm/input_company'.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.getCSSValueKeyword.getCSSValue(GetCSSValueKeyword.groovy:84)
+	at com.kms.katalon.core.webui.keyword.builtin.getCSSValueKeyword.execute(GetCSSValueKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getCSSValue(WebUiBuiltInKeywords.groovy:4594)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$getCSSValue$9.call(Unknown Source)
+	at validation.CheckOutFormValidation.validateBoxShadowBlaceHolderBorder(CheckOutFormValidation.groovy:30)
+	at validation.CheckOutFormValidation$validateBoxShadowBlaceHolderBorder.call(Unknown Source)
+	at helpers.checkOutFormHelper.sendCompanyValue(checkOutFormHelper.groovy:28)
+	at helpers.checkOutFormHelper$sendCompanyValue$0.call(Unknown Source)
+	at helpers.checkOutFormHelper.fillCheckOutForm(checkOutFormHelper.groovy:141)
+	at helpers.checkOutFormHelper$fillCheckOutForm.call(Unknown Source)
+	at Category.run(Category:41)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:181)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1642237146783.run(TempTestSuite1642237146783.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Cannot get CSS 'border-color' value on 'Object Repository/CheckOutForm/input_company'.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.getCSSValueKeyword$_getCSSValue_closure1.doCall(GetCSSValueKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.getCSSValueKeyword$_getCSSValue_closure1.call(GetCSSValueKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 28 more
+)
+
+2022-01-15 11:19:11 - [MESSAGE][PASSED] - Current window's title is: 'Checkout - Cleaner's Supply'
+
+2022-01-15 11:19:11 - [MESSAGE][PASSED] - Current window's url is: 'https://www.cleanersupply.com/checkout/'
+
+2022-01-15 11:19:13 - [MESSAGE][PASSED] - Text of object 'Object Repository/CheckOutForm/h1_checkOutHeader' is: 'CHECKOUT'
+
+2022-01-15 11:19:13 - [MESSAGE][PASSED] - Object: 'Object Repository/CheckOutForm/input_company' is focused
+
+2022-01-15 11:19:13 - [MESSAGE][PASSED] - Get CSS 'box-shadow' value on 'Object Repository/CheckOutForm/input_company' successfully: 'rgb(99, 99, 99) 0px -3px 0px 0px inset'.
+
+2022-01-15 11:19:14 - [MESSAGE][FAILED] - Cannot get CSS 'border-color' value on 'Object Repository/CheckOutForm/input_company'. (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot get CSS 'border-color' value on 'Object Repository/CheckOutForm/input_company'.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.getCSSValueKeyword$_getCSSValue_closure1.doCall(GetCSSValueKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.getCSSValueKeyword$_getCSSValue_closure1.call(GetCSSValueKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.getCSSValueKeyword.getCSSValue(GetCSSValueKeyword.groovy:84)
+	at com.kms.katalon.core.webui.keyword.builtin.getCSSValueKeyword.execute(GetCSSValueKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getCSSValue(WebUiBuiltInKeywords.groovy:4594)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$getCSSValue$9.call(Unknown Source)
+	at validation.CheckOutFormValidation.validateBoxShadowBlaceHolderBorder(CheckOutFormValidation.groovy:30)
+	at validation.CheckOutFormValidation$validateBoxShadowBlaceHolderBorder.call(Unknown Source)
+	at helpers.checkOutFormHelper.sendCompanyValue(checkOutFormHelper.groovy:28)
+	at helpers.checkOutFormHelper$sendCompanyValue$0.call(Unknown Source)
+	at helpers.checkOutFormHelper.fillCheckOutForm(checkOutFormHelper.groovy:141)
+	at helpers.checkOutFormHelper$fillCheckOutForm.call(Unknown Source)
+	at Category.run(Category:41)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:181)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1642237146783.run(TempTestSuite1642237146783.groovy:36)
+)
+
+2022-01-15 11:19:14 - [MESSAGE][FAILED] - Cannot get CSS 'border-color' value on 'Object Repository/CheckOutForm/input_company'. (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot get CSS 'border-color' value on 'Object Repository/CheckOutForm/input_company'.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.getCSSValueKeyword.getCSSValue(GetCSSValueKeyword.groovy:84)
+	at com.kms.katalon.core.webui.keyword.builtin.getCSSValueKeyword.execute(GetCSSValueKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getCSSValue(WebUiBuiltInKeywords.groovy:4594)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$getCSSValue$9.call(Unknown Source)
+	at validation.CheckOutFormValidation.validateBoxShadowBlaceHolderBorder(CheckOutFormValidation.groovy:30)
+	at validation.CheckOutFormValidation$validateBoxShadowBlaceHolderBorder.call(Unknown Source)
+	at helpers.checkOutFormHelper.sendCompanyValue(checkOutFormHelper.groovy:28)
+	at helpers.checkOutFormHelper$sendCompanyValue$0.call(Unknown Source)
+	at helpers.checkOutFormHelper.fillCheckOutForm(checkOutFormHelper.groovy:141)
+	at helpers.checkOutFormHelper$fillCheckOutForm.call(Unknown Source)
+	at Category.run(Category:41)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:181)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1642237146783.run(TempTestSuite1642237146783.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Cannot get CSS 'border-color' value on 'Object Repository/CheckOutForm/input_company'.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.getCSSValueKeyword$_getCSSValue_closure1.doCall(GetCSSValueKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.getCSSValueKeyword$_getCSSValue_closure1.call(GetCSSValueKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 28 more
+)
+[[ATTACHMENT|/Users/waleedafifi/git/cleanersupply/Reports/20220115_105856/Checkout/20220115_105906/1642238354160.png]]]]></system-out>
+         <system-err><![CDATA[2022-01-15 11:17:42 - [TEST_CASE][FAILED] - Test Cases/Checkout Scenario/Category: Test Cases/Checkout Scenario/Category FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Cannot get CSS 'border-color' value on 'Object Repository/CheckOutForm/input_company'.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.getCSSValueKeyword.getCSSValue(GetCSSValueKeyword.groovy:84)
+	at com.kms.katalon.core.webui.keyword.builtin.getCSSValueKeyword.execute(GetCSSValueKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getCSSValue(WebUiBuiltInKeywords.groovy:4594)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$getCSSValue$9.call(Unknown Source)
+	at validation.CheckOutFormValidation.validateBoxShadowBlaceHolderBorder(CheckOutFormValidation.groovy:30)
+	at validation.CheckOutFormValidation$validateBoxShadowBlaceHolderBorder.call(Unknown Source)
+	at helpers.checkOutFormHelper.sendCompanyValue(checkOutFormHelper.groovy:28)
+	at helpers.checkOutFormHelper$sendCompanyValue$0.call(Unknown Source)
+	at helpers.checkOutFormHelper.fillCheckOutForm(checkOutFormHelper.groovy:141)
+	at helpers.checkOutFormHelper$fillCheckOutForm.call(Unknown Source)
+	at Category.run(Category:41)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:181)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1642237146783.run(TempTestSuite1642237146783.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Cannot get CSS 'border-color' value on 'Object Repository/CheckOutForm/input_company'.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.getCSSValueKeyword$_getCSSValue_closure1.doCall(GetCSSValueKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.getCSSValueKeyword$_getCSSValue_closure1.call(GetCSSValueKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 28 more]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-01-15 11:12:10 - [TEST_SUITE][FAILED] - Checkout: Test Cases/Checkout Scenario/Product Details FAILED.
+Reason:
+Assertion failed: 
+
+assert WebUI.getCSSValue(searchFor, 'background-color').equals(GlobalVariable.searchHeaderTopBarBackgroundColor)
+             |           |                              |                     |
+             |           |                              false                 rgba(82, 36, 127, 1)
+             |           TestObject - 'Object Repository/Product details/div_searchHeaderTopBar'
+             rgb(82, 36, 127)
+
+	at validation.SearchValidations.VerifySearchDropDownTopBarStyle(SearchValidations.groovy:41)
+	at validation.SearchValidations$VerifySearchDropDownTopBarStyle$0.call(Unknown Source)
+	at helpers.GeneralHelpers.headerSearchFillAndClick(GeneralHelpers.groovy:50)
+	at helpers.GeneralHelpers$headerSearchFillAndClick$0.call(Unknown Source)
+	at Product Details.run(Product Details:34)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:181)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1642237146783.run(TempTestSuite1642237146783.groovy:36)]]></system-out>
+      <system-err><![CDATA[2022-01-15 11:12:10 - [TEST_SUITE][FAILED] - Checkout: Test Cases/Checkout Scenario/Product Details FAILED.
+Reason:
+Assertion failed: 
+
+assert WebUI.getCSSValue(searchFor, 'background-color').equals(GlobalVariable.searchHeaderTopBarBackgroundColor)
+             |           |                              |                     |
+             |           |                              false                 rgba(82, 36, 127, 1)
+             |           TestObject - 'Object Repository/Product details/div_searchHeaderTopBar'
+             rgb(82, 36, 127)
+
+	at validation.SearchValidations.VerifySearchDropDownTopBarStyle(SearchValidations.groovy:41)
+	at validation.SearchValidations$VerifySearchDropDownTopBarStyle$0.call(Unknown Source)
+	at helpers.GeneralHelpers.headerSearchFillAndClick(GeneralHelpers.groovy:50)
+	at helpers.GeneralHelpers$headerSearchFillAndClick$0.call(Unknown Source)
+	at Product Details.run(Product Details:34)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:181)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1642237146783.run(TempTestSuite1642237146783.groovy:36)]]></system-err>
+   </testsuite>
+</testsuites>

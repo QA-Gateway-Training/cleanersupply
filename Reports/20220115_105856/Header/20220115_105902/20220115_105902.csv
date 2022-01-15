@@ -1,0 +1,9 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Header,Chrome 97.0.4692.71,,,2022-01-15 11:09:43,2022-01-15 11:10:26,42.655s,PASSED
+,,,,,,,
+Test Cases/Header/Primary Header TC,Chrome 97.0.4692.71,,,2022-01-15 11:09:44,2022-01-15 11:10:26,42.215s,PASSED
+GeneralHelpers.initScenario(),Chrome 97.0.4692.71,,,2022-01-15 11:09:44,2022-01-15 11:10:14,30.108s,PASSED
+PrimaryHeaderHelpers.topNav(),Chrome 97.0.4692.71,,,2022-01-15 11:10:14,2022-01-15 11:10:19,5.304s,PASSED
+PrimaryHeaderHelpers.rightLinkehoverEffect(),Chrome 97.0.4692.71,,,2022-01-15 11:10:19,2022-01-15 11:10:22,2.406s,PASSED
+PrimaryHeaderHelpers.cartLinkHover(),Chrome 97.0.4692.71,,,2022-01-15 11:10:22,2022-01-15 11:10:25,2.689s,PASSED
+PrimaryHeaderHelpers.myAccountButton(),Chrome 97.0.4692.71,,,2022-01-15 11:10:25,2022-01-15 11:10:26,1.325s,PASSED

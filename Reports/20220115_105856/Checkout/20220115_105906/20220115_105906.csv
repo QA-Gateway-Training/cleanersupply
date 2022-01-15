@@ -1,0 +1,32 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Checkout,Firefox 95.0,,,2022-01-15 11:12:10,2022-01-15 11:19:14,7m - 3.907s,FAILED
+,,,,,,,
+Test Cases/Checkout Scenario/Product Details,Firefox 95.0,,,2022-01-15 11:13:18,2022-01-15 11:13:47,29.537s,FAILED
+GeneralHelpers.initScenario(),Firefox 95.0,,,2022-01-15 11:13:18,2022-01-15 11:13:39,21.078s,PASSED
+GeneralHelpers.headerSearchFillAndClick(),Firefox 95.0,,,2022-01-15 11:13:39,2022-01-15 11:13:47,8.419s,FAILED
+,,,,,,,
+Test Cases/Checkout Scenario/Quick Order,Firefox 95.0,,,2022-01-15 11:14:54,2022-01-15 11:15:10,15.629s,FAILED
+GeneralHelpers.initScenario(),Firefox 95.0,,,2022-01-15 11:14:54,2022-01-15 11:15:07,13.136s,PASSED
+QuickOrderHelpers.navigationAndVerifyToQuickOrder(),Firefox 95.0,,,2022-01-15 11:15:07,2022-01-15 11:15:10,2.477s,FAILED
+,,,,,,,
+Test Cases/Checkout Scenario/Category,Firefox 95.0,,,2022-01-15 11:17:42,2022-01-15 11:19:14,1m - 31.761s,FAILED
+GeneralHelpers.initScenario(),Firefox 95.0,,,2022-01-15 11:17:42,2022-01-15 11:17:56,13.423s,PASSED
+"computerRegister = ""Object Repository/Category/a_ComputerRegister""",Firefox 95.0,,,2022-01-15 11:17:56,2022-01-15 11:17:56,0.001s,PASSED
+CategoryScActions.hovertags(),Firefox 95.0,,,2022-01-15 11:17:56,2022-01-15 11:18:08,12.492s,PASSED
+CategorySCHelpers.navigateComputerRegister(),Firefox 95.0,,,2022-01-15 11:18:08,2022-01-15 11:18:13,4.582s,PASSED
+CategoryValidations.validatespanText(computerRegisterspan),Firefox 95.0,,,2022-01-15 11:18:13,2022-01-15 11:18:28,15.544s,PASSED
+CategoryScActions.getDefaultProjectCategoryFilter(expectedProductNum),Firefox 95.0,,,2022-01-15 11:18:28,2022-01-15 11:18:29,0.715s,PASSED
+CategoryScActions.getDefaultValueOfSortBy(sortByDefault),Firefox 95.0,,,2022-01-15 11:18:29,2022-01-15 11:18:30,0.794s,PASSED
+CategoryScActions.getDefaultManufacturar(manufacturarDefault),Firefox 95.0,,,2022-01-15 11:18:30,2022-01-15 11:18:30,0.288s,PASSED
+CategoryScActions.getDefaultModal(defaultmodal),Firefox 95.0,,,2022-01-15 11:18:30,2022-01-15 11:18:30,0.298s,PASSED
+CategoryScActions.clickOnManuWithassertOPened(menuExpandValue),Firefox 95.0,,,2022-01-15 11:18:30,2022-01-15 11:18:31,0.863s,PASSED
+CategorySCHelpers.selectCasioManufacturar(),Firefox 95.0,,,2022-01-15 11:18:31,2022-01-15 11:18:33,2.278s,PASSED
+CategorySCHelpers.selectModalsp1000(),Firefox 95.0,,,2022-01-15 11:18:33,2022-01-15 11:18:36,2.829s,PASSED
+CategorySCHelpers.EnterCasioSP1000Product(),Firefox 95.0,,,2022-01-15 11:18:36,2022-01-15 11:18:41,4.281s,PASSED
+CategorySCHelpers.ValidateCasioSP1000ProductDetails(),Firefox 95.0,,,2022-01-15 11:18:41,2022-01-15 11:18:54,13.033s,PASSED
+CategorySCHelpers.enterTenItemsFromProduct(),Firefox 95.0,,,2022-01-15 11:18:54,2022-01-15 11:18:59,5.140s,PASSED
+CategorySCHelpers.checkMeniCartBadge(),Firefox 95.0,,,2022-01-15 11:18:59,2022-01-15 11:18:59,0.702s,PASSED
+CategorySCHelpers.navigateToCart(),Firefox 95.0,,,2022-01-15 11:18:59,2022-01-15 11:19:08,8.260s,PASSED
+"navigateToUrl(""https://www.cleanersupply.com/checkout/"")",Firefox 95.0,,,2022-01-15 11:19:08,2022-01-15 11:19:10,2.790s,PASSED
+maximizeWindow(),Firefox 95.0,,,2022-01-15 11:19:10,2022-01-15 11:19:10,0.015s,PASSED
+checkOutFormHelper.fillCheckOutForm(),Firefox 95.0,,,2022-01-15 11:19:10,2022-01-15 11:19:14,3.399s,FAILED

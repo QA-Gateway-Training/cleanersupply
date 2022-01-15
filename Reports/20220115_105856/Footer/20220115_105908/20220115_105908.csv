@@ -1,0 +1,7 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Footer,Firefox 95.0,,,2022-01-15 11:19:19,2022-01-15 11:21:00,1m - 41.107s,FAILED
+,,,,,,,
+Test Cases/Footer/Footer TC,Firefox 95.0,,,2022-01-15 11:20:35,2022-01-15 11:21:00,25.277s,FAILED
+GeneralHelpers.initScenario(),Firefox 95.0,,,2022-01-15 11:20:35,2022-01-15 11:20:48,13.092s,PASSED
+defaultFooterValidatins.verifyExistingOftopFooterImage(),Firefox 95.0,,,2022-01-15 11:20:48,2022-01-15 11:20:58,10.120s,PASSED
+defaultFooterValidatins.verifyBackGroundandMaxHeightOfTopFooter(),Firefox 95.0,,,2022-01-15 11:20:58,2022-01-15 11:21:00,2.018s,FAILED
