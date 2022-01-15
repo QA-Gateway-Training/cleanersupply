@@ -51,8 +51,12 @@ https://github.com/QA-Gateway-Training/cleanersupply.git
   3. Quick Order Scenario.
   
 ## Test Steps
-  1. Step 1
-  2. Step 2
+
+https://user-images.githubusercontent.com/57403758/149640452-ba3c7032-7aa1-4b2b-910e-1007db325b5c.mp4
+
+## Execution report
+<img width="500" alt="Screen Shot 2022-01-16 at 1 07 06 AM" src="https://user-images.githubusercontent.com/57403758/149640501-88e77e6b-ce77-4862-b42b-32101f2c528c.png">
+
 
 ## Test Plan
 
