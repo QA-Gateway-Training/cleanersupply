@@ -1,0 +1,42 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Footer,Firefox 95.0,,,2022-01-16 00:23:23,2022-01-16 00:24:39,1m - 15.778s,PASSED
+,,,,,,,
+Test Cases/Footer/Footer TC,Firefox 95.0,,,2022-01-16 00:23:24,2022-01-16 00:24:39,1m - 15.332s,PASSED
+GeneralHelpers.initScenario(),Firefox 95.0,,,2022-01-16 00:23:24,2022-01-16 00:23:42,17.898s,PASSED
+defaultFooterValidatins.verifyExistingOftopFooterImage(),Firefox 95.0,,,2022-01-16 00:23:42,2022-01-16 00:23:44,1.919s,PASSED
+defaultFooterValidatins.verifyBackGroundandMaxHeightOfTopFooter(),Firefox 95.0,,,2022-01-16 00:23:44,2022-01-16 00:23:47,2.823s,PASSED
+defaultFooterValidatins.verifyExistingOffooterBody(),Firefox 95.0,,,2022-01-16 00:23:47,2022-01-16 00:23:47,0.314s,PASSED
+defaultFooterValidatins.verifyBackGroundandPaddingOfFooterBody(),Firefox 95.0,,,2022-01-16 00:23:47,2022-01-16 00:23:47,0.264s,PASSED
+defaultFooterValidatins.verifyExistingOffooterBodyRightColomn(),Firefox 95.0,,,2022-01-16 00:23:47,2022-01-16 00:23:48,0.293s,PASSED
+defaultFooterValidatins.verifyExistingOffooterBodyMiddleColomn(),Firefox 95.0,,,2022-01-16 00:23:48,2022-01-16 00:23:48,0.309s,PASSED
+defaultFooterValidatins.verifyExistingOffooterBodyLeftColomn(),Firefox 95.0,,,2022-01-16 00:23:48,2022-01-16 00:23:48,0.308s,PASSED
+defaultFooterValidatins.verifyRequestCatalogueLink(),Firefox 95.0,,,2022-01-16 00:23:48,2022-01-16 00:23:55,6.392s,PASSED
+defaultFooterValidatins.verifycassifiedListLink(),Firefox 95.0,,,2022-01-16 00:23:55,2022-01-16 00:24:01,6.451s,PASSED
+defaultFooterValidatins.verifyExistingOfRegionButtonandClickable(),Firefox 95.0,,,2022-01-16 00:24:01,2022-01-16 00:24:03,1.491s,PASSED
+defaultFooterValidatins.verifyClickingOnFeedBackButtonShowPopUP(),Firefox 95.0,,,2022-01-16 00:24:03,2022-01-16 00:24:04,1.288s,PASSED
+defaultFooterValidatins.fillModalWithAssertValueAndClose(),Firefox 95.0,,,2022-01-16 00:24:04,2022-01-16 00:24:06,2.459s,PASSED
+defaultFooterActions.clickpreviouslyOrdered(),Firefox 95.0,,,2022-01-16 00:24:06,2022-01-16 00:24:09,2.857s,PASSED
+defaultFooterValidatins.verifyClickingPreviouslyOrdered(),Firefox 95.0,,,2022-01-16 00:24:09,2022-01-16 00:24:21,11.500s,PASSED
+defaultFooterActions.clickQuickOrder(),Firefox 95.0,,,2022-01-16 00:24:21,2022-01-16 00:24:26,4.748s,PASSED
+defaultFooterValidatins.verifyExistingOfLeftFooterTitle(),Firefox 95.0,,,2022-01-16 00:24:26,2022-01-16 00:24:27,1.926s,PASSED
+defaultFooterValidatins.verifyExistingOfLeftFooterSubTitle(),Firefox 95.0,,,2022-01-16 00:24:27,2022-01-16 00:24:28,0.521s,PASSED
+defaultFooterValidatins.verifyExistingOfEmailAndValidatingIt(),Firefox 95.0,,,2022-01-16 00:24:28,2022-01-16 00:24:28,0.293s,PASSED
+defaultFooterActions.fillEmailSubscriber(),Firefox 95.0,,,2022-01-16 00:24:28,2022-01-16 00:24:29,0.854s,PASSED
+defaultFooterActions.clickOnSignUpSubscriber(),Firefox 95.0,,,2022-01-16 00:24:29,2022-01-16 00:24:31,1.583s,PASSED
+defaultFooterValidatins.verifyExistingOfConnectUsTitleandhasexpectedTitle(),Firefox 95.0,,,2022-01-16 00:24:31,2022-01-16 00:24:31,0.634s,PASSED
+defaultFooterValidatins.verifyEmailContactAddresAndHasExpectedAddress(),Firefox 95.0,,,2022-01-16 00:24:31,2022-01-16 00:24:32,0.294s,PASSED
+defaultFooterValidatins.verifyExistingangOfEmailIconAndHasExpectedStyle(),Firefox 95.0,,,2022-01-16 00:24:32,2022-01-16 00:24:32,0.553s,PASSED
+defaultFooterValidatins.verifyContactInfoAddressAsExpected(),Firefox 95.0,,,2022-01-16 00:24:32,2022-01-16 00:24:33,0.546s,PASSED
+defaultFooterValidatins.verifyExistingangOfPhoneIconAndHasExpectedStyle(),Firefox 95.0,,,2022-01-16 00:24:33,2022-01-16 00:24:33,0.532s,PASSED
+"english = ""Object Repository/defaultFooter/footerBody/leftColumn/div_englishSpeaking""",Firefox 95.0,,,2022-01-16 00:24:33,2022-01-16 00:24:33,0.001s,PASSED
+"defaultFooterHelpers.verifyPresentOfContactNumberasExpectedTextAndStyle(english, englishContact)",Firefox 95.0,,,2022-01-16 00:24:33,2022-01-16 00:24:34,0.807s,PASSED
+"korean = ""Object Repository/defaultFooter/footerBody/leftColumn/div_koreanSpeaking""",Firefox 95.0,,,2022-01-16 00:24:34,2022-01-16 00:24:34,0.001s,PASSED
+"defaultFooterHelpers.verifyPresentOfContactNumberasExpectedTextAndStyle(korean, koreanSpeaking)",Firefox 95.0,,,2022-01-16 00:24:34,2022-01-16 00:24:35,1.202s,PASSED
+"international = ""Object Repository/defaultFooter/footerBody/leftColumn/div_internationalOrders""",Firefox 95.0,,,2022-01-16 00:24:35,2022-01-16 00:24:35,0.002s,PASSED
+"defaultFooterHelpers.verifyPresentOfContactNumberasExpectedTextAndStyle(international, internationalOrdersContact)",Firefox 95.0,,,2022-01-16 00:24:35,2022-01-16 00:24:36,0.829s,PASSED
+defaultFooterValidatins.verifyLogoExisting(),Firefox 95.0,,,2022-01-16 00:24:36,2022-01-16 00:24:37,0.785s,PASSED
+defaultFooterValidatins.verifyFaceBookIconExistingAndRedirection(),Firefox 95.0,,,2022-01-16 00:24:37,2022-01-16 00:24:37,0.543s,PASSED
+defaultFooterValidatins.verifyYoutubeIconExistingAndRedirection(),Firefox 95.0,,,2022-01-16 00:24:37,2022-01-16 00:24:38,0.539s,PASSED
+defaultFooterValidatins.verifyInstagramIconExistingAndRedirection(),Firefox 95.0,,,2022-01-16 00:24:38,2022-01-16 00:24:39,0.555s,PASSED
+defaultFooterValidatins.verifylinkedInIconExistingAndRedirection(),Firefox 95.0,,,2022-01-16 00:24:39,2022-01-16 00:24:39,0.531s,PASSED
+Video,Firefox 95.0,,,2022-01-16 00:24:39,2022-01-16 00:24:39,0.001s,PASSED

@@ -1,0 +1,120 @@
+1
+00:00:00,000 --> 00:00:00,000
+1. GeneralHelpers.initScenario()
+
+2
+00:00:00,000 --> 00:00:00,000
+5. GeneralHelpers.headerSearchFillAndClick()
+
+3
+00:00:00,000 --> 00:00:00,000
+9. GeneralHelpers.navigateToResultPage()
+
+4
+00:00:00,000 --> 00:00:00,000
+13. SearchResultPageValidations.verifyDefaultValues()
+
+5
+00:00:00,000 --> 00:00:00,000
+17. SearchResultHelper.checkSearchPagePagination()
+
+6
+00:00:00,000 --> 00:00:00,000
+21. SearchResultHelper.selectProductFilters()
+
+7
+00:00:00,000 --> 00:00:00,000
+25. SearchResultPageActions.NavigateToProductDetailsPage()
+
+8
+00:00:00,000 --> 00:00:00,000
+29. ProductDetailsHelpers.initProductDetailsPage()
+
+9
+00:00:00,000 --> 00:00:00,000
+33. ProductDetailsHelpers.hoverEffectAndClickXLargeSizeLink()
+
+10
+00:00:00,000 --> 00:00:00,000
+37. ProductDetailsHelpers.selectGreenColor()
+
+11
+00:00:00,000 --> 00:00:00,000
+41. ProductDetailsHelpers.addProductToCart()
+
+12
+00:00:00,000 --> 00:00:00,000
+45. MiniCartHelpers.hoverOnMiniCartHeader()
+
+13
+00:00:00,000 --> 00:00:00,000
+49. ProductDetailsHelpers.hoverEffectAndClickLargeSizeLink()
+
+14
+00:00:00,000 --> 00:00:00,000
+53. ProductDetailsHelpers.selectRoyalBlueColor()
+
+15
+00:00:00,000 --> 00:00:00,000
+57. ProductDetailsHelpers.addProductToCart()
+
+16
+00:00:00,000 --> 00:00:00,000
+61. MiniCartHelpers.hoverOnMiniCartHeader()
+
+17
+00:00:00,000 --> 00:00:00,000
+65. MiniCartActions.navigateToCartPage()
+
+18
+00:00:00,000 --> 00:00:00,000
+69. ShoppingCartHelpers.navigateToCartPage()
+
+19
+00:00:00,000 --> 00:00:00,000
+73. ShoppingCartHelpers.updateQuantities()
+
+20
+00:00:00,000 --> 00:00:00,000
+77. ShoppingCartHelpers.navigateToCheckoutPage()
+
+21
+00:00:00,000 --> 00:00:00,000
+81. CheckoutPageHelpers.initCheckoutPage()
+
+22
+00:00:00,000 --> 00:00:00,000
+85. CheckoutPageHelpers.navigateToCheckoutInformationForm()
+
+23
+00:00:00,000 --> 00:00:00,000
+89. checkOutFormHelper.fillCheckOutForm()
+
+24
+00:00:00,000 --> 00:00:00,000
+93. CheckoutPageValidation.verifyNavigationToCheckoutDetails()
+
+25
+00:00:00,000 --> 00:00:00,000
+97. CheckoutPageHelpers.ShippingAddressDiv()
+
+26
+00:00:00,000 --> 00:00:00,000
+101. CheckoutPageHelpers.verifyShippingDetailsInCeckout()
+
+27
+00:00:00,000 --> 00:00:00,000
+105. CheckoutPageHelpers.standardShippingAddress()
+
+28
+00:00:00,000 --> 00:00:00,000
+109. CheckoutPageHelpers.paymentMethodDiv()
+
+29
+00:00:00,000 --> 00:00:00,000
+113. CheckoutPageHelpers.verifyPaymentMethodDetails()
+
+30
+00:00:00,000 --> 00:00:00,000
+117. closeBrowser()
+

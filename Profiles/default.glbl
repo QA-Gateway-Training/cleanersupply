@@ -764,4 +764,9 @@
       <initValue>'uppercase'</initValue>
       <name>upperCaseTransform</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'rgba(241, 242, 242, 1)'</initValue>
+      <name>grayClr</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

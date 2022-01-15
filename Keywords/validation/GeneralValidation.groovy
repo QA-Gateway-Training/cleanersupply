@@ -35,7 +35,7 @@ public class GeneralValidation {
 	 * @author waleedafifi
 	 */
 	public static void verifyCurrentPageTitleValue(String expectedTitle) {
-		assert WebUI.getWindowTitle().equalsIgnoreCase(expectedTitle)
+		assert WebUI.getWindowTitle().toLowerCase().contains(expectedTitle.toLowerCase())
 	}
 
 	/**

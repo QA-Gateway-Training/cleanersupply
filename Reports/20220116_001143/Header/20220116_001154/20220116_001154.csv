@@ -1,0 +1,15 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Header,Firefox 95.0,,,2022-01-16 00:31:44,2022-01-16 00:32:20,35.958s,PASSED
+,,,,,,,
+Test Cases/Header/Primary Header TC,Firefox 95.0,,,2022-01-16 00:31:45,2022-01-16 00:32:20,35.523s,PASSED
+GeneralHelpers.initScenario(),Firefox 95.0,,,2022-01-16 00:31:45,2022-01-16 00:32:01,16.104s,PASSED
+PrimaryHeaderHelpers.topNav(),Firefox 95.0,,,2022-01-16 00:32:01,2022-01-16 00:32:07,5.740s,PASSED
+PrimaryHeaderHelpers.rightLinkehoverEffect(),Firefox 95.0,,,2022-01-16 00:32:07,2022-01-16 00:32:09,2.305s,PASSED
+PrimaryHeaderHelpers.cartLinkHover(),Firefox 95.0,,,2022-01-16 00:32:09,2022-01-16 00:32:11,1.804s,PASSED
+PrimaryHeaderHelpers.myAccountButton(),Firefox 95.0,,,2022-01-16 00:32:11,2022-01-16 00:32:12,1.160s,PASSED
+PrimaryHeaderHelpers.headerTopBar(),Firefox 95.0,,,2022-01-16 00:32:12,2022-01-16 00:32:16,3.200s,PASSED
+PrimaryHeaderHelpers.shippingDetailsAction(),Firefox 95.0,,,2022-01-16 00:32:16,2022-01-16 00:32:16,0.717s,PASSED
+PrimaryHeaderHelpers.customerService(),Firefox 95.0,,,2022-01-16 00:32:16,2022-01-16 00:32:19,2.731s,PASSED
+PrimaryHeaderHelpers.customerServiceLinkAction(),Firefox 95.0,,,2022-01-16 00:32:19,2022-01-16 00:32:20,0.738s,PASSED
+closeBrowser(),Firefox 95.0,,,2022-01-16 00:32:20,2022-01-16 00:32:20,0.626s,PASSED
+Video,Firefox 95.0,,,2022-01-16 00:32:20,2022-01-16 00:32:20,0.001s,PASSED

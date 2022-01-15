@@ -1,0 +1,132 @@
+1
+00:00:00,000 --> 00:00:00,000
+1. GeneralHelpers.initScenario()
+
+2
+00:00:00,000 --> 00:00:00,000
+5. QuickOrderHelpers.navigationAndVerifyToQuickOrder()
+
+3
+00:00:00,000 --> 00:00:00,000
+9. QuickOrderValidations.verifyCartCounter("0")
+
+4
+00:00:00,000 --> 00:00:00,000
+13. QuickOrderHelpers.headerAndTableStyle()
+
+5
+00:00:00,000 --> 00:00:00,000
+17. QuickOrderHelpers.fillingVerifyingStockNo()
+
+6
+00:00:00,000 --> 00:00:00,000
+21. QuickOrderHelpers.fillingQuanitiesInputs()
+
+7
+00:00:00,000 --> 00:00:00,000
+25. QuickOrderHelpers.storeProductsDetailsAndVerifyTotal()
+
+8
+00:00:00,000 --> 00:00:00,000
+29. QuickOrderHelpers.navigationAndVerifyingShoppingCart()
+
+9
+00:00:00,000 --> 00:00:00,000
+33. QuickOrderValidations.verifyCartCounter("5")
+
+10
+00:00:00,000 --> 00:00:00,000
+37. QuickOrderHelpers.verifyCartTotalAndRowsNo(5)
+
+11
+00:00:00,000 --> 00:00:00,000
+41. MiniCartActions.hoverOnMiniCartLink()
+
+12
+00:00:00,000 --> 00:00:00,000
+45. MiniCartValidations.verifyHoverStyleOnMiniCartLink()
+
+13
+00:00:00,000 --> 00:00:00,000
+49. MiniCartValidations.verifyMiniCartTotals()
+
+14
+00:00:00,000 --> 00:00:00,000
+53. MiniCartValidations.miniCartItemCount()
+
+15
+00:00:00,000 --> 00:00:00,000
+57. ShoppingCartValidations.verifyShoppingCartItemEqualMiniCartBadge()
+
+16
+00:00:00,000 --> 00:00:00,000
+61. ShoppingCartValidations.verifyShoppingCartItemEqualToSummaryItem()
+
+17
+00:00:00,000 --> 00:00:00,000
+65. ShoppingCartValidations.verifyTotalPriceForProductTable()
+
+18
+00:00:00,000 --> 00:00:00,000
+69. ShoppingCartValidations.verifyTotalPriceInSummaryTable()
+
+19
+00:00:00,000 --> 00:00:00,000
+73. QuickOrderHelpers.verifyShoppingCartProductsSameWithStoredProducts()
+
+20
+00:00:00,000 --> 00:00:00,000
+77. ShoppingCartHelpers.navigateToCheckoutPage()
+
+21
+00:00:00,000 --> 00:00:00,000
+81. CheckoutPageValidation.verifyNaigationTOCheckOut()
+
+22
+00:00:00,000 --> 00:00:00,000
+85. CheckoutPageValidation.verifyTotalPrice()
+
+23
+00:00:00,000 --> 00:00:00,000
+89. CheckoutPageValidation.verifyCheckoutAsGuest()
+
+24
+00:00:00,000 --> 00:00:00,000
+93. CheckoutPageValidation.verifyCheckoutAsGuestSelected()
+
+25
+00:00:00,000 --> 00:00:00,000
+97. CheckoutPageValidation.verifyProductSummaryItemQountityTotal()
+
+26
+00:00:00,000 --> 00:00:00,000
+101. CheckoutPageHelpers.navigateToCheckoutInformationForm()
+
+27
+00:00:00,000 --> 00:00:00,000
+105. checkOutFormHelper.fillCheckOutForm()
+
+28
+00:00:00,000 --> 00:00:00,000
+109. CheckoutPageValidation.verifyNavigationToCheckoutDetails()
+
+29
+00:00:00,000 --> 00:00:00,000
+113. CheckoutPageHelpers.ShippingAddressDiv()
+
+30
+00:00:00,000 --> 00:00:00,000
+117. CheckoutPageHelpers.ShippingDetailsInCeckout()
+
+31
+00:00:00,000 --> 00:00:00,000
+121. CheckoutPageHelpers.standardShippingAddress()
+
+32
+00:00:00,000 --> 00:00:00,000
+125. CheckoutPageHelpers.paymentMethodDiv()
+
+33
+00:00:00,000 --> 00:00:00,000
+129. CheckoutPageHelpers.verifyPaymentMethodDetails()
+
