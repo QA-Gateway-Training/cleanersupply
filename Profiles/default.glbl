@@ -481,7 +481,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'rgb(255, 199, 9)'</initValue>
+      <initValue>'rgba(255, 199, 9, 1)'</initValue>
       <name>topFooterBackGroundColor</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -491,7 +491,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'rgb(70, 70, 70)'</initValue>
+      <initValue>'rgba(70, 70, 70, 1)'</initValue>
       <name>footerBodyBackGroundColor</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

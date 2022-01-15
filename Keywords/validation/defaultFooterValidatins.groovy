@@ -32,7 +32,7 @@ public class defaultFooterValidatins {
 
 	public static void verifyBackGroundandMaxHeightOfTopFooter() {
 		TestObject topFooter = findTestObject("Object Repository/defaultFooter/div_topFooter")
-		String backgroundColor =WebUI.getCSSValue(topFooter, 'background')
+		String backgroundColor =WebUI.getCSSValue(topFooter, 'background-color')
 		String footerTopMaxheight=WebUI.getCSSValue(topFooter, 'max-height')
 		assert backgroundColor.contains(GlobalVariable.topFooterBackGroundColor)
 		assert footerTopMaxheight.equals(GlobalVariable.footerMaxHeight)
@@ -59,10 +59,10 @@ public class defaultFooterValidatins {
 
 	public static void verifyBackGroundandPaddingOfFooterBody() {
 		TestObject div_footerBody = findTestObject("Object Repository/defaultFooter/div_footerBody")
-		String backgroundColor =WebUI.getCSSValue(div_footerBody, 'background')
-		String padding=WebUI.getCSSValue(div_footerBody, 'padding')
+		String backgroundColor =WebUI.getCSSValue(div_footerBody, 'background-color')
+//		String padding=WebUI.getCSSValue(div_footerBody, 'padding')
 		assert backgroundColor.contains(GlobalVariable.footerBodyBackGroundColor)
-		println(padding)
+//		println(padding)
 		//		assert padding.equals(GlobalVariable.footerMaxHeight)
 
 	}

@@ -7,13 +7,16 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#footer-container .column-left > div > div.footer-item.hidden-xs.hidden-sm > div > div:nth-child(3) > span:nth-child(1)</value>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@class='contact-box']//div[@class='contact-group'][3]/span[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>
