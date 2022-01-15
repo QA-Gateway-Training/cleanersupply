@@ -66,7 +66,7 @@ public class QuickOrderValidations {
 	public static void veriyHeaderStyle() {
 		TestObject quickHeader = findTestObject('Object Repository/Quick Order/a_quickOrderHeader')
 		assert WebUI.getCSSValue(quickHeader, "background-color").equals(GlobalVariable.searchHeaderTopBarBackgroundColor)
-		assert WebUI.getCSSValue(quickHeader, "color").equals("#fff")
+		assert WebUI.getCSSValue(quickHeader, "color").equals(GlobalVariable.whiteColor)
 		TestObject quickIcon = findTestObject('Object Repository/Quick Order/span_quickOrderIcon')
 		WebUI.verifyElementVisible(quickIcon)
 	}

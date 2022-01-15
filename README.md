@@ -89,7 +89,7 @@ https://github.com/QA-Gateway-Training/cleanersupply.git
   
 2- Product details page test plan ( search )
   - Verify page url
-  - Verify page Title ( title cappetlize but the product name uppercase <img src="https://c.tenor.com/IUzym1Pr2x0AAAAC/bug-cute.gif" alt="testing image" width="30"/>)
+  - Verify page Title
   - Verify product name contain part of the name
   - Verify breadcrumb
   - Verify `sku` number with the url
@@ -145,7 +145,15 @@ https://github.com/QA-Gateway-Training/cleanersupply.git
     - Verify displayed information are the same as user entered
 
 5- Quick order test plan
-  - test 1
+  - Verify URL
+  - Verify page title
+  - Verify products table
+  - Verify search for product by sku number
+  - Verify update the quantity number
+  - Verify data reflected intp the sku and quantity fields
+  - Verifu add to cart not present without product in the table
+  - Verify mini cart refelect the added product
+  - Verify shopping cart
   
 6- Search
   - Check placeholder
@@ -170,8 +178,6 @@ https://github.com/QA-Gateway-Training/cleanersupply.git
   - Verify visibility of leave feedback button, verify clicking it and a pop- up modal appear.
   - Verify Filling feedback's modal with a comment and email and close it.( note: Katalon can't support recaptcha verification image).
   - Verify existing of bbb logo image at the end left column in footer's body.
-  -   
-  - 
   
 8- Shopping Cart
   - Verify Page url
@@ -186,7 +192,8 @@ https://github.com/QA-Gateway-Training/cleanersupply.git
 ## Update <img src="https://static.wixstatic.com/media/c25f40_b40fd52500d9473aa2a6d93115091847~mv2.gif" alt="testing image" width="40"/>
 - [x] Checkout summary table check with the added product to the cart
 - [x] Check product price with the volume table depend on the quantity
+- [x] Verify `header` assertions for all pages and the `header` for the checkout page
+- [x] Verify `footer` assertions for all pages and the `footer` for the checkout page
+
 
 ## Todo <img src="https://i.pinimg.com/originals/89/d9/e0/89d9e0f67c361865fe9746c3c3de6b8a.gif" alt="testing image" width="50"/>
-- [ ] Verify `header` assertions for all pages and the `header` for the checkout page
-- [ ] Verify `footer` assertions for all pages and the `footer` for the checkout page

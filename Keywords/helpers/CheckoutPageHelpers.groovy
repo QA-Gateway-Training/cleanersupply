@@ -46,10 +46,10 @@ public class CheckoutPageHelpers {
 	}
 
 	public static void ShippingAddressDiv() {
-		CheckoutPageActions.moveToShippingAddressDiv()	
+		CheckoutPageActions.moveToShippingAddressDiv()
 		CheckoutPageValidation.verifyVisibilityAndHeaderShipping()
 	}
-	
+
 	public static void verifyShippingDetailsInCeckout() {
 		TestObject address = findTestObject("Object Repository/CheckOut Details/span_shippingAddressDetails")
 		String[] allAddress =  WebUI.getText(address).split("\n")
@@ -90,7 +90,7 @@ public class CheckoutPageHelpers {
 	public static void verifyPaymentMethodDetails() {
 		TestObject paymentDetails = findTestObject("Object Repository/CheckOut Details/span_paymentMethodDetails")
 		CheckoutPageValidation.verifyPaymentMethodDetails(paymentDetails)
-		
+
 		TestObject poNoDiv = findTestObject("Object Repository/CheckOut Details/div_PoNoDiv")
 		WebUI.verifyElementVisible(poNoDiv)
 
