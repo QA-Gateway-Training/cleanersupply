@@ -45,7 +45,7 @@ public class CategoryScActions{
 	 */
 
 	public static String getcssvvalueforTagsBackGround(String selector){
-		return WebUI.getCSSValue(findTestObject(selector), 'background').toString()
+		return WebUI.getCSSValue(findTestObject(selector), 'background-color').toString()
 	}
 
 	/** Click on specific given selector's object
@@ -95,9 +95,10 @@ public class CategoryScActions{
 //	}
 
 	public static void clickOnManuWithassertOPened(String ExpectedCSSEXpandedValue) {
-		TestObject manuDefault = findTestObject("Object Repository/Category/span_manuDefault")
+		TestObject expandedMenu = findTestObject('Object Repository/Category/sp001Casiprodoct/ul_manufature')
+		TestObject manuDefault = findTestObject('Object Repository/Category/span_manuDefault')
 		WebUI.click(manuDefault)
-		String cssValue= WebUI.getAttribute(manuDefault, 'aria-expanded')
+		String cssValue= WebUI.getAttribute(expandedMenu, 'aria-expanded')
 		assert cssValue.equals(ExpectedCSSEXpandedValue)
 	}
 

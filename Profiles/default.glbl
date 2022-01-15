@@ -71,7 +71,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box'</initValue>
+      <initValue>'#fff'</initValue>
       <name>tagsHoverBackgound</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -681,21 +681,6 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'rgba(82, 36, 127, 1)'</initValue>
-      <name>moveColr</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'open-desktop'</initValue>
-      <name>flyMenyOpenedClass</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'uppercase'</initValue>
-      <name>upperCaseTransform</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
       <initValue>'AZ'</initValue>
       <name>stateAbbr</name>
    </GlobalVariableEntity>
@@ -741,7 +726,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-     <initValue>'rgba(255, 200, 11, 1)'</initValue>
+      <initValue>'rgba(255, 200, 11, 1)'</initValue>
       <name>topNavBackgroundColor</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -763,5 +748,20 @@
       <description></description>
       <initValue>'rgba(220, 221, 222, 1)'</initValue>
       <name>leftArrowColor</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'rgba(82, 36, 127, 1)'</initValue>
+      <name>moveColr</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'open-desktop'</initValue>
+      <name>flyMenyOpenedClass</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'uppercase'</initValue>
+      <name>upperCaseTransform</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

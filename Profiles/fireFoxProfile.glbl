@@ -744,4 +744,19 @@
       <initValue>'700'</initValue>
       <name>navLinkFontWeight</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'rgb(82, 36, 127)'</initValue>
+      <name>moveColr</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'open-desktop'</initValue>
+      <name>flyMenyOpenedClass</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'uppercase'</initValue>
+      <name>upperCaseTransform</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
