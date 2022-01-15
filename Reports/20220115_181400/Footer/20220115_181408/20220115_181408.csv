@@ -1,0 +1,6 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Footer,Firefox 95.0,,,2022-01-15 18:22:04,2022-01-15 18:22:22,18.189s,PASSED
+,,,,,,,
+Test Cases/Footer/Footer TC,Firefox 95.0,,,2022-01-15 18:22:05,2022-01-15 18:22:22,17.758s,PASSED
+GeneralHelpers.initScenario(),Firefox 95.0,,,2022-01-15 18:22:05,2022-01-15 18:22:22,17.329s,PASSED
+Video,Firefox 95.0,,,2022-01-15 18:22:22,2022-01-15 18:22:22,0.003s,PASSED

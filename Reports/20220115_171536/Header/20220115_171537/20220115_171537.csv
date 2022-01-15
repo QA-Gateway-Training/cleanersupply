@@ -1,0 +1,15 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Header,Chrome 97.0.4692.71,,,2022-01-15 17:15:47,2022-01-15 17:16:35,48.439s,PASSED
+,,,,,,,
+Test Cases/Header/Primary Header TC,Chrome 97.0.4692.71,,,2022-01-15 17:15:47,2022-01-15 17:16:35,48.022s,PASSED
+GeneralHelpers.initScenario(),Chrome 97.0.4692.71,,,2022-01-15 17:15:48,2022-01-15 17:16:09,21.207s,PASSED
+PrimaryHeaderHelpers.topNav(),Chrome 97.0.4692.71,,,2022-01-15 17:16:09,2022-01-15 17:16:16,6.661s,PASSED
+PrimaryHeaderHelpers.rightLinkehoverEffect(),Chrome 97.0.4692.71,,,2022-01-15 17:16:16,2022-01-15 17:16:19,3.001s,PASSED
+PrimaryHeaderHelpers.cartLinkHover(),Chrome 97.0.4692.71,,,2022-01-15 17:16:19,2022-01-15 17:16:21,2.295s,PASSED
+PrimaryHeaderHelpers.myAccountButton(),Chrome 97.0.4692.71,,,2022-01-15 17:16:21,2022-01-15 17:16:23,1.873s,PASSED
+PrimaryHeaderHelpers.headerTopBar(),Chrome 97.0.4692.71,,,2022-01-15 17:16:23,2022-01-15 17:16:27,4.493s,PASSED
+PrimaryHeaderHelpers.shippingDetailsAction(),Chrome 97.0.4692.71,,,2022-01-15 17:16:27,2022-01-15 17:16:28,1.226s,PASSED
+PrimaryHeaderHelpers.customerService(),Chrome 97.0.4692.71,,,2022-01-15 17:16:28,2022-01-15 17:16:31,2.645s,PASSED
+PrimaryHeaderHelpers.customerServiceLinkAction(),Chrome 97.0.4692.71,,,2022-01-15 17:16:31,2022-01-15 17:16:32,1.289s,PASSED
+closeBrowser(),Chrome 97.0.4692.71,,,2022-01-15 17:16:32,2022-01-15 17:16:33,0.242s,PASSED
+Video,Chrome 97.0.4692.71,,,2022-01-15 17:16:35,2022-01-15 17:16:35,0.007s,PASSED

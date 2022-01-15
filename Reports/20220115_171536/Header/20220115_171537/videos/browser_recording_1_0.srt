@@ -1,0 +1,40 @@
+1
+00:00:00,000 --> 00:00:14,053
+1. GeneralHelpers.initScenario()
+
+2
+00:00:14,060 --> 00:00:20,722
+5. PrimaryHeaderHelpers.topNav()
+
+3
+00:00:20,723 --> 00:00:23,724
+9. PrimaryHeaderHelpers.rightLinkehoverEffect()
+
+4
+00:00:23,724 --> 00:00:26,020
+13. PrimaryHeaderHelpers.cartLinkHover()
+
+5
+00:00:26,020 --> 00:00:27,892
+17. PrimaryHeaderHelpers.myAccountButton()
+
+6
+00:00:27,893 --> 00:00:32,386
+21. PrimaryHeaderHelpers.headerTopBar()
+
+7
+00:00:32,387 --> 00:00:33,613
+25. PrimaryHeaderHelpers.shippingDetailsAction()
+
+8
+00:00:33,613 --> 00:00:36,258
+29. PrimaryHeaderHelpers.customerService()
+
+9
+00:00:36,259 --> 00:00:37,548
+33. PrimaryHeaderHelpers.customerServiceLinkAction()
+
+10
+00:00:37,548 --> 00:00:37,792
+37. closeBrowser()
+
