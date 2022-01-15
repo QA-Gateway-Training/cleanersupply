@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>dic_standardShiping</name>
+   <name>td_price</name>
    <tag></tag>
-   <elementGuidId>bf2e98bf-212e-42d8-bbf2-968b4d403e9a</elementGuidId>
+   <elementGuidId>1dbe8373-d196-4938-8e0a-755581b935e9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//section[@anonymous=&quot;true&quot;]/div</value>
+         <value>//table[contains(@class, 'volume-table')]//tr[2]/td[not(contains(text(),'Price'))]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-      </entry>
-      <entry>
-         <key>CSS</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>dic_standardShiping</name>
+   <name>td_save</name>
    <tag></tag>
-   <elementGuidId>bf2e98bf-212e-42d8-bbf2-968b4d403e9a</elementGuidId>
+   <elementGuidId>7456902d-5308-45f4-bec8-43d29427ecd9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//section[@anonymous=&quot;true&quot;]/div</value>
+         <value>//table[contains(@class, 'volume-table')]//tr[3]/td[not(contains(text(),'Save'))]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-      </entry>
-      <entry>
-         <key>CSS</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

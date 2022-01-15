@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>dic_standardShiping</name>
+   <name>span_productSpecSize</name>
    <tag></tag>
-   <elementGuidId>bf2e98bf-212e-42d8-bbf2-968b4d403e9a</elementGuidId>
+   <elementGuidId>2f2f0513-4fd9-4727-9843-75c3c994a4bd</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//section[@anonymous=&quot;true&quot;]/div</value>
+         <value>//span[contains(text(), 'Size / Dimension:')]/following-sibling::span</value>
       </entry>
       <entry>
          <key>BASIC</key>
-      </entry>
-      <entry>
-         <key>CSS</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

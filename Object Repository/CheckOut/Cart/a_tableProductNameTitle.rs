@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>dic_standardShiping</name>
+   <name>a_tableProductNameTitle</name>
    <tag></tag>
-   <elementGuidId>bf2e98bf-212e-42d8-bbf2-968b4d403e9a</elementGuidId>
+   <elementGuidId>b9a68995-3bf5-4ee0-9489-c15ebde67965</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//section[@anonymous=&quot;true&quot;]/div</value>
+         <key>CSS</key>
+         <value>table.product-table a.product-title</value>
       </entry>
       <entry>
          <key>BASIC</key>
-      </entry>
-      <entry>
-         <key>CSS</key>
+         <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

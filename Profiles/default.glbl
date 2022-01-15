@@ -66,11 +66,6 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'CBS40BK'</initValue>
-      <name>firstStockNo</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
       <initValue>'#52247f'</initValue>
       <name>tagsHoverColor</name>
    </GlobalVariableEntity>
@@ -296,11 +291,6 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>''</initValue>
-      <name>addToCartPageTitle</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
       <initValue>'SHOPPING CART CONTINUE SHOPPING'</initValue>
       <name>shopCartHeader</name>
    </GlobalVariableEntity>
@@ -326,6 +316,26 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
+      <initValue>'rgba(82, 36, 127, 1)'</initValue>
+      <name>checkoutBgColor</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Checkout Interstitial - Cleaner\'s Supply'</initValue>
+      <name>checkoutPageTitle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Secure Checkout'</initValue>
+      <name>checkoutHeader</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'/checkout-interstitial/'</initValue>
+      <name>checkoutUrl</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
       <initValue>'155.40'</initValue>
       <name>total10</name>
    </GlobalVariableEntity>
@@ -333,6 +343,16 @@
       <description>Will be filled from shopping cart</description>
       <initValue>'0'</initValue>
       <name>totalPrice</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Checkout - Cleaner\'s Supply'</initValue>
+      <name>checkoutDetailsPageTitle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'/checkout/'</initValue>
+      <name>checkoutDetailsUrl</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
@@ -426,6 +446,11 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
+      <initValue>'Shopping Cart - Cleaner\'s Supply'</initValue>
+      <name>shoppingCartPageTitle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
       <initValue>'CHECKOUT'</initValue>
       <name>checkOutFormHeader</name>
    </GlobalVariableEntity>
@@ -443,6 +468,16 @@
       <description></description>
       <initValue>5</initValue>
       <name>elementVisibilityTimeOut</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>['test']</initValue>
+      <name>productItems</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>['test']</initValue>
+      <name>cartItems</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
@@ -643,5 +678,40 @@
       <description></description>
       <initValue>'PRIVACY POLICY'</initValue>
       <name>privacyPolicyTitle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'AZ'</initValue>
+      <name>stateAbbr</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'United States'</initValue>
+      <name>USDcountry</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>will be filled randomly</description>
+      <initValue>'1'</initValue>
+      <name>monthValue</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'2020'</initValue>
+      <name>yearValue</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'rgba(241, 242, 242, 1)'</initValue>
+      <name>grayBgColor</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'AmericanExpress'</initValue>
+      <name>cardType</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'PAYMENT METHOD'</initValue>
+      <name>paymentMethodDivTitle</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

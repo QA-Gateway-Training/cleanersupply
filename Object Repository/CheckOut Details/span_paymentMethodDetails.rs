@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class=&quot;panel-group panel-group-reset&quot;][2]//div[@class=&quot;card-info-holder&quot;] span</value>
+         <value>//div[@class=&quot;panel-group panel-group-reset&quot;][2]//div[@class=&quot;card-info-holder&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

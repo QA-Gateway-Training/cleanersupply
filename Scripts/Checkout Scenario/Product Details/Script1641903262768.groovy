@@ -23,7 +23,9 @@ import helpers.MiniCartHelpers
 import helpers.ProductDetailsHelpers
 import helpers.SearchResultHelper
 import helpers.ShoppingCartHelpers
+import helpers.checkOutFormHelper
 import internal.GlobalVariable
+import validation.CheckoutPageValidation
 import validation.SearchResultPageValidations
 
 import org.openqa.selenium.Keys as Keys
@@ -41,7 +43,6 @@ ProductDetailsHelpers.initProductDetailsPage()
 // Green X large
 ProductDetailsHelpers.hoverEffectAndClickXLargeSizeLink()
 ProductDetailsHelpers.selectGreenColor()
-ProductDetailsHelpers.fillProductQuantity(5)
 ProductDetailsHelpers.addProductToCart()
 
 MiniCartHelpers.hoverOnMiniCartHeader()
@@ -49,16 +50,25 @@ MiniCartHelpers.hoverOnMiniCartHeader()
 // Blue Large
 ProductDetailsHelpers.hoverEffectAndClickLargeSizeLink()
 ProductDetailsHelpers.selectRoyalBlueColor()
-ProductDetailsHelpers.fillProductQuantity(4)
 ProductDetailsHelpers.addProductToCart()
 
 MiniCartHelpers.hoverOnMiniCartHeader()
 MiniCartActions.navigateToCartPage()
 
 ShoppingCartHelpers.navigateToCartPage()
+ShoppingCartHelpers.updateQuantities()
 ShoppingCartHelpers.navigateToCheckoutPage()
 
 CheckoutPageHelpers.initCheckoutPage()
 CheckoutPageHelpers.navigateToCheckoutInformationForm()
+checkOutFormHelper.fillCheckOutForm()
+
+
+CheckoutPageValidation.verifyNavigationToCheckoutDetails()
+CheckoutPageHelpers.ShippingAddressDiv()
+CheckoutPageHelpers.verifyShippingDetailsInCeckout()
+CheckoutPageHelpers.standardShippingAddress()
+CheckoutPageHelpers.paymentMethodDiv()
+CheckoutPageHelpers.verifyPaymentMethodDetails()
 
 WebUI.closeBrowser()

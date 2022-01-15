@@ -19,6 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
+import validation.GeneralValidation
 
 public class CheckoutPageActions {
 	/**
@@ -30,5 +31,16 @@ public class CheckoutPageActions {
 		WebUI.click(btn)
 	}
 	
+	public static void moveToShippingAddressDiv() {
+		TestObject shippingAddrDiv = findTestObject("Object Repository/CheckOut Details/div_shippingAddr")
+		WebUI.scrollToElement(shippingAddrDiv,GlobalVariable.elementVisibilityTimeOut)
+		WebUI.verifyElementVisible(shippingAddrDiv)
+		GeneralValidation.verifyBackgroundColor(shippingAddrDiv, GlobalVariable.grayBgColor)
+	}
 	
+	public static void clickShippingOptionLink(TestObject ShippingOptionLink) {
+		assert WebUI.getAttribute(ShippingOptionLink, "class").contains("collapsed")
+		WebUI.click(ShippingOptionLink)
+		assert !WebUI.getAttribute(ShippingOptionLink, "class").contains("collapsed")
+	}
 }

@@ -18,6 +18,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
+import helpers.GeneralHelpers
 import internal.GlobalVariable
 import org.openqa.selenium.WebElement
 
@@ -31,9 +32,9 @@ public class CheckoutPageValidation {
 		TestObject subTotal = findTestObject('Object Repository/CheckOut/td_summaryTableTotal')
 		TestObject total = findTestObject('Object Repository/CheckOut/td_summaryTotalSubTotal')
 
-		assert WebUI.getText(titleTotal).contains(GlobalVariable.totalPrice)
-		assert WebUI.getText(subTotal).contains(GlobalVariable.totalPrice)
-		assert WebUI.getText(total).contains(GlobalVariable.totalPrice)
+		assert WebUI.getText(titleTotal).replace('$', '').replace(',', '').contains(GlobalVariable.totalPrice)
+		assert WebUI.getText(subTotal).replace('$', '').replace(',', '').contains(GlobalVariable.totalPrice)
+		assert WebUI.getText(total).replace('$', '').replace(',', '').contains(GlobalVariable.totalPrice)
 	}
 
 	/**
@@ -73,5 +74,79 @@ public class CheckoutPageValidation {
 
 			assert total.equals(String.format("%.2f", (Float.parseFloat(prc) * Integer.parseInt(qt))))
 		}
+	}
+
+	public static void verifyNavigationToCheckoutDetails() {
+		TestObject checkoutDetailsHeader = findTestObject("Object Repository/CheckOut Details/h1_checkoutHeader")
+		GeneralHelpers.verifyNavigationToPage(GlobalVariable.checkoutDetailsPageTitle, checkoutDetailsHeader,
+				"CHECKOUT", GlobalVariable.checkoutDetailsUrl)
+	}
+	
+	public static void verifyVisibilityAndHeaderShipping() {
+		TestObject shippingAddrDivHeader = findTestObject("Object Repository/CheckOut Details/h2_shippingAddrDivHeader")
+		WebUI.verifyElementVisible(shippingAddrDivHeader)
+		assert WebUI.getText(shippingAddrDivHeader).equals("SHIPPING ADDRESS")
+	}
+	
+	public static void verifyShippingDetails(TestObject address) {
+		String[] allAddress =  WebUI.getText(address).split("\n")
+		assert allAddress[0].equals(GlobalVariable.companyValue)
+		assert allAddress[1].equals(GlobalVariable.fNameValue+" "+ GlobalVariable.lNameValue)
+		assert allAddress[2].equals(GlobalVariable.address1)
+		assert allAddress[3].equals(GlobalVariable.address2)
+		assert allAddress[4].equals(GlobalVariable.city + ", "+GlobalVariable.stateAbbr +" "+ GlobalVariable.zipCode)
+		assert allAddress[5].equals(GlobalVariable.phone + " x" + GlobalVariable.phoneExt)
+		assert allAddress[6].equals(GlobalVariable.USDcountry)
+	}
+	
+	public static void verifyPaymentMethodDetails(TestObject paymentDetails) {
+		String[] allpaymentDetails =  WebUI.getText(paymentDetails).split("\n")
+		assert allpaymentDetails[0].equals(GlobalVariable.cardType +" **** "+GlobalVariable.CreditCardNumber.toString().substring(11))
+		assert allpaymentDetails[1].equals(GlobalVariable.creditCardNAme)
+		assert allpaymentDetails[2].equals("Expires: "+ GlobalVariable.monthValue.toString().split(" ")[0].replace('0', '') + "/" +GlobalVariable.yearValue.toString().substring(2))
+	}
+	
+	public static void verifyDeliveryInputChecked() {
+		TestObject standardDelivery = findTestObject("Object Repository/CheckOut Details/span_standard_Delivery")
+		assert WebUI.getCSSValue(standardDelivery, "border-color").equals("rgb(82, 36, 127)")
+	}
+	
+	public static void verifyNaigationTOCheckOut() {
+		TestObject checkoutHeader = findTestObject("CheckOut/div_checkoutHeader")
+		GeneralHelpers.verifyNavigationToPage(GlobalVariable.checkoutPageTitle, checkoutHeader,
+											  GlobalVariable.checkoutHeader, GlobalVariable.checkoutUrl)
+	}
+	
+	/**
+	 * Verify added product reflected to the cart items
+	 * @author waleedafifi
+	 */
+	public static void verifyAddedProductRefelectDetails() {
+		List<WebElement> prodPrice = WebUI.findWebElements(findTestObject('Object Repository/CheckOut/Cart/div_productPrice'), GlobalVariable.globalTimeOut)
+		List<WebElement> prodQyt = WebUI.findWebElements(findTestObject('Object Repository/CheckOut/Cart/input_productQuantity'), GlobalVariable.globalTimeOut)
+		List<WebElement> prodSKU = WebUI.findWebElements(findTestObject('Object Repository/CheckOut/Cart/span_skuNumber'), GlobalVariable.globalTimeOut)
+		List<WebElement> prodName = WebUI.findWebElements(findTestObject('Object Repository/CheckOut/Cart/a_tableProductNameTitle'), GlobalVariable.globalTimeOut)
+		List<WebElement> totalPrice = WebUI.findWebElements(findTestObject('Object Repository/CheckOut/Cart/div_priceTotal'), GlobalVariable.globalTimeOut)
+		
+		List cartItem = GlobalVariable.cartItems
+		boolean flag = false
+
+		println cartItem
+
+		for(int idx = 0; idx < prodPrice.size(); idx++) {
+			String prc = prodPrice.get(idx).getAttribute('innerText').replaceAll("[^0-9\\.]","");
+			String qt = prodQyt.get(idx).getAttribute('value');
+			String sku = prodSKU.get(idx).getAttribute('innerText');
+			String name = prodName.get(idx).getAttribute('innerText');
+
+			for(int i = 0; i < cartItem.size(); i++) {
+				if(name.contains(cartItem[i][0]) && sku.contains(cartItem[i][2]) && qt.equals(cartItem[i][3])) {
+					flag = true
+					break
+				}
+			}
+		}
+
+		assert flag : "Verify summary Refelected to added cart"
 	}
 }

@@ -5,7 +5,7 @@
 /.classpath
 .svn/
 settings/
-.cache/
+.cache/*
 /.cache/
 .DS_Store
 .project
