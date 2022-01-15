@@ -14,6 +14,25 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
+
+import actions.GeneralActions
+import helpers.GeneralHelpers
+import helpers.SeconderyHeaderHelper
+import internal.GlobalVariable
+import validation.GeneralValidation
+import validation.SeconderyHeaderValidation
+
 import org.openqa.selenium.Keys as Keys
+
+GeneralHelpers.initScenario()
+
+SeconderyHeaderValidation.verifyNavVisibilityAndBackground()
+
+SeconderyHeaderHelper.verifyAllNavLinksStyle()
+
+SeconderyHeaderHelper.hoverAllMainNavLinksAndCheckStyle()
+
+
+
+
 

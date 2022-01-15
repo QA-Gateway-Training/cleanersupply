@@ -39,10 +39,26 @@ public class ShoppingCartHelpers {
 		ShoppingCartValidations.verifyAddedProductRefelectDetails()
 	}
 
+	/**
+	 * Navigate to checkout page
+	 * @author waleedafifi
+	 */
 	public static void navigateToCheckoutPage() {
 		ShoppingCartValidations.verifyCheckoutButtonStyle()
 		ShoppingCartActions.hoverCheckOutButton()
 		ShoppingCartValidations.verifyCheckoutButtonOnHover()
 		ShoppingCartActions.navigateToCheckOutPage()
+	}
+	
+	/**
+	 * Update and verify the quantities of the items in shipping cart
+	 * @author waleedafifi
+	 */
+	public static void updateQuantities() {
+		ShoppingCartActions.updateProductQuantity(4)
+		ShoppingCartValidations.verifyQuantityValue(4)
+		ShoppingCartActions.moveOutQuantityField()
+		ShoppingCartValidations.verifyTotalPriceForProductTable()
+		ShoppingCartValidations.verifyTotalPriceInSummaryTable()
 	}
 }

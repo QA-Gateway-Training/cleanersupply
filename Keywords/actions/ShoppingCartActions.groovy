@@ -19,15 +19,46 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.Keys
 
 public class ShoppingCartActions {
+	/**
+	 * Navigate to checkout page
+	 * @author waleedafifi
+	 */
 	public static void navigateToCheckOutPage() {
 		TestObject btn = findTestObject('Object Repository/Shopping Cart/button_proceedToCheckout')
 		WebUI.click(btn)
 	}
 
+	/**
+	 * Trigger mouse move on checkout button
+	 * @author waleedafifi
+	 */
 	public static void hoverCheckOutButton() {
 		TestObject btn = findTestObject('Object Repository/Shopping Cart/button_proceedToCheckout')
 		WebUI.mouseOver(btn)
+	}
+
+	/**
+	 * Update product quantity in shopping cart page based on passed params
+	 * @param qyt
+	 * @author waleedafifi
+	 */
+	public static void updateProductQuantity(int qyt) {
+		List<WebElement> quantityInput = WebUI.findWebElements(findTestObject('Object Repository/Shopping Cart/input_shoppingCartProductQuantity'), GlobalVariable.globalTimeOut)
+		for (int idx = 0; idx < quantityInput.size(); idx++) {
+			quantityInput[idx].sendKeys(Keys.chord(Keys.BACK_SPACE) + qyt.toString())
+		}
+	}
+
+	/**
+	 * Click outside the quantity field to update the totals
+	 * @author waleedafifi 
+	 */
+	public static void moveOutQuantityField() {
+		TestObject to = findTestObject('Object Repository/Shopping Cart/td_summaryTableItemCount')
+		WebUI.click(to)
 	}
 }

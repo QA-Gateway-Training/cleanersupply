@@ -252,7 +252,7 @@ public class defaultFooterValidatins {
 		assert width.equals(GlobalVariable.logoFooterWidth)
 		assert height.equals(GlobalVariable.logoFooterHeight)
 	}
-	
+
 	public static void  verifyChatLinkExistAndHasExpectedColor() {
 		TestObject chatEmail = findTestObject("Object Repository/defaultFooter/footerBody/leftColumn/a_chat")
 		assert WebUI.verifyElementPresent(chatEmail, GlobalVariable.pageLoadTimeOut)
@@ -264,38 +264,38 @@ public class defaultFooterValidatins {
 		String color = WebUI.getCSSValue(chatIcon, 'color')
 		assert color.equals(GlobalVariable.footerbodyWightColor)
 	}
-	
-	//social media link verification 
-	
+
+	//social media link verification
+
 	public static void  verifyFaceBookIconExistingAndRedirection() {
 		TestObject FaceBookIcon = findTestObject("Object Repository/defaultFooter/footerBody/leftColumn/a_facebook")
 		assert WebUI.verifyElementPresent(FaceBookIcon, GlobalVariable.pageLoadTimeOut)
 		String color = WebUI.getCSSValue(FaceBookIcon, 'color')
 		assert color.equals(GlobalVariable.footerbodyWightColor)
-		
+
 	}
-	
+
 	public static void  verifyYoutubeIconExistingAndRedirection() {
 		TestObject YoutubeIcon = findTestObject("Object Repository/defaultFooter/footerBody/leftColumn/a_youtube")
 		assert WebUI.verifyElementPresent(YoutubeIcon, GlobalVariable.pageLoadTimeOut)
 		String color = WebUI.getCSSValue(YoutubeIcon, 'color')
 		assert color.equals(GlobalVariable.footerbodyWightColor)
 	}
-	
+
 	public static void  verifyInstagramIconExistingAndRedirection() {
 		TestObject instagramIcon = findTestObject("Object Repository/defaultFooter/footerBody/leftColumn/a_instagram")
 		assert WebUI.verifyElementPresent(instagramIcon, GlobalVariable.pageLoadTimeOut)
 		String color = WebUI.getCSSValue(instagramIcon, 'color')
 		assert color.equals(GlobalVariable.footerbodyWightColor)
 	}
-	
+
 	public static void  verifylinkedInIconExistingAndRedirection() {
 		TestObject linkedInIcon = findTestObject("Object Repository/defaultFooter/footerBody/leftColumn/a_linkedIn")
 		assert WebUI.verifyElementPresent(linkedInIcon, GlobalVariable.pageLoadTimeOut)
 		String color = WebUI.getCSSValue(linkedInIcon, 'color')
 		assert color.equals(GlobalVariable.footerbodyWightColor)
 	}
-	
+
 
 
 }

@@ -6,14 +6,17 @@
    <elementGuidId>e73ebee9-4f6b-441f-ac24-6867b1c10e17</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>CSS</key>
          <value></value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>//div[@class=&quot;card-info-holder&quot;]/address/span[1]</value>
+         <key>XPATH</key>
+         <value>//div[@class=&quot;card-info-holder&quot;]/address/span[2]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

@@ -7,13 +7,16 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//section[@anonymous=&quot;true&quot;]//a</value>
       </entry>
       <entry>
          <key>CSS</key>
          <value>//section[@anonymous=&quot;true&quot;]//a</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

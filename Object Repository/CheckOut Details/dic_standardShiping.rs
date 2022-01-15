@@ -7,15 +7,13 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//section[@anonymous=&quot;true&quot;]</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value></value>
+         <value>//section[@anonymous=&quot;true&quot;]/div</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
