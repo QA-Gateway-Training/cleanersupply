@@ -1,6 +1,0 @@
-Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
-Header,Firefox 95.0,,,2022-01-15 11:10:30,2022-01-15 11:12:05,1m - 35.288s,FAILED
-,,,,,,,
-Test Cases/Header/Primary Header TC,Firefox 95.0,,,2022-01-15 11:11:42,2022-01-15 11:12:05,23.629s,FAILED
-GeneralHelpers.initScenario(),Firefox 95.0,,,2022-01-15 11:11:42,2022-01-15 11:11:55,13.926s,PASSED
-PrimaryHeaderHelpers.topNav(),Firefox 95.0,,,2022-01-15 11:11:55,2022-01-15 11:12:05,9.678s,FAILED

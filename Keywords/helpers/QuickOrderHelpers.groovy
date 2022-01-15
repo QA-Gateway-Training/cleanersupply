@@ -30,24 +30,25 @@ import validation.GeneralValidation
 import validation.QuickOrderValidations
 
 public class QuickOrderHelpers {
-
-	public static List<WebElement> quantities 
-	public static List<WebElement> titles 
-	public static List<WebElement> prices 
-	public static List<WebElement> totals 
-	public static List<WebElement> stocksNotify 
+	public static List<Integer> cartItem = new ArrayList<>();
+	
+	public static List<WebElement> quantities
+	public static List<WebElement> titles
+	public static List<WebElement> prices
+	public static List<WebElement> totals
+	public static List<WebElement> stocksNotify
 	public static List<WebElement> images
 	public static List<quickOrder> products
-	
+
 	public static List<WebElement> quantitiesShopping
 	public static List<WebElement> pricesShopping
-	public static List<WebElement> totalsShopping 
+	public static List<WebElement> totalsShopping
 	public static List<WebElement> titlesShopping
 	public static List<WebElement> stocksNotifyShopping
 	public static List<WebElement> imagesShopping
-	
-	
-	
+
+
+
 	public static void navigateToQuickOrderPage() {
 		TestObject quickOrderLink = findTestObject("Object Repository/Quick Order/a_quickOrder")
 		WebUI.verifyElementVisible(quickOrderLink)
@@ -63,14 +64,14 @@ public class QuickOrderHelpers {
 		//QuickOrderValidations.verifyChangeStyleOnBtnHover(addToCartBtn)
 		QuickOrderActions.clickAddToCartBtn()
 	}
-	
+
 	public static void navigationAndVerifyingShoppingCart() {
 		QuickOrderHelpers.navigateToAddToCartPage()
 		TestObject shopCartHeader = findTestObject("Object Repository/Shopping Cart/h1_shopCartHeader")
 		WebUI.waitForElementPresent(shopCartHeader, 5)
-		
+
 		GeneralHelpers.verifyNavigationToPage(GlobalVariable.shoppingCartPageTitle, shopCartHeader, GlobalVariable.shopCartHeader,
-											  GlobalVariable.shoppingCartUrl)
+				GlobalVariable.shoppingCartUrl)
 	}
 
 	public static void fillStockNoQuickOrder(TestObject stockInput, String value) {
@@ -102,15 +103,15 @@ public class QuickOrderHelpers {
 		double fifthTotal = QuickOrderActions.formatPriceAndTotal(fifth)
 		return Double.parseDouble(format.format(firstTotal + secTotal + thirdTotal + fourthTotal + fifthTotal));
 	}
-	
+
 	public static void navigationAndVerifyToQuickOrder() {
 		QuickOrderHelpers.navigateToQuickOrderPage()
-		
+
 		TestObject quickOrderHeader = findTestObject("Object Repository/Quick Order/span_quickOrderHeader")
 		GeneralHelpers.verifyNavigationToPage(GlobalVariable.quickOrderPageTitle, quickOrderHeader,
-											  GlobalVariable.quickOrderHeader, GlobalVariable.quickOrderUrl)
+				GlobalVariable.quickOrderHeader, GlobalVariable.quickOrderUrl)
 	}
-	
+
 	public static void fillingVerifyingStockNo() {
 		TestObject firstStockNo = findTestObject("Object Repository/Quick Order/input_0quickOrderStock")
 		WebUI.waitForElementPresent(firstStockNo, 5)
@@ -118,14 +119,14 @@ public class QuickOrderHelpers {
 		TestObject thirdStockNo = findTestObject("Object Repository/Quick Order/input_2quickOrderStock")
 		TestObject fourthStockNo = findTestObject("Object Repository/Quick Order/input_3quickOrderStock")
 		TestObject fivthStockNo = findTestObject("Object Repository/Quick Order/input_4quickOrderStock")
-		
+
 		QuickOrderHelpers.fillStockNoQuickOrder(firstStockNo, GlobalVariable.firstStockNo)
 		QuickOrderHelpers.fillStockNoQuickOrder(secStockNo, GlobalVariable.secStockNo)
 		QuickOrderHelpers.fillStockNoQuickOrder(thirdStockNo, GlobalVariable.thirdStockNo)
 		QuickOrderHelpers.fillStockNoQuickOrder(fourthStockNo, GlobalVariable.fourthStockNo)
 		QuickOrderHelpers.fillStockNoQuickOrder(fivthStockNo, GlobalVariable.fifthStockNo)
 	}
-	
+
 	public static void getProductsSelectorsFromTable() {
 		quantities = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/input_quantities"),GlobalVariable.webElementTimeOut)
 		titles = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/a_quickOrderTitle"),GlobalVariable.webElementTimeOut)
@@ -134,7 +135,7 @@ public class QuickOrderHelpers {
 		stocksNotify = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/div_quickOrderStock"),GlobalVariable.webElementTimeOut)
 		images = WebUI.findWebElements(findTestObject("Object Repository/Quick Order/img_quickOrderProductImg"),GlobalVariable.webElementTimeOut)
 	}
-	
+
 	public static void getProductsSelectorFromShoppingCartTabke() {
 		quantitiesShopping = WebUI.findWebElements(findTestObject("Object Repository/Shopping Cart/input_shoppingCartProductQuantity"),GlobalVariable.webElementTimeOut)
 		pricesShopping = WebUI.findWebElements(findTestObject("Object Repository/Shopping Cart/td_shoppingCartProductPrice"),GlobalVariable.webElementTimeOut)
@@ -143,10 +144,10 @@ public class QuickOrderHelpers {
 		stocksNotifyShopping = WebUI.findWebElements(findTestObject("Object Repository/Shopping Cart/div_shoppingCartStock"),GlobalVariable.webElementTimeOut)
 		imagesShopping = WebUI.findWebElements(findTestObject("Object Repository/Shopping Cart/img_shoppingCartProductImg"),GlobalVariable.webElementTimeOut)
 	}
-	
+
 	public static void verifyShoppingCartProductsSameWithStoredProducts() {
 		QuickOrderHelpers.getProductsSelectorFromShoppingCartTabke()
-		
+
 		int y=0;
 		for(int i=4; i>=0; i--) {
 			TestObject Quantity = WebUI.convertWebElementToTestObject(quantitiesShopping[y])
@@ -155,22 +156,22 @@ public class QuickOrderHelpers {
 			TestObject title = WebUI.convertWebElementToTestObject(titlesShopping[y])
 			TestObject stock = WebUI.convertWebElementToTestObject(stocksNotifyShopping[y])
 			TestObject img = WebUI.convertWebElementToTestObject(imagesShopping[y])
-			
-		   assert products[i].Quantity.equals(WebUI.getAttribute(Quantity,"value"))
-		   assert products[i].Price.equals(WebUI.getText(price))
-		   assert products[i].Total.equals(WebUI.getText(total))
-		   assert products[i].Title.equals(WebUI.getText(title))
-		   assert products[i].StocksNotify.equals(WebUI.getText(stock))
-		   String expectedImg = products[i].Img;
-		   String realImg = WebUI.getAttribute(img,"src");
-		   assert expectedImg.substring(expectedImg.indexOf("?"))[0].equals(realImg.substring(realImg.indexOf("?"))[0])
-		   y++;
+
+			assert products[i].Quantity.equals(WebUI.getAttribute(Quantity,"value"))
+			assert products[i].Price.equals(WebUI.getText(price))
+			assert products[i].Total.equals(WebUI.getText(total))
+			assert products[i].Title.equals(WebUI.getText(title))
+			assert products[i].StocksNotify.equals(WebUI.getText(stock))
+			String expectedImg = products[i].Img;
+			String realImg = WebUI.getAttribute(img,"src");
+			assert expectedImg.substring(expectedImg.indexOf("?"))[0].equals(realImg.substring(realImg.indexOf("?"))[0])
+			y++;
 		}
 	}
-	
-	public static void fillingQuanitiesInputs() {	
+
+	public static void fillingQuanitiesInputs() {
 		QuickOrderHelpers.getProductsSelectorsFromTable()
-		
+
 		for(int i=0; i<=4; i++) {
 			TestObject Quantity = WebUI.convertWebElementToTestObject(quantities[i])
 			TestObject Title = WebUI.convertWebElementToTestObject(titles[i])
@@ -178,7 +179,7 @@ public class QuickOrderHelpers {
 			QuickOrderHelpers.fillQuantityQuickOrder(Title, StocksNotify, Quantity)
 		}
 	}
-	
+
 	public static void storeProductsDetailsAndVerifyTotal() {
 		products = new ArrayList<quickOrder>();
 		for(int i=0; i<=4; i++) {
@@ -188,25 +189,30 @@ public class QuickOrderHelpers {
 			TestObject Title = WebUI.convertWebElementToTestObject(titles[i])
 			TestObject Img = WebUI.convertWebElementToTestObject(images[i])
 			TestObject StocksNotify = WebUI.convertWebElementToTestObject(stocksNotify[i])
-			
+
 			products.add(new quickOrder(WebUI.getAttribute(Quantity,"value"),WebUI.getText(Price), WebUI.getText(Total),WebUI.getText(Title),
-									WebUI.getAttribute(Img,"src"),WebUI.getText(StocksNotify)))
+					WebUI.getAttribute(Img,"src"),WebUI.getText(StocksNotify)))
+
+			String name = WebUI.getText(Title)
+			String qyt = WebUI.getAttribute(Quantity, 'value')
+			String price = WebUI.getText(Price).replaceAll("[^0-9\\.]","")
+			
+			cartItem.add(GeneralHelperFunctions.makeListOfItems(name, price, 'none', qyt))
+			GlobalVariable.cartItems = cartItem
 			
 			QuickOrderHelpers.verifyQuickOrderTotal(Price, Total, Quantity)
 		}
 	}
-	
+
 	public static void verifyCartTotalAndRowsNo(int no) {
 		QuickOrderValidations.verifyCartTotal(products[0].Total, products[1].Total, products[2].Total,
-			products[3].Total, products[4].Total)
+				products[3].Total, products[4].Total)
 
 		List<WebElement> productsNoCartTr = WebUI
-							.findWebElements(findTestObject("Object Repository/Quick Order/tr_productsInCart")
-								,GlobalVariable.webElementTimeOut)
+				.findWebElements(findTestObject("Object Repository/Quick Order/tr_productsInCart")
+				,GlobalVariable.webElementTimeOut)
 		QuickOrderValidations.verifyProductsNoInCart(no, productsNoCartTr.size())
 	}
-	
-	
 }
 
 public class quickOrder{
@@ -216,7 +222,7 @@ public class quickOrder{
 	public String Title;
 	public String Img;
 	public String StocksNotify;
-	
+
 	public quickOrder(String _Quantity,String _Price, String _Total, String _Title,String _Img ,String _StocksNotify) {
 		Quantity = _Quantity;
 		Price = _Price;
