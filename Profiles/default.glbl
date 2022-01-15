@@ -76,7 +76,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'#fff'</initValue>
+      <initValue>'rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box'</initValue>
       <name>tagsHoverBackgound</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -643,5 +643,20 @@
       <description></description>
       <initValue>'PRIVACY POLICY'</initValue>
       <name>privacyPolicyTitle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'rgba(82, 36, 127, 1)'</initValue>
+      <name>moveColr</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'open-desktop'</initValue>
+      <name>flyMenyOpenedClass</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'uppercase'</initValue>
+      <name>upperCaseTransform</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

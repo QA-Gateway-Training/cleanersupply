@@ -31,17 +31,19 @@ public class GeneralHelpers {
 		GeneralValidation.verifyCurrentPageURL(GlobalVariable.baseUrl)
 	}
 
+	
+	public static void navigateTotags() {
+		CategoryScActions.hoverTags()
+	}
+	
 	/**
 	 * Fill search field with specific term
 	 * Verify the value reflected to the same search term
 	 * Verify search box is visible when filling the search field
 	 * Click on search button
-	 * 
+	 *
 	 * @author waleedafifi
 	 */
-	public static void navigateTotags() {
-		CategoryScActions.hoverTags()
-	}
 	public static void headerSearchFillAndClick() {
 		GeneralActions.fillHeaderSearch(GlobalVariable.searchTerm)
 		GeneralValidation.verifySearchFieldValue(GlobalVariable.searchTerm)

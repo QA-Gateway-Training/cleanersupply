@@ -132,12 +132,12 @@ public class checkOutFormHelper {
 		//		.validateBoxShadowBlaceHolderBorder(selectorId)
 		checkOutFormAction.sendValue(selectorId,GlobalVariable.comment)
 	}
-	
+
 	public static void fillCheckOutForm() {
 		TestObject CheckOutHeader = findTestObject("Object Repository/CheckOutForm/h1_checkOutHeader")
-		
+
 		GeneralHelpers.verifyNavigationToPage(GlobalVariable.checkOutFormTitle,CheckOutHeader,
-			GlobalVariable.checkOutFormHeader, GlobalVariable.checkOutFormURL)
+				GlobalVariable.checkOutFormHeader, GlobalVariable.checkOutFormURL)
 		checkOutFormHelper.sendCompanyValue()
 		checkOutFormHelper.sendFnameValue()
 		checkOutFormHelper.sendlnameValue()
