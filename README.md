@@ -57,6 +57,20 @@ https://user-images.githubusercontent.com/57403758/149640452-ba3c7032-7aa1-4b2b-
 ## Execution report
 <img width="500" alt="Screen Shot 2022-01-16 at 1 07 06 AM" src="https://user-images.githubusercontent.com/57403758/149640501-88e77e6b-ce77-4862-b42b-32101f2c528c.png">
 
+### Email setting
+- **Host**: the domain name of the mail server.
+- **Port**: the port to be used for that server.
+- **Username & Password**: the account to authenticate with the server.
+- **Protocol**: the protocol to communicate with the mail server (None, SSL, TLS).
+- **Encrypt** authentication data is recommended for sensitive data protection.
+
+#### Gmail:
+- Host: smtp.gmail.com
+- Port: 465 SSL Or 587 TLS
+- Username: Your full Gmail address (e.g., yourusername@gmail.com)
+- Password: Your Gmail password
+
+<img width="500" alt="Screen Shot 2022-01-16 at 1 07 06 AM" src="https://github.com/katalon-studio/docs-images/raw/master/katalon-studio/docs/emails-settings/new-ui.png">
 
 ## Test Plan
 
