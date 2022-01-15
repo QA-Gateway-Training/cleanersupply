@@ -5,6 +5,7 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import actions.CategoryScActions
+import internal.GlobalVariable
 
 
 public class CategoryValidations {
@@ -19,6 +20,18 @@ public class CategoryValidations {
 		String actualBackground = CategoryScActions.getcssvvalueforTagsBackGround(selector)
 		assert	actualColor.equals(ExpectedHoverColor)
 		assert	actualBackground.equals(ExpectedHoverBackground)
+	}
+
+	public static void checkHoverFlyMenuVisibility() {
+		TestObject menyFly = findTestObject("Object Repository/Category/ul_flyMenu")
+		assert WebUI.verifyElementVisible(menyFly)
+		assert WebUI.getAttribute(menyFly, "class").contains(GlobalVariable.flyMenyOpenedClass)
+	}
+
+	public static void checkHoverFlyMenuUNVisibility() {
+		TestObject menyFly = findTestObject("Object Repository/Category/ul_flyMenu")
+		assert WebUI.verifyElementNotPresent(menyFly, 0)
+		assert WebUI.getAttribute(menyFly, "class").contains(!GlobalVariable.flyMenyOpenedClass)
 	}
 
 	public static void validatespanText(String ExpectedText){

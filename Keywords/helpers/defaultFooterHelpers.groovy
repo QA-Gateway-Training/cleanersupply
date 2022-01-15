@@ -21,12 +21,12 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
 
 public class defaultFooterHelpers {
-	
+
 	public static void  verifyPresentOfContactNumberasExpectedTextAndStyle(String Selector,String Text) {
 		TestObject englishSpeaking = findTestObject(Selector)
 		assert WebUI.verifyElementPresent(englishSpeaking, GlobalVariable.pageLoadTimeOut)
 		assert WebUI.getText(englishSpeaking).equals( Text)
-	String color = WebUI.getCSSValue(englishSpeaking, 'color')
+		String color = WebUI.getCSSValue(englishSpeaking, 'color')
 		assert color.equals(GlobalVariable.footerbodyWightColor)
 	}
 }

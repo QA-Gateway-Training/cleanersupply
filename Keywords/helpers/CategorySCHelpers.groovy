@@ -30,10 +30,14 @@ public class CategorySCHelpers {
 
 	public static void navigateComputerRegister() {
 		String computerRegister = "Object Repository/Category/a_ComputerRegister"
-		WebUI.mouseOver(findTestObject("Object Repository/Category/a_ComputerRegister"))
-		WebUI.click(findTestObject("Object Repository/Category/a_ComputerRegister"))
+		WebUI.mouseOver(findTestObject(computerRegister))
+		String hoverColor = CategoryScActions.getcssvvalueforTagsColor(computerRegister)
+		assert	hoverColor.equals(GlobalVariable.moveColr)
+		String transform =WebUI.getCSSValue(findTestObject(computerRegister), "text-transform") 
+		assert	transform.equals(GlobalVariable.upperCaseTransform)
+		WebUI.click(findTestObject(computerRegister))
 		GeneralValidation.verifyCurrentPageURL(GlobalVariable.computerRegisterURL)
-		//GeneralValidation.verifyCurrentPageTitleValue(GlobalVariable.computerRegisterTitle)
+		GeneralValidation.verifyCurrentPageTitleValue(GlobalVariable.computerRegisterTitle)
 	}
 
 	public static void selectCasioManufacturar() {
@@ -42,10 +46,10 @@ public class CategorySCHelpers {
 		//add loading verification
 		TestObject casioSelect = findTestObject("Object Repository/Category/button_afterSelectCasio")
 		String text = WebUI.getAttribute(casioSelect, "title")
-		text.equals(GlobalVariable.CasioSelect)
+		assert text.equals(GlobalVariable.CasioSelect)
 		TestObject firstSelectedFilter = findTestObject("Object Repository/Category/a_casioSelectedFilter")
 		String casio = WebUI.getText(firstSelectedFilter)
-		casio.equals(GlobalVariable.CasioSelect)
+		assert casio.equals(GlobalVariable.CasioSelect)
 		CategoryScActions.getDefaultProjectCategoryFilter(GlobalVariable.expectedProductNum) // false on console
 
 	}
