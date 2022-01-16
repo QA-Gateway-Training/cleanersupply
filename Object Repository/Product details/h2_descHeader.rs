@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>td_shoppingCartProductPrice</name>
+   <name>h2_descHeader</name>
    <tag></tag>
-   <elementGuidId>92e86696-3d54-432f-8d7d-c940cb4a0859</elementGuidId>
+   <elementGuidId>39dd1f9f-949f-4fd4-a944-80dfda0345df</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>table.product-table tbody tr td.product-table__price</value>
+         <value>.description-header</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

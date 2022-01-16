@@ -4,7 +4,7 @@
 
 ## Team member
 1. Razan Hammad
-2. Shaimaa Iqtefan
+2. Shimaa Iqtefan
 3. Waleed A. Afifi
 
 ## Requirenments
@@ -51,26 +51,8 @@ https://github.com/QA-Gateway-Training/cleanersupply.git
   3. Quick Order Scenario.
   
 ## Test Steps
-
-https://user-images.githubusercontent.com/57403758/149640452-ba3c7032-7aa1-4b2b-910e-1007db325b5c.mp4
-
-## Execution report
-<img width="500" alt="Screen Shot 2022-01-16 at 1 07 06 AM" src="https://user-images.githubusercontent.com/57403758/149640501-88e77e6b-ce77-4862-b42b-32101f2c528c.png">
-
-### Email setting
-- **Host**: the domain name of the mail server.
-- **Port**: the port to be used for that server.
-- **Username & Password**: the account to authenticate with the server.
-- **Protocol**: the protocol to communicate with the mail server (None, SSL, TLS).
-- **Encrypt** authentication data is recommended for sensitive data protection.
-
-#### Gmail:
-- Host: smtp.gmail.com
-- Port: 465 SSL Or 587 TLS
-- Username: Your full Gmail address (e.g., yourusername@gmail.com)
-- Password: Your Gmail password
-
-<img width="500" alt="Screen Shot 2022-01-16 at 1 07 06 AM" src="https://github.com/katalon-studio/docs-images/raw/master/katalon-studio/docs/emails-settings/new-ui.png">
+  1. Step 1
+  2. Step 2
 
 ## Test Plan
 
@@ -107,7 +89,7 @@ https://user-images.githubusercontent.com/57403758/149640452-ba3c7032-7aa1-4b2b-
   
 2- Product details page test plan ( search )
   - Verify page url
-  - Verify page Title
+  - Verify page Title ( title cappetlize but the product name uppercase <img src="https://c.tenor.com/IUzym1Pr2x0AAAAC/bug-cute.gif" alt="testing image" width="30"/>)
   - Verify product name contain part of the name
   - Verify breadcrumb
   - Verify `sku` number with the url
@@ -163,33 +145,7 @@ https://user-images.githubusercontent.com/57403758/149640452-ba3c7032-7aa1-4b2b-
     - Verify displayed information are the same as user entered
 
 5- Quick order test plan
-
-  - Verify visibility and hover effect on Quick Order button
-  - Verify navigation to Quick Order page 
-  - Verify url, title, heading
-  - Verify cart counter number (0) and style
-  - Verify header visibility and style
-  - Verify addToCartBtn not visible
-  - Verify inputs placeholder , and empty value
-  - Verify border changing on input focus
-  - Verify filling product stock number and value is reflected 
-  - Verify visibilty of product details in same row
-  - Verify filling quantities inputs on table and value is reflected 
-  - Verify changing total value
-  - Verify the total values are correct
-  - Verify hover effect and click on addToCart Button 
-
-
-  - Verify URL
-  - Verify page title
-  - Verify products table
-  - Verify search for product by sku number
-  - Verify update the quantity number
-  - Verify data reflected intp the sku and quantity fields
-  - Verifu add to cart not present without product in the table
-  - Verify mini cart refelect the added product
-  - Verify shopping cart
-
+  - test 1
   
 6- Search
   - Check placeholder
@@ -214,6 +170,8 @@ https://user-images.githubusercontent.com/57403758/149640452-ba3c7032-7aa1-4b2b-
   - Verify visibility of leave feedback button, verify clicking it and a pop- up modal appear.
   - Verify Filling feedback's modal with a comment and email and close it.( note: Katalon can't support recaptcha verification image).
   - Verify existing of bbb logo image at the end left column in footer's body.
+  -   
+  - 
   
 8- Shopping Cart
   - Verify Page url
@@ -228,8 +186,7 @@ https://user-images.githubusercontent.com/57403758/149640452-ba3c7032-7aa1-4b2b-
 ## Update <img src="https://static.wixstatic.com/media/c25f40_b40fd52500d9473aa2a6d93115091847~mv2.gif" alt="testing image" width="40"/>
 - [x] Checkout summary table check with the added product to the cart
 - [x] Check product price with the volume table depend on the quantity
-- [x] Verify `header` assertions for all pages and the `header` for the checkout page
-- [x] Verify `footer` assertions for all pages and the `footer` for the checkout page
-
 
 ## Todo <img src="https://i.pinimg.com/originals/89/d9/e0/89d9e0f67c361865fe9746c3c3de6b8a.gif" alt="testing image" width="50"/>
+- [ ] Verify `header` assertions for all pages and the `header` for the checkout page
+- [ ] Verify `footer` assertions for all pages and the `footer` for the checkout page

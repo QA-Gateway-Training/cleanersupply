@@ -41,9 +41,14 @@ public class QuickOrderValidations {
 		assert WebUI.getCSSValue(item, "box-shadow").equals("0 0 10px 2px rgb(0 0 0 / 30%)")
 	}
 
-	public static void verifyCartCounter(String no) {
-		assert WebUI.getText(findTestObject("Object Repository/Quick Order/span_cartCounter")).equals(no)
+	public static void verifyCartCounterAndStyle(String no) {
+		TestObject cartSpan = findTestObject("Object Repository/Quick Order/span_cartCounter")
+		assert WebUI.getText(cartSpan).equals(no)
+		assert WebUI.getCSSValue(cartSpan, "background-color").equals(GlobalVariable.cartCounterBgClr)
+		assert WebUI.getCSSValue(cartSpan, "color").equals(GlobalVariable.whiteColor)
 	}
+
+	
 
 	public static void verifyCartTotal(String first, String sec, String third, String fourth,String fifth) {
 		double expectedTotal = QuickOrderHelpers.calculateQuickOrdersTotal(first, sec, third, fourth, fifth)

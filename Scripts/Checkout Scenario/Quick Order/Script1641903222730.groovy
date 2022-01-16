@@ -43,7 +43,7 @@ GeneralHelpers.initScenario()
 //-------------------quick order------------------------
 
 QuickOrderHelpers.navigationAndVerifyToQuickOrder()
-QuickOrderValidations.verifyCartCounter("0")
+QuickOrderValidations.verifyCartCounterAndStyle("0")
 
 //--------------filling product stock number inputs ----------
 
@@ -52,6 +52,7 @@ QuickOrderHelpers.fillingVerifyingStockNo()
 
 //---------------filling quantity inputs and verify total----------
 
+QuickOrderHelpers.visibilityOfProductDetails()
 QuickOrderHelpers.fillingQuanitiesInputs()
 
 //------------------store 5 products details & verify the total is right ----------------
@@ -64,22 +65,14 @@ QuickOrderHelpers.navigationAndVerifyingShoppingCart()
 
 //-----------------verify cart counter and cart total same with products table----------
 
-QuickOrderValidations.verifyCartCounter("5")
+QuickOrderValidations.verifyCartCounterAndStyle("5")
 QuickOrderHelpers.verifyCartTotalAndRowsNo(5)
 
 //-----------------verify cart counter and cart total inside mini cart ---------------
 
-//MiniCartHelpers.hoverOnMiniCartHeader()
-MiniCartActions.hoverOnMiniCartLink()
-MiniCartValidations.verifyHoverStyleOnMiniCartLink()
-MiniCartValidations.verifyMiniCartTotals()
-MiniCartValidations.miniCartItemCount()
+QuickOrderHelpers.hoverOnMiniCartHeader()
 
-//ShoppingCartHelpers.navigateToCartPage()
-ShoppingCartValidations.verifyShoppingCartItemEqualMiniCartBadge()
-ShoppingCartValidations.verifyShoppingCartItemEqualToSummaryItem()
-ShoppingCartValidations.verifyTotalPriceForProductTable()
-ShoppingCartValidations.verifyTotalPriceInSummaryTable()
+QuickOrderHelpers.navigateToCartPage()
 
 //-----------------verify the products details and totals in shopping cart same as stored products----------
 
@@ -91,11 +84,7 @@ ShoppingCartHelpers.navigateToCheckoutPage()
 
 CheckoutPageValidation.verifyNaigationTOCheckOut()
 
-//CheckoutPageHelpers.initCheckoutPage()
-CheckoutPageValidation.verifyTotalPrice()
-CheckoutPageValidation.verifyCheckoutAsGuest()
-CheckoutPageValidation.verifyCheckoutAsGuestSelected()
-CheckoutPageValidation.verifyProductSummaryItemQountityTotal()
+QuickOrderHelpers.initCheckoutPage()
 
 CheckoutPageHelpers.navigateToCheckoutInformationForm()
 
@@ -117,7 +106,7 @@ CheckoutPageHelpers.paymentMethodDiv()
 
 CheckoutPageHelpers.verifyPaymentMethodDetails()
 
-
+WebUI.closeBrowser()
 
 
 

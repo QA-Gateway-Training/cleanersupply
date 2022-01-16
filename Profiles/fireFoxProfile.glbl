@@ -741,6 +741,11 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
+      <initValue>'rgb(83, 35, 128)'</initValue>
+      <name>cartCounterBgClr</name>
+</GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
       <initValue>'700'</initValue>
       <name>navLinkFontWeight</name>
    </GlobalVariableEntity>
