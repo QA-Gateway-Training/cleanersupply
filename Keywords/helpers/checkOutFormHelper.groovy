@@ -132,6 +132,11 @@ public class checkOutFormHelper {
 		//		.validateBoxShadowBlaceHolderBorder(selectorId)
 		checkOutFormAction.sendValue(selectorId,GlobalVariable.comment)
 	}
+	
+	/***
+	 * Fill checkout form inputs 
+	 * @author Razan
+	 */
 
 	public static void fillCheckOutForm() {
 		TestObject CheckOutHeader = findTestObject("Object Repository/CheckOutForm/h1_checkOutHeader")

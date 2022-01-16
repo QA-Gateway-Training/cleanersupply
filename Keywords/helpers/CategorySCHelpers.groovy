@@ -19,11 +19,7 @@ public class CategorySCHelpers {
 	 * @param selector
 	 */
 
-	//	public static void navigateTotags(String selector){
-	//
-	//		CategoryScActions.hoveranchor("Object Repository/Category/a_ComputerRegister")
-	//		//CategoryScActions.ClickObject(selector)
-	//	}
+
 
 	/***
 	 * hover, navigate to computer and register with url and title assertion
@@ -42,6 +38,13 @@ public class CategorySCHelpers {
 		GeneralValidation.verifyCurrentPageTitleValue(GlobalVariable.computerRegisterTitle)
 	}
 
+
+	/**
+	 * @author Razan
+	 * select casio from drop down Manufacturar menu and assert that sp1000 selected as expected
+	 */
+
+
 	public static void selectCasioManufacturar() {
 		TestObject manuDefault = findTestObject("Object Repository/Category/a_casio")
 		WebUI.click(manuDefault)
@@ -52,8 +55,8 @@ public class CategorySCHelpers {
 		TestObject firstSelectedFilter = findTestObject("Object Repository/Category/a_casioSelectedFilter")
 		String casio = WebUI.getText(firstSelectedFilter)
 		assert casio.equals(GlobalVariable.CasioSelect)
-		
-		List<WebElement> filteredList = WebUI.findWebElements(findTestObject('Object Repository/Category/li_filteredList'), GlobalVariable.globalTimeOut) 
+
+		List<WebElement> filteredList = WebUI.findWebElements(findTestObject('Object Repository/Category/li_filteredList'), GlobalVariable.globalTimeOut)
 		CategoryScActions.getDefaultProjectCategoryFilter(filteredList.size().toString()) // false on console
 
 	}
@@ -62,6 +65,11 @@ public class CategorySCHelpers {
 		TestObject divCollapse = findTestObject(Selector)
 		WebUI.verifyElementAttributeValue(divCollapse, 'aria-expanded', 'true',2)
 	}
+
+	/**
+	 * @author Razan
+	 * select sp1000 from drop down modal menu and assert that sp1000 selected as expected
+	 */
 
 	public static void selectModalsp1000() {
 		checkCollabse("Object Repository/Category/div_collabse1")
@@ -75,13 +83,14 @@ public class CategorySCHelpers {
 		TestObject secondSelectedFilter = findTestObject("Object Repository/Category/A_SP001selectedFilter")
 		String sp001 = WebUI.getText(secondSelectedFilter)
 		sp001.equals(GlobalVariable.modalSelect)
-		
-//		List<WebElement> filteredList = WebUI.findWebElements(findTestObject('Object Repository/Category/li_filteredList'), GlobalVariable.globalTimeOut)
-//		
-//		CategoryScActions.getDefaultProjectCategoryFilter(filteredList.size().toString()) // false on console
+
 
 	}
 
+	/***
+	 * entering sp100 casio result product and validate it's text title, min and max price as expected
+	 * @author Razan
+	 */
 
 	public static void EnterCasioSP1000Product() {
 		String titleSelector = "Object Repository/Category/sp001Casiprodoct/h2_sp1000CasioTitle"
@@ -93,18 +102,24 @@ public class CategorySCHelpers {
 		CategoryValidations.validateText(maxPrice, GlobalVariable.sp1000casioproductMaxPrice)
 		TestObject productClick = findTestObject("Object Repository/Category/sp001Casiprodoct/a_product")
 		WebUI.click(productClick)
-
 	}
+
+	/***
+	 * validate product details as expected
+	 * @author Razan
+	 */
 
 	public static void ValidateCasioSP1000ProductDetails() {
 		String productName= "Object Repository/Category/sp1000CasioProductDetails/h1_sp1000CasioProduct"
 		String productPrice="Object Repository/Category/sp1000CasioProductDetails/span_productPrice"
 		String inStock = "Object Repository/Category/sp1000CasioProductDetails/div_InStock"
 		CategoryValidations.validateText(productName, GlobalVariable.sp1000casioproductTitle)
-		//CategoryValidations.validateText(inStock,GlobalVariable.instockText)
-		//CategoryValidations.validatePrice(productPrice,GlobalVariable.sp1000Casioprice)
-
 	}
+
+	/***
+	 * Enter 10 items from product details and
+	 * @author Razan
+	 */
 
 	public static void enterTenItemsFromProduct() {
 		CategoryValidations.validateCartNo(GlobalVariable.initialCartBadge)
@@ -114,14 +129,10 @@ public class CategorySCHelpers {
 		WebUI.sendKeys(textSelector, Keys.chord(Keys.BACK_SPACE))
 		WebUI.setText(textSelector, GlobalVariable.itemsQty10)
 		WebUI.click(findTestObject("Object Repository/Category/sp1000CasioProductDetails/h1_sp1000CasioProduct"))
-		TestObject addToCart = findTestObject("Object Repository/Category/sp1000CasioProductDetails/button_addToCart")
-		//WebUI.mouseOver(addToCart)
-//		WebUI.click(addToCart)
+		//TestObject addToCart = findTestObject("Object Repository/Category/sp1000CasioProductDetails/button_addToCart")
+
 		ProductDetailsActions.addToCartAction()
-//		CategoryValidations.validateCartNo(GlobalVariable.afterAdd10ItemsBadge)
 		GeneralValidation.verifyCurrentPageTitleIsNotEmpty()
-
-
 	}
 
 	public static BigDecimal formatNumber(String selector){
@@ -135,7 +146,6 @@ public class CategorySCHelpers {
 	public static void checkEqualityNumber(BigDecimal Price,BigDecimal Expected) {
 
 		WebUI.verifyEqual(Price, Expected)
-
 	}
 
 	public static void checkMeniCartBadge() {
@@ -143,7 +153,6 @@ public class CategorySCHelpers {
 		BigDecimal actual = formatNumber(priceLabelCart)
 		BigDecimal expected =new BigDecimal(GlobalVariable.total10)
 		checkEqualityNumber(actual,expected)
-
 	}
 
 
@@ -152,12 +161,6 @@ public class CategorySCHelpers {
 		WebUI.click(CartNavigate)
 		GeneralValidation.verifyCurrentPageURL(GlobalVariable.cartURL)
 		GeneralValidation.verifyCurrentPageTitleValue(GlobalVariable.cartTitle)
-
 	}
-
-
-
-
-
 }
 
