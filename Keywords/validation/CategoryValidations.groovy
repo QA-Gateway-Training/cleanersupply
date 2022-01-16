@@ -22,6 +22,11 @@ public class CategoryValidations {
 		assert	actualBackground.equals(ExpectedHoverBackground)
 	}
 
+	/***
+	 * @description Check fly menu is appeared when hovering tags and forms
+	 * @author Razan
+	 */
+
 	public static void checkHoverFlyMenuVisibility() {
 		TestObject menyFly = findTestObject("Object Repository/Category/ul_flyMenu")
 		assert WebUI.verifyElementVisible(menyFly)
@@ -34,6 +39,10 @@ public class CategoryValidations {
 		assert WebUI.getAttribute(menyFly, "class").contains(!GlobalVariable.flyMenyOpenedClass)
 	}
 
+	/***
+	 * @description validate that actual text is as expected
+	 * @author Razan
+	 */
 	public static void validatespanText(String ExpectedText){
 		TestObject object=findTestObject("Object Repository/Category/span_omputerRegister")
 		String text =	WebUI.getText(object)
@@ -49,13 +58,10 @@ public class CategoryValidations {
 	public static void validatePrice(String Selector,BigDecimal ExpectedPrice) {
 		TestObject priceSelector = findTestObject(Selector)
 		String price =WebUI.getText(priceSelector)
-		//println (price)
-		//println (ExpectedPrice)
+
 		price = price.replace('\\$', "");
-		//println(price)
 		float f=Float.parseFloat(price);
 		WebUI.verifyEqual(price, ExpectedPrice)
-
 	}
 
 	public static void validateCartNo(String ExpectedNo) {

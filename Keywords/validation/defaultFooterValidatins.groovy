@@ -24,12 +24,23 @@ import internal.GlobalVariable
 import helpers.GeneralHelpers
 import actions.defaultFooterActions
 public class defaultFooterValidatins {
+	
+	/***
+	 * @description verify that top footer image exist
+	 * @author Razan
+	 * 
+	 */
 
 	public static void verifyExistingOftopFooterImage() {
 		TestObject image = findTestObject("Object Repository/defaultFooter/img_topFooter")
 		WebUI.verifyElementVisible(image)
 	}
-
+	
+	/***
+	 * @description verify BackGroundand and MaxHeight OfTopFooter
+	 * @author Razan
+	 *
+	 */
 	public static void verifyBackGroundandMaxHeightOfTopFooter() {
 		TestObject topFooter = findTestObject("Object Repository/defaultFooter/div_topFooter")
 		String backgroundColor =WebUI.getCSSValue(topFooter, 'background-color')
@@ -37,35 +48,39 @@ public class defaultFooterValidatins {
 		assert backgroundColor.contains(GlobalVariable.topFooterBackGroundColor)
 		assert footerTopMaxheight.equals(GlobalVariable.footerMaxHeight)
 	}
+	
+	/***
+	 * @description verify Existing Of footer Body
+	 * @author Razan
+	 *
+	 */
 
 	public static void verifyExistingOffooterBody() {
 		TestObject footerBody = findTestObject("Object Repository/defaultFooter/div_footerBody")
 		WebUI.verifyElementVisible(footerBody)
 	}
 
-	//	public static void verifyFooterRowsNumber() {
-	//		TestObject cols = findTestObject("Object Repository/CheckOutForm/button_expirationYear")
-	//		WebUI.click(button)
-	//		List <WebElement> Years =
-	//				WebUI.findWebElements(findTestObject("Object Repository/CheckOutForm/a_expirationCardYear"),
-	//				GlobalVariable.elementVisibilityTimeOut)
-	//		int maxYear = Years.size();
-	//		Random random = new Random();
-	//		int randomyear= random.nextInt(maxYear);
-	//		Years.get(randomyear).click();
-	//
-	//	}
+	/***
+	 * @description verify BackGroundand Padding Of Footer Body
+	 * @author Razan
+	 *
+	 */
 
 
 	public static void verifyBackGroundandPaddingOfFooterBody() {
 		TestObject div_footerBody = findTestObject("Object Repository/defaultFooter/div_footerBody")
 		String backgroundColor =WebUI.getCSSValue(div_footerBody, 'background-color')
-//		String padding=WebUI.getCSSValue(div_footerBody, 'padding')
+
 		assert backgroundColor.contains(GlobalVariable.footerBodyBackGroundColor)
-//		println(padding)
-		//		assert padding.equals(GlobalVariable.footerMaxHeight)
+
 
 	}
+	
+	/***
+	 * @description verify Existing Of footer Body RightColomn
+	 * @author Razan
+	 *
+	 */
 
 
 	public static void verifyExistingOffooterBodyRightColomn() {
@@ -73,18 +88,36 @@ public class defaultFooterValidatins {
 		WebUI.verifyElementVisible(RightColomn)
 
 	}
+	
+	/***
+	 * @description verify Existing Of footerBody Middle Colomn
+	 * @author Razan
+	 *
+	 */
 
 	public static void verifyExistingOffooterBodyMiddleColomn() {
 		TestObject MiddleColomn = findTestObject("Object Repository/defaultFooter/div_footerBodyMiddleColumn")
 		WebUI.verifyElementVisible(MiddleColomn)
 
 	}
+	
+	/***
+	 * @description verify Existing Of footer Body Left Colomn
+	 * @author Razan
+	 *
+	 */
 
 	public static void verifyExistingOffooterBodyLeftColomn() {
 		TestObject LeftColomn = findTestObject("Object Repository/defaultFooter/div_footerBodyLeftColumn")
 		WebUI.verifyElementVisible(LeftColomn)
 
 	}
+	
+	/***
+	 * @description verify Request Catalogue Link
+	 * @author Razan
+	 *
+	 */
 
 	public static void verifyRequestCatalogueLink() {
 		TestObject requestCatalouge = findTestObject("Object Repository/defaultFooter/footerBody/rightColumn/a_requestCatalogue")
@@ -99,6 +132,12 @@ public class defaultFooterValidatins {
 		WebUI.verifyElementVisible(catalogueIcon)
 
 	}
+	
+	/***
+	 * @description verify cassified List Link
+	 * @author Razan
+	 *
+	 */
 
 	public static void verifycassifiedListLink() {
 		TestObject a_classifiedList = findTestObject("Object Repository/defaultFooter/footerBody/rightColumn/a_classifiedList")
@@ -112,6 +151,12 @@ public class defaultFooterValidatins {
 		TestObject classifiedIcon = findTestObject("Object Repository/defaultFooter/footerBody/rightColumn/span_classifieds")
 		WebUI.verifyElementVisible(classifiedIcon)
 	}
+	
+	/***
+	 * @description verify Existing Of Region Button and Clickable
+	 * @author Razan
+	 *
+	 */
 
 
 	public static void verifyExistingOfRegionButtonandClickable() {
@@ -126,6 +171,11 @@ public class defaultFooterValidatins {
 		assert textRegion.equals(GlobalVariable.defaultRegionText)
 	}
 
+	/***
+	 * @description verify Clicking On FeedBack Button ShowPopUP
+	 * @author Razan
+	 *
+	 */
 	public static void verifyClickingOnFeedBackButtonShowPopUP() {
 		TestObject modal = findTestObject("Object Repository/defaultFooter/footerBody/rightColumn/div_leave-feedback-form")
 		WebUI.verifyElementNotVisible(modal)
@@ -136,6 +186,13 @@ public class defaultFooterValidatins {
 		//		String header = WebUI.getAttribute(headerFeadBack, 'value')
 		//		assert header.equals(GlobalVariable.feedbackHeader)
 	}
+	
+	
+	/***
+	 * @description fill Modal With Assert Value And Close
+	 * @author Razan
+	 *
+	 */
 
 	public static void fillModalWithAssertValueAndClose() {
 		TestObject comment = findTestObject("Object Repository/defaultFooter/footerBody/rightColumn/textarea_feedback")
@@ -151,6 +208,12 @@ public class defaultFooterValidatins {
 		TestObject close = findTestObject("Object Repository/defaultFooter/footerBody/rightColumn/button_closeFeedbackModal")
 		WebUI.click(close)
 	}
+	
+	/***
+	 * @description verify Clicking Favourites
+	 * @author Razan
+	 *
+	 */
 
 	public static void verifyClickingFavourites() {
 
@@ -159,6 +222,13 @@ public class defaultFooterValidatins {
 				GlobalVariable.loginPageHeader, GlobalVariable.favouriteURL)
 		WebUI.navigateToUrl(GlobalVariable.baseUrl)
 	}
+	
+	/***
+	 * @description verify Clicking Previously Ordered
+	 * @author Razan
+	 *
+	 */
+
 
 	public static void verifyClickingPreviouslyOrdered() {
 
@@ -167,6 +237,13 @@ public class defaultFooterValidatins {
 				GlobalVariable.loginPageHeader, GlobalVariable.previouslyOrderURL)
 		WebUI.navigateToUrl(GlobalVariable.baseUrl)
 	}
+	
+	
+	/***
+	 * @description verify Clicking On QuickOrder
+	 * @author Razan
+	 *
+	 */
 
 	public static void verifyClickingOnQuickOrder() {
 		TestObject quickOrderHeader = findTestObject("Object Repository/Quick Order/span_quickOrderHeader")
@@ -175,6 +252,12 @@ public class defaultFooterValidatins {
 		WebUI.navigateToUrl(GlobalVariable.baseUrl)
 
 	}
+	
+	/***
+	 * @description verify Clicking On OnlineOrder
+	 * @author Razan
+	 *
+	 */
 
 	public static void verifyClickingOnOnlineOrder() {
 		TestObject quickOrderHeader = findTestObject("Object Repository/defaultFooter/footerBody/rightColumn/a_onlineOrdering")
@@ -183,10 +266,23 @@ public class defaultFooterValidatins {
 		WebUI.navigateToUrl(GlobalVariable.baseUrl)
 
 	}
+	
+	
+	/***
+	 * @description verify Existing Of Sample Footer
+	 * @author Razan
+	 *
+	 */
 
 	public static void verifyExistingOfSampleFooter() {
 
 	}
+	
+	/***
+	 * @description verify Existing Of Left FooterTitle
+	 * @author Razan
+	 *
+	 */
 
 	public static void verifyExistingOfLeftFooterTitle() {
 		TestObject leftFooterTitle = findTestObject("Object Repository/defaultFooter/footerBody/leftColumn/span_leftFooterTitle")
@@ -195,6 +291,12 @@ public class defaultFooterValidatins {
 		assert text.equals(GlobalVariable.leftFooterTitle.toString().toUpperCase())
 
 	}
+	
+	/***
+	 * @description verify Existing Of Left FooterTitle
+	 * @author Razan
+	 *
+	 */
 
 	public static void verifyExistingOfLeftFooterSubTitle() {
 		TestObject leftFooterSubTitle = findTestObject("Object Repository/defaultFooter/footerBody/leftColumn/span_leftFootersubTitle")
