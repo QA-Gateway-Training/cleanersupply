@@ -4,10 +4,12 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.testobject.TestObject
 
 import actions.CategoryScActions
+import actions.ProductDetailsActions
 import internal.GlobalVariable
 import validation.GeneralValidation
 import validation.CategoryValidations
-import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.Keys
+import org.openqa.selenium.WebElement
 
 
 public class CategorySCHelpers {
@@ -30,10 +32,14 @@ public class CategorySCHelpers {
 
 	public static void navigateComputerRegister() {
 		String computerRegister = "Object Repository/Category/a_ComputerRegister"
-		WebUI.mouseOver(findTestObject("Object Repository/Category/a_ComputerRegister"))
-		WebUI.click(findTestObject("Object Repository/Category/a_ComputerRegister"))
+		WebUI.mouseOver(findTestObject(computerRegister))
+		String hoverColor = CategoryScActions.getcssvvalueforTagsColor(computerRegister)
+		assert	hoverColor.equals(GlobalVariable.moveColr)
+		String transform =WebUI.getCSSValue(findTestObject(computerRegister), "text-transform")
+		assert	transform.equals(GlobalVariable.upperCaseTransform)
+		WebUI.click(findTestObject(computerRegister))
 		GeneralValidation.verifyCurrentPageURL(GlobalVariable.computerRegisterURL)
-		//GeneralValidation.verifyCurrentPageTitleValue(GlobalVariable.computerRegisterTitle)
+		GeneralValidation.verifyCurrentPageTitleValue(GlobalVariable.computerRegisterTitle)
 	}
 
 	public static void selectCasioManufacturar() {
@@ -42,11 +48,13 @@ public class CategorySCHelpers {
 		//add loading verification
 		TestObject casioSelect = findTestObject("Object Repository/Category/button_afterSelectCasio")
 		String text = WebUI.getAttribute(casioSelect, "title")
-		text.equals(GlobalVariable.CasioSelect)
+		assert text.equals(GlobalVariable.CasioSelect)
 		TestObject firstSelectedFilter = findTestObject("Object Repository/Category/a_casioSelectedFilter")
 		String casio = WebUI.getText(firstSelectedFilter)
-		casio.equals(GlobalVariable.CasioSelect)
-		CategoryScActions.getDefaultProjectCategoryFilter(GlobalVariable.expectedProductNum) // false on console
+		assert casio.equals(GlobalVariable.CasioSelect)
+		
+		List<WebElement> filteredList = WebUI.findWebElements(findTestObject('Object Repository/Category/li_filteredList'), GlobalVariable.globalTimeOut) 
+		CategoryScActions.getDefaultProjectCategoryFilter(filteredList.size().toString()) // false on console
 
 	}
 
@@ -67,7 +75,10 @@ public class CategorySCHelpers {
 		TestObject secondSelectedFilter = findTestObject("Object Repository/Category/A_SP001selectedFilter")
 		String sp001 = WebUI.getText(secondSelectedFilter)
 		sp001.equals(GlobalVariable.modalSelect)
-		CategoryScActions.getDefaultProjectCategoryFilter(GlobalVariable.expectedProductNum) // false on console
+		
+//		List<WebElement> filteredList = WebUI.findWebElements(findTestObject('Object Repository/Category/li_filteredList'), GlobalVariable.globalTimeOut)
+//		
+//		CategoryScActions.getDefaultProjectCategoryFilter(filteredList.size().toString()) // false on console
 
 	}
 
@@ -105,8 +116,9 @@ public class CategorySCHelpers {
 		WebUI.click(findTestObject("Object Repository/Category/sp1000CasioProductDetails/h1_sp1000CasioProduct"))
 		TestObject addToCart = findTestObject("Object Repository/Category/sp1000CasioProductDetails/button_addToCart")
 		//WebUI.mouseOver(addToCart)
-		WebUI.click(addToCart)
-		CategoryValidations.validateCartNo(GlobalVariable.afterAdd10ItemsBadge)
+//		WebUI.click(addToCart)
+		ProductDetailsActions.addToCartAction()
+//		CategoryValidations.validateCartNo(GlobalVariable.afterAdd10ItemsBadge)
 		GeneralValidation.verifyCurrentPageTitleIsNotEmpty()
 
 

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;footer-container&quot;]/div[2]/div/div/div[3]/div/div[4]/div/div[3]/span[3]</value>
+         <value>//div[@class='contact-box']//div[@class='contact-group'][3]/span[2]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -15,7 +15,6 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

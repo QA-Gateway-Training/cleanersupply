@@ -45,7 +45,7 @@ public class CategoryScActions{
 	 */
 
 	public static String getcssvvalueforTagsBackGround(String selector){
-		return WebUI.getCSSValue(findTestObject(selector), 'background').toString()
+		return WebUI.getCSSValue(findTestObject(selector), 'background-color').toString()
 	}
 
 	/** Click on specific given selector's object
@@ -59,45 +59,47 @@ public class CategoryScActions{
 
 
 
-	public static boolean getDefaultProjectCategoryFilter(String ExpectedProductNum) {
+	public static void getDefaultProjectCategoryFilter(String ExpectedProductNum) {
 		//WebUI.delay(5)
 		//TestObject defaultProductsCount = findTestObject(".product-list-container .section-subheading h2")
 		TestObject defaultProductsCount = findTestObject("Object Repository/Category/h2_productNum")
 		String text =	WebUI.getText(defaultProductsCount)
 		String numberOnly= text.replaceAll("[^0-9]", "");
-		return println (numberOnly.equals(ExpectedProductNum))
+		assert numberOnly.equals(ExpectedProductNum)
+		//return println (numberOnly.equals(ExpectedProductNum))
 
 	}
 
 	public static void getDefaultValueOfSortBy(String ExpectedValue) {
 		//TestObject defaultProductsCount = findTestObject(".product-list-container .filter-option")
-		TestObject defaultProductsfilter = findTestObject("Object Repository/Category/h2_productNum")
+		TestObject defaultProductsfilter = findTestObject("Object Repository/Category/span_featuredDefault")
 		String text = WebUI.getText(defaultProductsfilter)
-		text.equals(ExpectedValue)
+		assert text.equals(ExpectedValue)
 	}
 
 
 	public static void getDefaultManufacturar(String Expected) {
 		TestObject manuDefault = findTestObject("Object Repository/Category/span_manuDefault")
 		String actual = WebUI.getText(manuDefault)
-		actual.equals(Expected)
+	assert	actual.equals(Expected)
 	}
 
 	public static void getDefaultModal(String Expected) {
 		TestObject manuDefault = findTestObject("Object Repository/Category/span_defaultFilterModal")
 		String actual = WebUI.getText(manuDefault)
-		actual.equals(Expected)
+		assert actual.equals(Expected)
 	}
-	public static void getDefaultProjectCategoryFilter() {
-		WebElement defaultfilterPro = FindElement(By.partialLinkText("74 products"))
-		TestObject element = WebUI.convertWebElementToTestObject(defaultfilterPro)
-	}
+//	public static void getDefaultProjectCategoryFilter() {
+//		WebElement defaultfilterPro = FindElement(By.partialLinkText("74 products"))
+//		TestObject element = WebUI.convertWebElementToTestObject(defaultfilterPro)
+//	}
 
 	public static void clickOnManuWithassertOPened(String ExpectedCSSEXpandedValue) {
-		TestObject manuDefault = findTestObject("Object Repository/Category/span_manuDefault")
+		TestObject expandedMenu = findTestObject('Object Repository/Category/sp001Casiprodoct/ul_manufature')
+		TestObject manuDefault = findTestObject('Object Repository/Category/span_manuDefault')
 		WebUI.click(manuDefault)
-		String cssValue= WebUI.getAttribute(manuDefault, 'aria-expanded')
-		cssValue.equals(ExpectedCSSEXpandedValue)
+		String cssValue= WebUI.getAttribute(expandedMenu, 'aria-expanded')
+		assert cssValue.equals(ExpectedCSSEXpandedValue)
 	}
 
 	//	public static void clickOnManuWithassertOPened(String ExpectedCSSEXpandedValue) {
@@ -106,7 +108,7 @@ public class CategoryScActions{
 	//		String cssValue= WebUI.getAttribute(manuDefault, 'aria-expanded')
 	//		cssValue.equals(ExpectedCSSEXpandedValue)
 	//	}
-	
+
 
 
 

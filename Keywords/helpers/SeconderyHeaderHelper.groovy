@@ -34,7 +34,7 @@ public class SeconderyHeaderHelper {
 	
 	public static void verifyNavLinksStyle(TestObject link, String expectedTitle) {
 		assert WebUI.getText(link).equals(expectedTitle)
-		SeconderyHeaderValidation.verifyElmStyle(link,"color",GlobalVariable.whiteColor)
+		SeconderyHeaderValidation.verifyElmStyle(link,"color",GlobalVariable.footerbodyWightColor)
 		SeconderyHeaderValidation.verifyElmStyle(link,"font-weight",GlobalVariable.navLinkFontWeight)
 		SeconderyHeaderValidation.verifyElmStyle(link,"text-transform","uppercase")	
 	}

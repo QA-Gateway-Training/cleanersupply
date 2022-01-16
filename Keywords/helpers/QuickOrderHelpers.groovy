@@ -73,8 +73,10 @@ public class QuickOrderHelpers {
 	 */
 	public static void navigateToAddToCartPage() {
 		TestObject addToCartBtn = findTestObject('Object Repository/Quick Order/button_addToCart')
+
 		GeneralActions.hoverItem(addToCartBtn)
 		//assert WebUI.getCSSValue(container, 'box-shadow').equals('rgba(0, 0, 0, 0.3) 0px 0px 10px 2px')
+
 		QuickOrderActions.clickAddToCartBtn()
 	}
 
@@ -157,9 +159,11 @@ public class QuickOrderHelpers {
 	public static void headerAndTableStyle() {
 		QuickOrderValidations.veriyHeaderStyle()
 		TestObject quickOrderTableRows = findTestObject("Object Repository/Quick Order/tr_allQuickOrderRows")
-		GeneralValidation.verifyBackgroundColor(quickOrderTableRows,GlobalVariable.grayBgColor)
+
+		GeneralValidation.verifyBackgroundColor(quickOrderTableRows,GlobalVariable.grayClr)
 		TestObject addToCartBtn = findTestObject("Object Repository/Quick Order/button_addToCart")
-		WebUI.verifyElementNotPresent(addToCartBtn,2)
+		WebUI.verifyElementNotPresent(addToCartBtn, GlobalVariable.globalTimeOut)
+
 	}
 
 	/***
@@ -292,6 +296,7 @@ public class QuickOrderHelpers {
 			String name = WebUI.getText(Title)
 			String qyt = WebUI.getAttribute(Quantity, 'value')
 			String price = WebUI.getText(Price).replaceAll("[^0-9\\.]","")
+
 			String sku = WebUI.getAttribute(Sku,"value")
 
 			cartItem.add(GeneralHelperFunctions.makeListOfItems(name, price, sku, qyt))

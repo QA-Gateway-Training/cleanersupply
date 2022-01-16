@@ -31,7 +31,7 @@ public class ProductDetailsHelpers {
 	 * @author waleedafifi
 	 */
 	public static void initProductDetailsPage() {
-		//		GeneralValidation.verifyCurrentPageTitleValue(GlobalVariable.productItems[1])
+				GeneralValidation.verifyCurrentPageTitleValue(GlobalVariable.productItems[1])
 		GeneralValidation.verifyCurrentPageURL(GlobalVariable.productItems[0])
 
 		ProductDetailsValidation.verifyProductDetailsPageBreadCrumb()
