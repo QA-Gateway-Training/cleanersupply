@@ -18,15 +18,15 @@
       <testCaseId>Test Cases/Checkout Scenario/Product Details</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>f6c71b30-5992-4f93-8cca-9f4223ccb50b</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Checkout Scenario/Quick Order</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>898ba9f6-a97c-4d71-9011-f78ed04ab3c5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Checkout Scenario/Category</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f6c71b30-5992-4f93-8cca-9f4223ccb50b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Checkout Scenario/Quick Order</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

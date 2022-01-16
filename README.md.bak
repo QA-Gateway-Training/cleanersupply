@@ -4,7 +4,7 @@
 
 ## Team member
 1. Razan Hammad
-2. Shaimaa Iqtefan
+2. Shimaa Iqtefan
 3. Waleed A. Afifi
 
 ## Requirenments
@@ -145,20 +145,7 @@ https://github.com/QA-Gateway-Training/cleanersupply.git
     - Verify displayed information are the same as user entered
 
 5- Quick order test plan
-  - Verify visibility and hover effect on Quick Order button
-  - Verify navigation to Quick Order page 
-  - Verify url, title, heading
-  - Verify cart counter number (0) and style
-  - Verify header visibility and style
-  - Verify addToCartBtn not visible
-  - Verify inputs placeholder , and empty value
-  - Verify border changing on input focus
-  - Verify filling product stock number and value is reflected 
-  - Verify visibilty of product details in same row
-  - Verify filling quantities inputs on table and value is reflected 
-  - Verify changing total value
-  - Verify the total values are correct
-  - Verify hover effect and click on addToCart Button 
+  - test 1
   
 6- Search
   - Check placeholder

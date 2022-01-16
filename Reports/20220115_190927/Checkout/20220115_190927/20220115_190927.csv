@@ -1,0 +1,33 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Checkout,Chrome 97.0.4692.71,,,2022-01-15 19:09:38,2022-01-15 19:13:11,3m - 33.258s,FAILED
+,,,,,,,
+Test Cases/Checkout Scenario/Product Details,Chrome 97.0.4692.71,,,2022-01-15 19:09:39,2022-01-15 19:10:41,1m - 2.665s,FAILED
+GeneralHelpers.initScenario(),Chrome 97.0.4692.71,,,2022-01-15 19:09:40,2022-01-15 19:10:14,34.097s,PASSED
+GeneralHelpers.headerSearchFillAndClick(),Chrome 97.0.4692.71,,,2022-01-15 19:10:14,2022-01-15 19:10:38,24.322s,PASSED
+GeneralHelpers.navigateToResultPage(),Chrome 97.0.4692.71,,,2022-01-15 19:10:38,2022-01-15 19:10:41,3.270s,FAILED
+,,,,,,,
+Test Cases/Checkout Scenario/Category,Chrome 97.0.4692.71,,,2022-01-15 19:10:41,2022-01-15 19:12:33,1m - 51.612s,PASSED
+GeneralHelpers.initScenario(),Chrome 97.0.4692.71,,,2022-01-15 19:10:42,2022-01-15 19:10:57,15.380s,PASSED
+"computerRegister = ""Object Repository/Category/a_ComputerRegister""",Chrome 97.0.4692.71,,,2022-01-15 19:10:57,2022-01-15 19:10:57,0.002s,PASSED
+CategoryScActions.hovertags(),Chrome 97.0.4692.71,,,2022-01-15 19:10:57,2022-01-15 19:10:59,1.646s,PASSED
+CategorySCHelpers.navigateComputerRegister(),Chrome 97.0.4692.71,,,2022-01-15 19:10:59,2022-01-15 19:11:07,8.410s,PASSED
+CategoryValidations.validatespanText(computerRegisterspan),Chrome 97.0.4692.71,,,2022-01-15 19:11:07,2022-01-15 19:11:11,3.456s,PASSED
+CategoryScActions.getDefaultProjectCategoryFilter(expectedProductNum),Chrome 97.0.4692.71,,,2022-01-15 19:11:11,2022-01-15 19:11:11,0.456s,PASSED
+CategoryScActions.getDefaultValueOfSortBy(sortByDefault),Chrome 97.0.4692.71,,,2022-01-15 19:11:11,2022-01-15 19:11:12,0.506s,PASSED
+CategoryScActions.getDefaultManufacturar(manufacturarDefault),Chrome 97.0.4692.71,,,2022-01-15 19:11:12,2022-01-15 19:11:12,0.447s,PASSED
+CategoryScActions.getDefaultModal(defaultmodal),Chrome 97.0.4692.71,,,2022-01-15 19:11:12,2022-01-15 19:11:13,0.414s,PASSED
+CategoryScActions.clickOnManuWithassertOPened(menuExpandValue),Chrome 97.0.4692.71,,,2022-01-15 19:11:13,2022-01-15 19:11:14,1.134s,PASSED
+CategorySCHelpers.selectCasioManufacturar(),Chrome 97.0.4692.71,,,2022-01-15 19:11:14,2022-01-15 19:11:16,2.292s,PASSED
+CategorySCHelpers.selectModalsp1000(),Chrome 97.0.4692.71,,,2022-01-15 19:11:16,2022-01-15 19:11:21,5.080s,PASSED
+CategorySCHelpers.EnterCasioSP1000Product(),Chrome 97.0.4692.71,,,2022-01-15 19:11:21,2022-01-15 19:11:30,8.431s,PASSED
+CategorySCHelpers.ValidateCasioSP1000ProductDetails(),Chrome 97.0.4692.71,,,2022-01-15 19:11:30,2022-01-15 19:11:31,1.501s,PASSED
+CategorySCHelpers.enterTenItemsFromProduct(),Chrome 97.0.4692.71,,,2022-01-15 19:11:31,2022-01-15 19:11:37,6.395s,PASSED
+CategorySCHelpers.checkMeniCartBadge(),Chrome 97.0.4692.71,,,2022-01-15 19:11:37,2022-01-15 19:11:38,0.481s,PASSED
+CategorySCHelpers.navigateToCart(),Chrome 97.0.4692.71,,,2022-01-15 19:11:38,2022-01-15 19:11:45,6.927s,PASSED
+"navigateToUrl(""https://www.cleanersupply.com/checkout/"")",Chrome 97.0.4692.71,,,2022-01-15 19:11:45,2022-01-15 19:11:46,1.565s,PASSED
+maximizeWindow(),Chrome 97.0.4692.71,,,2022-01-15 19:11:46,2022-01-15 19:11:47,0.223s,PASSED
+checkOutFormHelper.fillCheckOutForm(),Chrome 97.0.4692.71,,,2022-01-15 19:11:47,2022-01-15 19:12:33,46.419s,PASSED
+,,,,,,,
+Test Cases/Checkout Scenario/Quick Order,Chrome 97.0.4692.71,,,2022-01-15 19:12:33,2022-01-15 19:13:11,38.361s,FAILED
+GeneralHelpers.initScenario(),Chrome 97.0.4692.71,,,2022-01-15 19:12:34,2022-01-15 19:12:48,14.483s,PASSED
+QuickOrderHelpers.navigationAndVerifyToQuickOrder(),Chrome 97.0.4692.71,,,2022-01-15 19:12:48,2022-01-15 19:13:11,23.210s,FAILED

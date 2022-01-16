@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>td_shoppingCartProductPrice</name>
+   <name>input_tabkeSku</name>
    <tag></tag>
-   <elementGuidId>92e86696-3d54-432f-8d7d-c940cb4a0859</elementGuidId>
+   <elementGuidId>b499d43b-2184-4f7d-a7b6-92ebe3bbf644</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>table.product-table tbody tr td.product-table__price</value>
+         <value>.product-table__input input</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

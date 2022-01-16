@@ -739,4 +739,9 @@
       <initValue>'rgb(220, 221, 222)'</initValue>
       <name>leftArrowColor</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'rgb(83, 35, 128)'</initValue>
+      <name>cartCounterBgClr</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

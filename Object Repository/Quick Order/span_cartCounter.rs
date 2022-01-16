@@ -6,12 +6,11 @@
    <elementGuidId>8a842395-716d-46cd-b04a-89f886b201d0</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>CSS</key>
+         <value>.graphic-group .item-no </value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>.item-no span</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

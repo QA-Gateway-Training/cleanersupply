@@ -61,9 +61,9 @@ public class CheckoutPageValidation {
 	 * @author waleedafifi
 	 */
 	public static void verifyProductSummaryItemQountityTotal() {
-		List<WebElement> productPrice = WebUI.findWebElements(findTestObject('Object Repository/Shopping Cart/td_shoppingCartProductPrice'), GlobalVariable.globalTimeOut)
-		List<WebElement> productQuantity = WebUI.findWebElements(findTestObject('Object Repository/Shopping Cart/input_shoppingCartProductQuantity'), GlobalVariable.globalTimeOut)
-		List<WebElement> productTotal = WebUI.findWebElements(findTestObject('Object Repository/Shopping Cart/td_shoppingCartProductTotal'), GlobalVariable.globalTimeOut)
+		List<WebElement> productPrice = WebUI.findWebElements(findTestObject('Object Repository/CheckOut/Cart/div_productPrice'), GlobalVariable.globalTimeOut)
+		List<WebElement> productQuantity = WebUI.findWebElements(findTestObject('Object Repository/CheckOut/Cart/input_productQuantity'), GlobalVariable.globalTimeOut)
+		List<WebElement> productTotal = WebUI.findWebElements(findTestObject('Object Repository/CheckOut/Cart/div_priceTotal'), GlobalVariable.globalTimeOut)
 
 		for(int idx = 0; idx < productPrice.size(); idx++) {
 			String prc = productPrice.get(idx).getAttribute('innerText').replaceAll("[^0-9\\.]","");

@@ -82,6 +82,8 @@ public class ProductDetailsHelpers {
 	 * @author waleedafifi
 	 */
 	public static void hoverEffectAndClickLargeSizeLink() {
+		WebUI.mouseOver(findTestObject('Product details/h2_descHeader'))
+		println("Done")
 		ProductDetailsActions.hoverOverLargeSizeLink()
 		//		ProductDetailsValidation.verifyOnHoverStyle()
 
