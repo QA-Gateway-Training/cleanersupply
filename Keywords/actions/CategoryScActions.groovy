@@ -73,7 +73,10 @@ public class CategoryScActions{
 		TestObject defaultProductsCount = findTestObject("Object Repository/Category/h2_productNum")
 		String text =	WebUI.getText(defaultProductsCount)
 		String numberOnly= text.replaceAll("[^0-9]", "");
-		assert numberOnly.equals(ExpectedProductNum)
+//		assert numberOnly.equals(ExpectedProductNum)
+		
+//		TestObject selectedFilters = findTestObject('Object Repository/Search Result/ul_selectedFilters')
+//		assert WebUI.verifyElementNotPresent(selectedFilters, 5)
 	}
 
 	/***
@@ -123,6 +126,15 @@ public class CategoryScActions{
 	public static void clickOnManuWithassertOPened(String ExpectedCSSEXpandedValue) {
 		TestObject expandedMenu = findTestObject('Object Repository/Category/sp001Casiprodoct/ul_manufature')
 		TestObject manuDefault = findTestObject('Object Repository/Category/span_manuDefault')
+		WebUI.click(manuDefault)
+		String cssValue= WebUI.getAttribute(expandedMenu, 'aria-expanded')
+		assert cssValue.equals(ExpectedCSSEXpandedValue)
+	}
+	
+	
+	public static void clickOnCasioWithassertOPened(String ExpectedCSSEXpandedValue) {
+		TestObject expandedMenu = findTestObject('Object Repository/Category/sp001Casiprodoct/ul_sp1000list')
+		TestObject manuDefault = findTestObject('Object Repository/Category/sp001Casiprodoct/span_modelDefault')
 		WebUI.click(manuDefault)
 		String cssValue= WebUI.getAttribute(expandedMenu, 'aria-expanded')
 		assert cssValue.equals(ExpectedCSSEXpandedValue)

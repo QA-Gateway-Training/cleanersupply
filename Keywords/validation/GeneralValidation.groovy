@@ -46,7 +46,11 @@ public class GeneralValidation {
 	public static void verifyCurrentPageURL(String expectedURL) {
 		assert WebUI.getUrl().contains(expectedURL)
 	}
-
+	
+	public static void verifyPageHeader(TestObject selector, String ExpectedText) {
+		String actualText = WebUI.getText(selector)
+		assert actualText.contains(ExpectedText)
+	}
 
 
 	public static void verifyColorChangeOnHover(TestObject item , String color) {

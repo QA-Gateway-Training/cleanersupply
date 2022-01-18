@@ -14,9 +14,12 @@ import helpers.MiniCartHelpers as MiniCartHelpers
 import actions.MiniCartActions as MiniCartActions
 import helpers.ShoppingCartHelpers as ShoppingCartHelpers
 import helpers.CheckoutPageHelpers as CheckoutPageHelpers
+import validation.GeneralValidation as GeneralValidation
+import validation.CheckoutPageValidation
+import helpers.PrimaryHeaderHelpers
 
 GeneralHelpers.initScenario()
-
+PrimaryHeaderHelpers.cartLinkHover()
 String computerRegister = 'Object Repository/Category/a_ComputerRegister'
 
 //CategoryValidations.checkHoverFlyMenuUNVisibility()
@@ -28,9 +31,16 @@ CategoryValidations.checkanchorHoverColorBackground(tags, GlobalVariable.moveCol
 
 CategoryValidations.checkHoverFlyMenuVisibility()
 
-CategorySCHelpers.navigateComputerRegister()
+CategorySCHelpers.navigateComputerRegister( // navigation assertion and action 
+    )
 
-CategoryValidations.validatespanText(GlobalVariable.computerRegisterspan)
+ TestObject header = findTestObject('Object Repository/Category/h1_computerRegisterTags' // verify header
+    )
+
+GeneralValidation.verifyPageHeader(header, GlobalVariable.computerRegisterHeader)
+
+CategoryValidations.validatespanText(GlobalVariable.computerRegisterspan // breadcrumb
+    )
 
 CategoryScActions.getDefaultProjectCategoryFilter(GlobalVariable.expectedProductNum // true on console
     )
@@ -41,7 +51,10 @@ CategoryScActions.getDefaultManufacturar(GlobalVariable.manufacturarDefault)
 
 CategoryScActions.getDefaultModal(GlobalVariable.defaultmodal)
 
-CategoryScActions.clickOnManuWithassertOPened(GlobalVariable.menuExpandValue)
+CategorySCHelpers.checkCollabse("Object Repository/Category/div_collabse1")
+
+CategoryScActions.clickOnManuWithassertOPened(GlobalVariable.menuExpandValue // click and assert drop down for manufacturar
+    )
 
 CategorySCHelpers.selectCasioManufacturar()
 
@@ -50,6 +63,7 @@ CategorySCHelpers.selectModalsp1000()
 CategorySCHelpers.EnterCasioSP1000Product()
 
 CategorySCHelpers.ValidateCasioSP1000ProductDetails()
+CategoryValidations.validateProductDetailsText(GlobalVariable.broductBreadCrump)
 
 CategorySCHelpers.enterTenItemsFromProduct()
 
@@ -64,5 +78,12 @@ CheckoutPageHelpers.initCheckoutPage()
 CheckoutPageHelpers.navigateToCheckoutInformationForm()
 
 checkOutFormHelper.fillCheckOutForm()
+
+CheckoutPageValidation.verifyNavigationToCheckoutDetails()
+CheckoutPageHelpers.ShippingAddressDiv()
+CheckoutPageHelpers.verifyShippingDetailsInCeckout()
+CheckoutPageHelpers.standardShippingAddress()
+CheckoutPageHelpers.paymentMethodDiv()
+CheckoutPageHelpers.verifyPaymentMethodDetails()
 
 WebUI.closeBrowser()
