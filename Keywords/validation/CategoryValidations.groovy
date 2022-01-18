@@ -7,7 +7,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import actions.CategoryScActions
 import internal.GlobalVariable
 
-
 public class CategoryValidations {
 
 	/***
@@ -22,6 +21,11 @@ public class CategoryValidations {
 		assert	actualBackground.equals(ExpectedHoverBackground)
 	}
 
+	/***
+	 * @description Check fly menu is appeared when hovering tags and forms
+	 * @author Razan
+	 */
+
 	public static void checkHoverFlyMenuVisibility() {
 		TestObject menyFly = findTestObject("Object Repository/Category/ul_flyMenu")
 		assert WebUI.verifyElementVisible(menyFly)
@@ -34,28 +38,36 @@ public class CategoryValidations {
 		assert WebUI.getAttribute(menyFly, "class").contains(!GlobalVariable.flyMenyOpenedClass)
 	}
 
+	/***
+	 * @description validate that actual text is as expected
+	 * @author Razan
+	 */
 	public static void validatespanText(String ExpectedText){
-		TestObject object=findTestObject("Object Repository/Category/span_omputerRegister")
+		TestObject object=findTestObject("Category/span_computerRegister")
 		String text =	WebUI.getText(object)
 		assert text.contains(ExpectedText.toUpperCase())
+	}
+	
+	public static void validateProductDetailsText(String ExpectedText){
+		TestObject object=findTestObject("Object Repository/Category/sp001Casiprodoct/span_productdetailBreadCrump")
+		String text =	WebUI.getText(object)
+		assert text.contains(ExpectedText)
+		
+	
 	}
 
 	public static void validateText(String Selector ,String ExpectedText) {
 		TestObject textSelector = findTestObject(Selector)
 		String text =WebUI.getText(textSelector)
-		WebUI.verifyEqual(text, ExpectedText.toUpperCase())
-	}
+		assert text.contains(ExpectedText)}
 
 	public static void validatePrice(String Selector,BigDecimal ExpectedPrice) {
 		TestObject priceSelector = findTestObject(Selector)
 		String price =WebUI.getText(priceSelector)
-		//println (price)
-		//println (ExpectedPrice)
+
 		price = price.replace('\\$', "");
-		//println(price)
 		float f=Float.parseFloat(price);
 		WebUI.verifyEqual(price, ExpectedPrice)
-
 	}
 
 	public static void validateCartNo(String ExpectedNo) {

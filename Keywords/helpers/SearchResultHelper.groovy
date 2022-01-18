@@ -30,8 +30,8 @@ public class SearchResultHelper {
 	 * @author waleedafifi
 	 */
 	public static void filterCardExpand() {
-		SearchResultPageActions.expandFilterCard('collapse5')
-		SearchResultPageValidations.verifyFilterCardExpanded('collapse5')
+		SearchResultPageActions.expandFilterCard('collapse6')
+		SearchResultPageValidations.verifyFilterCardExpanded('collapse6')
 	}
 
 	/**
@@ -50,7 +50,9 @@ public class SearchResultHelper {
 		GeneralValidation.verifyLoader()
 		SearchResultPageValidations.verifyPlasticBagsFilterSelected()
 		SearchResultPageValidations.verifySelectedFilter('Plastic Bags')
+		
 		filterCardExpand()
+//		SearchResultPageActions.expandColorCardFilter()
 
 		SearchResultPageActions.selectColorFilter()
 		GeneralValidation.verifyLoader()

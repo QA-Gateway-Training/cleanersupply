@@ -1,0 +1,80 @@
+1
+00:00:00,000 --> 00:00:09,252
+1. GeneralHelpers.initScenario()
+
+2
+00:00:09,253 --> 00:00:11,041
+5. SeconderyHeaderValidation.verifyNavVisibilityAndBackground()
+
+3
+00:00:11,042 --> 00:00:12,056
+9. SeconderyHeaderHelper.verifyAllNavLinksStyle()
+
+4
+00:00:12,056 --> 00:00:26,222
+13. SeconderyHeaderHelper.hoverAllMainNavLinksAndCheckStyle()
+
+5
+00:00:26,223 --> 00:00:30,610
+17. SeconderyHeaderHelper.navigateToTagsAndForms()
+
+6
+00:00:30,610 --> 00:00:32,728
+21. PrimaryHeaderHelpers.NavigateToHomePageUsingLogo()
+
+7
+00:00:32,731 --> 00:00:36,341
+25. SeconderyHeaderHelper.navigateToCounterAndCheckin()
+
+8
+00:00:36,359 --> 00:00:39,394
+29. PrimaryHeaderHelpers.NavigateToHomePageUsingLogo()
+
+9
+00:00:39,395 --> 00:00:44,341
+33. SeconderyHeaderHelper.navigateToBags()
+
+10
+00:00:44,342 --> 00:00:46,621
+37. PrimaryHeaderHelpers.NavigateToHomePageUsingLogo()
+
+11
+00:00:46,622 --> 00:00:51,494
+41. SeconderyHeaderHelper.navigateToPressingAndSpotting()
+
+12
+00:00:51,495 --> 00:00:53,565
+45. PrimaryHeaderHelpers.NavigateToHomePageUsingLogo()
+
+13
+00:00:53,567 --> 00:00:56,462
+49. SeconderyHeaderHelper.navigateToPackaging()
+
+14
+00:00:56,462 --> 00:00:59,702
+53. PrimaryHeaderHelpers.NavigateToHomePageUsingLogo()
+
+15
+00:00:59,703 --> 00:01:02,855
+57. SeconderyHeaderHelper.navigateToRacks()
+
+16
+00:01:02,855 --> 00:01:06,620
+61. PrimaryHeaderHelpers.NavigateToHomePageUsingLogo()
+
+17
+00:01:06,621 --> 00:01:09,949
+65. SeconderyHeaderHelper.navigateToTailoring()
+
+18
+00:01:09,950 --> 00:01:12,805
+69. PrimaryHeaderHelpers.NavigateToHomePageUsingLogo()
+
+19
+00:01:12,806 --> 00:01:15,858
+73. SeconderyHeaderHelper.navigateToLaundromat()
+
+20
+00:01:15,858 --> 00:01:18,910
+77. PrimaryHeaderHelpers.NavigateToHomePageUsingLogo()
+

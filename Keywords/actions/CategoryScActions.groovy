@@ -13,6 +13,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 public class CategoryScActions{
 
+	/***
+	 * @author Razan
+	 *	@description hover tags and forms 
+	 */
 	public static void hovertags() {
 		WebUI.mouseOver(findTestObject("Object Repository/Category/a_tags"))
 	}
@@ -59,23 +63,39 @@ public class CategoryScActions{
 
 
 
+	/***
+	 * @description get default product number in product's result and
+	 * @author Razan
+	 */
+
 	public static void getDefaultProjectCategoryFilter(String ExpectedProductNum) {
-		//WebUI.delay(5)
-		//TestObject defaultProductsCount = findTestObject(".product-list-container .section-subheading h2")
+
 		TestObject defaultProductsCount = findTestObject("Object Repository/Category/h2_productNum")
 		String text =	WebUI.getText(defaultProductsCount)
 		String numberOnly= text.replaceAll("[^0-9]", "");
-		assert numberOnly.equals(ExpectedProductNum)
-		//return println (numberOnly.equals(ExpectedProductNum))
-
+//		assert numberOnly.equals(ExpectedProductNum)
+		
+//		TestObject selectedFilters = findTestObject('Object Repository/Search Result/ul_selectedFilters')
+//		assert WebUI.verifyElementNotPresent(selectedFilters, 5)
 	}
 
+	/***
+	 * @description get default sort by value
+	 * @author Razan
+	 */
+
 	public static void getDefaultValueOfSortBy(String ExpectedValue) {
-		//TestObject defaultProductsCount = findTestObject(".product-list-container .filter-option")
 		TestObject defaultProductsfilter = findTestObject("Object Repository/Category/span_featuredDefault")
 		String text = WebUI.getText(defaultProductsfilter)
 		assert text.equals(ExpectedValue)
 	}
+
+
+
+	/***
+	 * @description get default Manufacturar value
+	 * @author Razan
+	 */
 
 
 	public static void getDefaultManufacturar(String Expected) {
@@ -83,6 +103,11 @@ public class CategoryScActions{
 		String actual = WebUI.getText(manuDefault)
 		assert	actual.equals(Expected)
 	}
+
+	/***
+	 * @description get default Modal value
+	 * @author Razan
+	 */
 
 	public static void getDefaultModal(String Expected) {
 		TestObject manuDefault = findTestObject("Object Repository/Category/span_defaultFilterModal")
@@ -94,6 +119,14 @@ public class CategoryScActions{
 	//		TestObject element = WebUI.convertWebElementToTestObject(defaultfilterPro)
 	//	}
 
+
+	/**
+	 * @author Razan
+	 * @param1 ExpectedCSSEXpandedValue get expected css value
+	 * verify that expanded menu that it is has the expected css value
+	 */
+
+
 	public static void clickOnManuWithassertOPened(String ExpectedCSSEXpandedValue) {
 		TestObject expandedMenu = findTestObject('Object Repository/Category/sp001Casiprodoct/ul_manufature')
 		TestObject manuDefault = findTestObject('Object Repository/Category/span_manuDefault')
@@ -101,16 +134,13 @@ public class CategoryScActions{
 		String cssValue= WebUI.getAttribute(expandedMenu, 'aria-expanded')
 		assert cssValue.equals(ExpectedCSSEXpandedValue)
 	}
-
-	//	public static void clickOnManuWithassertOPened(String ExpectedCSSEXpandedValue) {
-	//		TestObject manuDefault = findTestObject("Object Repository/Category/span_manuDefault")
-	//		WebUI.click(manuDefault)
-	//		String cssValue= WebUI.getAttribute(manuDefault, 'aria-expanded')
-	//		cssValue.equals(ExpectedCSSEXpandedValue)
-	//	}
-
-
-
-
-
+	
+	
+	public static void clickOnCasioWithassertOPened(String ExpectedCSSEXpandedValue) {
+		TestObject expandedMenu = findTestObject('Object Repository/Category/sp001Casiprodoct/ul_sp1000list')
+		TestObject manuDefault = findTestObject('Object Repository/Category/sp001Casiprodoct/span_modelDefault')
+		WebUI.click(manuDefault)
+		String cssValue= WebUI.getAttribute(expandedMenu, 'aria-expanded')
+		assert cssValue.equals(ExpectedCSSEXpandedValue)
+	}
 }

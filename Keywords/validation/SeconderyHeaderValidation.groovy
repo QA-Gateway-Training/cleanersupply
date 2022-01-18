@@ -25,7 +25,7 @@ public class SeconderyHeaderValidation {
 	public static void verifyNavVisibilityAndBackground() {
 		TestObject navBottom = findTestObject("Object Repository/Secondary Header/div_navBottom")
 		WebUI.verifyElementVisible(navBottom)
-		GeneralValidation.verifyBackgroundColor(navBottom, "rgba(83, 35, 128, 1)")
+		GeneralValidation.verifyBackgroundColor(navBottom, GlobalVariable.mainNavBackground)
 	}
 	
 	public static void verifyElmStyle(TestObject item, String style, String value) {

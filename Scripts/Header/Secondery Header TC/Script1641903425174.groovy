@@ -17,6 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import actions.GeneralActions
 import helpers.GeneralHelpers
+import helpers.PrimaryHeaderHelpers
 import helpers.SeconderyHeaderHelper
 import internal.GlobalVariable
 import validation.GeneralValidation
@@ -32,7 +33,26 @@ SeconderyHeaderHelper.verifyAllNavLinksStyle()
 
 SeconderyHeaderHelper.hoverAllMainNavLinksAndCheckStyle()
 
+SeconderyHeaderHelper.navigateToTagsAndForms()
+PrimaryHeaderHelpers.NavigateToHomePageUsingLogo()
 
+SeconderyHeaderHelper.navigateToCounterAndCheckin()
+PrimaryHeaderHelpers.NavigateToHomePageUsingLogo()
 
+SeconderyHeaderHelper.navigateToBags()
+PrimaryHeaderHelpers.NavigateToHomePageUsingLogo()
 
+SeconderyHeaderHelper.navigateToPressingAndSpotting()
+PrimaryHeaderHelpers.NavigateToHomePageUsingLogo()
 
+SeconderyHeaderHelper.navigateToPackaging()
+PrimaryHeaderHelpers.NavigateToHomePageUsingLogo()
+
+SeconderyHeaderHelper.navigateToRacks()
+PrimaryHeaderHelpers.NavigateToHomePageUsingLogo()
+
+SeconderyHeaderHelper.navigateToTailoring()
+PrimaryHeaderHelpers.NavigateToHomePageUsingLogo()
+
+SeconderyHeaderHelper.navigateToLaundromat()
+PrimaryHeaderHelpers.NavigateToHomePageUsingLogo()

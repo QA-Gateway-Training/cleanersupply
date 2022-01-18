@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>.graphic-group .item-no </value>
+         <value>a.desk.cart-btn  span.item-no</value>
       </entry>
       <entry>
          <key>BASIC</key>
