@@ -81,7 +81,7 @@ public class CategoryScActions{
 	public static void getDefaultManufacturar(String Expected) {
 		TestObject manuDefault = findTestObject("Object Repository/Category/span_manuDefault")
 		String actual = WebUI.getText(manuDefault)
-	assert	actual.equals(Expected)
+		assert	actual.equals(Expected)
 	}
 
 	public static void getDefaultModal(String Expected) {
@@ -89,10 +89,10 @@ public class CategoryScActions{
 		String actual = WebUI.getText(manuDefault)
 		assert actual.equals(Expected)
 	}
-//	public static void getDefaultProjectCategoryFilter() {
-//		WebElement defaultfilterPro = FindElement(By.partialLinkText("74 products"))
-//		TestObject element = WebUI.convertWebElementToTestObject(defaultfilterPro)
-//	}
+	//	public static void getDefaultProjectCategoryFilter() {
+	//		WebElement defaultfilterPro = FindElement(By.partialLinkText("74 products"))
+	//		TestObject element = WebUI.convertWebElementToTestObject(defaultfilterPro)
+	//	}
 
 	public static void clickOnManuWithassertOPened(String ExpectedCSSEXpandedValue) {
 		TestObject expandedMenu = findTestObject('Object Repository/Category/sp001Casiprodoct/ul_manufature')
