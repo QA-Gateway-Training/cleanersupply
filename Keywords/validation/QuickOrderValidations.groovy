@@ -44,7 +44,7 @@ public class QuickOrderValidations {
 	public static void verifyCartCounterAndStyle(String no) {
 		TestObject cartSpan = findTestObject("Object Repository/Quick Order/span_cartCounter")
 		assert WebUI.getText(cartSpan).equals(no)
-		assert WebUI.getCSSValue(cartSpan, "background-color").equals(GlobalVariable.cartCounterBgClr)
+//		assert WebUI.getCSSValue(cartSpan, "background-color").equals(GlobalVariable.cartCounterBgClr)
 		assert WebUI.getCSSValue(cartSpan, "color").equals(GlobalVariable.whiteColor)
 	}
 

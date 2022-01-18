@@ -1,0 +1,42 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Footer,Chrome 97.0.4692.71,,,2022-01-17 13:05:19,2022-01-17 13:06:41,1m - 22.468s,PASSED
+,,,,,,,
+Test Cases/Footer/Footer TC,Chrome 97.0.4692.71,,,2022-01-17 13:05:19,2022-01-17 13:06:41,1m - 22.018s,PASSED
+GeneralHelpers.initScenario(),Chrome 97.0.4692.71,,,2022-01-17 13:05:20,2022-01-17 13:05:36,15.824s,PASSED
+defaultFooterValidatins.verifyExistingOftopFooterImage(),Chrome 97.0.4692.71,,,2022-01-17 13:05:36,2022-01-17 13:05:39,3.092s,PASSED
+defaultFooterValidatins.verifyBackGroundandMaxHeightOfTopFooter(),Chrome 97.0.4692.71,,,2022-01-17 13:05:39,2022-01-17 13:05:40,1.134s,PASSED
+defaultFooterValidatins.verifyExistingOffooterBody(),Chrome 97.0.4692.71,,,2022-01-17 13:05:40,2022-01-17 13:05:40,0.511s,PASSED
+defaultFooterValidatins.verifyBackGroundandPaddingOfFooterBody(),Chrome 97.0.4692.71,,,2022-01-17 13:05:40,2022-01-17 13:05:41,0.344s,PASSED
+defaultFooterValidatins.verifyExistingOffooterBodyRightColomn(),Chrome 97.0.4692.71,,,2022-01-17 13:05:41,2022-01-17 13:05:41,0.421s,PASSED
+defaultFooterValidatins.verifyExistingOffooterBodyMiddleColomn(),Chrome 97.0.4692.71,,,2022-01-17 13:05:41,2022-01-17 13:05:42,0.306s,PASSED
+defaultFooterValidatins.verifyExistingOffooterBodyLeftColomn(),Chrome 97.0.4692.71,,,2022-01-17 13:05:42,2022-01-17 13:05:42,0.310s,PASSED
+defaultFooterValidatins.verifyRequestCatalogueLink(),Chrome 97.0.4692.71,,,2022-01-17 13:05:42,2022-01-17 13:05:50,7.680s,PASSED
+defaultFooterValidatins.verifycassifiedListLink(),Chrome 97.0.4692.71,,,2022-01-17 13:05:50,2022-01-17 13:05:57,7.401s,PASSED
+defaultFooterValidatins.verifyExistingOfRegionButtonandClickable(),Chrome 97.0.4692.71,,,2022-01-17 13:05:57,2022-01-17 13:05:59,2.391s,PASSED
+defaultFooterValidatins.verifyClickingOnFeedBackButtonShowPopUP(),Chrome 97.0.4692.71,,,2022-01-17 13:05:59,2022-01-17 13:06:01,1.922s,PASSED
+defaultFooterValidatins.fillModalWithAssertValueAndClose(),Chrome 97.0.4692.71,,,2022-01-17 13:06:01,2022-01-17 13:06:05,3.918s,PASSED
+defaultFooterActions.clickpreviouslyOrdered(),Chrome 97.0.4692.71,,,2022-01-17 13:06:05,2022-01-17 13:06:10,4.404s,PASSED
+defaultFooterValidatins.verifyClickingPreviouslyOrdered(),Chrome 97.0.4692.71,,,2022-01-17 13:06:10,2022-01-17 13:06:13,3.811s,PASSED
+defaultFooterActions.clickQuickOrder(),Chrome 97.0.4692.71,,,2022-01-17 13:06:13,2022-01-17 13:06:17,3.577s,PASSED
+defaultFooterValidatins.verifyExistingOfLeftFooterTitle(),Chrome 97.0.4692.71,,,2022-01-17 13:06:17,2022-01-17 13:06:18,1.511s,PASSED
+defaultFooterValidatins.verifyExistingOfLeftFooterSubTitle(),Chrome 97.0.4692.71,,,2022-01-17 13:06:18,2022-01-17 13:06:19,0.903s,PASSED
+defaultFooterValidatins.verifyExistingOfEmailAndValidatingIt(),Chrome 97.0.4692.71,,,2022-01-17 13:06:19,2022-01-17 13:06:20,0.418s,PASSED
+defaultFooterActions.fillEmailSubscriber(),Chrome 97.0.4692.71,,,2022-01-17 13:06:20,2022-01-17 13:06:21,1.169s,PASSED
+defaultFooterActions.clickOnSignUpSubscriber(),Chrome 97.0.4692.71,,,2022-01-17 13:06:21,2022-01-17 13:06:23,1.724s,PASSED
+defaultFooterValidatins.verifyExistingOfConnectUsTitleandhasexpectedTitle(),Chrome 97.0.4692.71,,,2022-01-17 13:06:23,2022-01-17 13:06:23,0.691s,PASSED
+defaultFooterValidatins.verifyEmailContactAddresAndHasExpectedAddress(),Chrome 97.0.4692.71,,,2022-01-17 13:06:23,2022-01-17 13:06:24,0.291s,PASSED
+defaultFooterValidatins.verifyExistingangOfEmailIconAndHasExpectedStyle(),Chrome 97.0.4692.71,,,2022-01-17 13:06:24,2022-01-17 13:06:24,0.790s,PASSED
+defaultFooterValidatins.verifyContactInfoAddressAsExpected(),Chrome 97.0.4692.71,,,2022-01-17 13:06:24,2022-01-17 13:06:25,1.016s,PASSED
+defaultFooterValidatins.verifyExistingangOfPhoneIconAndHasExpectedStyle(),Chrome 97.0.4692.71,,,2022-01-17 13:06:25,2022-01-17 13:06:26,0.778s,PASSED
+"english = ""Object Repository/defaultFooter/footerBody/leftColumn/div_englishSpeaking""",Chrome 97.0.4692.71,,,2022-01-17 13:06:26,2022-01-17 13:06:26,0.001s,PASSED
+"defaultFooterHelpers.verifyPresentOfContactNumberasExpectedTextAndStyle(english, englishContact)",Chrome 97.0.4692.71,,,2022-01-17 13:06:26,2022-01-17 13:06:28,1.611s,PASSED
+"korean = ""Object Repository/defaultFooter/footerBody/leftColumn/div_koreanSpeaking""",Chrome 97.0.4692.71,,,2022-01-17 13:06:28,2022-01-17 13:06:28,0.001s,PASSED
+"defaultFooterHelpers.verifyPresentOfContactNumberasExpectedTextAndStyle(korean, koreanSpeaking)",Chrome 97.0.4692.71,,,2022-01-17 13:06:28,2022-01-17 13:06:29,1.462s,PASSED
+"international = ""Object Repository/defaultFooter/footerBody/leftColumn/div_internationalOrders""",Chrome 97.0.4692.71,,,2022-01-17 13:06:29,2022-01-17 13:06:29,0.002s,PASSED
+"defaultFooterHelpers.verifyPresentOfContactNumberasExpectedTextAndStyle(international, internationalOrdersContact)",Chrome 97.0.4692.71,,,2022-01-17 13:06:29,2022-01-17 13:06:31,1.445s,PASSED
+defaultFooterValidatins.verifyLogoExisting(),Chrome 97.0.4692.71,,,2022-01-17 13:06:31,2022-01-17 13:06:32,1.244s,PASSED
+defaultFooterValidatins.verifyFaceBookIconExistingAndRedirection(),Chrome 97.0.4692.71,,,2022-01-17 13:06:32,2022-01-17 13:06:34,1.623s,PASSED
+defaultFooterValidatins.verifyYoutubeIconExistingAndRedirection(),Chrome 97.0.4692.71,,,2022-01-17 13:06:34,2022-01-17 13:06:34,0.699s,PASSED
+defaultFooterValidatins.verifyInstagramIconExistingAndRedirection(),Chrome 97.0.4692.71,,,2022-01-17 13:06:34,2022-01-17 13:06:35,0.929s,PASSED
+defaultFooterValidatins.verifylinkedInIconExistingAndRedirection(),Chrome 97.0.4692.71,,,2022-01-17 13:06:35,2022-01-17 13:06:36,0.786s,PASSED
+Video,Chrome 97.0.4692.71,,,2022-01-17 13:06:41,2022-01-17 13:06:41,0.003s,PASSED

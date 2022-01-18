@@ -1,0 +1,85 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Checkout,Chrome 97.0.4692.71,,,2022-01-17 12:58:21,2022-01-17 13:05:10,6m - 49.443s,FAILED
+,,,,,,,
+Test Cases/Checkout Scenario/Product Details,Chrome 97.0.4692.71,,,2022-01-17 12:58:21,2022-01-17 13:01:04,2m - 42.995s,FAILED
+GeneralHelpers.initScenario(),Chrome 97.0.4692.71,,,2022-01-17 12:58:21,2022-01-17 12:58:39,17.282s,PASSED
+GeneralHelpers.headerSearchFillAndClick(),Chrome 97.0.4692.71,,,2022-01-17 12:58:39,2022-01-17 12:58:48,9.349s,PASSED
+GeneralHelpers.navigateToResultPage(),Chrome 97.0.4692.71,,,2022-01-17 12:58:48,2022-01-17 12:58:51,2.553s,PASSED
+SearchResultPageValidations.verifyDefaultValues(),Chrome 97.0.4692.71,,,2022-01-17 12:58:51,2022-01-17 12:58:59,8.518s,PASSED
+SearchResultHelper.checkSearchPagePagination(),Chrome 97.0.4692.71,,,2022-01-17 12:58:59,2022-01-17 12:59:01,2.299s,PASSED
+SearchResultHelper.selectProductFilters(),Chrome 97.0.4692.71,,,2022-01-17 12:59:01,2022-01-17 12:59:12,10.536s,PASSED
+SearchResultPageActions.NavigateToProductDetailsPage(),Chrome 97.0.4692.71,,,2022-01-17 12:59:12,2022-01-17 12:59:18,5.942s,PASSED
+ProductDetailsHelpers.initProductDetailsPage(),Chrome 97.0.4692.71,,,2022-01-17 12:59:18,2022-01-17 12:59:26,7.704s,PASSED
+ProductDetailsHelpers.hoverEffectAndClickXLargeSizeLink(),Chrome 97.0.4692.71,,,2022-01-17 12:59:26,2022-01-17 12:59:36,10.249s,PASSED
+ProductDetailsHelpers.selectGreenColor(),Chrome 97.0.4692.71,,,2022-01-17 12:59:36,2022-01-17 12:59:40,3.585s,PASSED
+ProductDetailsHelpers.addProductToCart(),Chrome 97.0.4692.71,,,2022-01-17 12:59:40,2022-01-17 12:59:42,2.773s,PASSED
+MiniCartHelpers.hoverOnMiniCartHeader(),Chrome 97.0.4692.71,,,2022-01-17 12:59:42,2022-01-17 12:59:49,6.963s,PASSED
+ProductDetailsHelpers.hoverEffectAndClickLargeSizeLink(),Chrome 97.0.4692.71,,,2022-01-17 12:59:49,2022-01-17 12:59:58,9.191s,PASSED
+ProductDetailsHelpers.selectRoyalBlueColor(),Chrome 97.0.4692.71,,,2022-01-17 12:59:58,2022-01-17 13:00:02,3.913s,PASSED
+ProductDetailsHelpers.addProductToCart(),Chrome 97.0.4692.71,,,2022-01-17 13:00:02,2022-01-17 13:00:05,2.657s,PASSED
+MiniCartHelpers.hoverOnMiniCartHeader(),Chrome 97.0.4692.71,,,2022-01-17 13:00:05,2022-01-17 13:00:12,7.208s,PASSED
+MiniCartActions.navigateToCartPage(),Chrome 97.0.4692.71,,,2022-01-17 13:00:12,2022-01-17 13:00:17,4.500s,PASSED
+ShoppingCartHelpers.navigateToCartPage(),Chrome 97.0.4692.71,,,2022-01-17 13:00:17,2022-01-17 13:00:23,6.168s,PASSED
+ShoppingCartHelpers.updateQuantities(),Chrome 97.0.4692.71,,,2022-01-17 13:00:23,2022-01-17 13:00:29,6.399s,PASSED
+ShoppingCartHelpers.navigateToCheckoutPage(),Chrome 97.0.4692.71,,,2022-01-17 13:00:29,2022-01-17 13:00:34,4.550s,PASSED
+CheckoutPageHelpers.initCheckoutPage(),Chrome 97.0.4692.71,,,2022-01-17 13:00:34,2022-01-17 13:00:41,7.178s,PASSED
+CheckoutPageHelpers.navigateToCheckoutInformationForm(),Chrome 97.0.4692.71,,,2022-01-17 13:00:41,2022-01-17 13:00:43,2.385s,PASSED
+checkOutFormHelper.fillCheckOutForm(),Chrome 97.0.4692.71,,,2022-01-17 13:00:43,2022-01-17 13:00:54,10.161s,FAILED
+Video,Chrome 97.0.4692.71,,,2022-01-17 13:01:04,2022-01-17 13:01:04,0.006s,PASSED
+,,,,,,,
+Test Cases/Checkout Scenario/Category,Chrome 97.0.4692.71,,,2022-01-17 13:01:04,2022-01-17 13:02:53,1m - 48.949s,PASSED
+GeneralHelpers.initScenario(),Chrome 97.0.4692.71,,,2022-01-17 13:01:05,2022-01-17 13:01:16,11.578s,PASSED
+"computerRegister = ""Object Repository/Category/a_ComputerRegister""",Chrome 97.0.4692.71,,,2022-01-17 13:01:16,2022-01-17 13:01:16,0.001s,PASSED
+CategoryScActions.hovertags(),Chrome 97.0.4692.71,,,2022-01-17 13:01:16,2022-01-17 13:01:18,1.619s,PASSED
+"tags = ""Object Repository/Category/a_tags""",Chrome 97.0.4692.71,,,2022-01-17 13:01:18,2022-01-17 13:01:18,0.000s,PASSED
+"CategoryValidations.checkanchorHoverColorBackground(tags, moveColr, whiteColor)",Chrome 97.0.4692.71,,,2022-01-17 13:01:18,2022-01-17 13:01:19,0.926s,PASSED
+CategoryValidations.checkHoverFlyMenuVisibility(),Chrome 97.0.4692.71,,,2022-01-17 13:01:19,2022-01-17 13:01:19,0.664s,PASSED
+CategorySCHelpers.navigateComputerRegister(),Chrome 97.0.4692.71,,,2022-01-17 13:01:19,2022-01-17 13:01:25,5.303s,PASSED
+CategoryValidations.validatespanText(computerRegisterspan),Chrome 97.0.4692.71,,,2022-01-17 13:01:25,2022-01-17 13:01:26,1.662s,PASSED
+CategoryScActions.getDefaultProjectCategoryFilter(expectedProductNum),Chrome 97.0.4692.71,,,2022-01-17 13:01:26,2022-01-17 13:01:27,0.419s,PASSED
+CategoryScActions.getDefaultValueOfSortBy(sortByDefault),Chrome 97.0.4692.71,,,2022-01-17 13:01:27,2022-01-17 13:01:27,0.400s,PASSED
+CategoryScActions.getDefaultManufacturar(manufacturarDefault),Chrome 97.0.4692.71,,,2022-01-17 13:01:27,2022-01-17 13:01:27,0.324s,PASSED
+CategoryScActions.getDefaultModal(defaultmodal),Chrome 97.0.4692.71,,,2022-01-17 13:01:27,2022-01-17 13:01:28,0.407s,PASSED
+CategoryScActions.clickOnManuWithassertOPened(menuExpandValue),Chrome 97.0.4692.71,,,2022-01-17 13:01:28,2022-01-17 13:01:29,1.337s,PASSED
+CategorySCHelpers.selectCasioManufacturar(),Chrome 97.0.4692.71,,,2022-01-17 13:01:29,2022-01-17 13:01:32,2.855s,PASSED
+CategorySCHelpers.selectModalsp1000(),Chrome 97.0.4692.71,,,2022-01-17 13:01:32,2022-01-17 13:01:36,3.560s,PASSED
+CategorySCHelpers.EnterCasioSP1000Product(),Chrome 97.0.4692.71,,,2022-01-17 13:01:36,2022-01-17 13:01:41,5.450s,PASSED
+CategorySCHelpers.ValidateCasioSP1000ProductDetails(),Chrome 97.0.4692.71,,,2022-01-17 13:01:41,2022-01-17 13:01:42,0.799s,PASSED
+CategorySCHelpers.enterTenItemsFromProduct(),Chrome 97.0.4692.71,,,2022-01-17 13:01:42,2022-01-17 13:01:47,5.002s,PASSED
+MiniCartActions.navigateToCartPage(),Chrome 97.0.4692.71,,,2022-01-17 13:01:47,2022-01-17 13:01:50,3.380s,PASSED
+ShoppingCartHelpers.navigateToCartPage(),Chrome 97.0.4692.71,,,2022-01-17 13:01:50,2022-01-17 13:01:57,6.667s,PASSED
+ShoppingCartHelpers.navigateToCheckoutPage(),Chrome 97.0.4692.71,,,2022-01-17 13:01:57,2022-01-17 13:02:01,3.631s,PASSED
+CheckoutPageHelpers.initCheckoutPage(),Chrome 97.0.4692.71,,,2022-01-17 13:02:01,2022-01-17 13:02:07,6.054s,PASSED
+CheckoutPageHelpers.navigateToCheckoutInformationForm(),Chrome 97.0.4692.71,,,2022-01-17 13:02:07,2022-01-17 13:02:09,2.051s,PASSED
+checkOutFormHelper.fillCheckOutForm(),Chrome 97.0.4692.71,,,2022-01-17 13:02:09,2022-01-17 13:02:45,36.336s,PASSED
+closeBrowser(),Chrome 97.0.4692.71,,,2022-01-17 13:02:45,2022-01-17 13:02:45,0.166s,PASSED
+Video,Chrome 97.0.4692.71,,,2022-01-17 13:02:53,2022-01-17 13:02:53,0.003s,PASSED
+,,,,,,,
+Test Cases/Checkout Scenario/Quick Order,Chrome 97.0.4692.71,,,2022-01-17 13:02:53,2022-01-17 13:05:10,2m - 16.994s,PASSED
+GeneralHelpers.initScenario(),Chrome 97.0.4692.71,,,2022-01-17 13:02:53,2022-01-17 13:03:05,11.111s,PASSED
+QuickOrderHelpers.navigationAndVerifyToQuickOrder(),Chrome 97.0.4692.71,,,2022-01-17 13:03:05,2022-01-17 13:03:15,10.209s,PASSED
+"QuickOrderValidations.verifyCartCounterAndStyle(""0"")",Chrome 97.0.4692.71,,,2022-01-17 13:03:15,2022-01-17 13:03:16,0.817s,PASSED
+QuickOrderHelpers.headerAndTableStyle(),Chrome 97.0.4692.71,,,2022-01-17 13:03:16,2022-01-17 13:03:17,1.747s,PASSED
+QuickOrderHelpers.fillingVerifyingStockNo(),Chrome 97.0.4692.71,,,2022-01-17 13:03:17,2022-01-17 13:03:32,14.732s,PASSED
+QuickOrderHelpers.visibilityOfProductDetails(),Chrome 97.0.4692.71,,,2022-01-17 13:03:32,2022-01-17 13:03:35,3.149s,PASSED
+QuickOrderHelpers.fillingQuanitiesInputs(),Chrome 97.0.4692.71,,,2022-01-17 13:03:35,2022-01-17 13:03:36,0.593s,PASSED
+QuickOrderHelpers.storeProductsDetailsAndVerifyTotal(),Chrome 97.0.4692.71,,,2022-01-17 13:03:36,2022-01-17 13:03:37,0.786s,PASSED
+QuickOrderHelpers.navigationAndVerifyingShoppingCart(),Chrome 97.0.4692.71,,,2022-01-17 13:03:37,2022-01-17 13:03:44,7.779s,PASSED
+"QuickOrderValidations.verifyCartCounterAndStyle(""5"")",Chrome 97.0.4692.71,,,2022-01-17 13:03:44,2022-01-17 13:03:45,0.804s,PASSED
+QuickOrderHelpers.verifyCartTotalAndRowsNo(5),Chrome 97.0.4692.71,,,2022-01-17 13:03:45,2022-01-17 13:03:46,0.865s,PASSED
+QuickOrderHelpers.hoverOnMiniCartHeader(),Chrome 97.0.4692.71,,,2022-01-17 13:03:46,2022-01-17 13:03:52,5.594s,PASSED
+QuickOrderHelpers.navigateToCartPage(),Chrome 97.0.4692.71,,,2022-01-17 13:03:52,2022-01-17 13:03:57,5.474s,PASSED
+QuickOrderHelpers.verifyShoppingCartProductsSameWithStoredProducts(),Chrome 97.0.4692.71,,,2022-01-17 13:03:57,2022-01-17 13:04:01,3.550s,PASSED
+ShoppingCartHelpers.navigateToCheckoutPage(),Chrome 97.0.4692.71,,,2022-01-17 13:04:01,2022-01-17 13:04:05,4.356s,PASSED
+CheckoutPageValidation.verifyNaigationTOCheckOut(),Chrome 97.0.4692.71,,,2022-01-17 13:04:05,2022-01-17 13:04:06,1.223s,PASSED
+QuickOrderHelpers.initCheckoutPage(),Chrome 97.0.4692.71,,,2022-01-17 13:04:06,2022-01-17 13:04:12,5.880s,PASSED
+CheckoutPageHelpers.navigateToCheckoutInformationForm(),Chrome 97.0.4692.71,,,2022-01-17 13:04:12,2022-01-17 13:04:14,2.224s,PASSED
+checkOutFormHelper.fillCheckOutForm(),Chrome 97.0.4692.71,,,2022-01-17 13:04:14,2022-01-17 13:04:50,35.487s,PASSED
+CheckoutPageValidation.verifyNavigationToCheckoutDetails(),Chrome 97.0.4692.71,,,2022-01-17 13:04:50,2022-01-17 13:04:51,1.415s,PASSED
+CheckoutPageHelpers.ShippingAddressDiv(),Chrome 97.0.4692.71,,,2022-01-17 13:04:51,2022-01-17 13:04:53,2.170s,PASSED
+CheckoutPageHelpers.ShippingDetailsInCeckout(),Chrome 97.0.4692.71,,,2022-01-17 13:04:53,2022-01-17 13:04:54,0.429s,PASSED
+CheckoutPageHelpers.standardShippingAddress(),Chrome 97.0.4692.71,,,2022-01-17 13:04:54,2022-01-17 13:04:57,3.376s,PASSED
+CheckoutPageHelpers.paymentMethodDiv(),Chrome 97.0.4692.71,,,2022-01-17 13:04:57,2022-01-17 13:04:58,0.889s,PASSED
+CheckoutPageHelpers.verifyPaymentMethodDetails(),Chrome 97.0.4692.71,,,2022-01-17 13:04:58,2022-01-17 13:05:00,1.641s,PASSED
+closeBrowser(),Chrome 97.0.4692.71,,,2022-01-17 13:05:00,2022-01-17 13:05:00,0.140s,PASSED
+Video,Chrome 97.0.4692.71,,,2022-01-17 13:05:10,2022-01-17 13:05:10,0.001s,PASSED

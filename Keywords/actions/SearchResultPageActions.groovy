@@ -103,4 +103,13 @@ public class SearchResultPageActions {
 		TestObject sku = findTestObject('Object Repository/Product details/span_skuNumber')
 		return WebUI.getText(sku)
 	}
+	
+	/**
+	 * Expand the color filter card
+	 * @author waleedafifi
+	 */
+	public static void expandColorCardFilter() {
+		TestObject to = findTestObject('Object Repository/Filter/div_colorGroupTitle')
+		WebUI.click(to)
+	}
 }

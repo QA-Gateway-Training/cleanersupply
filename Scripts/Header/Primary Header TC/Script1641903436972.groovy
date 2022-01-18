@@ -22,12 +22,32 @@ import org.openqa.selenium.Keys as Keys
 
 GeneralHelpers.initScenario()
 PrimaryHeaderHelpers.topNav()
+PrimaryHeaderHelpers.NavigateToHomePageUsingLogo()
 PrimaryHeaderHelpers.rightLinkehoverEffect()
 PrimaryHeaderHelpers.cartLinkHover()
+
 PrimaryHeaderHelpers.myAccountButton()
+
+PrimaryHeaderHelpers.navigateToQuickOrder()
+PrimaryHeaderHelpers.NavigateToHomePageUsingLogo()
+
+PrimaryHeaderHelpers.navigateToReOrderPage()
+PrimaryHeaderHelpers.NavigateToHomePageUsingLogo()
+
+PrimaryHeaderHelpers.navigateToShippingDetailsPage()
+PrimaryHeaderHelpers.NavigateToHomePageUsingLogo()
+
 PrimaryHeaderHelpers.headerTopBar()
+
 PrimaryHeaderHelpers.shippingDetailsAction()
+PrimaryHeaderHelpers.navigateToShippingDetailsPage()
+PrimaryHeaderHelpers.NavigateToHomePageUsingLogo()
+
 PrimaryHeaderHelpers.customerService()
 PrimaryHeaderHelpers.customerServiceLinkAction()
+PrimaryHeaderHelpers.navigateToCustomerServicePage()
+PrimaryHeaderHelpers.NavigateToHomePageUsingLogo()
+
+
 
 WebUI.closeBrowser()

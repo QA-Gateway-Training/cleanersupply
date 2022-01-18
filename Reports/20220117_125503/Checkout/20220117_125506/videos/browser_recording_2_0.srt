@@ -1,0 +1,100 @@
+1
+00:00:00,191 --> 00:00:11,767
+1. GeneralHelpers.initScenario()
+
+2
+00:00:11,770 --> 00:00:11,774
+5. computerRegister = "Object Repository/Category/a_ComputerRegister"
+
+3
+00:00:11,774 --> 00:00:13,392
+9. CategoryScActions.hovertags()
+
+4
+00:00:13,393 --> 00:00:13,393
+13. tags = "Object Repository/Category/a_tags"
+
+5
+00:00:13,393 --> 00:00:14,303
+17. CategoryValidations.checkanchorHoverColorBackground(tags, moveColr, whiteColor)
+
+6
+00:00:14,319 --> 00:00:14,983
+21. CategoryValidations.checkHoverFlyMenuVisibility()
+
+7
+00:00:14,983 --> 00:00:20,278
+25. CategorySCHelpers.navigateComputerRegister()
+
+8
+00:00:20,279 --> 00:00:21,947
+29. CategoryValidations.validatespanText(computerRegisterspan)
+
+9
+00:00:21,947 --> 00:00:22,367
+33. CategoryScActions.getDefaultProjectCategoryFilter(expectedProductNum)
+
+10
+00:00:22,369 --> 00:00:22,768
+37. CategoryScActions.getDefaultValueOfSortBy(sortByDefault)
+
+11
+00:00:22,769 --> 00:00:23,093
+41. CategoryScActions.getDefaultManufacturar(manufacturarDefault)
+
+12
+00:00:23,093 --> 00:00:23,500
+45. CategoryScActions.getDefaultModal(defaultmodal)
+
+13
+00:00:23,501 --> 00:00:24,839
+49. CategoryScActions.clickOnManuWithassertOPened(menuExpandValue)
+
+14
+00:00:24,839 --> 00:00:27,693
+53. CategorySCHelpers.selectCasioManufacturar()
+
+15
+00:00:27,694 --> 00:00:31,252
+57. CategorySCHelpers.selectModalsp1000()
+
+16
+00:00:31,252 --> 00:00:36,700
+61. CategorySCHelpers.EnterCasioSP1000Product()
+
+17
+00:00:36,701 --> 00:00:37,504
+65. CategorySCHelpers.ValidateCasioSP1000ProductDetails()
+
+18
+00:00:37,504 --> 00:00:42,502
+69. CategorySCHelpers.enterTenItemsFromProduct()
+
+19
+00:00:42,505 --> 00:00:45,882
+73. MiniCartActions.navigateToCartPage()
+
+20
+00:00:45,883 --> 00:00:52,548
+77. ShoppingCartHelpers.navigateToCartPage()
+
+21
+00:00:52,553 --> 00:00:56,181
+81. ShoppingCartHelpers.navigateToCheckoutPage()
+
+22
+00:00:56,182 --> 00:01:02,235
+85. CheckoutPageHelpers.initCheckoutPage()
+
+23
+00:01:02,237 --> 00:01:04,286
+89. CheckoutPageHelpers.navigateToCheckoutInformationForm()
+
+24
+00:01:04,290 --> 00:01:40,624
+93. checkOutFormHelper.fillCheckOutForm()
+
+25
+00:01:40,625 --> 00:01:40,795
+97. closeBrowser()
+
