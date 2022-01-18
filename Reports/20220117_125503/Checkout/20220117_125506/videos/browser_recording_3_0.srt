@@ -1,0 +1,104 @@
+1
+00:00:00,000 --> 00:00:08,784
+1. GeneralHelpers.initScenario()
+
+2
+00:00:08,785 --> 00:00:18,994
+5. QuickOrderHelpers.navigationAndVerifyToQuickOrder()
+
+3
+00:00:18,995 --> 00:00:19,812
+9. QuickOrderValidations.verifyCartCounterAndStyle("0")
+
+4
+00:00:19,812 --> 00:00:21,558
+13. QuickOrderHelpers.headerAndTableStyle()
+
+5
+00:00:21,559 --> 00:00:36,288
+17. QuickOrderHelpers.fillingVerifyingStockNo()
+
+6
+00:00:36,290 --> 00:00:39,441
+21. QuickOrderHelpers.visibilityOfProductDetails()
+
+7
+00:00:39,441 --> 00:00:40,033
+25. QuickOrderHelpers.fillingQuanitiesInputs()
+
+8
+00:00:40,033 --> 00:00:40,818
+29. QuickOrderHelpers.storeProductsDetailsAndVerifyTotal()
+
+9
+00:00:40,819 --> 00:00:48,596
+33. QuickOrderHelpers.navigationAndVerifyingShoppingCart()
+
+10
+00:00:48,597 --> 00:00:49,402
+37. QuickOrderValidations.verifyCartCounterAndStyle("5")
+
+11
+00:00:49,402 --> 00:00:50,268
+41. QuickOrderHelpers.verifyCartTotalAndRowsNo(5)
+
+12
+00:00:50,268 --> 00:00:55,852
+45. QuickOrderHelpers.hoverOnMiniCartHeader()
+
+13
+00:00:55,862 --> 00:01:01,337
+49. QuickOrderHelpers.navigateToCartPage()
+
+14
+00:01:01,337 --> 00:01:04,886
+53. QuickOrderHelpers.verifyShoppingCartProductsSameWithStoredProducts()
+
+15
+00:01:04,887 --> 00:01:09,239
+57. ShoppingCartHelpers.navigateToCheckoutPage()
+
+16
+00:01:09,243 --> 00:01:10,466
+61. CheckoutPageValidation.verifyNaigationTOCheckOut()
+
+17
+00:01:10,467 --> 00:01:16,340
+65. QuickOrderHelpers.initCheckoutPage()
+
+18
+00:01:16,343 --> 00:01:18,572
+69. CheckoutPageHelpers.navigateToCheckoutInformationForm()
+
+19
+00:01:18,573 --> 00:01:54,055
+73. checkOutFormHelper.fillCheckOutForm()
+
+20
+00:01:54,057 --> 00:01:55,474
+77. CheckoutPageValidation.verifyNavigationToCheckoutDetails()
+
+21
+00:01:55,474 --> 00:01:57,643
+81. CheckoutPageHelpers.ShippingAddressDiv()
+
+22
+00:01:57,644 --> 00:01:58,074
+85. CheckoutPageHelpers.ShippingDetailsInCeckout()
+
+23
+00:01:58,074 --> 00:02:01,447
+89. CheckoutPageHelpers.standardShippingAddress()
+
+24
+00:02:01,448 --> 00:02:02,340
+93. CheckoutPageHelpers.paymentMethodDiv()
+
+25
+00:02:02,340 --> 00:02:03,979
+97. CheckoutPageHelpers.verifyPaymentMethodDetails()
+
+26
+00:02:03,980 --> 00:02:04,122
+101. closeBrowser()
+

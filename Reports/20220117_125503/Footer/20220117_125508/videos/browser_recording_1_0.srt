@@ -1,0 +1,148 @@
+1
+00:00:00,000 --> 00:00:11,416
+1. GeneralHelpers.initScenario()
+
+2
+00:00:11,422 --> 00:00:14,515
+5. defaultFooterValidatins.verifyExistingOftopFooterImage()
+
+3
+00:00:14,516 --> 00:00:15,650
+9. defaultFooterValidatins.verifyBackGroundandMaxHeightOfTopFooter()
+
+4
+00:00:15,651 --> 00:00:16,160
+13. defaultFooterValidatins.verifyExistingOffooterBody()
+
+5
+00:00:16,161 --> 00:00:16,507
+17. defaultFooterValidatins.verifyBackGroundandPaddingOfFooterBody()
+
+6
+00:00:16,507 --> 00:00:16,928
+21. defaultFooterValidatins.verifyExistingOffooterBodyRightColomn()
+
+7
+00:00:16,928 --> 00:00:17,235
+25. defaultFooterValidatins.verifyExistingOffooterBodyMiddleColomn()
+
+8
+00:00:17,235 --> 00:00:17,546
+29. defaultFooterValidatins.verifyExistingOffooterBodyLeftColomn()
+
+9
+00:00:17,546 --> 00:00:25,225
+33. defaultFooterValidatins.verifyRequestCatalogueLink()
+
+10
+00:00:25,226 --> 00:00:32,626
+37. defaultFooterValidatins.verifycassifiedListLink()
+
+11
+00:00:32,626 --> 00:00:35,015
+41. defaultFooterValidatins.verifyExistingOfRegionButtonandClickable()
+
+12
+00:00:35,017 --> 00:00:36,941
+45. defaultFooterValidatins.verifyClickingOnFeedBackButtonShowPopUP()
+
+13
+00:00:36,941 --> 00:00:40,858
+49. defaultFooterValidatins.fillModalWithAssertValueAndClose()
+
+14
+00:00:40,859 --> 00:00:45,263
+53. defaultFooterActions.clickpreviouslyOrdered()
+
+15
+00:00:45,264 --> 00:00:49,069
+57. defaultFooterValidatins.verifyClickingPreviouslyOrdered()
+
+16
+00:00:49,072 --> 00:00:52,645
+61. defaultFooterActions.clickQuickOrder()
+
+17
+00:00:52,650 --> 00:00:54,164
+65. defaultFooterValidatins.verifyExistingOfLeftFooterTitle()
+
+18
+00:00:54,164 --> 00:00:55,067
+69. defaultFooterValidatins.verifyExistingOfLeftFooterSubTitle()
+
+19
+00:00:55,068 --> 00:00:55,485
+73. defaultFooterValidatins.verifyExistingOfEmailAndValidatingIt()
+
+20
+00:00:55,485 --> 00:00:56,654
+77. defaultFooterActions.fillEmailSubscriber()
+
+21
+00:00:56,655 --> 00:00:58,372
+81. defaultFooterActions.clickOnSignUpSubscriber()
+
+22
+00:00:58,372 --> 00:00:59,070
+85. defaultFooterValidatins.verifyExistingOfConnectUsTitleandhasexpectedTitle()
+
+23
+00:00:59,070 --> 00:00:59,361
+89. defaultFooterValidatins.verifyEmailContactAddresAndHasExpectedAddress()
+
+24
+00:00:59,362 --> 00:01:00,151
+93. defaultFooterValidatins.verifyExistingangOfEmailIconAndHasExpectedStyle()
+
+25
+00:01:00,151 --> 00:01:01,167
+97. defaultFooterValidatins.verifyContactInfoAddressAsExpected()
+
+26
+00:01:01,167 --> 00:01:01,943
+101. defaultFooterValidatins.verifyExistingangOfPhoneIconAndHasExpectedStyle()
+
+27
+00:01:01,943 --> 00:01:01,946
+105. english = "Object Repository/defaultFooter/footerBody/leftColumn/div_englishSpeaking"
+
+28
+00:01:01,947 --> 00:01:03,557
+109. defaultFooterHelpers.verifyPresentOfContactNumberasExpectedTextAndStyle(english, englishContact)
+
+29
+00:01:03,558 --> 00:01:03,559
+113. korean = "Object Repository/defaultFooter/footerBody/leftColumn/div_koreanSpeaking"
+
+30
+00:01:03,559 --> 00:01:05,016
+117. defaultFooterHelpers.verifyPresentOfContactNumberasExpectedTextAndStyle(korean, koreanSpeaking)
+
+31
+00:01:05,018 --> 00:01:05,022
+121. international = "Object Repository/defaultFooter/footerBody/leftColumn/div_internationalOrders"
+
+32
+00:01:05,022 --> 00:01:06,467
+125. defaultFooterHelpers.verifyPresentOfContactNumberasExpectedTextAndStyle(international, internationalOrdersContact)
+
+33
+00:01:06,467 --> 00:01:07,712
+129. defaultFooterValidatins.verifyLogoExisting()
+
+34
+00:01:07,713 --> 00:01:09,336
+133. defaultFooterValidatins.verifyFaceBookIconExistingAndRedirection()
+
+35
+00:01:09,337 --> 00:01:10,035
+137. defaultFooterValidatins.verifyYoutubeIconExistingAndRedirection()
+
+36
+00:01:10,036 --> 00:01:10,965
+141. defaultFooterValidatins.verifyInstagramIconExistingAndRedirection()
+
+37
+00:01:10,966 --> 00:01:11,753
+145. defaultFooterValidatins.verifylinkedInIconExistingAndRedirection()
+

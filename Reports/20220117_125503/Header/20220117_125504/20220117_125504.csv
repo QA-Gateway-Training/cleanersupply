@@ -1,0 +1,49 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Header,Chrome 97.0.4692.71,,,2022-01-17 12:55:18,2022-01-17 12:58:12,2m - 54.328s,PASSED
+,,,,,,,
+Test Cases/Header/Primary Header TC,Chrome 97.0.4692.71,,,2022-01-17 12:55:18,2022-01-17 12:56:44,1m - 25.695s,PASSED
+GeneralHelpers.initScenario(),Chrome 97.0.4692.71,,,2022-01-17 12:55:19,2022-01-17 12:55:38,18.602s,PASSED
+PrimaryHeaderHelpers.topNav(),Chrome 97.0.4692.71,,,2022-01-17 12:55:38,2022-01-17 12:55:44,6.880s,PASSED
+PrimaryHeaderHelpers.NavigateToHomePageUsingLogo(),Chrome 97.0.4692.71,,,2022-01-17 12:55:44,2022-01-17 12:55:49,4.602s,PASSED
+PrimaryHeaderHelpers.rightLinkehoverEffect(),Chrome 97.0.4692.71,,,2022-01-17 12:55:49,2022-01-17 12:55:52,2.841s,PASSED
+PrimaryHeaderHelpers.cartLinkHover(),Chrome 97.0.4692.71,,,2022-01-17 12:55:52,2022-01-17 12:55:54,2.038s,PASSED
+PrimaryHeaderHelpers.myAccountButton(),Chrome 97.0.4692.71,,,2022-01-17 12:55:54,2022-01-17 12:55:55,1.385s,PASSED
+PrimaryHeaderHelpers.navigateToQuickOrder(),Chrome 97.0.4692.71,,,2022-01-17 12:55:55,2022-01-17 12:55:59,3.875s,PASSED
+PrimaryHeaderHelpers.NavigateToHomePageUsingLogo(),Chrome 97.0.4692.71,,,2022-01-17 12:55:59,2022-01-17 12:56:01,2.085s,PASSED
+PrimaryHeaderHelpers.navigateToReOrderPage(),Chrome 97.0.4692.71,,,2022-01-17 12:56:01,2022-01-17 12:56:07,5.673s,PASSED
+PrimaryHeaderHelpers.NavigateToHomePageUsingLogo(),Chrome 97.0.4692.71,,,2022-01-17 12:56:07,2022-01-17 12:56:09,2.395s,PASSED
+PrimaryHeaderHelpers.navigateToShippingDetailsPage(),Chrome 97.0.4692.71,,,2022-01-17 12:56:09,2022-01-17 12:56:13,3.568s,PASSED
+PrimaryHeaderHelpers.NavigateToHomePageUsingLogo(),Chrome 97.0.4692.71,,,2022-01-17 12:56:13,2022-01-17 12:56:16,3.234s,PASSED
+PrimaryHeaderHelpers.headerTopBar(),Chrome 97.0.4692.71,,,2022-01-17 12:56:16,2022-01-17 12:56:21,5.042s,PASSED
+PrimaryHeaderHelpers.shippingDetailsAction(),Chrome 97.0.4692.71,,,2022-01-17 12:56:21,2022-01-17 12:56:22,1.062s,PASSED
+PrimaryHeaderHelpers.navigateToShippingDetailsPage(),Chrome 97.0.4692.71,,,2022-01-17 12:56:22,2022-01-17 12:56:24,1.858s,PASSED
+PrimaryHeaderHelpers.NavigateToHomePageUsingLogo(),Chrome 97.0.4692.71,,,2022-01-17 12:56:24,2022-01-17 12:56:27,3.292s,PASSED
+PrimaryHeaderHelpers.customerService(),Chrome 97.0.4692.71,,,2022-01-17 12:56:27,2022-01-17 12:56:31,4.104s,PASSED
+PrimaryHeaderHelpers.customerServiceLinkAction(),Chrome 97.0.4692.71,,,2022-01-17 12:56:31,2022-01-17 12:56:32,0.984s,PASSED
+PrimaryHeaderHelpers.navigateToCustomerServicePage(),Chrome 97.0.4692.71,,,2022-01-17 12:56:32,2022-01-17 12:56:35,2.060s,PASSED
+PrimaryHeaderHelpers.NavigateToHomePageUsingLogo(),Chrome 97.0.4692.71,,,2022-01-17 12:56:35,2022-01-17 12:56:38,3.386s,PASSED
+closeBrowser(),Chrome 97.0.4692.71,,,2022-01-17 12:56:38,2022-01-17 12:56:38,0.239s,PASSED
+Video,Chrome 97.0.4692.71,,,2022-01-17 12:56:44,2022-01-17 12:56:44,0.004s,PASSED
+,,,,,,,
+Test Cases/Header/Secondery Header TC,Chrome 97.0.4692.71,,,2022-01-17 12:56:44,2022-01-17 12:58:12,1m - 28.152s,PASSED
+GeneralHelpers.initScenario(),Chrome 97.0.4692.71,,,2022-01-17 12:56:45,2022-01-17 12:56:56,11.566s,PASSED
+SeconderyHeaderValidation.verifyNavVisibilityAndBackground(),Chrome 97.0.4692.71,,,2022-01-17 12:56:56,2022-01-17 12:56:58,1.781s,PASSED
+SeconderyHeaderHelper.verifyAllNavLinksStyle(),Chrome 97.0.4692.71,,,2022-01-17 12:56:58,2022-01-17 12:56:59,1.014s,PASSED
+SeconderyHeaderHelper.hoverAllMainNavLinksAndCheckStyle(),Chrome 97.0.4692.71,,,2022-01-17 12:56:59,2022-01-17 12:57:13,14.168s,PASSED
+SeconderyHeaderHelper.navigateToTagsAndForms(),Chrome 97.0.4692.71,,,2022-01-17 12:57:13,2022-01-17 12:57:17,4.386s,PASSED
+PrimaryHeaderHelpers.NavigateToHomePageUsingLogo(),Chrome 97.0.4692.71,,,2022-01-17 12:57:17,2022-01-17 12:57:20,2.121s,PASSED
+SeconderyHeaderHelper.navigateToCounterAndCheckin(),Chrome 97.0.4692.71,,,2022-01-17 12:57:20,2022-01-17 12:57:23,3.626s,PASSED
+PrimaryHeaderHelpers.NavigateToHomePageUsingLogo(),Chrome 97.0.4692.71,,,2022-01-17 12:57:23,2022-01-17 12:57:26,3.036s,PASSED
+SeconderyHeaderHelper.navigateToBags(),Chrome 97.0.4692.71,,,2022-01-17 12:57:26,2022-01-17 12:57:31,4.952s,PASSED
+PrimaryHeaderHelpers.NavigateToHomePageUsingLogo(),Chrome 97.0.4692.71,,,2022-01-17 12:57:31,2022-01-17 12:57:33,2.277s,PASSED
+SeconderyHeaderHelper.navigateToPressingAndSpotting(),Chrome 97.0.4692.71,,,2022-01-17 12:57:33,2022-01-17 12:57:38,4.875s,PASSED
+PrimaryHeaderHelpers.NavigateToHomePageUsingLogo(),Chrome 97.0.4692.71,,,2022-01-17 12:57:38,2022-01-17 12:57:40,2.054s,PASSED
+SeconderyHeaderHelper.navigateToPackaging(),Chrome 97.0.4692.71,,,2022-01-17 12:57:40,2022-01-17 12:57:43,2.895s,PASSED
+PrimaryHeaderHelpers.NavigateToHomePageUsingLogo(),Chrome 97.0.4692.71,,,2022-01-17 12:57:43,2022-01-17 12:57:47,3.240s,PASSED
+SeconderyHeaderHelper.navigateToRacks(),Chrome 97.0.4692.71,,,2022-01-17 12:57:47,2022-01-17 12:57:50,3.152s,PASSED
+PrimaryHeaderHelpers.NavigateToHomePageUsingLogo(),Chrome 97.0.4692.71,,,2022-01-17 12:57:50,2022-01-17 12:57:53,3.767s,PASSED
+SeconderyHeaderHelper.navigateToTailoring(),Chrome 97.0.4692.71,,,2022-01-17 12:57:53,2022-01-17 12:57:57,3.327s,PASSED
+PrimaryHeaderHelpers.NavigateToHomePageUsingLogo(),Chrome 97.0.4692.71,,,2022-01-17 12:57:57,2022-01-17 12:58:00,2.858s,PASSED
+SeconderyHeaderHelper.navigateToLaundromat(),Chrome 97.0.4692.71,,,2022-01-17 12:58:00,2022-01-17 12:58:03,3.050s,PASSED
+PrimaryHeaderHelpers.NavigateToHomePageUsingLogo(),Chrome 97.0.4692.71,,,2022-01-17 12:58:03,2022-01-17 12:58:06,3.050s,PASSED
+Video,Chrome 97.0.4692.71,,,2022-01-17 12:58:12,2022-01-17 12:58:12,0.004s,PASSED

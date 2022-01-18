@@ -171,6 +171,15 @@ public class PrimaryHeaderValidations {
 	}
 	
 	/**
+	 * Verify mini cart if has your cart is empty text when the cart is empty
+	 * @author waleedafifi
+	 */
+	public static void verifyMiniCartIsEmptyImage() {
+		TestObject to = findTestObject('Object Repository/Mini Cart/img_emptyImage')
+		assert WebUI.getAttribute(to, 'src').contains('empty-cart-img')
+	}
+	
+	/**
 	 * Verify default style for shipping info in the top bar
 	 * @author waleedafifi
 	 */

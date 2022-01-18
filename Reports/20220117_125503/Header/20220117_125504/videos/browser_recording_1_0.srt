@@ -1,0 +1,84 @@
+1
+00:00:00,000 --> 00:00:12,536
+1. GeneralHelpers.initScenario()
+
+2
+00:00:12,554 --> 00:00:19,435
+5. PrimaryHeaderHelpers.topNav()
+
+3
+00:00:19,435 --> 00:00:24,040
+9. PrimaryHeaderHelpers.NavigateToHomePageUsingLogo()
+
+4
+00:00:24,040 --> 00:00:26,881
+13. PrimaryHeaderHelpers.rightLinkehoverEffect()
+
+5
+00:00:26,882 --> 00:00:28,918
+17. PrimaryHeaderHelpers.cartLinkHover()
+
+6
+00:00:28,919 --> 00:00:30,304
+21. PrimaryHeaderHelpers.myAccountButton()
+
+7
+00:00:30,304 --> 00:00:34,178
+25. PrimaryHeaderHelpers.navigateToQuickOrder()
+
+8
+00:00:34,179 --> 00:00:36,265
+29. PrimaryHeaderHelpers.NavigateToHomePageUsingLogo()
+
+9
+00:00:36,265 --> 00:00:41,937
+33. PrimaryHeaderHelpers.navigateToReOrderPage()
+
+10
+00:00:41,938 --> 00:00:44,333
+37. PrimaryHeaderHelpers.NavigateToHomePageUsingLogo()
+
+11
+00:00:44,333 --> 00:00:47,894
+41. PrimaryHeaderHelpers.navigateToShippingDetailsPage()
+
+12
+00:00:47,896 --> 00:00:51,135
+45. PrimaryHeaderHelpers.NavigateToHomePageUsingLogo()
+
+13
+00:00:51,135 --> 00:00:56,176
+49. PrimaryHeaderHelpers.headerTopBar()
+
+14
+00:00:56,177 --> 00:00:57,239
+53. PrimaryHeaderHelpers.shippingDetailsAction()
+
+15
+00:00:57,240 --> 00:00:59,115
+57. PrimaryHeaderHelpers.navigateToShippingDetailsPage()
+
+16
+00:00:59,115 --> 00:01:02,404
+61. PrimaryHeaderHelpers.NavigateToHomePageUsingLogo()
+
+17
+00:01:02,406 --> 00:01:06,510
+65. PrimaryHeaderHelpers.customerService()
+
+18
+00:01:06,511 --> 00:01:07,496
+69. PrimaryHeaderHelpers.customerServiceLinkAction()
+
+19
+00:01:07,497 --> 00:01:09,556
+73. PrimaryHeaderHelpers.navigateToCustomerServicePage()
+
+20
+00:01:09,556 --> 00:01:12,938
+77. PrimaryHeaderHelpers.NavigateToHomePageUsingLogo()
+
+21
+00:01:12,940 --> 00:01:13,184
+81. closeBrowser()
+

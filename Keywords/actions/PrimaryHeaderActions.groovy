@@ -21,7 +21,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
 
 public class PrimaryHeaderActions {
-	
+
 	/**
 	 * Mouse over action on quick order link
 	 * @author waleedafifi
@@ -30,7 +30,7 @@ public class PrimaryHeaderActions {
 		TestObject to = findTestObject('Object Repository/Primary Header/a_quickOrder')
 		WebUI.mouseOver(to)
 	}
-	
+
 	/**
 	 * Mouse over action on reorder link
 	 * @author waleedafifi
@@ -39,7 +39,7 @@ public class PrimaryHeaderActions {
 		TestObject to = findTestObject('Object Repository/Primary Header/a_reOrder')
 		WebUI.mouseOver(to)
 	}
-	
+
 	/**
 	 * Mouse over action on my account link
 	 * @author waleedafifi
@@ -48,7 +48,7 @@ public class PrimaryHeaderActions {
 		TestObject to = findTestObject('Object Repository/Primary Header/button_myAccount')
 		WebUI.mouseOver(to)
 	}
-	
+
 	/**
 	 * Click action on my account link
 	 * @author waleedafifi
@@ -57,7 +57,7 @@ public class PrimaryHeaderActions {
 		TestObject to = findTestObject('Object Repository/Primary Header/button_myAccount')
 		WebUI.click(to)
 	}
-	
+
 	/**
 	 * Mouse over action on cart link
 	 * @author waleedafifi
@@ -66,7 +66,7 @@ public class PrimaryHeaderActions {
 		TestObject to = findTestObject('Object Repository/Primary Header/a_cart')
 		WebUI.mouseOver(to)
 	}
-	
+
 	/**
 	 * Mouse over action on shipping details link
 	 * @author waleedafifi
@@ -75,7 +75,7 @@ public class PrimaryHeaderActions {
 		TestObject to = findTestObject('Primary Header/TobBar/a_headerShippingDetails')
 		WebUI.mouseOver(to)
 	}
-	
+
 	/**
 	 * Mouse over action on customer service link
 	 * @author waleedafifi
@@ -83,5 +83,32 @@ public class PrimaryHeaderActions {
 	public static void customerPhoneMouseOver() {
 		TestObject to = findTestObject('Object Repository/Primary Header/TobBar/a_customerServiceLink')
 		WebUI.mouseOver(to)
+	}
+	
+	/**
+	 * Click on logo
+	 * @author waleedafifi
+	 */
+	public static void logoClickAction() {
+		TestObject to = findTestObject('Object Repository/Primary Header/a_logo')
+		WebUI.click(to)
+	}
+	
+	/**
+	 * Click on Details link
+	 * @author waleedafifi
+	 */
+	public static void detailsLinkClickAction() {
+		TestObject to = findTestObject('Object Repository/Primary Header/TobBar/a_headerShippingDetails')
+		WebUI.click(to)
+	}
+	
+	/**
+	 * Click on Customer services link
+	 * @author waleedafifi
+	 */
+	public static void customerSeriveLinkClickAction() {
+		TestObject to = findTestObject('Object Repository/Primary Header/TobBar/a_customerServiceLink')
+		WebUI.click(to)
 	}
 }

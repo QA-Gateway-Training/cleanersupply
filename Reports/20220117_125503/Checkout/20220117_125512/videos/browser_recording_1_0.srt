@@ -1,0 +1,52 @@
+1
+00:00:00,000 --> 00:00:00,000
+1. GeneralHelpers.initScenario()
+
+2
+00:00:00,000 --> 00:00:00,000
+5. GeneralHelpers.headerSearchFillAndClick()
+
+3
+00:00:00,000 --> 00:00:00,000
+9. GeneralHelpers.navigateToResultPage()
+
+4
+00:00:00,000 --> 00:00:00,000
+13. SearchResultPageValidations.verifyDefaultValues()
+
+5
+00:00:00,000 --> 00:00:00,000
+17. SearchResultHelper.checkSearchPagePagination()
+
+6
+00:00:00,000 --> 00:00:00,000
+21. SearchResultHelper.selectProductFilters()
+
+7
+00:00:00,000 --> 00:00:00,000
+25. SearchResultPageActions.NavigateToProductDetailsPage()
+
+8
+00:00:00,000 --> 00:00:00,000
+29. ProductDetailsHelpers.initProductDetailsPage()
+
+9
+00:00:00,000 --> 00:00:00,000
+33. ProductDetailsHelpers.hoverEffectAndClickXLargeSizeLink()
+
+10
+00:00:00,000 --> 00:00:00,000
+37. ProductDetailsHelpers.selectGreenColor()
+
+11
+00:00:00,000 --> 00:00:00,000
+41. ProductDetailsHelpers.addProductToCart()
+
+12
+00:00:00,000 --> 00:00:00,000
+45. MiniCartHelpers.hoverOnMiniCartHeader()
+
+13
+00:00:00,000 --> 00:00:00,000
+49. ProductDetailsHelpers.hoverEffectAndClickLargeSizeLink()
+

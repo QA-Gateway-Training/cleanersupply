@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Header" time="174.328" tests="2" failures="0" errors="0">
+   <testsuite name="Header" tests="2" failures="0" errors="0" time="174.328" skipped="0" timestamp="2022-01-17 12:55:18" hostname="waleedafifi - localhost" id="Test Suites/Header">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/waleedafifi/Desktop/development/fixProj/cleanersupply/Reports/20220117_125503/Header/20220117_125504"/>
+         <property name="logFiles" value="/Users/waleedafifi/Desktop/development/fixProj/cleanersupply/Reports/20220117_125503/Header/20220117_125504/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="waleedafifi - localhost"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="8.2.0.208"/>
+         <property name="browser" value="Chrome 97.0.4692.71"/>
+         <property name="hostAddress" value="127.0.0.1"/>
+         <property name="sessionId" value="ce1b64656db1e9191f335c59cba5ca13"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Mac OS X"/>
+      </properties>
+      <testcase name="Test Cases/Header/Primary Header TC" time="85.695" classname="Test Cases/Header/Primary Header TC" status="PASSED">
+         <system-out><![CDATA[2022-01-17 12:55:18 - [TEST_CASE][PASSED] - Test Cases/Header/Primary Header TC: Test Cases/Header/Primary Header TC
+
+2022-01-17 12:55:19 - [TEST_STEP][PASSED] - GeneralHelpers.initScenario(): Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-17 12:55:19 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-01-17 12:55:19 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-01-17 12:55:25 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2022-01-17 12:55:25 - [MESSAGE][PASSED] - Current window maximized
+
+2022-01-17 12:55:36 - [MESSAGE][PASSED] - Navigate to 'https://www.cleanersupply.com/' successfully
+
+2022-01-17 12:55:37 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2022-01-17 12:55:37 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-17 12:55:37 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-17 12:55:38 - [MESSAGE][PASSED] - Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-17 12:55:38 - [TEST_STEP][PASSED] - PrimaryHeaderHelpers.topNav(): Object 'Object Repository/Primary Header/button_myAccount' is present
+
+2022-01-17 12:55:40 - [MESSAGE][PASSED] - Get CSS 'background-color' value on 'Object Repository/Primary Header/div_navTop' successfully: 'rgba(255, 200, 11, 1)'.
+
+2022-01-17 12:55:41 - [MESSAGE][PASSED] - Object 'Object Repository/Primary Header/div_navTop' is present
+
+2022-01-17 12:55:41 - [MESSAGE][PASSED] - Object 'Object Repository/Primary Header/div_headerSearch' is present
+
+2022-01-17 12:55:41 - [MESSAGE][PASSED] - Object 'Object Repository/Primary Header/a_quickOrder' is present
+
+2022-01-17 12:55:42 - [MESSAGE][PASSED] - Object 'Object Repository/Primary Header/img_logo' is present
+
+2022-01-17 12:55:43 - [MESSAGE][PASSED] - Get CSS 'width' value on 'Object Repository/Primary Header/img_logo' successfully: '121px'.
+
+2022-01-17 12:55:43 - [MESSAGE][PASSED] - Object 'Object Repository/Primary Header/header' is present
+
+2022-01-17 12:55:44 - [MESSAGE][PASSED] - Object 'Object Repository/Primary Header/a_cart' is present
+
+2022-01-17 12:55:44 - [MESSAGE][PASSED] - Object 'Object Repository/Primary Header/button_myAccount' is present
+
+2022-01-17 12:55:44 - [TEST_STEP][PASSED] - PrimaryHeaderHelpers.NavigateToHomePageUsingLogo(): Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-17 12:55:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Primary Header/a_logo' is clicked on
+
+2022-01-17 12:55:49 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2022-01-17 12:55:49 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-17 12:55:49 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-17 12:55:49 - [MESSAGE][PASSED] - Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-17 12:55:49 - [TEST_STEP][PASSED] - PrimaryHeaderHelpers.rightLinkehoverEffect(): Get CSS 'color' value on 'Object Repository/Primary Header/i_iconReOrder' successfully: 'rgba(82, 36, 127, 1)'.
+
+2022-01-17 12:55:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Primary Header/button_myAccount' is hovered
+
+2022-01-17 12:55:50 - [MESSAGE][PASSED] - Get CSS 'color' value on 'Object Repository/Primary Header/i_iconMyAccount' successfully: 'rgba(82, 36, 127, 1)'.
+
+2022-01-17 12:55:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Primary Header/a_quickOrder' is hovered
+
+2022-01-17 12:55:51 - [MESSAGE][PASSED] - Get CSS 'color' value on 'Object Repository/Primary Header/i_iconQuickOrder' successfully: 'rgba(82, 36, 127, 1)'.
+
+2022-01-17 12:55:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Primary Header/a_reOrder' is hovered
+
+2022-01-17 12:55:52 - [MESSAGE][PASSED] - Get CSS 'color' value on 'Object Repository/Primary Header/i_iconReOrder' successfully: 'rgba(82, 36, 127, 1)'.
+
+2022-01-17 12:55:52 - [TEST_STEP][PASSED] - PrimaryHeaderHelpers.cartLinkHover(): Text of object 'Object Repository/Primary Header/span_emptCart' is: 'YOUR CART IS EMPTY
+AND VERY SAD'
+
+2022-01-17 12:55:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Primary Header/a_cart' is hovered
+
+2022-01-17 12:55:53 - [MESSAGE][PASSED] - Get CSS 'background-color' value on 'Object Repository/Mini Cart/a_miniCartLink' successfully: 'rgba(255, 255, 255, 1)'.
+
+2022-01-17 12:55:53 - [MESSAGE][PASSED] - Get CSS 'color' value on 'Object Repository/Mini Cart/a_miniCartLink' successfully: 'rgba(82, 36, 127, 1)'.
+
+2022-01-17 12:55:53 - [MESSAGE][PASSED] - Object 'Object Repository/Mini Cart/div_miniCartDropDown' is present
+
+2022-01-17 12:55:54 - [MESSAGE][PASSED] - Text of object 'Object Repository/Primary Header/span_emptCart' is: 'YOUR CART IS EMPTY
+AND VERY SAD'
+
+2022-01-17 12:55:54 - [TEST_STEP][PASSED] - PrimaryHeaderHelpers.myAccountButton(): Object 'Object Repository/Primary Header/My Account/div.accountDropDown' is present
+
+2022-01-17 12:55:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Primary Header/button_myAccount' is clicked on
+
+2022-01-17 12:55:55 - [MESSAGE][PASSED] - Attribute 'class' of object 'Object Repository/Primary Header/li_myAccount' is: 'dropdown hidden-mobile account-container open'
+
+2022-01-17 12:55:55 - [MESSAGE][PASSED] - Object 'Object Repository/Primary Header/My Account/div.accountDropDown' is present
+
+2022-01-17 12:55:55 - [TEST_STEP][PASSED] - PrimaryHeaderHelpers.navigateToQuickOrder(): Current window's url is: 'https://www.cleanersupply.com/quick-order/'
+
+2022-01-17 12:55:59 - [MESSAGE][PASSED] - Object: 'Object Repository/defaultFooter/footerBody/rightColumn/a_quickOrder' is clicked on
+
+2022-01-17 12:55:59 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2022-01-17 12:55:59 - [MESSAGE][PASSED] - Current window's title is: 'Quick Order - Cleaner's Supply'
+
+2022-01-17 12:55:59 - [MESSAGE][PASSED] - Current window's title is: 'Quick Order - Cleaner's Supply'
+
+2022-01-17 12:55:59 - [MESSAGE][PASSED] - Current window's url is: 'https://www.cleanersupply.com/quick-order/'
+
+2022-01-17 12:55:59 - [TEST_STEP][PASSED] - PrimaryHeaderHelpers.NavigateToHomePageUsingLogo(): Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-17 12:56:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Primary Header/a_logo' is clicked on
+
+2022-01-17 12:56:01 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2022-01-17 12:56:01 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-17 12:56:01 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-17 12:56:01 - [MESSAGE][PASSED] - Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-17 12:56:01 - [TEST_STEP][PASSED] - PrimaryHeaderHelpers.navigateToReOrderPage(): Current window's url is: 'https://www.cleanersupply.com/log-in/?ReturnUrl=%2fpreviously-ordered%2f'
+
+2022-01-17 12:56:07 - [MESSAGE][PASSED] - Object: 'Object Repository/defaultFooter/footerBody/rightColumn/a_previouslyOrdered' is clicked on
+
+2022-01-17 12:56:07 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2022-01-17 12:56:07 - [MESSAGE][PASSED] - Current window's title is: 'Log In - Cleaner's Supply'
+
+2022-01-17 12:56:07 - [MESSAGE][PASSED] - Current window's title is: 'Log In - Cleaner's Supply'
+
+2022-01-17 12:56:07 - [MESSAGE][PASSED] - Current window's url is: 'https://www.cleanersupply.com/log-in/?ReturnUrl=%2fpreviously-ordered%2f'
+
+2022-01-17 12:56:07 - [TEST_STEP][PASSED] - PrimaryHeaderHelpers.NavigateToHomePageUsingLogo(): Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-17 12:56:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Primary Header/a_logo' is clicked on
+
+2022-01-17 12:56:09 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2022-01-17 12:56:09 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-17 12:56:09 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-17 12:56:09 - [MESSAGE][PASSED] - Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-17 12:56:09 - [TEST_STEP][PASSED] - PrimaryHeaderHelpers.navigateToShippingDetailsPage(): Current window's url is: 'https://www.cleanersupply.com/fast-free-shipping/'
+
+2022-01-17 12:56:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Primary Header/TobBar/a_headerShippingDetails' is clicked on
+
+2022-01-17 12:56:13 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2022-01-17 12:56:13 - [MESSAGE][PASSED] - Current window's title is: 'Fast, Free Shipping - Cleaner's Supply'
+
+2022-01-17 12:56:13 - [MESSAGE][PASSED] - Current window's title is: 'Fast, Free Shipping - Cleaner's Supply'
+
+2022-01-17 12:56:13 - [MESSAGE][PASSED] - Current window's url is: 'https://www.cleanersupply.com/fast-free-shipping/'
+
+2022-01-17 12:56:13 - [TEST_STEP][PASSED] - PrimaryHeaderHelpers.NavigateToHomePageUsingLogo(): Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-17 12:56:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Primary Header/a_logo' is clicked on
+
+2022-01-17 12:56:16 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2022-01-17 12:56:16 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-17 12:56:16 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-17 12:56:16 - [MESSAGE][PASSED] - Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-17 12:56:16 - [TEST_STEP][PASSED] - PrimaryHeaderHelpers.headerTopBar(): Get CSS 'font-family' value on 'Object Repository/Primary Header/TobBar/a_headerShippingDetails' successfully: '"Nunito Sans", sans-serif'.
+
+2022-01-17 12:56:18 - [MESSAGE][PASSED] - Object 'Object Repository/Primary Header/TobBar/div_topBarHeader' is present
+
+2022-01-17 12:56:18 - [MESSAGE][PASSED] - Get CSS 'background-color' value on 'Object Repository/Primary Header/TobBar/div_topBarHeader' successfully: 'rgba(243, 243, 244, 1)'.
+
+2022-01-17 12:56:19 - [MESSAGE][PASSED] - Get CSS 'text-align' value on 'Object Repository/Primary Header/TobBar/div_infoHolder' successfully: 'center'.
+
+2022-01-17 12:56:19 - [MESSAGE][PASSED] - Text of object 'Object Repository/Primary Header/TobBar/span_headerShippingInfo' is: 'FREE SHIPPING & RETURNS ON ORDERS OVER $99'
+
+2022-01-17 12:56:19 - [MESSAGE][PASSED] - Get CSS 'font-weight' value on 'Object Repository/Primary Header/TobBar/span_headerShippingInfo' successfully: '900'.
+
+2022-01-17 12:56:20 - [MESSAGE][PASSED] - Get CSS 'color' value on 'Object Repository/Primary Header/TobBar/span_headerShippingInfo' successfully: 'rgba(0, 0, 0, 1)'.
+
+2022-01-17 12:56:20 - [MESSAGE][PASSED] - Get CSS 'font-family' value on 'Object Repository/Primary Header/TobBar/span_headerShippingInfo' successfully: '"Nunito Sans", sans-serif'.
+
+2022-01-17 12:56:20 - [MESSAGE][PASSED] - Get CSS 'font-weight' value on 'Object Repository/Primary Header/TobBar/a_headerShippingDetails' successfully: '400'.
+
+2022-01-17 12:56:21 - [MESSAGE][PASSED] - Get CSS 'color' value on 'Object Repository/Primary Header/TobBar/a_headerShippingDetails' successfully: 'rgba(0, 0, 0, 1)'.
+
+2022-01-17 12:56:21 - [MESSAGE][PASSED] - Get CSS 'font-family' value on 'Object Repository/Primary Header/TobBar/a_headerShippingDetails' successfully: '"Nunito Sans", sans-serif'.
+
+2022-01-17 12:56:21 - [TEST_STEP][PASSED] - PrimaryHeaderHelpers.shippingDetailsAction(): Get CSS 'text-decoration' value on 'Object Repository/Primary Header/TobBar/a_headerShippingDetails' successfully: 'underline solid rgb(0, 0, 0)'.
+
+2022-01-17 12:56:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Primary Header/TobBar/a_headerShippingDetails' is hovered
+
+2022-01-17 12:56:22 - [MESSAGE][PASSED] - Get CSS 'text-decoration' value on 'Object Repository/Primary Header/TobBar/a_headerShippingDetails' successfully: 'underline solid rgb(0, 0, 0)'.
+
+2022-01-17 12:56:22 - [TEST_STEP][PASSED] - PrimaryHeaderHelpers.navigateToShippingDetailsPage(): Current window's url is: 'https://www.cleanersupply.com/fast-free-shipping/'
+
+2022-01-17 12:56:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Primary Header/TobBar/a_headerShippingDetails' is clicked on
+
+2022-01-17 12:56:24 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2022-01-17 12:56:24 - [MESSAGE][PASSED] - Current window's title is: 'Fast, Free Shipping - Cleaner's Supply'
+
+2022-01-17 12:56:24 - [MESSAGE][PASSED] - Current window's title is: 'Fast, Free Shipping - Cleaner's Supply'
+
+2022-01-17 12:56:24 - [MESSAGE][PASSED] - Current window's url is: 'https://www.cleanersupply.com/fast-free-shipping/'
+
+2022-01-17 12:56:24 - [TEST_STEP][PASSED] - PrimaryHeaderHelpers.NavigateToHomePageUsingLogo(): Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-17 12:56:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Primary Header/a_logo' is clicked on
+
+2022-01-17 12:56:27 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2022-01-17 12:56:27 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-17 12:56:27 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-17 12:56:27 - [MESSAGE][PASSED] - Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-17 12:56:27 - [TEST_STEP][PASSED] - PrimaryHeaderHelpers.customerService(): Get CSS 'font-family' value on 'Object Repository/Primary Header/TobBar/a_customerServiceLink' successfully: '"Nunito Sans", sans-serif'.
+
+2022-01-17 12:56:29 - [MESSAGE][PASSED] - Object 'Object Repository/Primary Header/TobBar/div_customerServicesArea' is present
+
+2022-01-17 12:56:30 - [MESSAGE][PASSED] - Get CSS 'font-weight' value on 'Object Repository/Primary Header/TobBar/span_customerAreaPhone' successfully: '700'.
+
+2022-01-17 12:56:30 - [MESSAGE][PASSED] - Get CSS 'color' value on 'Object Repository/Primary Header/TobBar/span_customerAreaPhone' successfully: 'rgba(0, 0, 0, 1)'.
+
+2022-01-17 12:56:30 - [MESSAGE][PASSED] - Get CSS 'font-family' value on 'Object Repository/Primary Header/TobBar/span_customerAreaPhone' successfully: '"Nunito Sans", sans-serif'.
+
+2022-01-17 12:56:31 - [MESSAGE][PASSED] - Get CSS 'font-weight' value on 'Object Repository/Primary Header/TobBar/a_customerServiceLink' successfully: '700'.
+
+2022-01-17 12:56:31 - [MESSAGE][PASSED] - Get CSS 'color' value on 'Object Repository/Primary Header/TobBar/a_customerServiceLink' successfully: 'rgba(0, 0, 0, 1)'.
+
+2022-01-17 12:56:31 - [MESSAGE][PASSED] - Get CSS 'font-family' value on 'Object Repository/Primary Header/TobBar/a_customerServiceLink' successfully: '"Nunito Sans", sans-serif'.
+
+2022-01-17 12:56:31 - [TEST_STEP][PASSED] - PrimaryHeaderHelpers.customerServiceLinkAction(): Get CSS 'text-decoration' value on 'Object Repository/Primary Header/TobBar/a_customerServiceLink' successfully: 'underline solid rgb(0, 0, 0)'.
+
+2022-01-17 12:56:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Primary Header/TobBar/a_customerServiceLink' is hovered
+
+2022-01-17 12:56:32 - [MESSAGE][PASSED] - Get CSS 'text-decoration' value on 'Object Repository/Primary Header/TobBar/a_customerServiceLink' successfully: 'underline solid rgb(0, 0, 0)'.
+
+2022-01-17 12:56:32 - [TEST_STEP][PASSED] - PrimaryHeaderHelpers.navigateToCustomerServicePage(): Current window's url is: 'https://www.cleanersupply.com/customer-service/'
+
+2022-01-17 12:56:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Primary Header/TobBar/a_customerServiceLink' is clicked on
+
+2022-01-17 12:56:34 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2022-01-17 12:56:34 - [MESSAGE][PASSED] - Current window's title is: 'Customer Service - Cleaner's Supply'
+
+2022-01-17 12:56:35 - [MESSAGE][PASSED] - Current window's title is: 'Customer Service - Cleaner's Supply'
+
+2022-01-17 12:56:35 - [MESSAGE][PASSED] - Current window's url is: 'https://www.cleanersupply.com/customer-service/'
+
+2022-01-17 12:56:35 - [TEST_STEP][PASSED] - PrimaryHeaderHelpers.NavigateToHomePageUsingLogo(): Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-17 12:56:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Primary Header/a_logo' is clicked on
+
+2022-01-17 12:56:38 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2022-01-17 12:56:38 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-17 12:56:38 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-17 12:56:38 - [MESSAGE][PASSED] - Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-17 12:56:38 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2022-01-17 12:56:38 - [MESSAGE][PASSED] - Browser is closed
+
+2022-01-17 12:56:44 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/Header/Primary Header TC' .
+
+2022-01-17 12:56:44 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/Header/Primary Header TC' .]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Header/Secondery Header TC" time="88.152" classname="Test Cases/Header/Secondery Header TC" status="PASSED">
+         <system-out><![CDATA[2022-01-17 12:56:44 - [TEST_CASE][PASSED] - Test Cases/Header/Secondery Header TC: Test Cases/Header/Secondery Header TC
+
+2022-01-17 12:56:45 - [TEST_STEP][PASSED] - GeneralHelpers.initScenario(): Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-17 12:56:45 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-01-17 12:56:45 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-01-17 12:56:47 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2022-01-17 12:56:47 - [MESSAGE][PASSED] - Current window maximized
+
+2022-01-17 12:56:56 - [MESSAGE][PASSED] - Navigate to 'https://www.cleanersupply.com/' successfully
+
+2022-01-17 12:56:56 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2022-01-17 12:56:56 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-17 12:56:56 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-17 12:56:56 - [MESSAGE][PASSED] - Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-17 12:56:56 - [TEST_STEP][PASSED] - SeconderyHeaderValidation.verifyNavVisibilityAndBackground(): Get CSS 'background-color' value on 'Object Repository/Secondary Header/div_navBottom' successfully: 'rgba(83, 35, 128, 1)'.
+
+2022-01-17 12:56:58 - [MESSAGE][PASSED] - Object 'Object Repository/Secondary Header/div_navBottom' is visible
+
+2022-01-17 12:56:58 - [MESSAGE][PASSED] - Get CSS 'background-color' value on 'Object Repository/Secondary Header/div_navBottom' successfully: 'rgba(83, 35, 128, 1)'.
+
+2022-01-17 12:56:58 - [TEST_STEP][PASSED] - SeconderyHeaderHelper.verifyAllNavLinksStyle(): Get CSS 'text-transform' value on '' successfully: 'uppercase'.
+
+2022-01-17 12:56:58 - [MESSAGE][PASSED] - Text of object '' is: 'TAGS & FORMS'
+
+2022-01-17 12:56:58 - [MESSAGE][PASSED] - Get CSS 'color' value on '' successfully: 'rgba(255, 255, 255, 1)'.
+
+2022-01-17 12:56:59 - [MESSAGE][PASSED] - Get CSS 'font-weight' value on '' successfully: '700'.
+
+2022-01-17 12:56:59 - [MESSAGE][PASSED] - Get CSS 'text-transform' value on '' successfully: 'uppercase'.
+
+2022-01-17 12:56:59 - [MESSAGE][PASSED] - Text of object '' is: 'COUNTER & CHECK-IN'
+
+2022-01-17 12:56:59 - [MESSAGE][PASSED] - Get CSS 'color' value on '' successfully: 'rgba(255, 255, 255, 1)'.
+
+2022-01-17 12:56:59 - [MESSAGE][PASSED] - Get CSS 'font-weight' value on '' successfully: '700'.
+
+2022-01-17 12:56:59 - [MESSAGE][PASSED] - Get CSS 'text-transform' value on '' successfully: 'uppercase'.
+
+2022-01-17 12:56:59 - [MESSAGE][PASSED] - Text of object '' is: 'BAGS'
+
+2022-01-17 12:56:59 - [MESSAGE][PASSED] - Get CSS 'color' value on '' successfully: 'rgba(255, 255, 255, 1)'.
+
+2022-01-17 12:56:59 - [MESSAGE][PASSED] - Get CSS 'font-weight' value on '' successfully: '700'.
+
+2022-01-17 12:56:59 - [MESSAGE][PASSED] - Get CSS 'text-transform' value on '' successfully: 'uppercase'.
+
+2022-01-17 12:56:59 - [MESSAGE][PASSED] - Text of object '' is: 'PRESSING & SPOTTING'
+
+2022-01-17 12:56:59 - [MESSAGE][PASSED] - Get CSS 'color' value on '' successfully: 'rgba(255, 255, 255, 1)'.
+
+2022-01-17 12:56:59 - [MESSAGE][PASSED] - Get CSS 'font-weight' value on '' successfully: '700'.
+
+2022-01-17 12:56:59 - [MESSAGE][PASSED] - Get CSS 'text-transform' value on '' successfully: 'uppercase'.
+
+2022-01-17 12:56:59 - [MESSAGE][PASSED] - Text of object '' is: 'PACKAGING'
+
+2022-01-17 12:56:59 - [MESSAGE][PASSED] - Get CSS 'color' value on '' successfully: 'rgba(255, 255, 255, 1)'.
+
+2022-01-17 12:56:59 - [MESSAGE][PASSED] - Get CSS 'font-weight' value on '' successfully: '700'.
+
+2022-01-17 12:56:59 - [MESSAGE][PASSED] - Get CSS 'text-transform' value on '' successfully: 'uppercase'.
+
+2022-01-17 12:56:59 - [MESSAGE][PASSED] - Text of object '' is: 'RACKS'
+
+2022-01-17 12:56:59 - [MESSAGE][PASSED] - Get CSS 'color' value on '' successfully: 'rgba(255, 255, 255, 1)'.
+
+2022-01-17 12:56:59 - [MESSAGE][PASSED] - Get CSS 'font-weight' value on '' successfully: '700'.
+
+2022-01-17 12:56:59 - [MESSAGE][PASSED] - Get CSS 'text-transform' value on '' successfully: 'uppercase'.
+
+2022-01-17 12:56:59 - [MESSAGE][PASSED] - Text of object '' is: 'TAILORING'
+
+2022-01-17 12:56:59 - [MESSAGE][PASSED] - Get CSS 'color' value on '' successfully: 'rgba(255, 255, 255, 1)'.
+
+2022-01-17 12:56:59 - [MESSAGE][PASSED] - Get CSS 'font-weight' value on '' successfully: '700'.
+
+2022-01-17 12:56:59 - [MESSAGE][PASSED] - Get CSS 'text-transform' value on '' successfully: 'uppercase'.
+
+2022-01-17 12:56:59 - [MESSAGE][PASSED] - Text of object '' is: 'LAUNDROMAT'
+
+2022-01-17 12:56:59 - [MESSAGE][PASSED] - Get CSS 'color' value on '' successfully: 'rgba(255, 255, 255, 1)'.
+
+2022-01-17 12:56:59 - [MESSAGE][PASSED] - Get CSS 'font-weight' value on '' successfully: '700'.
+
+2022-01-17 12:56:59 - [MESSAGE][PASSED] - Get CSS 'text-transform' value on '' successfully: 'uppercase'.
+
+2022-01-17 12:56:59 - [TEST_STEP][PASSED] - SeconderyHeaderHelper.hoverAllMainNavLinksAndCheckStyle(): Object: '' is hovered
+
+2022-01-17 12:56:59 - [MESSAGE][PASSED] - Object: '' is hovered
+
+2022-01-17 12:57:00 - [MESSAGE][PASSED] - Get CSS 'color' value on '' successfully: 'rgba(82, 36, 127, 1)'.
+
+2022-01-17 12:57:00 - [MESSAGE][PASSED] - Get CSS 'cursor' value on '' successfully: 'pointer'.
+
+2022-01-17 12:57:00 - [MESSAGE][PASSED] - Get CSS 'background-color' value on '' successfully: 'rgba(255, 255, 255, 1)'.
+
+2022-01-17 12:57:00 - [MESSAGE][PASSED] - Get CSS 'display' value on '' successfully: 'block'.
+
+2022-01-17 12:57:00 - [MESSAGE][PASSED] - Get CSS 'border-bottom-color' value on '' successfully: 'rgba(82, 36, 127, 1)'.
+
+2022-01-17 12:57:00 - [MESSAGE][PASSED] - Get CSS 'border-bottom-width' value on '' successfully: '2px'.
+
+2022-01-17 12:57:00 - [MESSAGE][PASSED] - Get CSS 'background-color' value on '' successfully: 'rgba(255, 255, 255, 1)'.
+
+2022-01-17 12:57:01 - [MESSAGE][PASSED] - Attribute 'class' of object 'Object Repository/Secondary Header/ul_navBottom' is: 'nav navbar-nav navbar-left open-desktop'
+
+2022-01-17 12:57:01 - [MESSAGE][PASSED] - Get CSS 'color' value on '' successfully: 'rgba(0, 0, 0, 1)'.
+
+2022-01-17 12:57:01 - [MESSAGE][PASSED] - Object: '' is hovered
+
+2022-01-17 12:57:01 - [MESSAGE][PASSED] - Object: '' is hovered
+
+2022-01-17 12:57:02 - [MESSAGE][PASSED] - Get CSS 'color' value on '' successfully: 'rgba(82, 36, 127, 1)'.
+
+2022-01-17 12:57:02 - [MESSAGE][PASSED] - Get CSS 'cursor' value on '' successfully: 'pointer'.
+
+2022-01-17 12:57:02 - [MESSAGE][PASSED] - Get CSS 'background-color' value on '' successfully: 'rgba(255, 255, 255, 1)'.
+
+2022-01-17 12:57:02 - [MESSAGE][PASSED] - Get CSS 'display' value on '' successfully: 'block'.
+
+2022-01-17 12:57:02 - [MESSAGE][PASSED] - Get CSS 'border-bottom-color' value on '' successfully: 'rgba(82, 36, 127, 1)'.
+
+2022-01-17 12:57:02 - [MESSAGE][PASSED] - Get CSS 'border-bottom-width' value on '' successfully: '2px'.
+
+2022-01-17 12:57:02 - [MESSAGE][PASSED] - Get CSS 'background-color' value on '' successfully: 'rgba(255, 255, 255, 1)'.
+
+2022-01-17 12:57:02 - [MESSAGE][PASSED] - Attribute 'class' of object 'Object Repository/Secondary Header/ul_navBottom' is: 'nav navbar-nav navbar-left open-desktop'
+
+2022-01-17 12:57:02 - [MESSAGE][PASSED] - Get CSS 'color' value on '' successfully: 'rgba(0, 0, 0, 1)'.
+
+2022-01-17 12:57:03 - [MESSAGE][PASSED] - Object: '' is hovered
+
+2022-01-17 12:57:03 - [MESSAGE][PASSED] - Object: '' is hovered
+
+2022-01-17 12:57:04 - [MESSAGE][PASSED] - Get CSS 'color' value on '' successfully: 'rgba(82, 36, 127, 1)'.
+
+2022-01-17 12:57:04 - [MESSAGE][PASSED] - Get CSS 'cursor' value on '' successfully: 'pointer'.
+
+2022-01-17 12:57:04 - [MESSAGE][PASSED] - Get CSS 'background-color' value on '' successfully: 'rgba(255, 255, 255, 1)'.
+
+2022-01-17 12:57:04 - [MESSAGE][PASSED] - Get CSS 'display' value on '' successfully: 'block'.
+
+2022-01-17 12:57:04 - [MESSAGE][PASSED] - Get CSS 'border-bottom-color' value on '' successfully: 'rgba(82, 36, 127, 1)'.
+
+2022-01-17 12:57:04 - [MESSAGE][PASSED] - Get CSS 'border-bottom-width' value on '' successfully: '2px'.
+
+2022-01-17 12:57:04 - [MESSAGE][PASSED] - Get CSS 'background-color' value on '' successfully: 'rgba(255, 255, 255, 1)'.
+
+2022-01-17 12:57:04 - [MESSAGE][PASSED] - Attribute 'class' of object 'Object Repository/Secondary Header/ul_navBottom' is: 'nav navbar-nav navbar-left open-desktop'
+
+2022-01-17 12:57:04 - [MESSAGE][PASSED] - Get CSS 'color' value on '' successfully: 'rgba(0, 0, 0, 1)'.
+
+2022-01-17 12:57:04 - [MESSAGE][PASSED] - Object: '' is hovered
+
+2022-01-17 12:57:05 - [MESSAGE][PASSED] - Object: '' is hovered
+
+2022-01-17 12:57:06 - [MESSAGE][PASSED] - Get CSS 'color' value on '' successfully: 'rgba(82, 36, 127, 1)'.
+
+2022-01-17 12:57:06 - [MESSAGE][PASSED] - Get CSS 'cursor' value on '' successfully: 'pointer'.
+
+2022-01-17 12:57:06 - [MESSAGE][PASSED] - Get CSS 'background-color' value on '' successfully: 'rgba(255, 255, 255, 1)'.
+
+2022-01-17 12:57:06 - [MESSAGE][PASSED] - Get CSS 'display' value on '' successfully: 'block'.
+
+2022-01-17 12:57:06 - [MESSAGE][PASSED] - Get CSS 'border-bottom-color' value on '' successfully: 'rgba(82, 36, 127, 1)'.
+
+2022-01-17 12:57:06 - [MESSAGE][PASSED] - Get CSS 'border-bottom-width' value on '' successfully: '2px'.
+
+2022-01-17 12:57:06 - [MESSAGE][PASSED] - Get CSS 'background-color' value on '' successfully: 'rgba(255, 255, 255, 1)'.
+
+2022-01-17 12:57:06 - [MESSAGE][PASSED] - Attribute 'class' of object 'Object Repository/Secondary Header/ul_navBottom' is: 'nav navbar-nav navbar-left open-desktop'
+
+2022-01-17 12:57:06 - [MESSAGE][PASSED] - Get CSS 'color' value on '' successfully: 'rgba(0, 0, 0, 1)'.
+
+2022-01-17 12:57:06 - [MESSAGE][PASSED] - Object: '' is hovered
+
+2022-01-17 12:57:07 - [MESSAGE][PASSED] - Object: '' is hovered
+
+2022-01-17 12:57:07 - [MESSAGE][PASSED] - Get CSS 'color' value on '' successfully: 'rgba(82, 36, 127, 1)'.
+
+2022-01-17 12:57:07 - [MESSAGE][PASSED] - Get CSS 'cursor' value on '' successfully: 'pointer'.
+
+2022-01-17 12:57:07 - [MESSAGE][PASSED] - Get CSS 'background-color' value on '' successfully: 'rgba(255, 255, 255, 1)'.
+
+2022-01-17 12:57:07 - [MESSAGE][PASSED] - Get CSS 'display' value on '' successfully: 'block'.
+
+2022-01-17 12:57:07 - [MESSAGE][PASSED] - Get CSS 'border-bottom-color' value on '' successfully: 'rgba(82, 36, 127, 1)'.
+
+2022-01-17 12:57:07 - [MESSAGE][PASSED] - Get CSS 'border-bottom-width' value on '' successfully: '2px'.
+
+2022-01-17 12:57:08 - [MESSAGE][PASSED] - Get CSS 'background-color' value on '' successfully: 'rgba(255, 255, 255, 1)'.
+
+2022-01-17 12:57:08 - [MESSAGE][PASSED] - Attribute 'class' of object 'Object Repository/Secondary Header/ul_navBottom' is: 'nav navbar-nav navbar-left open-desktop'
+
+2022-01-17 12:57:08 - [MESSAGE][PASSED] - Get CSS 'color' value on '' successfully: 'rgba(0, 0, 0, 1)'.
+
+2022-01-17 12:57:08 - [MESSAGE][PASSED] - Object: '' is hovered
+
+2022-01-17 12:57:08 - [MESSAGE][PASSED] - Object: '' is hovered
+
+2022-01-17 12:57:09 - [MESSAGE][PASSED] - Get CSS 'color' value on '' successfully: 'rgba(82, 36, 127, 1)'.
+
+2022-01-17 12:57:09 - [MESSAGE][PASSED] - Get CSS 'cursor' value on '' successfully: 'pointer'.
+
+2022-01-17 12:57:09 - [MESSAGE][PASSED] - Get CSS 'background-color' value on '' successfully: 'rgba(255, 255, 255, 1)'.
+
+2022-01-17 12:57:09 - [MESSAGE][PASSED] - Get CSS 'display' value on '' successfully: 'block'.
+
+2022-01-17 12:57:09 - [MESSAGE][PASSED] - Get CSS 'border-bottom-color' value on '' successfully: 'rgba(82, 36, 127, 1)'.
+
+2022-01-17 12:57:09 - [MESSAGE][PASSED] - Get CSS 'border-bottom-width' value on '' successfully: '2px'.
+
+2022-01-17 12:57:09 - [MESSAGE][PASSED] - Get CSS 'background-color' value on '' successfully: 'rgba(255, 255, 255, 1)'.
+
+2022-01-17 12:57:10 - [MESSAGE][PASSED] - Attribute 'class' of object 'Object Repository/Secondary Header/ul_navBottom' is: 'nav navbar-nav navbar-left open-desktop'
+
+2022-01-17 12:57:10 - [MESSAGE][PASSED] - Get CSS 'color' value on '' successfully: 'rgba(0, 0, 0, 1)'.
+
+2022-01-17 12:57:10 - [MESSAGE][PASSED] - Object: '' is hovered
+
+2022-01-17 12:57:10 - [MESSAGE][PASSED] - Object: '' is hovered
+
+2022-01-17 12:57:11 - [MESSAGE][PASSED] - Get CSS 'color' value on '' successfully: 'rgba(82, 36, 127, 1)'.
+
+2022-01-17 12:57:11 - [MESSAGE][PASSED] - Get CSS 'cursor' value on '' successfully: 'pointer'.
+
+2022-01-17 12:57:11 - [MESSAGE][PASSED] - Get CSS 'background-color' value on '' successfully: 'rgba(255, 255, 255, 1)'.
+
+2022-01-17 12:57:11 - [MESSAGE][PASSED] - Get CSS 'display' value on '' successfully: 'block'.
+
+2022-01-17 12:57:11 - [MESSAGE][PASSED] - Get CSS 'border-bottom-color' value on '' successfully: 'rgba(82, 36, 127, 1)'.
+
+2022-01-17 12:57:11 - [MESSAGE][PASSED] - Get CSS 'border-bottom-width' value on '' successfully: '2px'.
+
+2022-01-17 12:57:11 - [MESSAGE][PASSED] - Get CSS 'background-color' value on '' successfully: 'rgba(255, 255, 255, 1)'.
+
+2022-01-17 12:57:11 - [MESSAGE][PASSED] - Attribute 'class' of object 'Object Repository/Secondary Header/ul_navBottom' is: 'nav navbar-nav navbar-left open-desktop'
+
+2022-01-17 12:57:11 - [MESSAGE][PASSED] - Get CSS 'color' value on '' successfully: 'rgba(0, 0, 0, 1)'.
+
+2022-01-17 12:57:11 - [MESSAGE][PASSED] - Object: '' is hovered
+
+2022-01-17 12:57:12 - [MESSAGE][PASSED] - Object: '' is hovered
+
+2022-01-17 12:57:13 - [MESSAGE][PASSED] - Get CSS 'color' value on '' successfully: 'rgba(82, 36, 127, 1)'.
+
+2022-01-17 12:57:13 - [MESSAGE][PASSED] - Get CSS 'cursor' value on '' successfully: 'pointer'.
+
+2022-01-17 12:57:13 - [MESSAGE][PASSED] - Get CSS 'background-color' value on '' successfully: 'rgba(255, 255, 255, 1)'.
+
+2022-01-17 12:57:13 - [MESSAGE][PASSED] - Get CSS 'display' value on '' successfully: 'block'.
+
+2022-01-17 12:57:13 - [MESSAGE][PASSED] - Get CSS 'border-bottom-color' value on '' successfully: 'rgba(82, 36, 127, 1)'.
+
+2022-01-17 12:57:13 - [MESSAGE][PASSED] - Get CSS 'border-bottom-width' value on '' successfully: '2px'.
+
+2022-01-17 12:57:13 - [MESSAGE][PASSED] - Get CSS 'background-color' value on '' successfully: 'rgba(255, 255, 255, 1)'.
+
+2022-01-17 12:57:13 - [MESSAGE][PASSED] - Attribute 'class' of object 'Object Repository/Secondary Header/ul_navBottom' is: 'nav navbar-nav navbar-left open-desktop'
+
+2022-01-17 12:57:13 - [MESSAGE][PASSED] - Get CSS 'color' value on '' successfully: 'rgba(0, 0, 0, 1)'.
+
+2022-01-17 12:57:13 - [MESSAGE][PASSED] - Object: '' is hovered
+
+2022-01-17 12:57:13 - [TEST_STEP][PASSED] - SeconderyHeaderHelper.navigateToTagsAndForms(): Current window's url is: 'https://www.cleanersupply.com/Tags-Forms/'
+
+2022-01-17 12:57:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Secondary Header/a_tagsAndForm' is clicked on
+
+2022-01-17 12:57:17 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2022-01-17 12:57:17 - [MESSAGE][PASSED] - Current window's title is: 'Dry Cleaning Tags, Forms & Invoices - Cleaner's Supply'
+
+2022-01-17 12:57:17 - [MESSAGE][PASSED] - Current window's title is: 'Dry Cleaning Tags, Forms & Invoices - Cleaner's Supply'
+
+2022-01-17 12:57:17 - [MESSAGE][PASSED] - Current window's url is: 'https://www.cleanersupply.com/Tags-Forms/'
+
+2022-01-17 12:57:17 - [TEST_STEP][PASSED] - PrimaryHeaderHelpers.NavigateToHomePageUsingLogo(): Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-17 12:57:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Primary Header/a_logo' is clicked on
+
+2022-01-17 12:57:20 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2022-01-17 12:57:20 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-17 12:57:20 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-17 12:57:20 - [MESSAGE][PASSED] - Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-17 12:57:20 - [TEST_STEP][PASSED] - SeconderyHeaderHelper.navigateToCounterAndCheckin(): Current window's url is: 'https://www.cleanersupply.com/Counter-Check-In/'
+
+2022-01-17 12:57:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Secondary Header/a_counterAndCheckin' is clicked on
+
+2022-01-17 12:57:23 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2022-01-17 12:57:23 - [MESSAGE][PASSED] - Current window's title is: 'Store Counter & Check-In Supplies - Cleaner's Supply'
+
+2022-01-17 12:57:23 - [MESSAGE][PASSED] - Current window's title is: 'Store Counter & Check-In Supplies - Cleaner's Supply'
+
+2022-01-17 12:57:23 - [MESSAGE][PASSED] - Current window's url is: 'https://www.cleanersupply.com/Counter-Check-In/'
+
+2022-01-17 12:57:23 - [TEST_STEP][PASSED] - PrimaryHeaderHelpers.NavigateToHomePageUsingLogo(): Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-17 12:57:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Primary Header/a_logo' is clicked on
+
+2022-01-17 12:57:26 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2022-01-17 12:57:26 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-17 12:57:26 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-17 12:57:26 - [MESSAGE][PASSED] - Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-17 12:57:26 - [TEST_STEP][PASSED] - SeconderyHeaderHelper.navigateToBags(): Current window's url is: 'https://www.cleanersupply.com/Bags/'
+
+2022-01-17 12:57:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Secondary Header/a_bags' is clicked on
+
+2022-01-17 12:57:31 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2022-01-17 12:57:31 - [MESSAGE][PASSED] - Current window's title is: 'Dry Cleaning Bags - Cleaner's Supply'
+
+2022-01-17 12:57:31 - [MESSAGE][PASSED] - Current window's title is: 'Dry Cleaning Bags - Cleaner's Supply'
+
+2022-01-17 12:57:31 - [MESSAGE][PASSED] - Current window's url is: 'https://www.cleanersupply.com/Bags/'
+
+2022-01-17 12:57:31 - [TEST_STEP][PASSED] - PrimaryHeaderHelpers.NavigateToHomePageUsingLogo(): Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-17 12:57:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Primary Header/a_logo' is clicked on
+
+2022-01-17 12:57:33 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2022-01-17 12:57:33 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-17 12:57:33 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-17 12:57:33 - [MESSAGE][PASSED] - Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-17 12:57:33 - [TEST_STEP][PASSED] - SeconderyHeaderHelper.navigateToPressingAndSpotting(): Current window's url is: 'https://www.cleanersupply.com/Pressing-Spotting/'
+
+2022-01-17 12:57:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Secondary Header/a_pressingAndSpotting' is clicked on
+
+2022-01-17 12:57:38 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2022-01-17 12:57:38 - [MESSAGE][PASSED] - Current window's title is: 'Pressing, Spotting Tools & Supplies - Cleaner's Supply'
+
+2022-01-17 12:57:38 - [MESSAGE][PASSED] - Current window's title is: 'Pressing, Spotting Tools & Supplies - Cleaner's Supply'
+
+2022-01-17 12:57:38 - [MESSAGE][PASSED] - Current window's url is: 'https://www.cleanersupply.com/Pressing-Spotting/'
+
+2022-01-17 12:57:38 - [TEST_STEP][PASSED] - PrimaryHeaderHelpers.NavigateToHomePageUsingLogo(): Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-17 12:57:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Primary Header/a_logo' is clicked on
+
+2022-01-17 12:57:40 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2022-01-17 12:57:40 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-17 12:57:40 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-17 12:57:40 - [MESSAGE][PASSED] - Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-17 12:57:40 - [TEST_STEP][PASSED] - SeconderyHeaderHelper.navigateToPackaging(): Current window's url is: 'https://www.cleanersupply.com/Packaging/'
+
+2022-01-17 12:57:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Secondary Header/a_packaging' is clicked on
+
+2022-01-17 12:57:43 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2022-01-17 12:57:43 - [MESSAGE][PASSED] - Current window's title is: 'Packaging Supplies - Cleaner's Supply'
+
+2022-01-17 12:57:43 - [MESSAGE][PASSED] - Current window's title is: 'Packaging Supplies - Cleaner's Supply'
+
+2022-01-17 12:57:43 - [MESSAGE][PASSED] - Current window's url is: 'https://www.cleanersupply.com/Packaging/'
+
+2022-01-17 12:57:43 - [TEST_STEP][PASSED] - PrimaryHeaderHelpers.NavigateToHomePageUsingLogo(): Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-17 12:57:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Primary Header/a_logo' is clicked on
+
+2022-01-17 12:57:46 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2022-01-17 12:57:46 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-17 12:57:47 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-17 12:57:47 - [MESSAGE][PASSED] - Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-17 12:57:47 - [TEST_STEP][PASSED] - SeconderyHeaderHelper.navigateToRacks(): Current window's url is: 'https://www.cleanersupply.com/Racks/'
+
+2022-01-17 12:57:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Secondary Header/a_racks' is clicked on
+
+2022-01-17 12:57:50 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2022-01-17 12:57:50 - [MESSAGE][PASSED] - Current window's title is: 'Racks & Rack Accessories - Cleaner's Supply'
+
+2022-01-17 12:57:50 - [MESSAGE][PASSED] - Current window's title is: 'Racks & Rack Accessories - Cleaner's Supply'
+
+2022-01-17 12:57:50 - [MESSAGE][PASSED] - Current window's url is: 'https://www.cleanersupply.com/Racks/'
+
+2022-01-17 12:57:50 - [TEST_STEP][PASSED] - PrimaryHeaderHelpers.NavigateToHomePageUsingLogo(): Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-17 12:57:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Primary Header/a_logo' is clicked on
+
+2022-01-17 12:57:53 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2022-01-17 12:57:53 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-17 12:57:53 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-17 12:57:53 - [MESSAGE][PASSED] - Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-17 12:57:53 - [TEST_STEP][PASSED] - SeconderyHeaderHelper.navigateToTailoring(): Current window's url is: 'https://www.cleanersupply.com/Tailoring/'
+
+2022-01-17 12:57:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Secondary Header/a_tailoring' is clicked on
+
+2022-01-17 12:57:57 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2022-01-17 12:57:57 - [MESSAGE][PASSED] - Current window's title is: 'Tailoring Supplies - Cleaner's Supply'
+
+2022-01-17 12:57:57 - [MESSAGE][PASSED] - Current window's title is: 'Tailoring Supplies - Cleaner's Supply'
+
+2022-01-17 12:57:57 - [MESSAGE][PASSED] - Current window's url is: 'https://www.cleanersupply.com/Tailoring/'
+
+2022-01-17 12:57:57 - [TEST_STEP][PASSED] - PrimaryHeaderHelpers.NavigateToHomePageUsingLogo(): Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-17 12:58:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Primary Header/a_logo' is clicked on
+
+2022-01-17 12:58:00 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2022-01-17 12:58:00 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-17 12:58:00 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-17 12:58:00 - [MESSAGE][PASSED] - Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-17 12:58:00 - [TEST_STEP][PASSED] - SeconderyHeaderHelper.navigateToLaundromat(): Current window's url is: 'https://www.cleanersupply.com/Laundromat/'
+
+2022-01-17 12:58:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Secondary Header/a_laundromat' is clicked on
+
+2022-01-17 12:58:03 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2022-01-17 12:58:03 - [MESSAGE][PASSED] - Current window's title is: 'Laundromat Supplies - Cleaner's Supply'
+
+2022-01-17 12:58:03 - [MESSAGE][PASSED] - Current window's title is: 'Laundromat Supplies - Cleaner's Supply'
+
+2022-01-17 12:58:03 - [MESSAGE][PASSED] - Current window's url is: 'https://www.cleanersupply.com/Laundromat/'
+
+2022-01-17 12:58:03 - [TEST_STEP][PASSED] - PrimaryHeaderHelpers.NavigateToHomePageUsingLogo(): Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-17 12:58:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Primary Header/a_logo' is clicked on
+
+2022-01-17 12:58:06 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2022-01-17 12:58:06 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-17 12:58:06 - [MESSAGE][PASSED] - Current window's title is: 'Cleaner's Supply - Dry Cleaning Supplies'
+
+2022-01-17 12:58:06 - [MESSAGE][PASSED] - Current window's url is: 'https://www.cleanersupply.com/'
+
+2022-01-17 12:58:12 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/Header/Secondery Header TC' .
+
+2022-01-17 12:58:12 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/Header/Secondery Header TC' .]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-01-17 12:55:18 - [TEST_SUITE][PASSED] - Header: Test Cases/Header/Secondery Header TC]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
