@@ -20,7 +20,7 @@ import helpers.GeneralHelpers as GeneralHelpers
 import validation.defaultFooterValidatins as defaultFooterValidatins
 import actions.defaultFooterActions as defaultFooterActions
 import helpers.defaultFooterHelpers as defaultFooterHelpers
-
+//switch to defaultwindow index 0 
 GeneralHelpers.initScenario()
 
 defaultFooterValidatins.verifyExistingOftopFooterImage()

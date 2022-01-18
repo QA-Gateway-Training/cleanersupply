@@ -150,6 +150,7 @@ public class ProductDetailsHelpers {
 		//		ProductDetailsValidation.VerifyInnerTEXTLoadingAfterAddToCart()
 		//		ProductDetailsValidation.VerifyInnerTEXTAddedAfterAddToCart()
 		//		ProductDetailsValidation.verifyProductQuantityField(1)
+		// add disabled
 
 	}
 }

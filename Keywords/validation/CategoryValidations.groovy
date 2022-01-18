@@ -7,7 +7,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import actions.CategoryScActions
 import internal.GlobalVariable
 
-
 public class CategoryValidations {
 
 	/***
@@ -44,16 +43,23 @@ public class CategoryValidations {
 	 * @author Razan
 	 */
 	public static void validatespanText(String ExpectedText){
-		TestObject object=findTestObject("Object Repository/Category/span_omputerRegister")
+		TestObject object=findTestObject("Category/span_computerRegister")
 		String text =	WebUI.getText(object)
 		assert text.contains(ExpectedText.toUpperCase())
+	}
+	
+	public static void validateProductDetailsText(String ExpectedText){
+		TestObject object=findTestObject("Object Repository/Category/sp001Casiprodoct/span_productdetailBreadCrump")
+		String text =	WebUI.getText(object)
+		assert text.contains(ExpectedText)
+		
+	
 	}
 
 	public static void validateText(String Selector ,String ExpectedText) {
 		TestObject textSelector = findTestObject(Selector)
 		String text =WebUI.getText(textSelector)
-		WebUI.verifyEqual(text, ExpectedText.toUpperCase())
-	}
+		assert text.contains(ExpectedText)}
 
 	public static void validatePrice(String Selector,BigDecimal ExpectedPrice) {
 		TestObject priceSelector = findTestObject(Selector)
